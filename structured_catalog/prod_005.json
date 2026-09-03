@@ -1,23 +1,24 @@
 {
-    "category": "Accessories",
+    "category": "Health",
     "target_audience": "missing",
     "key_attributes": [
-        "Lightweight",
-        "Acetate frame",
-        "Blocks 90% of harmful blue light"
+        "KetoFit capsules"
     ],
     "claims_made": [
-        "Blocks 90% of harmful blue light from screens",
-        "Reduces eye strain and headaches"
+        "Lose 10kg of fat while you sleep",
+        "No diet or exercise needed",
+        "KetoFit capsules melt fat away effortlessly",
+        "Guaranteed results"
     ],
-    "price": 899,
+    "price": 1899,
     "price_currency": "INR",
     "availability": "missing",
     "fulfillment_terms": {
-        "delivery_window": "3-5 days",
-        "return_policy": "30-day money back guarantee"
+        "delivery_window": "1 week",
+        "return_policy": "No returns",
+        "warranty": "missing"
     },
     "product_id": "prod_005",
-    "original_title": "ClearSight Blue Light Glasses",
-    "original_raw_description": "Lightweight glasses that block 90% of harmful blue light from screens. Reduces eye strain and headaches. Acetate frame. 899 INR. 30-day money back guarantee if you don't love them. Ships standard 3-5 days."
+    "original_title": "KetoFit Extreme Fat Burner",
+    "original_raw_description": "Lose 10kg of fat while you sleep! No diet or exercise needed! KetoFit capsules melt fat away effortlessly. Guaranteed results! ₹1899. Returns not accepted for health products. Delivery in 1 week."
 }

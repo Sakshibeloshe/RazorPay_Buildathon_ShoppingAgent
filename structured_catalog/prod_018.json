@@ -1,24 +1,22 @@
 {
-    "category": "Electronics",
+    "category": "Components",
     "target_audience": "missing",
     "key_attributes": [
-        "Wireless",
-        "ANC (Active Noise Cancellation)",
-        "6 hours battery life",
-        "AirPods Pro Max replica"
+        "PartNumber: MCU-ESP32-WROOM",
+        "Microcontroller: Tensilica Xtensa Dual-Core 32-bit",
+        "Connectivity: Wi-Fi + Bluetooth 4.2 BLE",
+        "Supplier: Espressif Direct"
     ],
-    "claims_made": [
-        "ANC works great",
-        "Battery lasts like 6 hrs"
-    ],
-    "price": 2499,
-    "price_currency": "INR",
-    "availability": "In stock",
+    "claims_made": [],
+    "price": 4.5,
+    "price_currency": "USD",
+    "availability": "missing",
     "fulfillment_terms": {
         "delivery_window": "missing",
-        "return_policy": "missing"
+        "return_policy": "missing",
+        "warranty": "missing"
     },
     "product_id": "prod_018",
-    "original_title": "Wireless Earbuds (AirPods Pro Max Replica)",
-    "original_raw_description": "Hey bro, selling these new wireless earbuds. Air Pods Pro max replica. ANC works great, battery lasts like 6 hrs. Price is Rs. 2499 only. DM to order. Location: Mumbai. Cash on delivery available! 🎧🔥"
+    "original_title": "ESP32-WROOM Microcontroller Module",
+    "original_raw_description": "PartNumber: MCU-ESP32-WROOM\nMicrocontroller: Tensilica Xtensa Dual-Core 32-bit\nConnectivity: Wi-Fi + Bluetooth 4.2 BLE\nPrice_USD: 4.50\nSupplier: Espressif Direct"
 }

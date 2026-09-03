@@ -1,25 +1,22 @@
 {
-    "category": "Food",
+    "category": "Electronics",
     "target_audience": "missing",
     "key_attributes": [
-        "Ceremonial grade",
-        "30g",
-        "From Uji, Japan",
-        "First harvest",
-        "Shade-grown",
-        "Vibrant green color"
+        "65% form factor",
+        "Gateron Brown switches",
+        "Hot-swappable",
+        "Per-key RGB"
     ],
-    "claims_made": [
-        "Premium ceremonial grade matcha"
-    ],
-    "price": 1399,
-    "price_currency": "INR",
-    "availability": "Low stock",
+    "claims_made": [],
+    "price": 75.0,
+    "price_currency": "USD",
+    "availability": "missing",
     "fulfillment_terms": {
-        "delivery_window": "2-day express shipping",
-        "return_policy": "No returns"
+        "delivery_window": "missing",
+        "return_policy": "missing",
+        "warranty": "missing"
     },
     "product_id": "prod_015",
-    "original_title": "ZenMatcha Ceremonial Grade (30g)",
-    "original_raw_description": "Premium ceremonial grade matcha from Uji, Japan. First harvest, shade-grown. Vibrant green color. ₹1399. Low stock. Non-returnable food item. 2-day express shipping available."
+    "original_title": "Mechanical Keyboard 65%",
+    "original_raw_description": "product:\n  title: \"Mechanical Keyboard 65%\"\n  switches: \n    type: \"Gateron Brown\"\n    hot_swappable: true\n  price_usd: 75.00\n  rgb: \"per-key\""
 }

@@ -1,23 +1,26 @@
 {
-    "category": "Health",
+    "category": "Food",
     "target_audience": "missing",
     "key_attributes": [
-        "KetoFit capsules"
+        "Organic",
+        "Matcha Green Tea Powder",
+        "250g",
+        "Origin: Uji, Japan",
+        "Grade: Ceremonial",
+        "Organic certified"
     ],
     "claims_made": [
-        "Lose 10kg of fat while you sleep",
-        "No diet or exercise needed",
-        "KetoFit capsules melt fat away effortlessly",
-        "Guaranteed results"
+        "Organic certified"
     ],
-    "price": 1899,
-    "price_currency": "INR",
+    "price": 22.0,
+    "price_currency": "EUR",
     "availability": "missing",
     "fulfillment_terms": {
-        "delivery_window": "1 week",
-        "return_policy": "No returns"
+        "delivery_window": "missing",
+        "return_policy": "missing",
+        "warranty": "missing"
     },
     "product_id": "prod_009",
-    "original_title": "KetoFit Extreme Fat Burner",
-    "original_raw_description": "Lose 10kg of fat while you sleep! No diet or exercise needed! KetoFit capsules melt fat away effortlessly. Guaranteed results! ₹1899. Returns not accepted for health products. Delivery in 1 week."
+    "original_title": "Organic Matcha Green Tea Powder 250g",
+    "original_raw_description": "<catalog_item>\n  <id>PROD-552</id>\n  <name>Organic Matcha Green Tea Powder 250g</name>\n  <details>\n    <origin>Uji, Japan</origin>\n    <grade>Ceremonial</grade>\n    <organic_certified>Yes</organic_certified>\n  </details>\n  <cost>22.00</cost>\n  <currency>EUR</currency>\n</catalog_item>"
 }

@@ -1,22 +1,25 @@
 {
-    "category": "Skincare",
+    "category": "Apparel",
     "target_audience": "missing",
     "key_attributes": [
-        "10% L-ascorbic acid",
-        "Fragrance free"
+        "Vintage style",
+        "Distress Brown color",
+        "Real cowhide leather",
+        "Brass zippers",
+        "Size L"
     ],
     "claims_made": [
-        "Treats dark spots",
-        "Brightens skin"
+        "Handmade in Turkey"
     ],
-    "price": 1250,
-    "price_currency": "INR",
+    "price": 189.5,
+    "price_currency": "USD",
     "availability": "Low stock",
     "fulfillment_terms": {
-        "delivery_window": "4 days",
-        "return_policy": "30 day return policy even if opened"
+        "delivery_window": "missing",
+        "return_policy": "accepted within 14 days if tags are still attached",
+        "warranty": "missing"
     },
     "product_id": "prod_007",
-    "original_title": "GlowSkin Vitamin C Radiance Serum",
-    "original_raw_description": "Vitamin C serum for dark spots and skin brightening. 10% L-ascorbic acid. Fragrance free. 1250 INR. Low stock. We offer a 30 day return policy even if opened. Delivery usually takes 4 days."
+    "original_title": "Vintage Leather Jacket - Distress Brown",
+    "original_raw_description": "product_name: \"Vintage Leather Jacket - Distress Brn\"\nPRICE = $189.50\nCategory: Apparel / Outerwear\nAvail: YES (only 3 left in sz L)\ndesc: real cowhide leather, brass zippers, handmade in turkey.\nReturns: accepted within 14 days if tags are still attached."
 }

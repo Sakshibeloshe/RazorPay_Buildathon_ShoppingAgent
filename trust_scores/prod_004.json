@@ -1,26 +1,32 @@
 {
     "product_id": "prod_004",
-    "title": "HyperCharge Power Bank 100k",
+    "title": "GlowSkin Vitamin C Radiance Serum",
     "claims_evaluated": [
         {
-            "claim": "Charge your phone 50 times on a single charge",
-            "score": 0,
-            "reason": "The claim is a pure marketing assertion that is physically implausible for a 5mm thin device and lacks any supporting technical specifications, efficiency calculations, or named testing standards.",
+            "claim": "Treats dark spots",
+            "score": 60,
+            "reason": "The claim is supported by the presence of 10% L-ascorbic acid, a well-documented ingredient for hyperpigmentation, but lacks specific clinical study citations or certification.",
+            "llm_evaluated": true
+        },
+        {
+            "claim": "Brightens skin",
+            "score": 60,
+            "reason": "The claim is supported by the inclusion of 10% L-ascorbic acid, a known skin-brightening agent, though it remains a general efficacy statement without specific technical verification or named studies.",
             "llm_evaluated": true
         }
     ],
-    "claim_evidence_avg": 0,
+    "claim_evidence_avg": 60,
     "failed_claim_evaluations": 0,
     "score_reliable": true,
     "deterministic_checks": {
         "return_policy_present": true,
         "price_consistent": true,
         "prices_found_in_text": [
-            499.0
+            1250.0
         ],
         "contact_info_present": false,
         "deterministic_score": 67
     },
-    "trust_score": 20,
-    "summary_reason": "Weakest claim: \"Charge your phone 50 times on a single charge\" — The claim is a pure marketing assertion that is physically implausible for a 5mm thin device and lacks any supporting technical specifications, efficiency calculations, or named testing standards. No contact/business info found."
+    "trust_score": 62,
+    "summary_reason": "No contact/business info found."
 }

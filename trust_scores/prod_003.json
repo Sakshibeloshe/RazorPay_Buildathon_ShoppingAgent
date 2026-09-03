@@ -1,30 +1,32 @@
 {
     "product_id": "prod_003",
-    "title": "PureOats Organic Gluten-Free Oats (1kg)",
+    "title": "Aura Sleep & Activity Smart Ring",
     "claims_evaluated": [
         {
-            "claim": "Certified organic",
-            "score": 20,
-            "reason": "The listing uses the phrase 'Certified organic' but fails to name the specific certifying body (e.g., USDA, EU Organic) or provide a certification number, making it a standard marketing claim rather than verifiable evidence.",
+            "claim": "Waterproof up to 50m",
+            "score": 85,
+            "reason": "The listing provides a precise technical specification (50m depth) which is a standard, verifiable metric for water resistance, though it lacks a specific certification name like IP68 or 5ATM.",
             "llm_evaluated": true
         },
         {
-            "claim": "Grown without synthetic pesticides",
-            "score": 10,
-            "reason": "This is a vague agricultural assertion that lacks specific details on farming practices, third-party audits, or residue test results to substantiate the claim.",
+            "claim": "Battery lasts 7 days",
+            "score": 80,
+            "reason": "The listing provides a precise quantitative specification (7 days) for battery life, which is a verifiable technical claim, although it does not specify the usage conditions or test protocol.",
             "llm_evaluated": true
         }
     ],
-    "claim_evidence_avg": 15,
+    "claim_evidence_avg": 82,
     "failed_claim_evaluations": 0,
     "score_reliable": true,
     "deterministic_checks": {
         "return_policy_present": true,
         "price_consistent": true,
-        "prices_found_in_text": [],
+        "prices_found_in_text": [
+            18999.0
+        ],
         "contact_info_present": false,
         "deterministic_score": 67
     },
-    "trust_score": 31,
-    "summary_reason": "Weakest claim: \"Grown without synthetic pesticides\" — This is a vague agricultural assertion that lacks specific details on farming practices, third-party audits, or residue test results to substantiate the claim. No contact/business info found."
+    "trust_score": 78,
+    "summary_reason": "No contact/business info found."
 }

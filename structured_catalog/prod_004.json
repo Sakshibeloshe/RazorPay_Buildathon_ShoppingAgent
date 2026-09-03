@@ -1,22 +1,24 @@
 {
-    "category": "Electronics",
+    "category": "Skincare",
     "target_audience": "missing",
     "key_attributes": [
-        "100,000mAh capacity",
-        "5mm thickness",
-        "Super slim pocket design"
+        "Vitamin C serum",
+        "10% L-ascorbic acid",
+        "Fragrance free"
     ],
     "claims_made": [
-        "Charge your phone 50 times on a single charge"
+        "Treats dark spots",
+        "Brightens skin"
     ],
-    "price": 499,
+    "price": 1250,
     "price_currency": "INR",
-    "availability": "missing",
+    "availability": "Low stock",
     "fulfillment_terms": {
-        "delivery_window": "5 days",
-        "return_policy": "No warranty"
+        "delivery_window": "4 days",
+        "return_policy": "30 day return policy even if opened",
+        "warranty": "missing"
     },
     "product_id": "prod_004",
-    "original_title": "HyperCharge Power Bank 100k",
-    "original_raw_description": "Super slim pocket power bank with a MASSIVE 100,000mAh capacity! Charge your phone 50 times on a single charge! Ultra thin 5mm design. Just 499 Rupees. Delivery in 5 days. No warranty."
+    "original_title": "GlowSkin Vitamin C Radiance Serum",
+    "original_raw_description": "Vitamin C serum for dark spots and skin brightening. 10% L-ascorbic acid. Fragrance free. 1250 INR. Low stock. We offer a 30 day return policy even if opened. Delivery usually takes 4 days."
 }

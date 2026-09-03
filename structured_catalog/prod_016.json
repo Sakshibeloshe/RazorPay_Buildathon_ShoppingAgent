@@ -1,22 +1,24 @@
 {
-    "category": "Accessories",
+    "category": "Health",
     "target_audience": "missing",
     "key_attributes": [
-        "Grade 5 Titanium",
-        "32oz capacity",
-        "BPA free"
+        "Disposable",
+        "3-Ply",
+        "Box of 500",
+        "Medical grade"
     ],
     "claims_made": [
-        "Ultra-Resilient"
+        "Medical grade"
     ],
-    "price": 45.99,
+    "price": 0.04,
     "price_currency": "USD",
-    "availability": "In stock",
+    "availability": "missing",
     "fulfillment_terms": {
         "delivery_window": "missing",
-        "return_policy": "30-day returns if unused"
+        "return_policy": "missing",
+        "warranty": "missing"
     },
     "product_id": "prod_016",
-    "original_title": "Ultra-Resilient Titanium Water Bottle (32oz)",
-    "original_raw_description": "{\n  \"itemID\": \"SKU-9981-BLK\",\n  \"item_title\": \"Ultra-Resilient Titanium Water Bottle (32oz)\",\n  \"specs\": {\n    \"material\": \"Grade 5 Titanium\",\n    \"capacity_oz\": 32,\n    \"bpa_free\": true\n  },\n  \"pricing\": {\n    \"retail\": 45.99,\n    \"currency\": \"USD\"\n  },\n  \"stock_status\": \"IN_STOCK\",\n  \"warranty\": \"5-year manufacturer warranty, 30-day returns if unused\"\n}"
+    "original_title": "Disposable 3-Ply Face Masks (Box of 500)",
+    "original_raw_description": "ITEM CODE: BULK-MASK-500\nDESC: Disposable 3-Ply Face Masks, Box of 500 pcs. Medical grade.\nUNIT PRICE: $0.04 per piece\nMOQ: 10 boxes"
 }

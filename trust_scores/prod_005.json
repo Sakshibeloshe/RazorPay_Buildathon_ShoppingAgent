@@ -1,32 +1,44 @@
 {
     "product_id": "prod_005",
-    "title": "ClearSight Blue Light Glasses",
+    "title": "KetoFit Extreme Fat Burner",
     "claims_evaluated": [
         {
-            "claim": "Blocks 90% of harmful blue light from screens",
-            "score": 10,
-            "reason": "The listing provides a specific percentage but lacks any certification, test data, or named technical specification to verify the accuracy of the 90% figure.",
+            "claim": "Lose 10kg of fat while you sleep",
+            "score": 0,
+            "reason": "This is an exaggerated, unsupported promise with no cited study, mechanism, or certification to verify the specific weight loss amount or the 'while you sleep' mechanism.",
             "llm_evaluated": true
         },
         {
-            "claim": "Reduces eye strain and headaches",
-            "score": 5,
-            "reason": "This is a general health benefit assertion without citing any clinical studies, medical endorsements, or specific physiological mechanisms to support the claim.",
+            "claim": "No diet or exercise needed",
+            "score": 0,
+            "reason": "This is a vague marketing assertion that contradicts standard medical consensus and provides no scientific evidence or named ingredient to support the claim that lifestyle changes are unnecessary.",
+            "llm_evaluated": true
+        },
+        {
+            "claim": "KetoFit capsules melt fat away effortlessly",
+            "score": 0,
+            "reason": "The phrase 'melt fat away effortlessly' is metaphorical marketing language without any verifiable technical specification, named active ingredient with a known function, or cited research.",
+            "llm_evaluated": true
+        },
+        {
+            "claim": "Guaranteed results",
+            "score": 0,
+            "reason": "This is a broad, unsubstantiated guarantee that lacks any specific terms, conditions, or evidence of efficacy, and is further undermined by the 'returns not accepted' policy.",
             "llm_evaluated": true
         }
     ],
-    "claim_evidence_avg": 8,
+    "claim_evidence_avg": 0,
     "failed_claim_evaluations": 0,
     "score_reliable": true,
     "deterministic_checks": {
         "return_policy_present": true,
         "price_consistent": true,
         "prices_found_in_text": [
-            899.0
+            1899.0
         ],
         "contact_info_present": false,
         "deterministic_score": 67
     },
-    "trust_score": 26,
-    "summary_reason": "Weakest claim: \"Reduces eye strain and headaches\" — This is a general health benefit assertion without citing any clinical studies, medical endorsements, or specific physiological mechanisms to support the claim. No contact/business info found."
+    "trust_score": 20,
+    "summary_reason": "Weakest claim: \"Lose 10kg of fat while you sleep\" — This is an exaggerated, unsupported promise with no cited study, mechanism, or certification to verify the specific weight loss amount or the 'while you sleep' mechanism. No contact/business info found."
 }

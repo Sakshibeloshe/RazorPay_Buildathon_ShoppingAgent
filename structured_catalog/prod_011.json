@@ -1,23 +1,22 @@
 {
-    "category": "Electronics",
+    "category": "Skincare",
     "target_audience": "missing",
     "key_attributes": [
-        "Active noise cancelling",
-        "Bluetooth 5.3",
-        "40 hours battery life with case",
-        "Bass boost mode"
+        "Niacinamide",
+        "Hyaluronic Acid"
     ],
     "claims_made": [
-        "1 year manufacturer warranty"
+        "Get that glass skin look instantly"
     ],
-    "price": 4999,
-    "price_currency": "INR",
-    "availability": "In stock",
+    "price": 29.0,
+    "price_currency": "USD",
+    "availability": "Low stock",
     "fulfillment_terms": {
         "delivery_window": "missing",
-        "return_policy": "10 day replacement policy"
+        "return_policy": "missing",
+        "warranty": "missing"
     },
     "product_id": "prod_011",
-    "original_title": "SoundWave Pro ANC Earbuds",
-    "original_raw_description": "Active noise cancelling earbuds. Bluetooth 5.3. 40 hours battery life with case. Bass boost mode. Price: 4999 INR. In Stock. 1 year manufacturer warranty. 10 day replacement policy."
+    "original_title": "Glow Up Serum (Niacinamide & Hyaluronic Acid)",
+    "original_raw_description": "✨ GLOW UP SERUM ✨ \nGet that glass skin look instantly! Infused with Niacinamide & Hyaluronic Acid. 💧\n🏷️ Price: $29.00 USD\n📦 Free shipping over $50. Comment 'BUY' to claim yours! Limited stock!"
 }

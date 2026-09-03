@@ -1,26 +1,30 @@
 {
     "product_id": "prod_010",
-    "title": "Dr. Ortho Knee Sleeve",
+    "title": "Ceramic Coffee Mug",
     "claims_evaluated": [
         {
-            "claim": "Instant pain relief",
-            "score": 0,
-            "reason": "The claim is a vague marketing assertion with no supporting evidence such as clinical studies, specific mechanisms, or certifications to verify the speed or efficacy of pain relief.",
+            "claim": "Dishwasher safe",
+            "score": 50,
+            "reason": "The listing explicitly states the mug is dishwasher safe, but provides no technical specifications, material composition, or certification to verify this claim.",
+            "llm_evaluated": true
+        },
+        {
+            "claim": "Microwave safe",
+            "score": 50,
+            "reason": "The listing explicitly states the mug is microwave safe, but provides no technical specifications, material composition, or certification to verify this claim.",
             "llm_evaluated": true
         }
     ],
-    "claim_evidence_avg": 0,
+    "claim_evidence_avg": 50,
     "failed_claim_evaluations": 0,
     "score_reliable": true,
     "deterministic_checks": {
-        "return_policy_present": true,
+        "return_policy_present": false,
         "price_consistent": true,
-        "prices_found_in_text": [
-            599.0
-        ],
+        "prices_found_in_text": [],
         "contact_info_present": false,
-        "deterministic_score": 67
+        "deterministic_score": 33
     },
-    "trust_score": 20,
-    "summary_reason": "Weakest claim: \"Instant pain relief\" — The claim is a vague marketing assertion with no supporting evidence such as clinical studies, specific mechanisms, or certifications to verify the speed or efficacy of pain relief. No contact/business info found."
+    "trust_score": 45,
+    "summary_reason": "No return policy stated. No contact/business info found."
 }

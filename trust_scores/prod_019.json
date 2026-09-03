@@ -1,15 +1,15 @@
 {
     "product_id": "prod_019",
-    "title": "Organic Matcha Green Tea Powder 250g",
+    "title": "Scented Soy Candle - Fig & Vetiver",
     "claims_evaluated": [
         {
-            "claim": "Organic certified",
-            "score": 60,
-            "reason": "The listing explicitly states 'organic_certified>Yes' and includes 'Organic' in the product name, providing a direct declaration of certification status, though it lacks the specific name of the certifying body or certification number required for full verifiability.",
+            "claim": "Burn time: 50+ hours",
+            "score": 10,
+            "reason": "The listing provides a specific numerical specification but offers no supporting evidence such as testing methodology, batch data, or certification to verify the claim.",
             "llm_evaluated": true
         }
     ],
-    "claim_evidence_avg": 60,
+    "claim_evidence_avg": 10,
     "failed_claim_evaluations": 0,
     "score_reliable": true,
     "deterministic_checks": {
@@ -19,6 +19,6 @@
         "contact_info_present": false,
         "deterministic_score": 33
     },
-    "trust_score": 52,
-    "summary_reason": "No return policy stated. No contact/business info found."
+    "trust_score": 17,
+    "summary_reason": "Weakest claim: \"Burn time: 50+ hours\" — The listing provides a specific numerical specification but offers no supporting evidence such as testing methodology, batch data, or certification to verify the claim. No return policy stated. No contact/business info found."
 }

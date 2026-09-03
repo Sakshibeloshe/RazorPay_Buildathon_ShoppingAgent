@@ -1,32 +1,30 @@
 {
     "product_id": "prod_008",
-    "title": "EcoBreeze Bamboo Fiber Mug",
+    "title": "Wireless Earbuds (AirPods Pro Max Replica)",
     "claims_evaluated": [
         {
-            "claim": "Eco-friendly",
-            "score": 10,
-            "reason": "The term is a vague marketing label without citing specific environmental certifications, lifecycle assessments, or quantifiable sustainability metrics.",
+            "claim": "ANC works great",
+            "score": 0,
+            "reason": "The phrase 'works great' is a subjective, vague marketing assertion with no technical specifications, certification, or verifiable mechanism provided.",
             "llm_evaluated": true
         },
         {
-            "claim": "Biodegradable",
-            "score": 20,
-            "reason": "While bamboo fiber is a natural material, the claim lacks specific standards (e.g., ASTM D6400), timeframes, or conditions required for biodegradation, especially given the inclusion of a non-biodegradable silicone lid.",
+            "claim": "Battery lasts like 6 hrs",
+            "score": 0,
+            "reason": "The use of the qualifier 'like' and the lack of specific testing conditions or technical data render this an unsupported estimate rather than a verified specification.",
             "llm_evaluated": true
         }
     ],
-    "claim_evidence_avg": 15,
+    "claim_evidence_avg": 0,
     "failed_claim_evaluations": 0,
     "score_reliable": true,
     "deterministic_checks": {
-        "return_policy_present": true,
+        "return_policy_present": false,
         "price_consistent": true,
-        "prices_found_in_text": [
-            399.0
-        ],
-        "contact_info_present": false,
+        "prices_found_in_text": [],
+        "contact_info_present": true,
         "deterministic_score": 67
     },
-    "trust_score": 31,
-    "summary_reason": "Weakest claim: \"Eco-friendly\" — The term is a vague marketing label without citing specific environmental certifications, lifecycle assessments, or quantifiable sustainability metrics. No contact/business info found."
+    "trust_score": 20,
+    "summary_reason": "Weakest claim: \"ANC works great\" — The phrase 'works great' is a subjective, vague marketing assertion with no technical specifications, certification, or verifiable mechanism provided. No return policy stated."
 }

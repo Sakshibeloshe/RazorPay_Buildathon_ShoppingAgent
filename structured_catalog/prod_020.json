@@ -1,24 +1,24 @@
 {
-    "category": "Home",
+    "category": "Electronics",
     "target_audience": "missing",
     "key_attributes": [
-        "Ceramic",
-        "Dishwasher safe",
-        "Microwave safe",
-        "Random assorted colors (blue/white/grey)"
+        "USB-C",
+        "7-in-1",
+        "4K HDMI",
+        "100W PD",
+        "USB 3.0",
+        "SD Card Reader"
     ],
-    "claims_made": [
-        "Dishwasher safe",
-        "Microwave safe"
-    ],
-    "price": 12.99,
-    "price_currency": "unknown",
-    "availability": "In stock",
+    "claims_made": [],
+    "price": 25,
+    "price_currency": "USD",
+    "availability": "missing",
     "fulfillment_terms": {
         "delivery_window": "missing",
-        "return_policy": "missing"
+        "return_policy": "missing",
+        "warranty": "missing"
     },
     "product_id": "prod_020",
-    "original_title": "Ceramic Coffee Mug",
-    "original_raw_description": "item: \"Coffee Mug Ceramic\"\namt: 12.99\nqty: 40\nnotes: dishwasher safe, microwave safe, random assorted colors (blue/white/grey)"
+    "original_title": "USB-C Hub Multiport Adapter 7-in-1",
+    "original_raw_description": "{\n  \"title\": \"USB-C Hub Multiport Adapter 7-in-1\",\n  \"price\": \"$25\",\n  \"features\": [\"4K HDMI\", \"100W PD\", \"USB 3.0\", \"SD Card Reader\"]\n}"
 }

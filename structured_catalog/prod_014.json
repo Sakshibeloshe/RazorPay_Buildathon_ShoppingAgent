@@ -1,22 +1,26 @@
 {
-    "category": "Home",
+    "category": "Electronics",
     "target_audience": "missing",
     "key_attributes": [
-        "Automatic self-watering",
-        "Water level indicator",
-        "Indoor planter"
+        "Smart LED Bulb",
+        "9W",
+        "RGB",
+        "Pack of 2",
+        "E27 screw base"
     ],
     "claims_made": [
-        "Perfect for kitchen herbs like basil and mint"
+        "Works with Alexa and Google Home",
+        "Change colors via app"
     ],
-    "price": 1599,
-    "price_currency": "INR",
+    "price": 14.99,
+    "price_currency": "USD",
     "availability": "missing",
     "fulfillment_terms": {
-        "delivery_window": "Ships within 24 hours",
-        "return_policy": "30-day money-back guarantee"
+        "delivery_window": "missing",
+        "return_policy": "missing",
+        "warranty": "missing"
     },
     "product_id": "prod_014",
-    "original_title": "SproutGarden Indoor Planter",
-    "original_raw_description": "Automatic self-watering indoor planter. Perfect for kitchen herbs like basil and mint. Water level indicator. 1599 Rs. Ships within 24 hours. 30-day money-back guarantee."
+    "original_title": "Smart LED Bulb 9W RGB (Pack of 2)",
+    "original_raw_description": "Smart LED Bulb 9W RGB\nWorks with Alexa and Google Home. Change colors via app.\n$14.99 each. \nPack of 2.\nE27 screw base."
 }

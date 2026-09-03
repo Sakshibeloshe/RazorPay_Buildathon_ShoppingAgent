@@ -1,21 +1,25 @@
 {
-    "category": "Health",
+    "category": "Food",
     "target_audience": "missing",
     "key_attributes": [
-        "quantum starlight ingredients"
+        "Organic",
+        "Gluten-free",
+        "Rolled oats",
+        "1kg"
     ],
     "claims_made": [
-        "Reverses cellular aging by 15 years in 3 days",
-        "No other product does this"
+        "Certified organic",
+        "Grown without synthetic pesticides"
     ],
-    "price": 2499,
+    "price": 350,
     "price_currency": "INR",
-    "availability": "Low stock",
+    "availability": "In stock",
     "fulfillment_terms": {
-        "delivery_window": "missing",
-        "return_policy": "No returns"
+        "delivery_window": "Next day delivery available in metro cities",
+        "return_policy": "7-day replacement for damaged goods",
+        "warranty": "missing"
     },
     "product_id": "prod_002",
-    "original_title": "Morrowen Miracle Elixir",
-    "original_raw_description": "💥💥 ATTENTION!! 💥💥 The wait is over!! Morrowen Miracle Elixir is here to REVERSE cellular aging by 15 YEARS in just 3 DAYS!! 😱😱 Secret quantum starlight ingredients. No other product does this! ₹2499 only! 🚫 NO REFUNDS ALL SALES FINAL 🚫 Limited stock msg fast for delivery!!"
+    "original_title": "PureOats Organic Gluten-Free Oats (1kg)",
+    "original_raw_description": "Certified organic, gluten-free rolled oats. Grown without synthetic pesticides. Perfect for breakfast or baking. Price: 350. Availability: Plenty in stock. Delivery: Next day delivery available in metro cities. Return policy: 7-day replacement for damaged goods."
 }

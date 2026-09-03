@@ -1,25 +1,25 @@
 {
-    "category": "Food",
+    "category": "Home",
     "target_audience": "missing",
     "key_attributes": [
-        "Organic",
-        "Matcha Green Tea Powder",
-        "250g",
-        "Origin: Uji, Japan",
-        "Grade: Ceremonial",
-        "Organic certified"
+        "Scented Soy Candle",
+        "Fig & Vetiver",
+        "Hand-poured in small batches",
+        "Burn time: 50+ hours",
+        "Vessel: Matte black ceramic"
     ],
     "claims_made": [
-        "Organic certified"
+        "Burn time: 50+ hours"
     ],
-    "price": 22.0,
-    "price_currency": "EUR",
+    "price": 38.0,
+    "price_currency": "GBP",
     "availability": "missing",
     "fulfillment_terms": {
         "delivery_window": "missing",
-        "return_policy": "missing"
+        "return_policy": "missing",
+        "warranty": "missing"
     },
     "product_id": "prod_019",
-    "original_title": "Organic Matcha Green Tea Powder 250g",
-    "original_raw_description": "<catalog_item>\n  <id>PROD-552</id>\n  <name>Organic Matcha Green Tea Powder 250g</name>\n  <details>\n    <origin>Uji, Japan</origin>\n    <grade>Ceremonial</grade>\n    <organic_certified>Yes</organic_certified>\n  </details>\n  <cost>22.00</cost>\n  <currency>EUR</currency>\n</catalog_item>"
+    "original_title": "Scented Soy Candle - Fig & Vetiver",
+    "original_raw_description": "Scented Soy Candle - Fig & Vetiver\nHand-poured in small batches. Burn time: 50+ hours.\nVessel: Matte black ceramic.\nPrice: 38.00 GBP"
 }

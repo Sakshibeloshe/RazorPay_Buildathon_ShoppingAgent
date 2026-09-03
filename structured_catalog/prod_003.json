@@ -1,24 +1,27 @@
 {
-    "category": "Food",
+    "category": "Wearables",
     "target_audience": "missing",
     "key_attributes": [
-        "Organic",
-        "Gluten-free",
-        "Rolled oats",
-        "1kg"
+        "Tracks sleep stages",
+        "Tracks HRV",
+        "Tracks body temperature",
+        "Titanium build",
+        "Waterproof up to 50m",
+        "7-day battery life"
     ],
     "claims_made": [
-        "Certified organic",
-        "Grown without synthetic pesticides"
+        "Waterproof up to 50m",
+        "Battery lasts 7 days"
     ],
-    "price": 350,
+    "price": 18999,
     "price_currency": "INR",
     "availability": "In stock",
     "fulfillment_terms": {
-        "delivery_window": "Next day delivery available in metro cities",
-        "return_policy": "7-day replacement for damaged goods"
+        "delivery_window": "Ships immediately",
+        "return_policy": "14-day free returns",
+        "warranty": "1-year warranty"
     },
     "product_id": "prod_003",
-    "original_title": "PureOats Organic Gluten-Free Oats (1kg)",
-    "original_raw_description": "Certified organic, gluten-free rolled oats. Grown without synthetic pesticides. Perfect for breakfast or baking. Price: 350. Availability: Plenty in stock. Delivery: Next day delivery available in metro cities. Return policy: 7-day replacement for damaged goods."
+    "original_title": "Aura Sleep & Activity Smart Ring",
+    "original_raw_description": "Track your sleep stages, HRV, and body temperature. Titanium build, waterproof up to 50m. Battery lasts 7 days. Price is ₹18,999. In stock now. 1-year warranty and 14-day free returns. Ships immediately."
 }

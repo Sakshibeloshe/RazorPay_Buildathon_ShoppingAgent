@@ -1,22 +1,22 @@
 {
-    "category": "Skincare",
-    "target_audience": "sensitive skin",
+    "category": "Health",
+    "target_audience": "missing",
     "key_attributes": [
-        "fragrance-free",
-        "without aluminum",
-        "without baking soda"
+        "Quantum starlight ingredients"
     ],
     "claims_made": [
-        "Clinically tested by dermatologists"
+        "Reverses cellular aging by 15 years in 3 days",
+        "No other product does this"
     ],
-    "price": 699,
+    "price": 2499,
     "price_currency": "INR",
-    "availability": "In stock",
+    "availability": "Low stock",
     "fulfillment_terms": {
-        "delivery_window": "2-3 business days",
-        "return_policy": "Returns accepted within 15 days if unopened"
+        "delivery_window": "missing",
+        "return_policy": "No returns",
+        "warranty": "missing"
     },
     "product_id": "prod_001",
-    "original_title": "SkinCalm Fragrance-Free Deodorant",
-    "original_raw_description": "A gentle, fragrance-free deodorant designed specifically for sensitive skin. Formulated without aluminum or baking soda. Clinically tested by dermatologists. Price: 699 INR. In stock. Returns accepted within 15 days if unopened. Ships in 2-3 business days."
+    "original_title": "Morrowen Miracle Elixir",
+    "original_raw_description": "💥💥 ATTENTION!! 💥💥 The wait is over!! Morrowen Miracle Elixir is here to REVERSE cellular aging by 15 YEARS in just 3 DAYS!! 😱😱 Secret quantum starlight ingredients. No other product does this! ₹2499 only! 🚫 NO REFUNDS ALL SALES FINAL 🚫 Limited stock msg fast for delivery!!"
 }

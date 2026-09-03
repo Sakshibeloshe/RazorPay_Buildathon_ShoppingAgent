@@ -1,22 +1,20 @@
 {
-    "category": "Accessories",
-    "target_audience": "missing",
+    "category": "Footwear",
+    "target_audience": "Men",
     "key_attributes": [
-        "Sticker format",
-        "Designed for phone attachment"
+        "Running Shoes",
+        "Apex-V"
     ],
-    "claims_made": [
-        "Shields from 99.9% of dangerous EMF radiation",
-        "Creates a 10-meter protective quantum radius"
-    ],
-    "price": 999,
-    "price_currency": "INR",
-    "availability": "missing",
+    "claims_made": [],
+    "price": 79.99,
+    "price_currency": "unknown",
+    "availability": "In stock",
     "fulfillment_terms": {
         "delivery_window": "missing",
-        "return_policy": "No returns"
+        "return_policy": "missing",
+        "warranty": "missing"
     },
     "product_id": "prod_013",
-    "original_title": "BioShield Quantum Radiation Sticker",
-    "original_raw_description": "Stick this on your phone to shield yourself from 99.9% of dangerous EMF radiation! Creates a 10-meter protective quantum radius around you. Just ₹999! Buy now! No returns."
+    "original_title": "Running Shoes Apex-V",
+    "original_raw_description": "ID|Title|Cost|Stock|Tags\nSKU-XYZ-1|Running Shoes Apex-V|79.99|120|footwear, sports, running, mens"
 }

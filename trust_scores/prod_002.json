@@ -1,32 +1,30 @@
 {
     "product_id": "prod_002",
-    "title": "Morrowen Miracle Elixir",
+    "title": "PureOats Organic Gluten-Free Oats (1kg)",
     "claims_evaluated": [
         {
-            "claim": "Reverses cellular aging by 15 years in 3 days",
-            "score": 0,
-            "reason": "The claim relies on vague 'quantum starlight ingredients' and lacks any named study, certification, or verifiable biological mechanism to support the specific quantitative promise.",
+            "claim": "Certified organic",
+            "score": 10,
+            "reason": "The listing uses the phrase 'Certified organic' but fails to name the specific certifying body (e.g., USDA, EU Organic) or provide a certification number, making it a vague marketing assertion rather than verifiable evidence.",
             "llm_evaluated": true
         },
         {
-            "claim": "No other product does this",
-            "score": 0,
-            "reason": "This is a superlative marketing assertion with no cited comparative data, market analysis, or third-party verification to substantiate the exclusivity of the product's effects.",
+            "claim": "Grown without synthetic pesticides",
+            "score": 10,
+            "reason": "This is a general agricultural practice claim that lacks specific verifiable details such as the farming method name (e.g., IPM), third-party audit results, or specific chemical exclusion lists.",
             "llm_evaluated": true
         }
     ],
-    "claim_evidence_avg": 0,
+    "claim_evidence_avg": 10,
     "failed_claim_evaluations": 0,
     "score_reliable": true,
     "deterministic_checks": {
         "return_policy_present": true,
         "price_consistent": true,
-        "prices_found_in_text": [
-            2499.0
-        ],
+        "prices_found_in_text": [],
         "contact_info_present": false,
         "deterministic_score": 67
     },
-    "trust_score": 20,
-    "summary_reason": "Weakest claim: \"Reverses cellular aging by 15 years in 3 days\" — The claim relies on vague 'quantum starlight ingredients' and lacks any named study, certification, or verifiable biological mechanism to support the specific quantitative promise. No contact/business info found."
+    "trust_score": 27,
+    "summary_reason": "Weakest claim: \"Certified organic\" — The listing uses the phrase 'Certified organic' but fails to name the specific certifying body (e.g., USDA, EU Organic) or provide a certification number, making it a vague marketing assertion rather than verifiable evidence. No contact/business info found."
 }

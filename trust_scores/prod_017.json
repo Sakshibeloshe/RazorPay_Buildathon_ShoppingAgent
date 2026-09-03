@@ -1,11 +1,11 @@
 {
     "product_id": "prod_017",
-    "title": "Vintage Leather Jacket - Distress Brown",
+    "title": "Organic Raw Honey (500g)",
     "claims_evaluated": [
         {
-            "claim": "Handmade in Turkey",
+            "claim": "Very good for immunity",
             "score": 0,
-            "reason": "The listing contains no certification, named artisan, specific workshop, or verifiable mechanism to substantiate the 'handmade' or 'Turkey' origin claims, making it an unsupported marketing assertion.",
+            "reason": "The statement is a vague health benefit claim without citing any specific study, certification, or verifiable mechanism to support the assertion.",
             "llm_evaluated": true
         }
     ],
@@ -13,14 +13,12 @@
     "failed_claim_evaluations": 0,
     "score_reliable": true,
     "deterministic_checks": {
-        "return_policy_present": true,
+        "return_policy_present": false,
         "price_consistent": true,
-        "prices_found_in_text": [
-            189.5
-        ],
+        "prices_found_in_text": [],
         "contact_info_present": false,
-        "deterministic_score": 67
+        "deterministic_score": 33
     },
-    "trust_score": 20,
-    "summary_reason": "Weakest claim: \"Handmade in Turkey\" — The listing contains no certification, named artisan, specific workshop, or verifiable mechanism to substantiate the 'handmade' or 'Turkey' origin claims, making it an unsupported marketing assertion. No contact/business info found."
+    "trust_score": 10,
+    "summary_reason": "Weakest claim: \"Very good for immunity\" — The statement is a vague health benefit claim without citing any specific study, certification, or verifiable mechanism to support the assertion. No return policy stated. No contact/business info found."
 }

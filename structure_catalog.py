@@ -115,6 +115,8 @@ Extract the following fields into a precise JSON object:
    - "delivery_window": string (e.g. "2-3 days", "Ships within 24 hours", "missing")
    - "return_policy": string (the exact return/refund/exchange policy as stated;
      "missing" if not mentioned; "No returns" if explicitly refused)
+   - "warranty": string (manufacturer or seller warranty — e.g. "1-year warranty";
+     "missing" if not mentioned)
 
 CRITICAL INSTRUCTIONS:
 - If a field is genuinely absent from the source text, use "missing" (or null for numbers).
@@ -134,7 +136,8 @@ CRITICAL INSTRUCTIONS:
   "availability": "...",
   "fulfillment_terms": {{
     "delivery_window": "...",
-    "return_policy": "..."
+    "return_policy": "...",
+    "warranty": "..."
   }}
 }}
 """

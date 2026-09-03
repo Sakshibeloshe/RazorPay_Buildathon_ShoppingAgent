@@ -1,26 +1,17 @@
 {
     "product_id": "prod_012",
-    "title": "Handmade Leather Wallet",
-    "claims_evaluated": [
-        {
-            "claim": "Built-in RFID protection",
-            "score": 10,
-            "reason": "The listing makes a functional claim but provides no specific technical specification, material name (e.g., metal mesh, conductive fabric), or certification to verify the mechanism.",
-            "llm_evaluated": true
-        }
-    ],
-    "claim_evidence_avg": 10,
+    "title": "Ergonomic Office Chair Mesh",
+    "claims_evaluated": [],
+    "claim_evidence_avg": 100,
     "failed_claim_evaluations": 0,
     "score_reliable": true,
     "deterministic_checks": {
         "return_policy_present": true,
         "price_consistent": true,
-        "prices_found_in_text": [
-            1499.0
-        ],
+        "prices_found_in_text": [],
         "contact_info_present": false,
         "deterministic_score": 67
     },
-    "trust_score": 27,
-    "summary_reason": "Weakest claim: \"Built-in RFID protection\" — The listing makes a functional claim but provides no specific technical specification, material name (e.g., metal mesh, conductive fabric), or certification to verify the mechanism. No contact/business info found."
+    "trust_score": 90,
+    "summary_reason": "No contact/business info found."
 }

@@ -1,24 +1,26 @@
 {
-    "category": "Apparel",
+    "category": "Food",
     "target_audience": "missing",
     "key_attributes": [
-        "Vintage style",
-        "Distressed brown color",
-        "Real cowhide leather",
-        "Brass zippers",
-        "Size L"
+        "Organic",
+        "Raw",
+        "Unfiltered",
+        "500g",
+        "Glass jar",
+        "From Kashmir"
     ],
     "claims_made": [
-        "Handmade in Turkey"
+        "Very good for immunity"
     ],
-    "price": 189.5,
-    "price_currency": "USD",
-    "availability": "Low stock",
+    "price": 850,
+    "price_currency": "INR",
+    "availability": "In stock",
     "fulfillment_terms": {
         "delivery_window": "missing",
-        "return_policy": "accepted within 14 days if tags are still attached"
+        "return_policy": "missing",
+        "warranty": "missing"
     },
     "product_id": "prod_017",
-    "original_title": "Vintage Leather Jacket - Distress Brown",
-    "original_raw_description": "product_name: \"Vintage Leather Jacket - Distress Brn\"\nPRICE = $189.50\nCategory: Apparel / Outerwear\nAvail: YES (only 3 left in sz L)\ndesc: real cowhide leather, brass zippers, handmade in turkey.\nReturns: accepted within 14 days if tags are still attached."
+    "original_title": "Organic Raw Honey (500g)",
+    "original_raw_description": "Hey we have some organic honey for sale coming straight from the farm in Kashmir. 500g glass jar. Pure raw honey, unfiltered. Costs Rs. 850 per jar. Very good for immunity. Stock is around 15 jars right now."
 }

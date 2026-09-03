@@ -1,26 +1,32 @@
 {
     "product_id": "prod_001",
-    "title": "SkinCalm Fragrance-Free Deodorant",
+    "title": "Morrowen Miracle Elixir",
     "claims_evaluated": [
         {
-            "claim": "Clinically tested by dermatologists",
-            "score": 10,
-            "reason": "The listing provides no specific study name, publication, institution, or certification to verify the clinical testing or the involvement of dermatologists.",
+            "claim": "Reverses cellular aging by 15 years in 3 days",
+            "score": 0,
+            "reason": "The claim relies on vague 'quantum starlight ingredients' and makes an impossible biological promise without citing any studies, certifications, or verifiable mechanisms.",
+            "llm_evaluated": true
+        },
+        {
+            "claim": "No other product does this",
+            "score": 0,
+            "reason": "This is a superlative marketing assertion with no comparative data, market analysis, or evidence provided to support the exclusivity of the product's effects.",
             "llm_evaluated": true
         }
     ],
-    "claim_evidence_avg": 10,
+    "claim_evidence_avg": 0,
     "failed_claim_evaluations": 0,
     "score_reliable": true,
     "deterministic_checks": {
         "return_policy_present": true,
         "price_consistent": true,
         "prices_found_in_text": [
-            699.0
+            2499.0
         ],
         "contact_info_present": false,
         "deterministic_score": 67
     },
-    "trust_score": 27,
-    "summary_reason": "Weakest claim: \"Clinically tested by dermatologists\" — The listing provides no specific study name, publication, institution, or certification to verify the clinical testing or the involvement of dermatologists. No contact/business info found."
+    "trust_score": 20,
+    "summary_reason": "Weakest claim: \"Reverses cellular aging by 15 years in 3 days\" — The claim relies on vague 'quantum starlight ingredients' and makes an impossible biological promise without citing any studies, certifications, or verifiable mechanisms. No contact/business info found."
 }

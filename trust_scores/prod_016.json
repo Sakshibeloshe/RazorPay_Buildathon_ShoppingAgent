@@ -1,11 +1,11 @@
 {
     "product_id": "prod_016",
-    "title": "Ultra-Resilient Titanium Water Bottle (32oz)",
+    "title": "Disposable 3-Ply Face Masks (Box of 500)",
     "claims_evaluated": [
         {
-            "claim": "Ultra-Resilient",
+            "claim": "Medical grade",
             "score": 10,
-            "reason": "The term 'Ultra-Resilient' is a vague marketing adjective without specific technical metrics (such as impact resistance ratings or tensile strength data) to substantiate the claim, although the material 'Grade 5 Titanium' is a known durable alloy.",
+            "reason": "The term 'Medical grade' is a vague marketing label without any specific certification (e.g., FDA 510(k), CE Mark), standard reference (e.g., ASTM F2100), or verifiable technical specification provided in the listing.",
             "llm_evaluated": true
         }
     ],
@@ -13,12 +13,14 @@
     "failed_claim_evaluations": 0,
     "score_reliable": true,
     "deterministic_checks": {
-        "return_policy_present": true,
+        "return_policy_present": false,
         "price_consistent": true,
-        "prices_found_in_text": [],
+        "prices_found_in_text": [
+            0.04
+        ],
         "contact_info_present": false,
-        "deterministic_score": 67
+        "deterministic_score": 33
     },
-    "trust_score": 27,
-    "summary_reason": "Weakest claim: \"Ultra-Resilient\" — The term 'Ultra-Resilient' is a vague marketing adjective without specific technical metrics (such as impact resistance ratings or tensile strength data) to substantiate the claim, although the material 'Grade 5 Titanium' is a known durable alloy. No contact/business info found."
+    "trust_score": 17,
+    "summary_reason": "Weakest claim: \"Medical grade\" — The term 'Medical grade' is a vague marketing label without any specific certification (e.g., FDA 510(k), CE Mark), standard reference (e.g., ASTM F2100), or verifiable technical specification provided in the listing. No return policy stated. No contact/business info found."
 }

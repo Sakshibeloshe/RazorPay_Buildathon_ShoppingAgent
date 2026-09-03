@@ -1,32 +1,24 @@
 {
     "product_id": "prod_006",
-    "title": "Aura Sleep & Activity Smart Ring",
+    "title": "Ultra-Resilient Titanium Water Bottle (32oz)",
     "claims_evaluated": [
         {
-            "claim": "Waterproof up to 50m",
-            "score": 85,
-            "reason": "The listing provides a precise technical specification (50m depth) which is a standard, verifiable metric for water resistance, though it lacks a specific certification name like IP68 or 5ATM.",
-            "llm_evaluated": true
-        },
-        {
-            "claim": "Battery lasts 7 days",
-            "score": 80,
-            "reason": "The listing provides a precise quantitative specification (7 days) for battery life, which is a verifiable technical claim, although it does not specify the usage conditions or test protocol.",
+            "claim": "Ultra-Resilient",
+            "score": 10,
+            "reason": "The term 'Ultra-Resilient' is a vague marketing adjective not supported by specific technical specifications, impact test data, or defined mechanical properties in the listing.",
             "llm_evaluated": true
         }
     ],
-    "claim_evidence_avg": 82,
+    "claim_evidence_avg": 10,
     "failed_claim_evaluations": 0,
     "score_reliable": true,
     "deterministic_checks": {
         "return_policy_present": true,
         "price_consistent": true,
-        "prices_found_in_text": [
-            18999.0
-        ],
+        "prices_found_in_text": [],
         "contact_info_present": false,
         "deterministic_score": 67
     },
-    "trust_score": 78,
-    "summary_reason": "No contact/business info found."
+    "trust_score": 27,
+    "summary_reason": "Weakest claim: \"Ultra-Resilient\" — The term 'Ultra-Resilient' is a vague marketing adjective not supported by specific technical specifications, impact test data, or defined mechanical properties in the listing. No contact/business info found."
 }

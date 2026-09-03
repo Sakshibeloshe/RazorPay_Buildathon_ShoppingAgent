@@ -1,27 +1,23 @@
 {
-    "category": "Wearables",
+    "category": "Accessories",
     "target_audience": "missing",
     "key_attributes": [
-        "Tracks sleep stages",
-        "Tracks HRV",
-        "Tracks body temperature",
-        "Titanium build",
-        "Waterproof up to 50m",
-        "7-day battery life",
-        "1-year warranty"
+        "Grade 5 Titanium",
+        "32oz capacity",
+        "BPA free"
     ],
     "claims_made": [
-        "Waterproof up to 50m",
-        "Battery lasts 7 days"
+        "Ultra-Resilient"
     ],
-    "price": 18999,
-    "price_currency": "INR",
+    "price": 45.99,
+    "price_currency": "USD",
     "availability": "In stock",
     "fulfillment_terms": {
-        "delivery_window": "Ships immediately",
-        "return_policy": "14-day free returns"
+        "delivery_window": "missing",
+        "return_policy": "30-day returns if unused",
+        "warranty": "5-year manufacturer warranty"
     },
     "product_id": "prod_006",
-    "original_title": "Aura Sleep & Activity Smart Ring",
-    "original_raw_description": "Track your sleep stages, HRV, and body temperature. Titanium build, waterproof up to 50m. Battery lasts 7 days. Price is ₹18,999. In stock now. 1-year warranty and 14-day free returns. Ships immediately."
+    "original_title": "Ultra-Resilient Titanium Water Bottle (32oz)",
+    "original_raw_description": "{\n  \"itemID\": \"SKU-9981-BLK\",\n  \"item_title\": \"Ultra-Resilient Titanium Water Bottle (32oz)\",\n  \"specs\": {\n    \"material\": \"Grade 5 Titanium\",\n    \"capacity_oz\": 32,\n    \"bpa_free\": true\n  },\n  \"pricing\": {\n    \"retail\": 45.99,\n    \"currency\": \"USD\"\n  },\n  \"stock_status\": \"IN_STOCK\",\n  \"warranty\": \"5-year manufacturer warranty, 30-day returns if unused\"\n}"
 }

@@ -1,24 +1,25 @@
 {
-    "category": "Home",
+    "category": "Electronics",
     "target_audience": "missing",
     "key_attributes": [
-        "Bamboo fiber",
-        "450ml",
-        "Silicone lid",
-        "For travel"
+        "Wireless",
+        "AirPods Pro Max Replica",
+        "ANC (Active Noise Cancellation)",
+        "6-hour battery life"
     ],
     "claims_made": [
-        "Eco-friendly",
-        "Biodegradable"
+        "ANC works great",
+        "Battery lasts like 6 hrs"
     ],
-    "price": 399,
+    "price": 2499,
     "price_currency": "INR",
-    "availability": "missing",
+    "availability": "In stock",
     "fulfillment_terms": {
-        "delivery_window": "2-3 days",
-        "return_policy": "No returns unless broken on arrival"
+        "delivery_window": "missing",
+        "return_policy": "missing",
+        "warranty": "missing"
     },
     "product_id": "prod_008",
-    "original_title": "EcoBreeze Bamboo Fiber Mug",
-    "original_raw_description": "Eco-friendly bamboo fiber coffee mug for travel (450ml). Biodegradable. Comes with a silicone lid. Price 399rs. Delivery time 2-3 days. No returns unless broken on arrival."
+    "original_title": "Wireless Earbuds (AirPods Pro Max Replica)",
+    "original_raw_description": "Hey bro, selling these new wireless earbuds. Air Pods Pro max replica. ANC works great, battery lasts like 6 hrs. Price is Rs. 2499 only. DM to order. Location: Mumbai. Cash on delivery available! 🎧🔥"
 }

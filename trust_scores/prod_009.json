@@ -1,44 +1,24 @@
 {
     "product_id": "prod_009",
-    "title": "KetoFit Extreme Fat Burner",
+    "title": "Organic Matcha Green Tea Powder 250g",
     "claims_evaluated": [
         {
-            "claim": "Lose 10kg of fat while you sleep",
-            "score": 0,
-            "reason": "This is an exaggerated, unsupported promise with no cited study, mechanism, or certification to verify the specific weight loss amount or the 'while you sleep' claim.",
-            "llm_evaluated": true
-        },
-        {
-            "claim": "No diet or exercise needed",
-            "score": 0,
-            "reason": "This is a vague marketing assertion that contradicts standard medical consensus and provides no technical evidence or named ingredient to support the elimination of lifestyle changes.",
-            "llm_evaluated": true
-        },
-        {
-            "claim": "KetoFit capsules melt fat away effortlessly",
-            "score": 0,
-            "reason": "The phrase 'melt fat away' is metaphorical and vague, lacking any specific verifiable mechanism, named active ingredient, or scientific backing.",
-            "llm_evaluated": true
-        },
-        {
-            "claim": "Guaranteed results",
-            "score": 0,
-            "reason": "This is a blanket marketing guarantee with no defined terms, legal backing, or evidence of efficacy, and is further undermined by the 'returns not accepted' policy.",
+            "claim": "Organic certified",
+            "score": 40,
+            "reason": "The listing explicitly states 'organic_certified: Yes' and includes 'Organic' in the product name, but it fails to name a specific certification body (e.g., USDA, EU Organic, JAS) or provide a certification number, leaving the claim as a self-declared attribute rather than a fully verifiable technical spec.",
             "llm_evaluated": true
         }
     ],
-    "claim_evidence_avg": 0,
+    "claim_evidence_avg": 40,
     "failed_claim_evaluations": 0,
     "score_reliable": true,
     "deterministic_checks": {
-        "return_policy_present": true,
+        "return_policy_present": false,
         "price_consistent": true,
-        "prices_found_in_text": [
-            1899.0
-        ],
+        "prices_found_in_text": [],
         "contact_info_present": false,
-        "deterministic_score": 67
+        "deterministic_score": 33
     },
-    "trust_score": 20,
-    "summary_reason": "Weakest claim: \"Lose 10kg of fat while you sleep\" — This is an exaggerated, unsupported promise with no cited study, mechanism, or certification to verify the specific weight loss amount or the 'while you sleep' claim. No contact/business info found."
+    "trust_score": 38,
+    "summary_reason": "Weakest claim: \"Organic certified\" — The listing explicitly states 'organic_certified: Yes' and includes 'Organic' in the product name, but it fails to name a specific certification body (e.g., USDA, EU Organic, JAS) or provide a certification number, leaving the claim as a self-declared attribute rather than a fully verifiable technical spec. No return policy stated. No contact/business info found."
 }

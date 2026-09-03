@@ -1,11 +1,17 @@
 {
     "product_id": "prod_014",
-    "title": "SproutGarden Indoor Planter",
+    "title": "Smart LED Bulb 9W RGB (Pack of 2)",
     "claims_evaluated": [
         {
-            "claim": "Perfect for kitchen herbs like basil and mint",
+            "claim": "Works with Alexa and Google Home",
             "score": 10,
-            "reason": "The claim is a subjective marketing assertion using the vague word 'perfect' without providing specific technical specifications, growth data, or evidence that the planter's mechanism is uniquely suited for these specific plants compared to others.",
+            "reason": "The listing makes a compatibility claim but provides no technical evidence such as specific protocol support (e.g., Zigbee, Thread, Wi-Fi), certification marks, or API integration details to verify the assertion.",
+            "llm_evaluated": true
+        },
+        {
+            "claim": "Change colors via app",
+            "score": 10,
+            "reason": "The listing asserts app-based color control without naming the specific application, providing a link, or detailing the underlying mechanism (e.g., specific SDK or protocol) that enables this functionality.",
             "llm_evaluated": true
         }
     ],
@@ -13,14 +19,14 @@
     "failed_claim_evaluations": 0,
     "score_reliable": true,
     "deterministic_checks": {
-        "return_policy_present": true,
+        "return_policy_present": false,
         "price_consistent": true,
         "prices_found_in_text": [
-            1599.0
+            14.99
         ],
         "contact_info_present": false,
-        "deterministic_score": 67
+        "deterministic_score": 33
     },
-    "trust_score": 27,
-    "summary_reason": "Weakest claim: \"Perfect for kitchen herbs like basil and mint\" — The claim is a subjective marketing assertion using the vague word 'perfect' without providing specific technical specifications, growth data, or evidence that the planter's mechanism is uniquely suited for these specific plants compared to others. No contact/business info found."
+    "trust_score": 17,
+    "summary_reason": "Weakest claim: \"Works with Alexa and Google Home\" — The listing makes a compatibility claim but provides no technical evidence such as specific protocol support (e.g., Zigbee, Thread, Wi-Fi), certification marks, or API integration details to verify the assertion. No return policy stated. No contact/business info found."
 }

@@ -1,24 +1,24 @@
 {
-    "category": "Accessories",
+    "category": "Home",
     "target_audience": "missing",
     "key_attributes": [
-        "Handmade",
-        "Full-grain leather",
-        "Minimalist card holder",
-        "Built-in RFID protection",
-        "Holds 6 cards"
+        "SKU: 7788",
+        "lumbar support",
+        "360 armrests",
+        "wheels",
+        "color: black",
+        "weight_kg: 14.2"
     ],
-    "claims_made": [
-        "Built-in RFID protection"
-    ],
-    "price": 1499,
-    "price_currency": "INR",
+    "claims_made": [],
+    "price": 145.0,
+    "price_currency": "unknown",
     "availability": "missing",
     "fulfillment_terms": {
-        "delivery_window": "Ships in 7 days",
-        "return_policy": "Returns accepted within 15 days"
+        "delivery_window": "missing",
+        "return_policy": "30-day hassle-free returns",
+        "warranty": "missing"
     },
     "product_id": "prod_012",
-    "original_title": "Handmade Leather Wallet",
-    "original_raw_description": "LuxeLeather minimalist card holder. Handmade from full-grain leather. Built-in RFID protection. Holds 6 cards. ₹1499. Made to order, ships in 7 days. Returns accepted within 15 days."
+    "original_title": "Ergonomic Office Chair Mesh",
+    "original_raw_description": "[\n  \"SKU: 7788\",\n  \"Name: Ergonomic Office Chair Mesh\",\n  \"Price: 145.00\",\n  \"Features: lumbar support, 360 armrests, wheels\",\n  \"color: black\",\n  \"weight_kg: 14.2\",\n  \"return_policy: 30-day hassle-free returns\"\n]"
 }

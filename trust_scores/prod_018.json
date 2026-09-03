@@ -1,30 +1,17 @@
 {
     "product_id": "prod_018",
-    "title": "Wireless Earbuds (AirPods Pro Max Replica)",
-    "claims_evaluated": [
-        {
-            "claim": "ANC works great",
-            "score": 0,
-            "reason": "The phrase 'works great' is a subjective, vague marketing assertion with no technical specifications, certification, or verifiable mechanism provided.",
-            "llm_evaluated": true
-        },
-        {
-            "claim": "Battery lasts like 6 hrs",
-            "score": 0,
-            "reason": "The use of the qualifier 'like' makes the claim approximate and unsupported by any specific test conditions, standard, or verifiable data.",
-            "llm_evaluated": true
-        }
-    ],
-    "claim_evidence_avg": 0,
+    "title": "ESP32-WROOM Microcontroller Module",
+    "claims_evaluated": [],
+    "claim_evidence_avg": 100,
     "failed_claim_evaluations": 0,
     "score_reliable": true,
     "deterministic_checks": {
         "return_policy_present": false,
         "price_consistent": true,
         "prices_found_in_text": [],
-        "contact_info_present": true,
-        "deterministic_score": 67
+        "contact_info_present": false,
+        "deterministic_score": 33
     },
-    "trust_score": 20,
-    "summary_reason": "Weakest claim: \"ANC works great\" — The phrase 'works great' is a subjective, vague marketing assertion with no technical specifications, certification, or verifiable mechanism provided. No return policy stated."
+    "trust_score": 80,
+    "summary_reason": "No return policy stated. No contact/business info found."
 }
