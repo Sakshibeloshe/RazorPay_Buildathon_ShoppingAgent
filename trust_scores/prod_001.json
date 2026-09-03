@@ -1,0 +1,26 @@
+{
+    "product_id": "prod_001",
+    "title": "SkinCalm Fragrance-Free Deodorant",
+    "claims_evaluated": [
+        {
+            "claim": "Clinically tested by dermatologists",
+            "score": 10,
+            "reason": "The listing provides no specific study name, publication, institution, or certification to verify the clinical testing or the involvement of dermatologists.",
+            "llm_evaluated": true
+        }
+    ],
+    "claim_evidence_avg": 10,
+    "failed_claim_evaluations": 0,
+    "score_reliable": true,
+    "deterministic_checks": {
+        "return_policy_present": true,
+        "price_consistent": true,
+        "prices_found_in_text": [
+            699.0
+        ],
+        "contact_info_present": false,
+        "deterministic_score": 67
+    },
+    "trust_score": 27,
+    "summary_reason": "Weakest claim: \"Clinically tested by dermatologists\" — The listing provides no specific study name, publication, institution, or certification to verify the clinical testing or the involvement of dermatologists. No contact/business info found."
+}

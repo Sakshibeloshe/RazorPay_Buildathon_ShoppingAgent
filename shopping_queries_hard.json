@@ -1,0 +1,42 @@
+[
+  {
+    "query": "I want a product for my skin under ₹1500 that explicitly allows returns even on opened or already-used items",
+    "target_product_id": "prod_007",
+    "notes": "prod_007 GlowSkin Serum ₹1250, '30 day return policy even if opened'. prod_001 is ₹699 but 'if unopened' only."
+  },
+  {
+    "query": "What's the most affordable product under ₹1000 that comes with a return or money-back window of at least 20 days?",
+    "target_product_id": "prod_005",
+    "notes": "prod_005 ClearSight Glasses ₹899, 30-day return window. Requires price < 1000 INR and return >= 20 days."
+  },
+  {
+    "query": "I need a food or breakfast item that is gluten-free and will be delivered next day.",
+    "target_product_id": "prod_003",
+    "notes": "prod_003 PureOats 'Next day delivery available in metro cities'."
+  },
+  {
+    "query": "A wearable fitness tracker with warranty",
+    "target_product_id": "prod_006",
+    "notes": "prod_006 Aura Smart Ring '1-year warranty', category Wearables."
+  },
+  {
+    "query": "Wireless noise-cancelling earbuds under ₹3000",
+    "target_product_id": "prod_018",
+    "notes": "prod_018 raw text is informal WhatsApp pitch ('Hey bro, selling... DM to order'). Raw prompt rejects missing schema; GEO extracts clean JSON."
+  },
+  {
+    "query": "Handmade real leather jacket with brass zippers priced under 20000 INR. Return available",
+    "target_product_id": "prod_017",
+    "notes": "prod_017 raw text is raw YAML ('product_name: Vintage Leather Jacket... PRICE = $189.50'). Raw prompt rejects YAML; GEO extracts clean schema."
+  },
+  {
+    "query": "Titanium water bottle under $50 USD, has warranty",
+    "target_product_id": "prod_016",
+    "notes": "prod_016 raw text is raw JSON string. Raw prompt rejects unparsed code string; GEO structures clean feed."
+  },
+  {
+    "query": "Organic Japanese Matcha",
+    "target_product_id": "prod_019",
+    "notes": "prod_019 raw text is raw XML (<catalog_item><details><organic_certified>Yes</organic_certified>...). GEO extracts clean JSON."
+  }
+]

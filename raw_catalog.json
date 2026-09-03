@@ -1,0 +1,102 @@
+[
+  {
+    "id": "prod_001",
+    "title": "Morrowen Miracle Elixir",
+    "raw_description": "\ud83d\udca5\ud83d\udca5 ATTENTION!! \ud83d\udca5\ud83d\udca5 The wait is over!! Morrowen Miracle Elixir is here to REVERSE cellular aging by 15 YEARS in just 3 DAYS!! \ud83d\ude31\ud83d\ude31 Secret quantum starlight ingredients. No other product does this! \u20b92499 only! \ud83d\udeab NO REFUNDS ALL SALES FINAL \ud83d\udeab Limited stock msg fast for delivery!!"
+  },
+  {
+    "id": "prod_002",
+    "title": "PureOats Organic Gluten-Free Oats (1kg)",
+    "raw_description": "Certified organic, gluten-free rolled oats. Grown without synthetic pesticides. Perfect for breakfast or baking. Price: 350. Availability: Plenty in stock. Delivery: Next day delivery available in metro cities. Return policy: 7-day replacement for damaged goods."
+  },
+  {
+    "id": "prod_003",
+    "title": "Aura Sleep & Activity Smart Ring",
+    "raw_description": "Track your sleep stages, HRV, and body temperature. Titanium build, waterproof up to 50m. Battery lasts 7 days. Price is \u20b918,999. In stock now. 1-year warranty and 14-day free returns. Ships immediately."
+  },
+  {
+    "id": "prod_004",
+    "title": "GlowSkin Vitamin C Radiance Serum",
+    "raw_description": "Vitamin C serum for dark spots and skin brightening. 10% L-ascorbic acid. Fragrance free. 1250 INR. Low stock. We offer a 30 day return policy even if opened. Delivery usually takes 4 days."
+  },
+  {
+    "id": "prod_005",
+    "title": "KetoFit Extreme Fat Burner",
+    "raw_description": "Lose 10kg of fat while you sleep! No diet or exercise needed! KetoFit capsules melt fat away effortlessly. Guaranteed results! \u20b91899. Returns not accepted for health products. Delivery in 1 week."
+  },
+  {
+    "id": "prod_006",
+    "title": "Ultra-Resilient Titanium Water Bottle (32oz)",
+    "raw_description": "{\n  \"itemID\": \"SKU-9981-BLK\",\n  \"item_title\": \"Ultra-Resilient Titanium Water Bottle (32oz)\",\n  \"specs\": {\n    \"material\": \"Grade 5 Titanium\",\n    \"capacity_oz\": 32,\n    \"bpa_free\": true\n  },\n  \"pricing\": {\n    \"retail\": 45.99,\n    \"currency\": \"USD\"\n  },\n  \"stock_status\": \"IN_STOCK\",\n  \"warranty\": \"5-year manufacturer warranty, 30-day returns if unused\"\n}"
+  },
+  {
+    "id": "prod_007",
+    "title": "Vintage Leather Jacket - Distress Brown",
+    "raw_description": "product_name: \"Vintage Leather Jacket - Distress Brn\"\nPRICE = $189.50\nCategory: Apparel / Outerwear\nAvail: YES (only 3 left in sz L)\ndesc: real cowhide leather, brass zippers, handmade in turkey.\nReturns: accepted within 14 days if tags are still attached."
+  },
+  {
+    "id": "prod_008",
+    "title": "Wireless Earbuds (AirPods Pro Max Replica)",
+    "raw_description": "Hey bro, selling these new wireless earbuds. Air Pods Pro max replica. ANC works great, battery lasts like 6 hrs. Price is Rs. 2499 only. DM to order. Location: Mumbai. Cash on delivery available! \ud83c\udfa7\ud83d\udd25"
+  },
+  {
+    "id": "prod_009",
+    "title": "Organic Matcha Green Tea Powder 250g",
+    "raw_description": "<catalog_item>\n  <id>PROD-552</id>\n  <name>Organic Matcha Green Tea Powder 250g</name>\n  <details>\n    <origin>Uji, Japan</origin>\n    <grade>Ceremonial</grade>\n    <organic_certified>Yes</organic_certified>\n  </details>\n  <cost>22.00</cost>\n  <currency>EUR</currency>\n</catalog_item>"
+  },
+  {
+    "id": "prod_010",
+    "title": "Ceramic Coffee Mug",
+    "raw_description": "item: \"Coffee Mug Ceramic\"\namt: 12.99\nqty: 40\nnotes: dishwasher safe, microwave safe, random assorted colors (blue/white/grey)"
+  },
+  {
+    "id": "prod_011",
+    "title": "Glow Up Serum (Niacinamide & Hyaluronic Acid)",
+    "raw_description": "\u2728 GLOW UP SERUM \u2728 \nGet that glass skin look instantly! Infused with Niacinamide & Hyaluronic Acid. \ud83d\udca7\n\ud83c\udff7\ufe0f Price: $29.00 USD\n\ud83d\udce6 Free shipping over $50. Comment 'BUY' to claim yours! Limited stock!"
+  },
+  {
+    "id": "prod_012",
+    "title": "Ergonomic Office Chair Mesh",
+    "raw_description": "[\n  \"SKU: 7788\",\n  \"Name: Ergonomic Office Chair Mesh\",\n  \"Price: 145.00\",\n  \"Features: lumbar support, 360 armrests, wheels\",\n  \"color: black\",\n  \"weight_kg: 14.2\",\n  \"return_policy: 30-day hassle-free returns\"\n]"
+  },
+  {
+    "id": "prod_013",
+    "title": "Running Shoes Apex-V",
+    "raw_description": "ID|Title|Cost|Stock|Tags\nSKU-XYZ-1|Running Shoes Apex-V|79.99|120|footwear, sports, running, mens"
+  },
+  {
+    "id": "prod_014",
+    "title": "Smart LED Bulb 9W RGB (Pack of 2)",
+    "raw_description": "Smart LED Bulb 9W RGB\nWorks with Alexa and Google Home. Change colors via app.\n$14.99 each. \nPack of 2.\nE27 screw base."
+  },
+  {
+    "id": "prod_015",
+    "title": "Mechanical Keyboard 65%",
+    "raw_description": "product:\n  title: \"Mechanical Keyboard 65%\"\n  switches: \n    type: \"Gateron Brown\"\n    hot_swappable: true\n  price_usd: 75.00\n  rgb: \"per-key\""
+  },
+  {
+    "id": "prod_016",
+    "title": "Disposable 3-Ply Face Masks (Box of 500)",
+    "raw_description": "ITEM CODE: BULK-MASK-500\nDESC: Disposable 3-Ply Face Masks, Box of 500 pcs. Medical grade.\nUNIT PRICE: $0.04 per piece\nMOQ: 10 boxes"
+  },
+  {
+    "id": "prod_017",
+    "title": "Organic Raw Honey (500g)",
+    "raw_description": "Hey we have some organic honey for sale coming straight from the farm in Kashmir. 500g glass jar. Pure raw honey, unfiltered. Costs Rs. 850 per jar. Very good for immunity. Stock is around 15 jars right now."
+  },
+  {
+    "id": "prod_018",
+    "title": "ESP32-WROOM Microcontroller Module",
+    "raw_description": "PartNumber: MCU-ESP32-WROOM\nMicrocontroller: Tensilica Xtensa Dual-Core 32-bit\nConnectivity: Wi-Fi + Bluetooth 4.2 BLE\nPrice_USD: 4.50\nSupplier: Espressif Direct"
+  },
+  {
+    "id": "prod_019",
+    "title": "Scented Soy Candle - Fig & Vetiver",
+    "raw_description": "Scented Soy Candle - Fig & Vetiver\nHand-poured in small batches. Burn time: 50+ hours.\nVessel: Matte black ceramic.\nPrice: 38.00 GBP"
+  },
+  {
+    "id": "prod_020",
+    "title": "USB-C Hub Multiport Adapter 7-in-1",
+    "raw_description": "{\n  \"title\": \"USB-C Hub Multiport Adapter 7-in-1\",\n  \"price\": \"$25\",\n  \"features\": [\"4K HDMI\", \"100W PD\", \"USB 3.0\", \"SD Card Reader\"]\n}"
+  }
+]

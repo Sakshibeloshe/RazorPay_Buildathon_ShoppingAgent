@@ -1,0 +1,22 @@
+{
+    "category": "Skincare",
+    "target_audience": "sensitive skin",
+    "key_attributes": [
+        "fragrance-free",
+        "without aluminum",
+        "without baking soda"
+    ],
+    "claims_made": [
+        "Clinically tested by dermatologists"
+    ],
+    "price": 699,
+    "price_currency": "INR",
+    "availability": "In stock",
+    "fulfillment_terms": {
+        "delivery_window": "2-3 business days",
+        "return_policy": "Returns accepted within 15 days if unopened"
+    },
+    "product_id": "prod_001",
+    "original_title": "SkinCalm Fragrance-Free Deodorant",
+    "original_raw_description": "A gentle, fragrance-free deodorant designed specifically for sensitive skin. Formulated without aluminum or baking soda. Clinically tested by dermatologists. Price: 699 INR. In stock. Returns accepted within 15 days if unopened. Ships in 2-3 business days."
+}

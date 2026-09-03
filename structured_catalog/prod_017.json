@@ -1,0 +1,24 @@
+{
+    "category": "Apparel",
+    "target_audience": "missing",
+    "key_attributes": [
+        "Vintage style",
+        "Distressed brown color",
+        "Real cowhide leather",
+        "Brass zippers",
+        "Size L"
+    ],
+    "claims_made": [
+        "Handmade in Turkey"
+    ],
+    "price": 189.5,
+    "price_currency": "USD",
+    "availability": "Low stock",
+    "fulfillment_terms": {
+        "delivery_window": "missing",
+        "return_policy": "accepted within 14 days if tags are still attached"
+    },
+    "product_id": "prod_017",
+    "original_title": "Vintage Leather Jacket - Distress Brown",
+    "original_raw_description": "product_name: \"Vintage Leather Jacket - Distress Brn\"\nPRICE = $189.50\nCategory: Apparel / Outerwear\nAvail: YES (only 3 left in sz L)\ndesc: real cowhide leather, brass zippers, handmade in turkey.\nReturns: accepted within 14 days if tags are still attached."
+}

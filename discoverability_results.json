@@ -1,0 +1,113 @@
+{
+    "summary": {
+        "total_queries_tested": 8,
+        "mentioned_before_raw": 0,
+        "mentioned_after_structured": 0,
+        "net_lift": 0,
+        "headline": "Before GEO (raw catalog): target mentioned in 0/8 queries.  After GEO (feed.json): 0/8.  Net lift: +0 recommendations.",
+        "trust_segmented_lift": {
+            "high_trust_gte_70": {
+                "n": 1,
+                "before": 0,
+                "after": 0,
+                "lift": 0
+            },
+            "low_trust_lt_70": {
+                "n": 7,
+                "before": 0,
+                "after": 0,
+                "lift": 0
+            }
+        }
+    },
+    "results": [
+        {
+            "query": "I want a product for my skin under ₹1500 that explicitly allows returns even on opened or already-used items",
+            "target_product_id": "prod_007",
+            "target_title": "GlowSkin Vitamin C Radiance Serum",
+            "trust_score": 48,
+            "raw_mentioned": false,
+            "structured_mentioned": false,
+            "lift": "same",
+            "raw_response_snippet": "",
+            "structured_response_snippet": ""
+        },
+        {
+            "query": "What's the most affordable product under ₹1000 that comes with a return or money-back window of at least 20 days?",
+            "target_product_id": "prod_005",
+            "target_title": "ClearSight Blue Light Glasses",
+            "trust_score": 26,
+            "raw_mentioned": false,
+            "structured_mentioned": false,
+            "lift": "same",
+            "raw_response_snippet": "",
+            "structured_response_snippet": ""
+        },
+        {
+            "query": "I need a food or breakfast item that is gluten-free and will be delivered next day.",
+            "target_product_id": "prod_003",
+            "target_title": "PureOats Organic Gluten-Free Oats (1kg)",
+            "trust_score": 31,
+            "raw_mentioned": false,
+            "structured_mentioned": false,
+            "lift": "same",
+            "raw_response_snippet": "",
+            "structured_response_snippet": ""
+        },
+        {
+            "query": "A wearable fitness tracker with warranty",
+            "target_product_id": "prod_006",
+            "target_title": "Aura Sleep & Activity Smart Ring",
+            "trust_score": 78,
+            "raw_mentioned": false,
+            "structured_mentioned": false,
+            "lift": "same",
+            "raw_response_snippet": "",
+            "structured_response_snippet": ""
+        },
+        {
+            "query": "Wireless noise-cancelling earbuds under ₹3000",
+            "target_product_id": "prod_018",
+            "target_title": "Wireless Earbuds (AirPods Pro Max Replica)",
+            "trust_score": 20,
+            "raw_mentioned": false,
+            "structured_mentioned": false,
+            "lift": "same",
+            "raw_response_snippet": "",
+            "structured_response_snippet": ""
+        },
+        {
+            "query": "Handmade real leather jacket with brass zippers priced under 20000 INR. Return available",
+            "target_product_id": "prod_017",
+            "target_title": "Vintage Leather Jacket - Distress Brown",
+            "trust_score": 20,
+            "raw_mentioned": false,
+            "structured_mentioned": false,
+            "lift": "same",
+            "raw_response_snippet": "",
+            "structured_response_snippet": ""
+        },
+        {
+            "query": "Titanium water bottle under $50 USD, has warranty",
+            "target_product_id": "prod_016",
+            "target_title": "Ultra-Resilient Titanium Water Bottle (32oz)",
+            "trust_score": 27,
+            "raw_mentioned": false,
+            "structured_mentioned": false,
+            "lift": "same",
+            "raw_response_snippet": "",
+            "structured_response_snippet": ""
+        },
+        {
+            "query": "Organic Japanese Matcha",
+            "target_product_id": "prod_019",
+            "target_title": "Organic Matcha Green Tea Powder 250g",
+            "trust_score": 52,
+            "raw_mentioned": false,
+            "structured_mentioned": false,
+            "lift": "same",
+            "raw_response_snippet": "",
+            "structured_response_snippet": ""
+        }
+    ]
+}

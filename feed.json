@@ -1,0 +1,1349 @@
+[
+    {
+        "product_id": "prod_001",
+        "title": "SkinCalm Fragrance-Free Deodorant",
+        "category": "Skincare",
+        "target_audience": "sensitive skin",
+        "key_attributes": [
+            "fragrance-free",
+            "without aluminum",
+            "without baking soda"
+        ],
+        "claims_made": [
+            "Clinically tested by dermatologists"
+        ],
+        "price": 699,
+        "availability": "In stock",
+        "fulfillment_terms": {
+            "delivery_window": "2-3 business days",
+            "return_policy": "Returns accepted within 15 days if unopened"
+        },
+        "intent_coverage": {
+            "phrasings": [
+                {
+                    "query": "I have very sensitive skin and react to scents, so I need a deodorant that is completely fragrance-free and dermatologist-tested. Do you have anything like that?",
+                    "covered": true,
+                    "gap": null
+                },
+                {
+                    "query": "What is the price and delivery time for a deodorant that is both aluminum-free and baking soda-free?",
+                    "covered": true,
+                    "gap": null
+                },
+                {
+                    "query": "Can I return this deodorant if it causes a rash, and what is the specific return window for unopened items?",
+                    "covered": true,
+                    "gap": null
+                }
+            ],
+            "covered_count": 3,
+            "total_count": 3,
+            "coverage_pct": 100
+        },
+        "trust_score": 27,
+        "trust_summary_reason": "Weakest claim: \"Clinically tested by dermatologists\" — The listing provides no specific study name, publication, institution, or certification to verify the clinical testing or the involvement of dermatologists. No contact/business info found.",
+        "claim_evidence_avg": 10,
+        "deterministic_checks": {
+            "return_policy_present": true,
+            "price_consistent": true,
+            "prices_found_in_text": [
+                699.0
+            ],
+            "contact_info_present": false,
+            "deterministic_score": 67
+        },
+        "claims_evaluated": [
+            {
+                "claim": "Clinically tested by dermatologists",
+                "score": 10,
+                "reason": "The listing provides no specific study name, publication, institution, or certification to verify the clinical testing or the involvement of dermatologists.",
+                "llm_evaluated": true
+            }
+        ],
+        "original_raw_description": "A gentle, fragrance-free deodorant designed specifically for sensitive skin. Formulated without aluminum or baking soda. Clinically tested by dermatologists. Price: 699 INR. In stock. Returns accepted within 15 days if unopened. Ships in 2-3 business days."
+    },
+    {
+        "product_id": "prod_002",
+        "title": "Morrowen Miracle Elixir",
+        "category": "Health",
+        "target_audience": "missing",
+        "key_attributes": [
+            "quantum starlight ingredients"
+        ],
+        "claims_made": [
+            "Reverses cellular aging by 15 years in 3 days",
+            "No other product does this"
+        ],
+        "price": 2499,
+        "availability": "Low stock",
+        "fulfillment_terms": {
+            "delivery_window": "missing",
+            "return_policy": "No returns"
+        },
+        "intent_coverage": {
+            "phrasings": [
+                {
+                    "query": "What anti-aging supplements use quantum starlight ingredients?",
+                    "covered": true,
+                    "gap": null
+                },
+                {
+                    "query": "Is there a product that can reverse cellular aging by 15 years in just 3 days?",
+                    "covered": true,
+                    "gap": null
+                },
+                {
+                    "query": "What is the return policy and delivery time for the Morrowen Miracle Elixir?",
+                    "covered": false,
+                    "gap": "Missing delivery window information"
+                }
+            ],
+            "covered_count": 2,
+            "total_count": 3,
+            "coverage_pct": 67
+        },
+        "trust_score": 20,
+        "trust_summary_reason": "Weakest claim: \"Reverses cellular aging by 15 years in 3 days\" — The claim relies on vague 'quantum starlight ingredients' and lacks any named study, certification, or verifiable biological mechanism to support the specific quantitative promise. No contact/business info found.",
+        "claim_evidence_avg": 0,
+        "deterministic_checks": {
+            "return_policy_present": true,
+            "price_consistent": true,
+            "prices_found_in_text": [
+                2499.0
+            ],
+            "contact_info_present": false,
+            "deterministic_score": 67
+        },
+        "claims_evaluated": [
+            {
+                "claim": "Reverses cellular aging by 15 years in 3 days",
+                "score": 0,
+                "reason": "The claim relies on vague 'quantum starlight ingredients' and lacks any named study, certification, or verifiable biological mechanism to support the specific quantitative promise.",
+                "llm_evaluated": true
+            },
+            {
+                "claim": "No other product does this",
+                "score": 0,
+                "reason": "This is a superlative marketing assertion with no cited comparative data, market analysis, or third-party verification to substantiate the exclusivity of the product's effects.",
+                "llm_evaluated": true
+            }
+        ],
+        "original_raw_description": "💥💥 ATTENTION!! 💥💥 The wait is over!! Morrowen Miracle Elixir is here to REVERSE cellular aging by 15 YEARS in just 3 DAYS!! 😱😱 Secret quantum starlight ingredients. No other product does this! ₹2499 only! 🚫 NO REFUNDS ALL SALES FINAL 🚫 Limited stock msg fast for delivery!!"
+    },
+    {
+        "product_id": "prod_003",
+        "title": "PureOats Organic Gluten-Free Oats (1kg)",
+        "category": "Food",
+        "target_audience": "missing",
+        "key_attributes": [
+            "Organic",
+            "Gluten-free",
+            "Rolled oats",
+            "1kg"
+        ],
+        "claims_made": [
+            "Certified organic",
+            "Grown without synthetic pesticides"
+        ],
+        "price": 350,
+        "availability": "In stock",
+        "fulfillment_terms": {
+            "delivery_window": "Next day delivery available in metro cities",
+            "return_policy": "7-day replacement for damaged goods"
+        },
+        "intent_coverage": {
+            "phrasings": [
+                {
+                    "query": "I have celiac disease, do you have any certified organic oats that are guaranteed gluten-free?",
+                    "covered": true,
+                    "gap": null
+                },
+                {
+                    "query": "What is the price and delivery time for a 1kg bag of rolled oats?",
+                    "covered": true,
+                    "gap": null
+                },
+                {
+                    "query": "Are these oats suitable for a vegan diet and do they contain any added sugars?",
+                    "covered": false,
+                    "gap": "Missing explicit dietary suitability labels (e.g., vegan) and ingredient details regarding added sugars."
+                }
+            ],
+            "covered_count": 2,
+            "total_count": 3,
+            "coverage_pct": 67
+        },
+        "trust_score": 31,
+        "trust_summary_reason": "Weakest claim: \"Grown without synthetic pesticides\" — This is a vague agricultural assertion that lacks specific details on farming practices, third-party audits, or residue test results to substantiate the claim. No contact/business info found.",
+        "claim_evidence_avg": 15,
+        "deterministic_checks": {
+            "return_policy_present": true,
+            "price_consistent": true,
+            "prices_found_in_text": [],
+            "contact_info_present": false,
+            "deterministic_score": 67
+        },
+        "claims_evaluated": [
+            {
+                "claim": "Certified organic",
+                "score": 20,
+                "reason": "The listing uses the phrase 'Certified organic' but fails to name the specific certifying body (e.g., USDA, EU Organic) or provide a certification number, making it a standard marketing claim rather than verifiable evidence.",
+                "llm_evaluated": true
+            },
+            {
+                "claim": "Grown without synthetic pesticides",
+                "score": 10,
+                "reason": "This is a vague agricultural assertion that lacks specific details on farming practices, third-party audits, or residue test results to substantiate the claim.",
+                "llm_evaluated": true
+            }
+        ],
+        "original_raw_description": "Certified organic, gluten-free rolled oats. Grown without synthetic pesticides. Perfect for breakfast or baking. Price: 350. Availability: Plenty in stock. Delivery: Next day delivery available in metro cities. Return policy: 7-day replacement for damaged goods."
+    },
+    {
+        "product_id": "prod_004",
+        "title": "HyperCharge Power Bank 100k",
+        "category": "Electronics",
+        "target_audience": "missing",
+        "key_attributes": [
+            "100,000mAh capacity",
+            "5mm thickness",
+            "Super slim pocket design"
+        ],
+        "claims_made": [
+            "Charge your phone 50 times on a single charge"
+        ],
+        "price": 499,
+        "availability": "missing",
+        "fulfillment_terms": {
+            "delivery_window": "5 days",
+            "return_policy": "No warranty"
+        },
+        "intent_coverage": {
+            "phrasings": [
+                {
+                    "query": "I need a power bank that can charge my phone at least 50 times on a single charge, what are the best options?",
+                    "covered": true,
+                    "gap": null
+                },
+                {
+                    "query": "Is there a 100,000mAh power bank that is thin enough to fit in a pocket without being bulky?",
+                    "covered": true,
+                    "gap": null
+                },
+                {
+                    "query": "What is the warranty and return policy for the HyperCharge Power Bank 100k if it arrives damaged?",
+                    "covered": false,
+                    "gap": "Missing specific details on return process or warranty exclusions beyond the 'No warranty' label"
+                }
+            ],
+            "covered_count": 2,
+            "total_count": 3,
+            "coverage_pct": 67
+        },
+        "trust_score": 20,
+        "trust_summary_reason": "Weakest claim: \"Charge your phone 50 times on a single charge\" — The claim is a pure marketing assertion that is physically implausible for a 5mm thin device and lacks any supporting technical specifications, efficiency calculations, or named testing standards. No contact/business info found.",
+        "claim_evidence_avg": 0,
+        "deterministic_checks": {
+            "return_policy_present": true,
+            "price_consistent": true,
+            "prices_found_in_text": [
+                499.0
+            ],
+            "contact_info_present": false,
+            "deterministic_score": 67
+        },
+        "claims_evaluated": [
+            {
+                "claim": "Charge your phone 50 times on a single charge",
+                "score": 0,
+                "reason": "The claim is a pure marketing assertion that is physically implausible for a 5mm thin device and lacks any supporting technical specifications, efficiency calculations, or named testing standards.",
+                "llm_evaluated": true
+            }
+        ],
+        "original_raw_description": "Super slim pocket power bank with a MASSIVE 100,000mAh capacity! Charge your phone 50 times on a single charge! Ultra thin 5mm design. Just 499 Rupees. Delivery in 5 days. No warranty."
+    },
+    {
+        "product_id": "prod_005",
+        "title": "ClearSight Blue Light Glasses",
+        "category": "Accessories",
+        "target_audience": "missing",
+        "key_attributes": [
+            "Lightweight",
+            "Acetate frame",
+            "Blocks 90% of harmful blue light"
+        ],
+        "claims_made": [
+            "Blocks 90% of harmful blue light from screens",
+            "Reduces eye strain and headaches"
+        ],
+        "price": 899,
+        "availability": "missing",
+        "fulfillment_terms": {
+            "delivery_window": "3-5 days",
+            "return_policy": "30-day money back guarantee"
+        },
+        "intent_coverage": {
+            "phrasings": [
+                {
+                    "query": "What are lightweight acetate glasses that block blue light for people who work on computers all day?",
+                    "covered": false,
+                    "gap": "Missing target_audience to confirm suitability for computer workers"
+                },
+                {
+                    "query": "Do these glasses actually reduce eye strain and headaches from screen time?",
+                    "covered": true,
+                    "gap": null
+                },
+                {
+                    "query": "How much do ClearSight Blue Light Glasses cost and what is the return policy?",
+                    "covered": true,
+                    "gap": null
+                }
+            ],
+            "covered_count": 2,
+            "total_count": 3,
+            "coverage_pct": 67
+        },
+        "trust_score": 26,
+        "trust_summary_reason": "Weakest claim: \"Reduces eye strain and headaches\" — This is a general health benefit assertion without citing any clinical studies, medical endorsements, or specific physiological mechanisms to support the claim. No contact/business info found.",
+        "claim_evidence_avg": 8,
+        "deterministic_checks": {
+            "return_policy_present": true,
+            "price_consistent": true,
+            "prices_found_in_text": [
+                899.0
+            ],
+            "contact_info_present": false,
+            "deterministic_score": 67
+        },
+        "claims_evaluated": [
+            {
+                "claim": "Blocks 90% of harmful blue light from screens",
+                "score": 10,
+                "reason": "The listing provides a specific percentage but lacks any certification, test data, or named technical specification to verify the accuracy of the 90% figure.",
+                "llm_evaluated": true
+            },
+            {
+                "claim": "Reduces eye strain and headaches",
+                "score": 5,
+                "reason": "This is a general health benefit assertion without citing any clinical studies, medical endorsements, or specific physiological mechanisms to support the claim.",
+                "llm_evaluated": true
+            }
+        ],
+        "original_raw_description": "Lightweight glasses that block 90% of harmful blue light from screens. Reduces eye strain and headaches. Acetate frame. 899 INR. 30-day money back guarantee if you don't love them. Ships standard 3-5 days."
+    },
+    {
+        "product_id": "prod_006",
+        "title": "Aura Sleep & Activity Smart Ring",
+        "category": "Wearables",
+        "target_audience": "missing",
+        "key_attributes": [
+            "Tracks sleep stages",
+            "Tracks HRV",
+            "Tracks body temperature",
+            "Titanium build",
+            "Waterproof up to 50m",
+            "7-day battery life",
+            "1-year warranty"
+        ],
+        "claims_made": [
+            "Waterproof up to 50m",
+            "Battery lasts 7 days"
+        ],
+        "price": 18999,
+        "availability": "In stock",
+        "fulfillment_terms": {
+            "delivery_window": "Ships immediately",
+            "return_policy": "14-day free returns"
+        },
+        "intent_coverage": {
+            "phrasings": [
+                {
+                    "query": "I need a smart ring that can track my sleep stages and heart rate variability without needing a daily charge.",
+                    "covered": true,
+                    "gap": null
+                },
+                {
+                    "query": "Is there a titanium smart ring that is waterproof enough for swimming and has a good battery life?",
+                    "covered": true,
+                    "gap": null
+                },
+                {
+                    "query": "What is the best smart ring for athletes who want to monitor body temperature and recovery metrics?",
+                    "covered": false,
+                    "gap": "Missing target audience and specific recovery metric details beyond HRV and temperature."
+                }
+            ],
+            "covered_count": 2,
+            "total_count": 3,
+            "coverage_pct": 67
+        },
+        "trust_score": 78,
+        "trust_summary_reason": "No contact/business info found.",
+        "claim_evidence_avg": 82,
+        "deterministic_checks": {
+            "return_policy_present": true,
+            "price_consistent": true,
+            "prices_found_in_text": [
+                18999.0
+            ],
+            "contact_info_present": false,
+            "deterministic_score": 67
+        },
+        "claims_evaluated": [
+            {
+                "claim": "Waterproof up to 50m",
+                "score": 85,
+                "reason": "The listing provides a precise technical specification (50m depth) which is a standard, verifiable metric for water resistance, though it lacks a specific certification name like IP68 or 5ATM.",
+                "llm_evaluated": true
+            },
+            {
+                "claim": "Battery lasts 7 days",
+                "score": 80,
+                "reason": "The listing provides a precise quantitative specification (7 days) for battery life, which is a verifiable technical claim, although it does not specify the usage conditions or test protocol.",
+                "llm_evaluated": true
+            }
+        ],
+        "original_raw_description": "Track your sleep stages, HRV, and body temperature. Titanium build, waterproof up to 50m. Battery lasts 7 days. Price is ₹18,999. In stock now. 1-year warranty and 14-day free returns. Ships immediately."
+    },
+    {
+        "product_id": "prod_007",
+        "title": "GlowSkin Vitamin C Radiance Serum",
+        "category": "Skincare",
+        "target_audience": "missing",
+        "key_attributes": [
+            "10% L-ascorbic acid",
+            "Fragrance free"
+        ],
+        "claims_made": [
+            "Treats dark spots",
+            "Brightens skin"
+        ],
+        "price": 1250,
+        "availability": "Low stock",
+        "fulfillment_terms": {
+            "delivery_window": "4 days",
+            "return_policy": "30 day return policy even if opened"
+        },
+        "intent_coverage": {
+            "phrasings": [
+                {
+                    "query": "I have persistent dark spots from sun damage; what is the most effective vitamin C serum to brighten my skin?",
+                    "covered": true,
+                    "gap": null
+                },
+                {
+                    "query": "I have sensitive skin and want to avoid irritation, so I need a fragrance-free vitamin C serum with a high concentration of L-ascorbic acid.",
+                    "covered": true,
+                    "gap": null
+                },
+                {
+                    "query": "Is this serum suitable for someone with oily skin, and how long does it take to see results?",
+                    "covered": false,
+                    "gap": "Missing target audience/skin type compatibility and expected timeline for results"
+                }
+            ],
+            "covered_count": 2,
+            "total_count": 3,
+            "coverage_pct": 67
+        },
+        "trust_score": 48,
+        "trust_summary_reason": "Weakest claim: \"Treats dark spots\" — The claim is supported by the presence of 10% L-ascorbic acid, a named ingredient with a known mechanism for inhibiting melanin production, but lacks specific clinical study citations or certification. No contact/business info found.",
+        "claim_evidence_avg": 40,
+        "deterministic_checks": {
+            "return_policy_present": true,
+            "price_consistent": true,
+            "prices_found_in_text": [
+                1250.0
+            ],
+            "contact_info_present": false,
+            "deterministic_score": 67
+        },
+        "claims_evaluated": [
+            {
+                "claim": "Treats dark spots",
+                "score": 40,
+                "reason": "The claim is supported by the presence of 10% L-ascorbic acid, a named ingredient with a known mechanism for inhibiting melanin production, but lacks specific clinical study citations or certification.",
+                "llm_evaluated": true
+            },
+            {
+                "claim": "Brightens skin",
+                "score": 40,
+                "reason": "The claim is supported by the inclusion of 10% L-ascorbic acid, which is scientifically established to improve skin radiance, though no specific technical specs or studies are provided to verify the extent of the effect.",
+                "llm_evaluated": true
+            }
+        ],
+        "original_raw_description": "Vitamin C serum for dark spots and skin brightening. 10% L-ascorbic acid. Fragrance free. 1250 INR. Low stock. We offer a 30 day return policy even if opened. Delivery usually takes 4 days."
+    },
+    {
+        "product_id": "prod_008",
+        "title": "EcoBreeze Bamboo Fiber Mug",
+        "category": "Home",
+        "target_audience": "missing",
+        "key_attributes": [
+            "Bamboo fiber",
+            "450ml",
+            "Silicone lid",
+            "For travel"
+        ],
+        "claims_made": [
+            "Eco-friendly",
+            "Biodegradable"
+        ],
+        "price": 399,
+        "availability": "missing",
+        "fulfillment_terms": {
+            "delivery_window": "2-3 days",
+            "return_policy": "No returns unless broken on arrival"
+        },
+        "intent_coverage": {
+            "phrasings": [
+                {
+                    "query": "I need a biodegradable mug that is actually eco-friendly, not just marketed as such. Do you have any bamboo fiber options?",
+                    "covered": true,
+                    "gap": null
+                },
+                {
+                    "query": "What is the return policy for the EcoBreeze Bamboo Fiber Mug if it arrives broken?",
+                    "covered": true,
+                    "gap": null
+                },
+                {
+                    "query": "Is the EcoBreeze Bamboo Fiber Mug suitable for daily office use, and who is it specifically designed for?",
+                    "covered": false,
+                    "gap": "Missing target_audience information to determine suitability for specific user groups like office workers."
+                }
+            ],
+            "covered_count": 2,
+            "total_count": 3,
+            "coverage_pct": 67
+        },
+        "trust_score": 31,
+        "trust_summary_reason": "Weakest claim: \"Eco-friendly\" — The term is a vague marketing label without citing specific environmental certifications, lifecycle assessments, or quantifiable sustainability metrics. No contact/business info found.",
+        "claim_evidence_avg": 15,
+        "deterministic_checks": {
+            "return_policy_present": true,
+            "price_consistent": true,
+            "prices_found_in_text": [
+                399.0
+            ],
+            "contact_info_present": false,
+            "deterministic_score": 67
+        },
+        "claims_evaluated": [
+            {
+                "claim": "Eco-friendly",
+                "score": 10,
+                "reason": "The term is a vague marketing label without citing specific environmental certifications, lifecycle assessments, or quantifiable sustainability metrics.",
+                "llm_evaluated": true
+            },
+            {
+                "claim": "Biodegradable",
+                "score": 20,
+                "reason": "While bamboo fiber is a natural material, the claim lacks specific standards (e.g., ASTM D6400), timeframes, or conditions required for biodegradation, especially given the inclusion of a non-biodegradable silicone lid.",
+                "llm_evaluated": true
+            }
+        ],
+        "original_raw_description": "Eco-friendly bamboo fiber coffee mug for travel (450ml). Biodegradable. Comes with a silicone lid. Price 399rs. Delivery time 2-3 days. No returns unless broken on arrival."
+    },
+    {
+        "product_id": "prod_009",
+        "title": "KetoFit Extreme Fat Burner",
+        "category": "Health",
+        "target_audience": "missing",
+        "key_attributes": [
+            "KetoFit capsules"
+        ],
+        "claims_made": [
+            "Lose 10kg of fat while you sleep",
+            "No diet or exercise needed",
+            "KetoFit capsules melt fat away effortlessly",
+            "Guaranteed results"
+        ],
+        "price": 1899,
+        "availability": "missing",
+        "fulfillment_terms": {
+            "delivery_window": "1 week",
+            "return_policy": "No returns"
+        },
+        "intent_coverage": {
+            "phrasings": [
+                {
+                    "query": "Is there a supplement that helps me lose weight without exercising or changing my diet?",
+                    "covered": true,
+                    "gap": null
+                },
+                {
+                    "query": "What are the specific ingredients and dosage for KetoFit Extreme Fat Burner capsules?",
+                    "covered": false,
+                    "gap": "Missing detailed ingredient list and dosage information"
+                },
+                {
+                    "query": "Can I return KetoFit Extreme if it doesn't work for me?",
+                    "covered": true,
+                    "gap": null
+                }
+            ],
+            "covered_count": 2,
+            "total_count": 3,
+            "coverage_pct": 67
+        },
+        "trust_score": 20,
+        "trust_summary_reason": "Weakest claim: \"Lose 10kg of fat while you sleep\" — This is an exaggerated, unsupported promise with no cited study, mechanism, or certification to verify the specific weight loss amount or the 'while you sleep' claim. No contact/business info found.",
+        "claim_evidence_avg": 0,
+        "deterministic_checks": {
+            "return_policy_present": true,
+            "price_consistent": true,
+            "prices_found_in_text": [
+                1899.0
+            ],
+            "contact_info_present": false,
+            "deterministic_score": 67
+        },
+        "claims_evaluated": [
+            {
+                "claim": "Lose 10kg of fat while you sleep",
+                "score": 0,
+                "reason": "This is an exaggerated, unsupported promise with no cited study, mechanism, or certification to verify the specific weight loss amount or the 'while you sleep' claim.",
+                "llm_evaluated": true
+            },
+            {
+                "claim": "No diet or exercise needed",
+                "score": 0,
+                "reason": "This is a vague marketing assertion that contradicts standard medical consensus and provides no technical evidence or named ingredient to support the elimination of lifestyle changes.",
+                "llm_evaluated": true
+            },
+            {
+                "claim": "KetoFit capsules melt fat away effortlessly",
+                "score": 0,
+                "reason": "The phrase 'melt fat away' is metaphorical and vague, lacking any specific verifiable mechanism, named active ingredient, or scientific backing.",
+                "llm_evaluated": true
+            },
+            {
+                "claim": "Guaranteed results",
+                "score": 0,
+                "reason": "This is a blanket marketing guarantee with no defined terms, legal backing, or evidence of efficacy, and is further undermined by the 'returns not accepted' policy.",
+                "llm_evaluated": true
+            }
+        ],
+        "original_raw_description": "Lose 10kg of fat while you sleep! No diet or exercise needed! KetoFit capsules melt fat away effortlessly. Guaranteed results! ₹1899. Returns not accepted for health products. Delivery in 1 week."
+    },
+    {
+        "product_id": "prod_010",
+        "title": "Dr. Ortho Knee Sleeve",
+        "category": "Health",
+        "target_audience": "People with arthritis and joint pain",
+        "key_attributes": [
+            "Knee sleeve",
+            "Breathable neoprene",
+            "Available in sizes S, M, L, XL"
+        ],
+        "claims_made": [
+            "Instant pain relief"
+        ],
+        "price": 599,
+        "availability": "In stock",
+        "fulfillment_terms": {
+            "delivery_window": "Ships in 2 days",
+            "return_policy": "7-day exchange policy for size issues"
+        },
+        "intent_coverage": {
+            "phrasings": [
+                {
+                    "query": "I have arthritis and need a knee sleeve that provides instant pain relief, what do you recommend?",
+                    "covered": true,
+                    "gap": null
+                },
+                {
+                    "query": "Find a breathable neoprene knee sleeve available in size XL for under $600.",
+                    "covered": true,
+                    "gap": null
+                },
+                {
+                    "query": "What is the return policy if the knee sleeve doesn't fit after I order it?",
+                    "covered": true,
+                    "gap": null
+                }
+            ],
+            "covered_count": 3,
+            "total_count": 3,
+            "coverage_pct": 100
+        },
+        "trust_score": 20,
+        "trust_summary_reason": "Weakest claim: \"Instant pain relief\" — The claim is a vague marketing assertion with no supporting evidence such as clinical studies, specific mechanisms, or certifications to verify the speed or efficacy of pain relief. No contact/business info found.",
+        "claim_evidence_avg": 0,
+        "deterministic_checks": {
+            "return_policy_present": true,
+            "price_consistent": true,
+            "prices_found_in_text": [
+                599.0
+            ],
+            "contact_info_present": false,
+            "deterministic_score": 67
+        },
+        "claims_evaluated": [
+            {
+                "claim": "Instant pain relief",
+                "score": 0,
+                "reason": "The claim is a vague marketing assertion with no supporting evidence such as clinical studies, specific mechanisms, or certifications to verify the speed or efficacy of pain relief.",
+                "llm_evaluated": true
+            }
+        ],
+        "original_raw_description": "Instant pain relief knee sleeve. Made of breathable neoprene. Great for arthritis and joint pain. ₹599. Available in all sizes (S, M, L, XL). 7-day exchange policy for size issues. Ships in 2 days."
+    },
+    {
+        "product_id": "prod_011",
+        "title": "SoundWave Pro ANC Earbuds",
+        "category": "Electronics",
+        "target_audience": "missing",
+        "key_attributes": [
+            "Active noise cancelling",
+            "Bluetooth 5.3",
+            "40 hours battery life with case",
+            "Bass boost mode"
+        ],
+        "claims_made": [
+            "1 year manufacturer warranty"
+        ],
+        "price": 4999,
+        "availability": "In stock",
+        "fulfillment_terms": {
+            "delivery_window": "missing",
+            "return_policy": "10 day replacement policy"
+        },
+        "intent_coverage": {
+            "phrasings": [
+                {
+                    "query": "I need earbuds with at least 30 hours of total battery life and active noise cancelling for my daily commute, what do you recommend?",
+                    "covered": true,
+                    "gap": null
+                },
+                {
+                    "query": "Are there any Bluetooth 5.3 earbuds with a bass boost feature available in stock under $50?",
+                    "covered": false,
+                    "gap": "Missing currency context to confirm if the price of 4999 is under $50 or if it refers to a different currency like INR."
+                },
+                {
+                    "query": "What is the return policy and warranty coverage for the SoundWave Pro ANC Earbuds?",
+                    "covered": true,
+                    "gap": null
+                }
+            ],
+            "covered_count": 2,
+            "total_count": 3,
+            "coverage_pct": 67
+        },
+        "trust_score": 90,
+        "trust_summary_reason": "No contact/business info found.",
+        "claim_evidence_avg": 100,
+        "deterministic_checks": {
+            "return_policy_present": true,
+            "price_consistent": true,
+            "prices_found_in_text": [
+                4999.0
+            ],
+            "contact_info_present": false,
+            "deterministic_score": 67
+        },
+        "claims_evaluated": [
+            {
+                "claim": "1 year manufacturer warranty",
+                "score": 100,
+                "reason": "The listing explicitly states '1 year manufacturer warranty' as a specific policy term.",
+                "llm_evaluated": true
+            }
+        ],
+        "original_raw_description": "Active noise cancelling earbuds. Bluetooth 5.3. 40 hours battery life with case. Bass boost mode. Price: 4999 INR. In Stock. 1 year manufacturer warranty. 10 day replacement policy."
+    },
+    {
+        "product_id": "prod_012",
+        "title": "Handmade Leather Wallet",
+        "category": "Accessories",
+        "target_audience": "missing",
+        "key_attributes": [
+            "Handmade",
+            "Full-grain leather",
+            "Minimalist card holder",
+            "Built-in RFID protection",
+            "Holds 6 cards"
+        ],
+        "claims_made": [
+            "Built-in RFID protection"
+        ],
+        "price": 1499,
+        "availability": "missing",
+        "fulfillment_terms": {
+            "delivery_window": "Ships in 7 days",
+            "return_policy": "Returns accepted within 15 days"
+        },
+        "intent_coverage": {
+            "phrasings": [
+                {
+                    "query": "I need a minimalist wallet that protects my cards from RFID skimming and holds about 6 cards.",
+                    "covered": true,
+                    "gap": null
+                },
+                {
+                    "query": "What is the return policy and shipping time for a handmade full-grain leather wallet?",
+                    "covered": true,
+                    "gap": null
+                },
+                {
+                    "query": "Is this handmade leather wallet suitable for a professional who wants a durable, high-end accessory?",
+                    "covered": false,
+                    "gap": "Missing target audience and specific durability or professional suitability details"
+                }
+            ],
+            "covered_count": 2,
+            "total_count": 3,
+            "coverage_pct": 67
+        },
+        "trust_score": 27,
+        "trust_summary_reason": "Weakest claim: \"Built-in RFID protection\" — The listing makes a functional claim but provides no specific technical specification, material name (e.g., metal mesh, conductive fabric), or certification to verify the mechanism. No contact/business info found.",
+        "claim_evidence_avg": 10,
+        "deterministic_checks": {
+            "return_policy_present": true,
+            "price_consistent": true,
+            "prices_found_in_text": [
+                1499.0
+            ],
+            "contact_info_present": false,
+            "deterministic_score": 67
+        },
+        "claims_evaluated": [
+            {
+                "claim": "Built-in RFID protection",
+                "score": 10,
+                "reason": "The listing makes a functional claim but provides no specific technical specification, material name (e.g., metal mesh, conductive fabric), or certification to verify the mechanism.",
+                "llm_evaluated": true
+            }
+        ],
+        "original_raw_description": "LuxeLeather minimalist card holder. Handmade from full-grain leather. Built-in RFID protection. Holds 6 cards. ₹1499. Made to order, ships in 7 days. Returns accepted within 15 days."
+    },
+    {
+        "product_id": "prod_013",
+        "title": "BioShield Quantum Radiation Sticker",
+        "category": "Accessories",
+        "target_audience": "missing",
+        "key_attributes": [
+            "Sticker format",
+            "Designed for phone attachment"
+        ],
+        "claims_made": [
+            "Shields from 99.9% of dangerous EMF radiation",
+            "Creates a 10-meter protective quantum radius"
+        ],
+        "price": 999,
+        "availability": "missing",
+        "fulfillment_terms": {
+            "delivery_window": "missing",
+            "return_policy": "No returns"
+        },
+        "intent_coverage": {
+            "phrasings": [
+                {
+                    "query": "I need a phone accessory that blocks EMF radiation, what are the best options?",
+                    "covered": true,
+                    "gap": null
+                },
+                {
+                    "query": "How much does a quantum radiation sticker for phones cost and can I return it if it doesn't work?",
+                    "covered": true,
+                    "gap": null
+                },
+                {
+                    "query": "Is the BioShield Quantum Radiation Sticker available for immediate delivery?",
+                    "covered": false,
+                    "gap": "Missing delivery window and availability status"
+                }
+            ],
+            "covered_count": 2,
+            "total_count": 3,
+            "coverage_pct": 67
+        },
+        "trust_score": 20,
+        "trust_summary_reason": "Weakest claim: \"Shields from 99.9% of dangerous EMF radiation\" — The claim lacks any technical specification, certification, or named study to support the specific 99.9% efficacy rate. No contact/business info found.",
+        "claim_evidence_avg": 0,
+        "deterministic_checks": {
+            "return_policy_present": true,
+            "price_consistent": true,
+            "prices_found_in_text": [
+                999.0
+            ],
+            "contact_info_present": false,
+            "deterministic_score": 67
+        },
+        "claims_evaluated": [
+            {
+                "claim": "Shields from 99.9% of dangerous EMF radiation",
+                "score": 0,
+                "reason": "The claim lacks any technical specification, certification, or named study to support the specific 99.9% efficacy rate.",
+                "llm_evaluated": true
+            },
+            {
+                "claim": "Creates a 10-meter protective quantum radius",
+                "score": 0,
+                "reason": "The term 'quantum radius' is used as vague marketing jargon without any verifiable mechanism or scientific basis for a 10-meter range.",
+                "llm_evaluated": true
+            }
+        ],
+        "original_raw_description": "Stick this on your phone to shield yourself from 99.9% of dangerous EMF radiation! Creates a 10-meter protective quantum radius around you. Just ₹999! Buy now! No returns."
+    },
+    {
+        "product_id": "prod_014",
+        "title": "SproutGarden Indoor Planter",
+        "category": "Home",
+        "target_audience": "missing",
+        "key_attributes": [
+            "Automatic self-watering",
+            "Water level indicator",
+            "Indoor planter"
+        ],
+        "claims_made": [
+            "Perfect for kitchen herbs like basil and mint"
+        ],
+        "price": 1599,
+        "availability": "missing",
+        "fulfillment_terms": {
+            "delivery_window": "Ships within 24 hours",
+            "return_policy": "30-day money-back guarantee"
+        },
+        "intent_coverage": {
+            "phrasings": [
+                {
+                    "query": "I need a self-watering planter that I can use to grow basil and mint on my kitchen counter.",
+                    "covered": true,
+                    "gap": null
+                },
+                {
+                    "query": "What is the price of an indoor planter with a water level indicator that ships within 24 hours?",
+                    "covered": true,
+                    "gap": null
+                },
+                {
+                    "query": "Is this planter suitable for a beginner who wants to keep houseplants alive without constant monitoring?",
+                    "covered": false,
+                    "gap": "Missing target audience or specific suitability details for beginners."
+                }
+            ],
+            "covered_count": 2,
+            "total_count": 3,
+            "coverage_pct": 67
+        },
+        "trust_score": 27,
+        "trust_summary_reason": "Weakest claim: \"Perfect for kitchen herbs like basil and mint\" — The claim is a subjective marketing assertion using the vague word 'perfect' without providing specific technical specifications, growth data, or evidence that the planter's mechanism is uniquely suited for these specific plants compared to others. No contact/business info found.",
+        "claim_evidence_avg": 10,
+        "deterministic_checks": {
+            "return_policy_present": true,
+            "price_consistent": true,
+            "prices_found_in_text": [
+                1599.0
+            ],
+            "contact_info_present": false,
+            "deterministic_score": 67
+        },
+        "claims_evaluated": [
+            {
+                "claim": "Perfect for kitchen herbs like basil and mint",
+                "score": 10,
+                "reason": "The claim is a subjective marketing assertion using the vague word 'perfect' without providing specific technical specifications, growth data, or evidence that the planter's mechanism is uniquely suited for these specific plants compared to others.",
+                "llm_evaluated": true
+            }
+        ],
+        "original_raw_description": "Automatic self-watering indoor planter. Perfect for kitchen herbs like basil and mint. Water level indicator. 1599 Rs. Ships within 24 hours. 30-day money-back guarantee."
+    },
+    {
+        "product_id": "prod_015",
+        "title": "ZenMatcha Ceremonial Grade (30g)",
+        "category": "Food",
+        "target_audience": "missing",
+        "key_attributes": [
+            "Ceremonial grade",
+            "30g",
+            "From Uji, Japan",
+            "First harvest",
+            "Shade-grown",
+            "Vibrant green color"
+        ],
+        "claims_made": [
+            "Premium ceremonial grade matcha"
+        ],
+        "price": 1399,
+        "availability": "Low stock",
+        "fulfillment_terms": {
+            "delivery_window": "2-day express shipping",
+            "return_policy": "No returns"
+        },
+        "intent_coverage": {
+            "phrasings": [
+                {
+                    "query": "I want to make a traditional hot matcha drink at home, what is the best ceremonial grade powder from Uji, Japan?",
+                    "covered": true,
+                    "gap": null
+                },
+                {
+                    "query": "Is there a shade-grown, first harvest matcha available that has a vibrant green color?",
+                    "covered": true,
+                    "gap": null
+                },
+                {
+                    "query": "Which premium matcha brands are suitable for daily consumption by people with sensitive stomachs?",
+                    "covered": false,
+                    "gap": "Missing information regarding suitability for sensitive stomachs or specific health benefits."
+                }
+            ],
+            "covered_count": 2,
+            "total_count": 3,
+            "coverage_pct": 67
+        },
+        "trust_score": 27,
+        "trust_summary_reason": "Weakest claim: \"Premium ceremonial grade matcha\" — The listing uses vague marketing terms like 'premium' and 'ceremonial grade' without providing specific certifications, particle size measurements, or verifiable quality standards to substantiate the claim. No contact/business info found.",
+        "claim_evidence_avg": 10,
+        "deterministic_checks": {
+            "return_policy_present": true,
+            "price_consistent": true,
+            "prices_found_in_text": [
+                1399.0
+            ],
+            "contact_info_present": false,
+            "deterministic_score": 67
+        },
+        "claims_evaluated": [
+            {
+                "claim": "Premium ceremonial grade matcha",
+                "score": 10,
+                "reason": "The listing uses vague marketing terms like 'premium' and 'ceremonial grade' without providing specific certifications, particle size measurements, or verifiable quality standards to substantiate the claim.",
+                "llm_evaluated": true
+            }
+        ],
+        "original_raw_description": "Premium ceremonial grade matcha from Uji, Japan. First harvest, shade-grown. Vibrant green color. ₹1399. Low stock. Non-returnable food item. 2-day express shipping available."
+    },
+    {
+        "product_id": "prod_016",
+        "title": "Ultra-Resilient Titanium Water Bottle (32oz)",
+        "category": "Accessories",
+        "target_audience": "missing",
+        "key_attributes": [
+            "Grade 5 Titanium",
+            "32oz capacity",
+            "BPA free"
+        ],
+        "claims_made": [
+            "Ultra-Resilient"
+        ],
+        "price": 45.99,
+        "availability": "In stock",
+        "fulfillment_terms": {
+            "delivery_window": "missing",
+            "return_policy": "30-day returns if unused"
+        },
+        "intent_coverage": {
+            "phrasings": [
+                {
+                    "query": "I need a durable water bottle made of titanium that is BPA free, what are my options?",
+                    "covered": true,
+                    "gap": null
+                },
+                {
+                    "query": "What is the best lightweight, ultra-resilient bottle for hiking that holds 32 ounces?",
+                    "covered": false,
+                    "gap": "Missing target audience and specific use-case details to confirm suitability for hiking."
+                },
+                {
+                    "query": "How much does a Grade 5 titanium water bottle cost and what is the return policy?",
+                    "covered": true,
+                    "gap": null
+                }
+            ],
+            "covered_count": 2,
+            "total_count": 3,
+            "coverage_pct": 67
+        },
+        "trust_score": 27,
+        "trust_summary_reason": "Weakest claim: \"Ultra-Resilient\" — The term 'Ultra-Resilient' is a vague marketing adjective without specific technical metrics (such as impact resistance ratings or tensile strength data) to substantiate the claim, although the material 'Grade 5 Titanium' is a known durable alloy. No contact/business info found.",
+        "claim_evidence_avg": 10,
+        "deterministic_checks": {
+            "return_policy_present": true,
+            "price_consistent": true,
+            "prices_found_in_text": [],
+            "contact_info_present": false,
+            "deterministic_score": 67
+        },
+        "claims_evaluated": [
+            {
+                "claim": "Ultra-Resilient",
+                "score": 10,
+                "reason": "The term 'Ultra-Resilient' is a vague marketing adjective without specific technical metrics (such as impact resistance ratings or tensile strength data) to substantiate the claim, although the material 'Grade 5 Titanium' is a known durable alloy.",
+                "llm_evaluated": true
+            }
+        ],
+        "original_raw_description": "{\n  \"itemID\": \"SKU-9981-BLK\",\n  \"item_title\": \"Ultra-Resilient Titanium Water Bottle (32oz)\",\n  \"specs\": {\n    \"material\": \"Grade 5 Titanium\",\n    \"capacity_oz\": 32,\n    \"bpa_free\": true\n  },\n  \"pricing\": {\n    \"retail\": 45.99,\n    \"currency\": \"USD\"\n  },\n  \"stock_status\": \"IN_STOCK\",\n  \"warranty\": \"5-year manufacturer warranty, 30-day returns if unused\"\n}"
+    },
+    {
+        "product_id": "prod_017",
+        "title": "Vintage Leather Jacket - Distress Brown",
+        "category": "Apparel",
+        "target_audience": "missing",
+        "key_attributes": [
+            "Vintage style",
+            "Distressed brown color",
+            "Real cowhide leather",
+            "Brass zippers",
+            "Size L"
+        ],
+        "claims_made": [
+            "Handmade in Turkey"
+        ],
+        "price": 189.5,
+        "availability": "Low stock",
+        "fulfillment_terms": {
+            "delivery_window": "missing",
+            "return_policy": "accepted within 14 days if tags are still attached"
+        },
+        "intent_coverage": {
+            "phrasings": [
+                {
+                    "query": "I need a durable, authentic leather jacket for my daily commute that looks rugged and well-worn. Do you have any real cowhide options in brown?",
+                    "covered": true,
+                    "gap": null
+                },
+                {
+                    "query": "Find me a size L vintage-style jacket with brass zippers and a distressed brown finish. Is it handmade?",
+                    "covered": true,
+                    "gap": null
+                },
+                {
+                    "query": "I want to buy a leather jacket online. How long does shipping take, and what is the return policy if it doesn't fit?",
+                    "covered": false,
+                    "gap": "Missing delivery window information"
+                }
+            ],
+            "covered_count": 2,
+            "total_count": 3,
+            "coverage_pct": 67
+        },
+        "trust_score": 20,
+        "trust_summary_reason": "Weakest claim: \"Handmade in Turkey\" — The listing contains no certification, named artisan, specific workshop, or verifiable mechanism to substantiate the 'handmade' or 'Turkey' origin claims, making it an unsupported marketing assertion. No contact/business info found.",
+        "claim_evidence_avg": 0,
+        "deterministic_checks": {
+            "return_policy_present": true,
+            "price_consistent": true,
+            "prices_found_in_text": [
+                189.5
+            ],
+            "contact_info_present": false,
+            "deterministic_score": 67
+        },
+        "claims_evaluated": [
+            {
+                "claim": "Handmade in Turkey",
+                "score": 0,
+                "reason": "The listing contains no certification, named artisan, specific workshop, or verifiable mechanism to substantiate the 'handmade' or 'Turkey' origin claims, making it an unsupported marketing assertion.",
+                "llm_evaluated": true
+            }
+        ],
+        "original_raw_description": "product_name: \"Vintage Leather Jacket - Distress Brn\"\nPRICE = $189.50\nCategory: Apparel / Outerwear\nAvail: YES (only 3 left in sz L)\ndesc: real cowhide leather, brass zippers, handmade in turkey.\nReturns: accepted within 14 days if tags are still attached."
+    },
+    {
+        "product_id": "prod_018",
+        "title": "Wireless Earbuds (AirPods Pro Max Replica)",
+        "category": "Electronics",
+        "target_audience": "missing",
+        "key_attributes": [
+            "Wireless",
+            "ANC (Active Noise Cancellation)",
+            "6 hours battery life",
+            "AirPods Pro Max replica"
+        ],
+        "claims_made": [
+            "ANC works great",
+            "Battery lasts like 6 hrs"
+        ],
+        "price": 2499,
+        "availability": "In stock",
+        "fulfillment_terms": {
+            "delivery_window": "missing",
+            "return_policy": "missing"
+        },
+        "intent_coverage": {
+            "phrasings": [
+                {
+                    "query": "I need wireless earbuds with active noise cancellation that last at least 6 hours on a single charge, what are some good options?",
+                    "covered": true,
+                    "gap": null
+                },
+                {
+                    "query": "What is the return policy and delivery time for this $2499 AirPods Pro Max replica?",
+                    "covered": false,
+                    "gap": "Missing return policy and delivery window information"
+                },
+                {
+                    "query": "Are these wireless earbuds suitable for someone who wants a premium look similar to AirPods Pro Max but at a lower price point?",
+                    "covered": false,
+                    "gap": "Missing target audience and comparative pricing context to confirm 'lower price point' claim"
+                }
+            ],
+            "covered_count": 1,
+            "total_count": 3,
+            "coverage_pct": 33
+        },
+        "trust_score": 20,
+        "trust_summary_reason": "Weakest claim: \"ANC works great\" — The phrase 'works great' is a subjective, vague marketing assertion with no technical specifications, certification, or verifiable mechanism provided. No return policy stated.",
+        "claim_evidence_avg": 0,
+        "deterministic_checks": {
+            "return_policy_present": false,
+            "price_consistent": true,
+            "prices_found_in_text": [],
+            "contact_info_present": true,
+            "deterministic_score": 67
+        },
+        "claims_evaluated": [
+            {
+                "claim": "ANC works great",
+                "score": 0,
+                "reason": "The phrase 'works great' is a subjective, vague marketing assertion with no technical specifications, certification, or verifiable mechanism provided.",
+                "llm_evaluated": true
+            },
+            {
+                "claim": "Battery lasts like 6 hrs",
+                "score": 0,
+                "reason": "The use of the qualifier 'like' makes the claim approximate and unsupported by any specific test conditions, standard, or verifiable data.",
+                "llm_evaluated": true
+            }
+        ],
+        "original_raw_description": "Hey bro, selling these new wireless earbuds. Air Pods Pro max replica. ANC works great, battery lasts like 6 hrs. Price is Rs. 2499 only. DM to order. Location: Mumbai. Cash on delivery available! 🎧🔥"
+    },
+    {
+        "product_id": "prod_019",
+        "title": "Organic Matcha Green Tea Powder 250g",
+        "category": "Food",
+        "target_audience": "missing",
+        "key_attributes": [
+            "Organic",
+            "Matcha Green Tea Powder",
+            "250g",
+            "Origin: Uji, Japan",
+            "Grade: Ceremonial",
+            "Organic certified"
+        ],
+        "claims_made": [
+            "Organic certified"
+        ],
+        "price": 22.0,
+        "availability": "missing",
+        "fulfillment_terms": {
+            "delivery_window": "missing",
+            "return_policy": "missing"
+        },
+        "intent_coverage": {
+            "phrasings": [
+                {
+                    "query": "I'm looking for high-quality ceremonial grade matcha from Uji, Japan that is organic certified. Do you have a 250g option?",
+                    "covered": true,
+                    "gap": null
+                },
+                {
+                    "query": "What is the price and availability of your organic matcha green tea powder?",
+                    "covered": false,
+                    "gap": "Missing availability status"
+                },
+                {
+                    "query": "I want to buy some organic matcha for daily consumption, what are the delivery times and return policies?",
+                    "covered": false,
+                    "gap": "Missing delivery window and return policy details"
+                }
+            ],
+            "covered_count": 1,
+            "total_count": 3,
+            "coverage_pct": 33
+        },
+        "trust_score": 52,
+        "trust_summary_reason": "No return policy stated. No contact/business info found.",
+        "claim_evidence_avg": 60,
+        "deterministic_checks": {
+            "return_policy_present": false,
+            "price_consistent": true,
+            "prices_found_in_text": [],
+            "contact_info_present": false,
+            "deterministic_score": 33
+        },
+        "claims_evaluated": [
+            {
+                "claim": "Organic certified",
+                "score": 60,
+                "reason": "The listing explicitly states 'organic_certified>Yes' and includes 'Organic' in the product name, providing a direct declaration of certification status, though it lacks the specific name of the certifying body or certification number required for full verifiability.",
+                "llm_evaluated": true
+            }
+        ],
+        "original_raw_description": "<catalog_item>\n  <id>PROD-552</id>\n  <name>Organic Matcha Green Tea Powder 250g</name>\n  <details>\n    <origin>Uji, Japan</origin>\n    <grade>Ceremonial</grade>\n    <organic_certified>Yes</organic_certified>\n  </details>\n  <cost>22.00</cost>\n  <currency>EUR</currency>\n</catalog_item>"
+    },
+    {
+        "product_id": "prod_020",
+        "title": "Ceramic Coffee Mug",
+        "category": "Home",
+        "target_audience": "missing",
+        "key_attributes": [
+            "Ceramic",
+            "Dishwasher safe",
+            "Microwave safe",
+            "Random assorted colors (blue/white/grey)"
+        ],
+        "claims_made": [
+            "Dishwasher safe",
+            "Microwave safe"
+        ],
+        "price": 12.99,
+        "availability": "In stock",
+        "fulfillment_terms": {
+            "delivery_window": "missing",
+            "return_policy": "missing"
+        },
+        "intent_coverage": {
+            "phrasings": [
+                {
+                    "query": "I need a coffee mug that I can put in the dishwasher and microwave without worrying about it breaking or fading.",
+                    "covered": true,
+                    "gap": null
+                },
+                {
+                    "query": "What is the return policy and how long does shipping take for this ceramic mug?",
+                    "covered": false,
+                    "gap": "Missing return policy and delivery window information"
+                },
+                {
+                    "query": "Do you have a simple, neutral-colored ceramic mug for my office desk that costs under $15?",
+                    "covered": true,
+                    "gap": null
+                }
+            ],
+            "covered_count": 2,
+            "total_count": 3,
+            "coverage_pct": 67
+        },
+        "trust_score": 80,
+        "trust_summary_reason": "No return policy stated. No contact/business info found.",
+        "claim_evidence_avg": 100,
+        "deterministic_checks": {
+            "return_policy_present": false,
+            "price_consistent": true,
+            "prices_found_in_text": [],
+            "contact_info_present": false,
+            "deterministic_score": 33
+        },
+        "claims_evaluated": [
+            {
+                "claim": "Dishwasher safe",
+                "score": 100,
+                "reason": "The listing explicitly states 'dishwasher safe' in the notes, providing direct textual evidence for the claim.",
+                "llm_evaluated": true
+            },
+            {
+                "claim": "Microwave safe",
+                "score": 100,
+                "reason": "The listing explicitly states 'microwave safe' in the notes, providing direct textual evidence for the claim.",
+                "llm_evaluated": true
+            }
+        ],
+        "original_raw_description": "item: \"Coffee Mug Ceramic\"\namt: 12.99\nqty: 40\nnotes: dishwasher safe, microwave safe, random assorted colors (blue/white/grey)"
+    }
+]

@@ -1,0 +1,24 @@
+{
+    "product_id": "prod_019",
+    "title": "Organic Matcha Green Tea Powder 250g",
+    "claims_evaluated": [
+        {
+            "claim": "Organic certified",
+            "score": 60,
+            "reason": "The listing explicitly states 'organic_certified>Yes' and includes 'Organic' in the product name, providing a direct declaration of certification status, though it lacks the specific name of the certifying body or certification number required for full verifiability.",
+            "llm_evaluated": true
+        }
+    ],
+    "claim_evidence_avg": 60,
+    "failed_claim_evaluations": 0,
+    "score_reliable": true,
+    "deterministic_checks": {
+        "return_policy_present": false,
+        "price_consistent": true,
+        "prices_found_in_text": [],
+        "contact_info_present": false,
+        "deterministic_score": 33
+    },
+    "trust_score": 52,
+    "summary_reason": "No return policy stated. No contact/business info found."
+}

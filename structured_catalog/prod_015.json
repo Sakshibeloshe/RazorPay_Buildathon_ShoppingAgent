@@ -1,0 +1,25 @@
+{
+    "category": "Food",
+    "target_audience": "missing",
+    "key_attributes": [
+        "Ceremonial grade",
+        "30g",
+        "From Uji, Japan",
+        "First harvest",
+        "Shade-grown",
+        "Vibrant green color"
+    ],
+    "claims_made": [
+        "Premium ceremonial grade matcha"
+    ],
+    "price": 1399,
+    "price_currency": "INR",
+    "availability": "Low stock",
+    "fulfillment_terms": {
+        "delivery_window": "2-day express shipping",
+        "return_policy": "No returns"
+    },
+    "product_id": "prod_015",
+    "original_title": "ZenMatcha Ceremonial Grade (30g)",
+    "original_raw_description": "Premium ceremonial grade matcha from Uji, Japan. First harvest, shade-grown. Vibrant green color. ₹1399. Low stock. Non-returnable food item. 2-day express shipping available."
+}

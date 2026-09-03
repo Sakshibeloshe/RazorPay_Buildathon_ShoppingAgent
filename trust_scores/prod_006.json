@@ -1,0 +1,32 @@
+{
+    "product_id": "prod_006",
+    "title": "Aura Sleep & Activity Smart Ring",
+    "claims_evaluated": [
+        {
+            "claim": "Waterproof up to 50m",
+            "score": 85,
+            "reason": "The listing provides a precise technical specification (50m depth) which is a standard, verifiable metric for water resistance, though it lacks a specific certification name like IP68 or 5ATM.",
+            "llm_evaluated": true
+        },
+        {
+            "claim": "Battery lasts 7 days",
+            "score": 80,
+            "reason": "The listing provides a precise quantitative specification (7 days) for battery life, which is a verifiable technical claim, although it does not specify the usage conditions or test protocol.",
+            "llm_evaluated": true
+        }
+    ],
+    "claim_evidence_avg": 82,
+    "failed_claim_evaluations": 0,
+    "score_reliable": true,
+    "deterministic_checks": {
+        "return_policy_present": true,
+        "price_consistent": true,
+        "prices_found_in_text": [
+            18999.0
+        ],
+        "contact_info_present": false,
+        "deterministic_score": 67
+    },
+    "trust_score": 78,
+    "summary_reason": "No contact/business info found."
+}

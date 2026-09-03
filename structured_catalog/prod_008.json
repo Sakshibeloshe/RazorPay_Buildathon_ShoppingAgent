@@ -1,0 +1,24 @@
+{
+    "category": "Home",
+    "target_audience": "missing",
+    "key_attributes": [
+        "Bamboo fiber",
+        "450ml",
+        "Silicone lid",
+        "For travel"
+    ],
+    "claims_made": [
+        "Eco-friendly",
+        "Biodegradable"
+    ],
+    "price": 399,
+    "price_currency": "INR",
+    "availability": "missing",
+    "fulfillment_terms": {
+        "delivery_window": "2-3 days",
+        "return_policy": "No returns unless broken on arrival"
+    },
+    "product_id": "prod_008",
+    "original_title": "EcoBreeze Bamboo Fiber Mug",
+    "original_raw_description": "Eco-friendly bamboo fiber coffee mug for travel (450ml). Biodegradable. Comes with a silicone lid. Price 399rs. Delivery time 2-3 days. No returns unless broken on arrival."
+}

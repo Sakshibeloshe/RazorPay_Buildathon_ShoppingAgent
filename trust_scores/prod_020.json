@@ -1,0 +1,30 @@
+{
+    "product_id": "prod_020",
+    "title": "Ceramic Coffee Mug",
+    "claims_evaluated": [
+        {
+            "claim": "Dishwasher safe",
+            "score": 100,
+            "reason": "The listing explicitly states 'dishwasher safe' in the notes, providing direct textual evidence for the claim.",
+            "llm_evaluated": true
+        },
+        {
+            "claim": "Microwave safe",
+            "score": 100,
+            "reason": "The listing explicitly states 'microwave safe' in the notes, providing direct textual evidence for the claim.",
+            "llm_evaluated": true
+        }
+    ],
+    "claim_evidence_avg": 100,
+    "failed_claim_evaluations": 0,
+    "score_reliable": true,
+    "deterministic_checks": {
+        "return_policy_present": false,
+        "price_consistent": true,
+        "prices_found_in_text": [],
+        "contact_info_present": false,
+        "deterministic_score": 33
+    },
+    "trust_score": 80,
+    "summary_reason": "No return policy stated. No contact/business info found."
+}

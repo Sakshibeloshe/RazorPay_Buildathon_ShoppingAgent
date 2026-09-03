@@ -1,0 +1,32 @@
+{
+    "product_id": "prod_005",
+    "title": "ClearSight Blue Light Glasses",
+    "claims_evaluated": [
+        {
+            "claim": "Blocks 90% of harmful blue light from screens",
+            "score": 10,
+            "reason": "The listing provides a specific percentage but lacks any certification, test data, or named technical specification to verify the accuracy of the 90% figure.",
+            "llm_evaluated": true
+        },
+        {
+            "claim": "Reduces eye strain and headaches",
+            "score": 5,
+            "reason": "This is a general health benefit assertion without citing any clinical studies, medical endorsements, or specific physiological mechanisms to support the claim.",
+            "llm_evaluated": true
+        }
+    ],
+    "claim_evidence_avg": 8,
+    "failed_claim_evaluations": 0,
+    "score_reliable": true,
+    "deterministic_checks": {
+        "return_policy_present": true,
+        "price_consistent": true,
+        "prices_found_in_text": [
+            899.0
+        ],
+        "contact_info_present": false,
+        "deterministic_score": 67
+    },
+    "trust_score": 26,
+    "summary_reason": "Weakest claim: \"Reduces eye strain and headaches\" — This is a general health benefit assertion without citing any clinical studies, medical endorsements, or specific physiological mechanisms to support the claim. No contact/business info found."
+}

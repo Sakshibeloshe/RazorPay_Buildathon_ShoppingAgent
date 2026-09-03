@@ -1,0 +1,30 @@
+{
+    "product_id": "prod_003",
+    "title": "PureOats Organic Gluten-Free Oats (1kg)",
+    "claims_evaluated": [
+        {
+            "claim": "Certified organic",
+            "score": 20,
+            "reason": "The listing uses the phrase 'Certified organic' but fails to name the specific certifying body (e.g., USDA, EU Organic) or provide a certification number, making it a standard marketing claim rather than verifiable evidence.",
+            "llm_evaluated": true
+        },
+        {
+            "claim": "Grown without synthetic pesticides",
+            "score": 10,
+            "reason": "This is a vague agricultural assertion that lacks specific details on farming practices, third-party audits, or residue test results to substantiate the claim.",
+            "llm_evaluated": true
+        }
+    ],
+    "claim_evidence_avg": 15,
+    "failed_claim_evaluations": 0,
+    "score_reliable": true,
+    "deterministic_checks": {
+        "return_policy_present": true,
+        "price_consistent": true,
+        "prices_found_in_text": [],
+        "contact_info_present": false,
+        "deterministic_score": 67
+    },
+    "trust_score": 31,
+    "summary_reason": "Weakest claim: \"Grown without synthetic pesticides\" — This is a vague agricultural assertion that lacks specific details on farming practices, third-party audits, or residue test results to substantiate the claim. No contact/business info found."
+}

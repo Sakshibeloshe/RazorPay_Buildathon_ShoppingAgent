@@ -1,0 +1,24 @@
+{
+    "category": "Food",
+    "target_audience": "missing",
+    "key_attributes": [
+        "Organic",
+        "Gluten-free",
+        "Rolled oats",
+        "1kg"
+    ],
+    "claims_made": [
+        "Certified organic",
+        "Grown without synthetic pesticides"
+    ],
+    "price": 350,
+    "price_currency": "INR",
+    "availability": "In stock",
+    "fulfillment_terms": {
+        "delivery_window": "Next day delivery available in metro cities",
+        "return_policy": "7-day replacement for damaged goods"
+    },
+    "product_id": "prod_003",
+    "original_title": "PureOats Organic Gluten-Free Oats (1kg)",
+    "original_raw_description": "Certified organic, gluten-free rolled oats. Grown without synthetic pesticides. Perfect for breakfast or baking. Price: 350. Availability: Plenty in stock. Delivery: Next day delivery available in metro cities. Return policy: 7-day replacement for damaged goods."
+}

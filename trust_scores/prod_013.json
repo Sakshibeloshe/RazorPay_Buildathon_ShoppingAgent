@@ -1,0 +1,32 @@
+{
+    "product_id": "prod_013",
+    "title": "BioShield Quantum Radiation Sticker",
+    "claims_evaluated": [
+        {
+            "claim": "Shields from 99.9% of dangerous EMF radiation",
+            "score": 0,
+            "reason": "The claim lacks any technical specification, certification, or named study to support the specific 99.9% efficacy rate.",
+            "llm_evaluated": true
+        },
+        {
+            "claim": "Creates a 10-meter protective quantum radius",
+            "score": 0,
+            "reason": "The term 'quantum radius' is used as vague marketing jargon without any verifiable mechanism or scientific basis for a 10-meter range.",
+            "llm_evaluated": true
+        }
+    ],
+    "claim_evidence_avg": 0,
+    "failed_claim_evaluations": 0,
+    "score_reliable": true,
+    "deterministic_checks": {
+        "return_policy_present": true,
+        "price_consistent": true,
+        "prices_found_in_text": [
+            999.0
+        ],
+        "contact_info_present": false,
+        "deterministic_score": 67
+    },
+    "trust_score": 20,
+    "summary_reason": "Weakest claim: \"Shields from 99.9% of dangerous EMF radiation\" — The claim lacks any technical specification, certification, or named study to support the specific 99.9% efficacy rate. No contact/business info found."
+}

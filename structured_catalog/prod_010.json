@@ -1,0 +1,22 @@
+{
+    "category": "Health",
+    "target_audience": "People with arthritis and joint pain",
+    "key_attributes": [
+        "Knee sleeve",
+        "Breathable neoprene",
+        "Available in sizes S, M, L, XL"
+    ],
+    "claims_made": [
+        "Instant pain relief"
+    ],
+    "price": 599,
+    "price_currency": "INR",
+    "availability": "In stock",
+    "fulfillment_terms": {
+        "delivery_window": "Ships in 2 days",
+        "return_policy": "7-day exchange policy for size issues"
+    },
+    "product_id": "prod_010",
+    "original_title": "Dr. Ortho Knee Sleeve",
+    "original_raw_description": "Instant pain relief knee sleeve. Made of breathable neoprene. Great for arthritis and joint pain. ₹599. Available in all sizes (S, M, L, XL). 7-day exchange policy for size issues. Ships in 2 days."
+}

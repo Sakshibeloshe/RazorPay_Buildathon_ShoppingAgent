@@ -1,0 +1,26 @@
+{
+    "product_id": "prod_017",
+    "title": "Vintage Leather Jacket - Distress Brown",
+    "claims_evaluated": [
+        {
+            "claim": "Handmade in Turkey",
+            "score": 0,
+            "reason": "The listing contains no certification, named artisan, specific workshop, or verifiable mechanism to substantiate the 'handmade' or 'Turkey' origin claims, making it an unsupported marketing assertion.",
+            "llm_evaluated": true
+        }
+    ],
+    "claim_evidence_avg": 0,
+    "failed_claim_evaluations": 0,
+    "score_reliable": true,
+    "deterministic_checks": {
+        "return_policy_present": true,
+        "price_consistent": true,
+        "prices_found_in_text": [
+            189.5
+        ],
+        "contact_info_present": false,
+        "deterministic_score": 67
+    },
+    "trust_score": 20,
+    "summary_reason": "Weakest claim: \"Handmade in Turkey\" — The listing contains no certification, named artisan, specific workshop, or verifiable mechanism to substantiate the 'handmade' or 'Turkey' origin claims, making it an unsupported marketing assertion. No contact/business info found."
+}

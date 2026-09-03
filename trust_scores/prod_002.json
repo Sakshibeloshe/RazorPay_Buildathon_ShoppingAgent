@@ -1,0 +1,32 @@
+{
+    "product_id": "prod_002",
+    "title": "Morrowen Miracle Elixir",
+    "claims_evaluated": [
+        {
+            "claim": "Reverses cellular aging by 15 years in 3 days",
+            "score": 0,
+            "reason": "The claim relies on vague 'quantum starlight ingredients' and lacks any named study, certification, or verifiable biological mechanism to support the specific quantitative promise.",
+            "llm_evaluated": true
+        },
+        {
+            "claim": "No other product does this",
+            "score": 0,
+            "reason": "This is a superlative marketing assertion with no cited comparative data, market analysis, or third-party verification to substantiate the exclusivity of the product's effects.",
+            "llm_evaluated": true
+        }
+    ],
+    "claim_evidence_avg": 0,
+    "failed_claim_evaluations": 0,
+    "score_reliable": true,
+    "deterministic_checks": {
+        "return_policy_present": true,
+        "price_consistent": true,
+        "prices_found_in_text": [
+            2499.0
+        ],
+        "contact_info_present": false,
+        "deterministic_score": 67
+    },
+    "trust_score": 20,
+    "summary_reason": "Weakest claim: \"Reverses cellular aging by 15 years in 3 days\" — The claim relies on vague 'quantum starlight ingredients' and lacks any named study, certification, or verifiable biological mechanism to support the specific quantitative promise. No contact/business info found."
+}

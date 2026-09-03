@@ -1,0 +1,32 @@
+{
+    "product_id": "prod_007",
+    "title": "GlowSkin Vitamin C Radiance Serum",
+    "claims_evaluated": [
+        {
+            "claim": "Treats dark spots",
+            "score": 40,
+            "reason": "The claim is supported by the presence of 10% L-ascorbic acid, a named ingredient with a known mechanism for inhibiting melanin production, but lacks specific clinical study citations or certification.",
+            "llm_evaluated": true
+        },
+        {
+            "claim": "Brightens skin",
+            "score": 40,
+            "reason": "The claim is supported by the inclusion of 10% L-ascorbic acid, which is scientifically established to improve skin radiance, though no specific technical specs or studies are provided to verify the extent of the effect.",
+            "llm_evaluated": true
+        }
+    ],
+    "claim_evidence_avg": 40,
+    "failed_claim_evaluations": 0,
+    "score_reliable": true,
+    "deterministic_checks": {
+        "return_policy_present": true,
+        "price_consistent": true,
+        "prices_found_in_text": [
+            1250.0
+        ],
+        "contact_info_present": false,
+        "deterministic_score": 67
+    },
+    "trust_score": 48,
+    "summary_reason": "Weakest claim: \"Treats dark spots\" — The claim is supported by the presence of 10% L-ascorbic acid, a named ingredient with a known mechanism for inhibiting melanin production, but lacks specific clinical study citations or certification. No contact/business info found."
+}

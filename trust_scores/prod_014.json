@@ -1,0 +1,26 @@
+{
+    "product_id": "prod_014",
+    "title": "SproutGarden Indoor Planter",
+    "claims_evaluated": [
+        {
+            "claim": "Perfect for kitchen herbs like basil and mint",
+            "score": 10,
+            "reason": "The claim is a subjective marketing assertion using the vague word 'perfect' without providing specific technical specifications, growth data, or evidence that the planter's mechanism is uniquely suited for these specific plants compared to others.",
+            "llm_evaluated": true
+        }
+    ],
+    "claim_evidence_avg": 10,
+    "failed_claim_evaluations": 0,
+    "score_reliable": true,
+    "deterministic_checks": {
+        "return_policy_present": true,
+        "price_consistent": true,
+        "prices_found_in_text": [
+            1599.0
+        ],
+        "contact_info_present": false,
+        "deterministic_score": 67
+    },
+    "trust_score": 27,
+    "summary_reason": "Weakest claim: \"Perfect for kitchen herbs like basil and mint\" — The claim is a subjective marketing assertion using the vague word 'perfect' without providing specific technical specifications, growth data, or evidence that the planter's mechanism is uniquely suited for these specific plants compared to others. No contact/business info found."
+}

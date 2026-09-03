@@ -1,0 +1,23 @@
+{
+    "category": "Electronics",
+    "target_audience": "missing",
+    "key_attributes": [
+        "Active noise cancelling",
+        "Bluetooth 5.3",
+        "40 hours battery life with case",
+        "Bass boost mode"
+    ],
+    "claims_made": [
+        "1 year manufacturer warranty"
+    ],
+    "price": 4999,
+    "price_currency": "INR",
+    "availability": "In stock",
+    "fulfillment_terms": {
+        "delivery_window": "missing",
+        "return_policy": "10 day replacement policy"
+    },
+    "product_id": "prod_011",
+    "original_title": "SoundWave Pro ANC Earbuds",
+    "original_raw_description": "Active noise cancelling earbuds. Bluetooth 5.3. 40 hours battery life with case. Bass boost mode. Price: 4999 INR. In Stock. 1 year manufacturer warranty. 10 day replacement policy."
+}

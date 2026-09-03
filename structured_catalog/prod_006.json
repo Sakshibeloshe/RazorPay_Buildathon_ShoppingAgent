@@ -1,0 +1,27 @@
+{
+    "category": "Wearables",
+    "target_audience": "missing",
+    "key_attributes": [
+        "Tracks sleep stages",
+        "Tracks HRV",
+        "Tracks body temperature",
+        "Titanium build",
+        "Waterproof up to 50m",
+        "7-day battery life",
+        "1-year warranty"
+    ],
+    "claims_made": [
+        "Waterproof up to 50m",
+        "Battery lasts 7 days"
+    ],
+    "price": 18999,
+    "price_currency": "INR",
+    "availability": "In stock",
+    "fulfillment_terms": {
+        "delivery_window": "Ships immediately",
+        "return_policy": "14-day free returns"
+    },
+    "product_id": "prod_006",
+    "original_title": "Aura Sleep & Activity Smart Ring",
+    "original_raw_description": "Track your sleep stages, HRV, and body temperature. Titanium build, waterproof up to 50m. Battery lasts 7 days. Price is ₹18,999. In stock now. 1-year warranty and 14-day free returns. Ships immediately."
+}

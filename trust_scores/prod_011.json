@@ -1,0 +1,26 @@
+{
+    "product_id": "prod_011",
+    "title": "SoundWave Pro ANC Earbuds",
+    "claims_evaluated": [
+        {
+            "claim": "1 year manufacturer warranty",
+            "score": 100,
+            "reason": "The listing explicitly states '1 year manufacturer warranty' as a specific policy term.",
+            "llm_evaluated": true
+        }
+    ],
+    "claim_evidence_avg": 100,
+    "failed_claim_evaluations": 0,
+    "score_reliable": true,
+    "deterministic_checks": {
+        "return_policy_present": true,
+        "price_consistent": true,
+        "prices_found_in_text": [
+            4999.0
+        ],
+        "contact_info_present": false,
+        "deterministic_score": 67
+    },
+    "trust_score": 90,
+    "summary_reason": "No contact/business info found."
+}

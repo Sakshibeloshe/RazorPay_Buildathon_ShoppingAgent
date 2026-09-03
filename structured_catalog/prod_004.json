@@ -1,0 +1,22 @@
+{
+    "category": "Electronics",
+    "target_audience": "missing",
+    "key_attributes": [
+        "100,000mAh capacity",
+        "5mm thickness",
+        "Super slim pocket design"
+    ],
+    "claims_made": [
+        "Charge your phone 50 times on a single charge"
+    ],
+    "price": 499,
+    "price_currency": "INR",
+    "availability": "missing",
+    "fulfillment_terms": {
+        "delivery_window": "5 days",
+        "return_policy": "No warranty"
+    },
+    "product_id": "prod_004",
+    "original_title": "HyperCharge Power Bank 100k",
+    "original_raw_description": "Super slim pocket power bank with a MASSIVE 100,000mAh capacity! Charge your phone 50 times on a single charge! Ultra thin 5mm design. Just 499 Rupees. Delivery in 5 days. No warranty."
+}

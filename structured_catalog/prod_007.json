@@ -1,0 +1,22 @@
+{
+    "category": "Skincare",
+    "target_audience": "missing",
+    "key_attributes": [
+        "10% L-ascorbic acid",
+        "Fragrance free"
+    ],
+    "claims_made": [
+        "Treats dark spots",
+        "Brightens skin"
+    ],
+    "price": 1250,
+    "price_currency": "INR",
+    "availability": "Low stock",
+    "fulfillment_terms": {
+        "delivery_window": "4 days",
+        "return_policy": "30 day return policy even if opened"
+    },
+    "product_id": "prod_007",
+    "original_title": "GlowSkin Vitamin C Radiance Serum",
+    "original_raw_description": "Vitamin C serum for dark spots and skin brightening. 10% L-ascorbic acid. Fragrance free. 1250 INR. Low stock. We offer a 30 day return policy even if opened. Delivery usually takes 4 days."
+}
