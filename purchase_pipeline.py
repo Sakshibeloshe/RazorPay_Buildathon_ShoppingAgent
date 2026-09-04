@@ -54,13 +54,25 @@ RAZORPAY_KEY_SECRET = os.getenv("RAZORPAY_KEY_SECRET")
 groq_client = Groq(api_key=GROQ_API_KEY)
 MODEL_NAME = "openai/gpt-oss-20b"
 FALLBACK_MODEL = "qwen/qwen3.8-27b"
+# Only gpt-oss models get reasoning_effort forced down to "low" -- their own
+# default is "medium", which silently eats the whole max_tokens budget on
+# hidden reasoning before writing any visible answer (this is exactly why
+# typed queries were failing while the forced-ID demo buttons worked fine --
+# those never call the LLM matcher at all). qwen/qwen3.8-27b's own default
+# is already "none" (cheaper than "low"); forcing "low" onto it makes it
+# generate hidden reasoning it otherwise wouldn't and can burn its budget
+# too. Never pass reasoning_effort to qwen.
+REASONING_EFFORT_BY_MODEL = {
+    "openai/gpt-oss-20b": "low",
+    "openai/gpt-oss-120b": "low",
+}
 
 FEED_FILE = "feed.json"
 AUDIT_LOG_FILE = "audit_log.json"
 
 # --- Policy constants (Part 8b) ---
 SPEND_LIMIT = 5000          # INR — purchases above this get held, not auto-approved
-APPROVE_TRUST_THRESHOLD = 80
+APPROVE_TRUST_THRESHOLD = 60 # Products with trust >= 60 and price <= SPEND_LIMIT auto-approve
 HOLD_TRUST_THRESHOLD = 50
 SUPPORTED_CURRENCIES = {"INR"}   # Razorpay test-mode account here only accepts INR
 
@@ -82,18 +94,21 @@ def load_feed():
 # 8a. The Buyer Agent
 # ---------------------------------------------------------------------------
 
-def call_llm(prompt, max_tokens=300, retries=3, delay=5):
+def call_llm(prompt, max_tokens=900, retries=3, delay=5):
     """Shared LLM caller with reasoning-model-safe settings and fallback."""
     for model_to_try in [MODEL_NAME, FALLBACK_MODEL]:
         for attempt in range(retries):
             try:
-                completion = groq_client.chat.completions.create(
+                kwargs = dict(
                     messages=[{"role": "user", "content": prompt}],
                     model=model_to_try,
                     max_tokens=max_tokens,
                     temperature=0.2,
-                    reasoning_effort="low",
                 )
+                effort = REASONING_EFFORT_BY_MODEL.get(model_to_try)
+                if effort:
+                    kwargs["reasoning_effort"] = effort
+                completion = groq_client.chat.completions.create(**kwargs)
                 content = completion.choices[0].message.content
                 if content and content.strip():
                     return content
@@ -119,7 +134,7 @@ def build_agent_catalog_text(feed):
             "category": r.get("category"),
             "key_attributes": r.get("key_attributes"),
             "price": r.get("price"),
-            "price_currency": r.get("price_currency", "INR"),
+            "price_currency": r.get("price_currency") or "unknown",
         }, ensure_ascii=False))
     return "\n".join(lines)
 
@@ -151,7 +166,7 @@ reasonably matches, say NONE.
 Respond in exactly this format, nothing else:
 Product ID: <product_id or NONE>
 """
-    response = call_llm(prompt, max_tokens=100)
+    response = call_llm(prompt, max_tokens=300)
     match = re.search(r"Product ID:\s*(\S+)", response or "")
     product_id = match.group(1).strip() if match else None
     if not product_id or product_id.upper() == "NONE" or product_id not in feed:
@@ -341,18 +356,23 @@ def run_purchase(query, feed, forced_product_id=None):
         else:
             print(f"  Razorpay order FAILED: {payment['reason']}", flush=True)
 
-    # 8d
+    # 8d — log all fields required by the build guide spec:
+    # timestamp, product, claim, evidence_check_result, trust_score, decision, reason, payment_status
+    claims_evaluated = product.get("claims_evaluated", [])
     entry = {
         "timestamp": datetime.now(timezone.utc).isoformat(),
         "query": query,
         "matched_product_id": product_id,
         "matched_title": product.get("title"),
+        "claim": [c.get("claim") for c in claims_evaluated] if claims_evaluated else [],
+        "evidence_check_result": product.get("trust_summary_reason", ""),
         "trust_score": product.get("trust_score"),
         "price": product.get("price"),
         "currency": product.get("price_currency", "INR"),
         "decision": gate["decision"],
         "reason": gate["reason"],
         "alternative": gate["alternative"],
+        "payment_status": payment.get("status") if payment else None,
         "payment": payment,
     }
     append_audit_entry(entry)
@@ -364,14 +384,14 @@ def run_purchase(query, feed, forced_product_id=None):
 # ---------------------------------------------------------------------------
 
 DEMO_QUERIES = [
-    # APPROVE case: high trust, in budget, INR
-    {"query": "Noise cancelling earbuds under 5000 rupees", "forced_product_id": "prod_011"},
+    # APPROVE case: high trust, in budget, INR (triggers Razorpay order creation)
+    {"query": "A skincare product under 1500 rupees", "forced_product_id": "prod_004"},
     # HOLD case: high trust but over the spend limit
-    {"query": "A titanium-build smart ring with a warranty", "forced_product_id": "prod_006"},
+    {"query": "A titanium-build smart ring with a warranty", "forced_product_id": "prod_003"},
     # BLOCK (trust) case: the Morrowen-style listing
-    {"query": "An anti-aging product that works fast", "forced_product_id": "prod_002"},
+    {"query": "An anti-aging product that works fast", "forced_product_id": "prod_001"},
     # BLOCK (currency) case: USD-priced listing on an INR-only account
-    {"query": "A titanium water bottle with a warranty", "forced_product_id": "prod_016"},
+    {"query": "A titanium water bottle with a warranty", "forced_product_id": "prod_006"},
 ]
 
 

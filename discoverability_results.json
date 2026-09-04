@@ -180,7 +180,7 @@
             "structured_response_snippet": "Final Recommendation: Running Shoes Apex-V\nReason: Running shoes are suitable gifts for sporty people."
         },
         {
-            "query": "gifts under 15.99 for coffee lovers",
+            "query": "gifts under 15 usd for coffee lovers",
             "target_product_id": "prod_010",
             "target_title": "Ceramic Coffee Mug",
             "trust_score": 45,

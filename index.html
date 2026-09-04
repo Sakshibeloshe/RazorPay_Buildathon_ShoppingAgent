@@ -1,0 +1,965 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GEO Merchant Dashboard — Razorpay Trust Engine</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg-main: #f4f6f9;
+      --bg-card: #ffffff;
+      --sidebar-bg: #0f172a;
+      --sidebar-active: #1e293b;
+      --text-main: #0f172a;
+      --text-muted: #64748b;
+      --border-color: #e2e8f0;
+      --primary: #000000;
+      --primary-hover: #1f2937;
+      --accent-blue: #3b82f6;
+      --accent-green: #10b981;
+      --accent-amber: #f59e0b;
+      --accent-red: #ef4444;
+      --radius-sm: 8px;
+      --radius-md: 14px;
+      --radius-lg: 20px;
+      --shadow-sm: 0 1px 3px rgba(0,0,0,0.05);
+      --shadow-md: 0 4px 12px rgba(0,0,0,0.05);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+    }
+
+    body {
+      background-color: var(--bg-main);
+      color: var(--text-main);
+      display: flex;
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    /* Sidebar Styling */
+    aside.sidebar {
+      width: 90px;
+      background-color: var(--sidebar-bg);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 24px 0;
+      gap: 24px;
+      z-index: 10;
+      flex-shrink: 0;
+    }
+
+    .brand-logo {
+      width: 44px;
+      height: 44px;
+      background: linear-gradient(135deg, #ffffff, #cbd5e1);
+      color: #0f172a;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 800;
+      font-size: 20px;
+      margin-bottom: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    }
+
+    nav.nav-menu {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      width: 100%;
+      align-items: center;
+    }
+
+    .nav-item {
+      width: 48px;
+      height: 48px;
+      border-radius: 14px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #94a3b8;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      position: relative;
+    }
+
+    .nav-item:hover {
+      color: #ffffff;
+      background-color: rgba(255, 255, 255, 0.08);
+    }
+
+    .nav-item.active {
+      color: #0f172a;
+      background-color: #ffffff;
+      box-shadow: 0 4px 12px rgba(255,255,255,0.2);
+    }
+
+    .nav-item svg {
+      width: 22px;
+      height: 22px;
+      fill: none;
+      stroke: currentColor;
+      stroke-width: 2;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+
+    /* Main Container */
+    .app-container {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+    }
+
+    /* Top Bar Header */
+    header.topbar {
+      height: 72px;
+      background-color: transparent;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 32px;
+      flex-shrink: 0;
+    }
+
+    .search-wrapper {
+      position: relative;
+      width: 400px;
+    }
+
+    .search-wrapper svg {
+      position: absolute;
+      left: 16px;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 18px;
+      height: 18px;
+      stroke: #94a3b8;
+      fill: none;
+      stroke-width: 2;
+    }
+
+    .search-input {
+      width: 100%;
+      padding: 12px 16px 12px 46px;
+      background-color: #ffffff;
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-lg);
+      font-size: 14px;
+      outline: none;
+      transition: border 0.2s;
+    }
+
+    .search-input:focus {
+      border-color: var(--text-main);
+    }
+
+    .topbar-right {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .icon-btn {
+      width: 40px;
+      height: 40px;
+      background-color: #ffffff;
+      border: 1px solid var(--border-color);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      color: #64748b;
+    }
+
+    .user-profile {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      background: #ffffff;
+      padding: 6px 14px 6px 8px;
+      border-radius: 30px;
+      border: 1px solid var(--border-color);
+    }
+
+    .avatar {
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      background: #0f172a;
+      color: #ffffff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 13px;
+      font-weight: 700;
+    }
+
+    .user-info {
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--text-main);
+    }
+
+    /* Scrollable Workspace Content */
+    main.content-area {
+      flex: 1;
+      padding: 0 32px 32px 32px;
+      overflow-y: auto;
+      display: flex;
+      gap: 28px;
+    }
+
+    .main-column {
+      flex: 1.6;
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+    }
+
+    .side-column {
+      flex: 0.9;
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+    }
+
+    /* Cards */
+    .card {
+      background-color: var(--bg-card);
+      border-radius: var(--radius-lg);
+      padding: 24px;
+      box-shadow: var(--shadow-sm);
+      border: 1px solid var(--border-color);
+    }
+
+    /* Hero Banner Card */
+    .hero-card {
+      background: #ffffff;
+      position: relative;
+      overflow: hidden;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .hero-text h1 {
+      font-size: 24px;
+      font-weight: 800;
+      margin-bottom: 6px;
+      letter-spacing: -0.5px;
+    }
+
+    .hero-text p {
+      color: var(--text-muted);
+      font-size: 14px;
+      max-width: 480px;
+      margin-bottom: 18px;
+      line-height: 1.5;
+    }
+
+    .btn-primary {
+      background-color: var(--primary);
+      color: #ffffff;
+      padding: 10px 22px;
+      border-radius: 12px;
+      font-size: 13px;
+      font-weight: 600;
+      border: none;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      transition: background-color 0.2s;
+    }
+
+    .btn-primary:hover {
+      background-color: var(--primary-hover);
+    }
+
+    .hero-illustration {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      opacity: 0.9;
+    }
+
+    /* Section Titles */
+    .section-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 16px;
+    }
+
+    .section-title {
+      font-size: 16px;
+      font-weight: 700;
+    }
+
+    .view-all {
+      font-size: 12px;
+      font-weight: 600;
+      color: var(--text-muted);
+      cursor: pointer;
+      text-decoration: none;
+    }
+
+    /* Pipeline Step Bar */
+    .pipeline-grid {
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      gap: 10px;
+    }
+
+    .step-box {
+      background: #f8fafc;
+      border: 1px solid #e2e8f0;
+      border-radius: var(--radius-md);
+      padding: 14px 10px;
+      text-align: center;
+      transition: all 0.2s ease;
+    }
+
+    .step-box.active {
+      background: #ffffff;
+      border-color: var(--text-main);
+      box-shadow: var(--shadow-sm);
+    }
+
+    .step-num {
+      font-size: 10px;
+      font-weight: 800;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      margin-bottom: 4px;
+    }
+
+    .step-name {
+      font-size: 12px;
+      font-weight: 700;
+    }
+
+    /* Discoverability Lift Grid */
+    .metrics-row {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+    }
+
+    .stat-card {
+      background: #f8fafc;
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-md);
+      padding: 16px;
+    }
+
+    .stat-label {
+      font-size: 12px;
+      color: var(--text-muted);
+      font-weight: 600;
+      margin-bottom: 8px;
+    }
+
+    .stat-value {
+      font-size: 22px;
+      font-weight: 800;
+      letter-spacing: -0.5px;
+    }
+
+    .stat-badge {
+      display: inline-block;
+      margin-top: 6px;
+      font-size: 11px;
+      font-weight: 700;
+      padding: 2px 8px;
+      border-radius: 20px;
+    }
+
+    .badge-green { background: #d1fae5; color: #047857; }
+    .badge-blue { background: #dbeafe; color: #1d4ed8; }
+    .badge-amber { background: #fef3c7; color: #b45309; }
+    .badge-red { background: #fee2e2; color: #b91c1c; }
+
+    /* Sandbox Interactive Box */
+    .sandbox-container {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .presets-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .chip-btn {
+      background: #f1f5f9;
+      border: 1px solid #cbd5e1;
+      padding: 6px 12px;
+      border-radius: 20px;
+      font-size: 12px;
+      font-weight: 600;
+      color: #334155;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+
+    .chip-btn:hover {
+      background: #e2e8f0;
+      color: #0f172a;
+    }
+
+    .input-group {
+      display: flex;
+      gap: 10px;
+    }
+
+    .query-input-field {
+      flex: 1;
+      padding: 12px 16px;
+      border: 1px solid var(--border-color);
+      border-radius: 12px;
+      font-size: 14px;
+      outline: none;
+    }
+
+    .query-input-field:focus {
+      border-color: var(--primary);
+    }
+
+    .live-output-box {
+      background: #0f172a;
+      color: #f8fafc;
+      border-radius: 14px;
+      padding: 18px;
+      font-family: monospace;
+      font-size: 13px;
+      min-height: 120px;
+      overflow-x: auto;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    /* Table Styling */
+    .table-container {
+      overflow-x: auto;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      text-align: left;
+      font-size: 13px;
+    }
+
+    th {
+      padding: 12px 14px;
+      font-weight: 700;
+      color: var(--text-muted);
+      border-bottom: 1px solid var(--border-color);
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    td {
+      padding: 14px;
+      border-bottom: 1px solid var(--border-color);
+      color: var(--text-main);
+      font-weight: 500;
+    }
+
+    tr:last-child td {
+      border-bottom: none;
+    }
+
+    tr:hover td {
+      background-color: #f8fafc;
+    }
+
+    /* Right Column Widgets */
+    .metric-list {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .metric-item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 14px 16px;
+      background: #f8fafc;
+      border: 1px solid var(--border-color);
+      border-radius: 14px;
+    }
+
+    .metric-item-info span {
+      display: block;
+    }
+
+    .metric-item-name {
+      font-size: 13px;
+      font-weight: 700;
+    }
+
+    .metric-item-desc {
+      font-size: 11px;
+      color: var(--text-muted);
+    }
+
+    .metric-item-val {
+      font-size: 18px;
+      font-weight: 800;
+    }
+
+    /* Feed JSON Inspector */
+    .feed-inspector {
+      background: #f8fafc;
+      border: 1px solid var(--border-color);
+      border-radius: 14px;
+      padding: 16px;
+      max-height: 300px;
+      overflow-y: auto;
+    }
+
+    select.product-select {
+      width: 100%;
+      padding: 10px;
+      border-radius: 10px;
+      border: 1px solid var(--border-color);
+      font-size: 13px;
+      margin-bottom: 12px;
+      outline: none;
+      background: #ffffff;
+    }
+
+    pre.code-block {
+      font-family: monospace;
+      font-size: 11px;
+      color: #1e293b;
+      white-space: pre-wrap;
+      word-break: break-all;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Left Sidebar -->
+  <aside class="sidebar">
+    <div class="brand-logo">Δ</div>
+    <nav class="nav-menu">
+      <div class="nav-item active" title="Overview & Dashboard">
+        <svg viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path></svg>
+      </div>
+      <div class="nav-item" title="Structured Feed">
+        <svg viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect></svg>
+      </div>
+      <div class="nav-item" title="Discoverability Experiment">
+        <svg viewBox="0 0 24 24"><line x1="18" y1="20" x2="18" y2="10"></line><line x1="12" y1="20" x2="12" y2="4"></line><line x1="6" y1="20" x2="6" y2="14"></line></svg>
+      </div>
+      <div class="nav-item" title="Audit Log">
+        <svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line></svg>
+      </div>
+    </nav>
+  </aside>
+
+  <!-- Main Container -->
+  <div class="app-container">
+    
+    <!-- Top Bar -->
+    <header class="topbar">
+      <div class="search-wrapper">
+        <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+        <input type="text" class="search-input" id="global-search" placeholder="Search catalog, trust scores, audit logs...">
+      </div>
+      <div class="topbar-right">
+        <div class="icon-btn">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path><path d="M13.73 21a2 2 0 0 1-3.46 0"></path></svg>
+        </div>
+        <div class="user-profile">
+          <div class="avatar">RZ</div>
+          <div class="user-info">Razorpay Merchant</div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main Workspace Content -->
+    <main class="content-area">
+
+      <!-- Left / Main Column -->
+      <div class="main-column">
+
+        <!-- Hero Card -->
+        <div class="card hero-card">
+          <div class="hero-text">
+            <h1>GEO Engine — Razorpay Trust Gateway</h1>
+            <p>Structuring merchant catalog data so AI shopping agents can discover, verify, and execute transactions safely via Razorpay.</p>
+            <button class="btn-primary" onclick="scrollToSandbox()">
+              <span>Try Live Shopping Agent</span>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </button>
+          </div>
+          <div class="hero-illustration">
+            <svg width="110" height="110" viewBox="0 0 24 24" fill="none" stroke="#0f172a" stroke-width="1.2">
+              <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+            </svg>
+          </div>
+        </div>
+
+        <!-- Core 6-Step Pipeline Visual -->
+        <div class="card">
+          <div class="section-header">
+            <div class="section-title">End-to-End GEO Pipeline</div>
+            <span class="view-all">6 Core Modules</span>
+          </div>
+          <div class="pipeline-grid">
+            <div class="step-box active">
+              <div class="step-num">Step 1</div>
+              <div class="step-name">Ingest</div>
+            </div>
+            <div class="step-box active">
+              <div class="step-num">Step 2</div>
+              <div class="step-name">Structure</div>
+            </div>
+            <div class="step-box active">
+              <div class="step-num">Step 3</div>
+              <div class="step-name">Intent</div>
+            </div>
+            <div class="step-box active">
+              <div class="step-num">Step 4</div>
+              <div class="step-name">Trust Score</div>
+            </div>
+            <div class="step-box active">
+              <div class="step-num">Step 5</div>
+              <div class="step-name">Publish</div>
+            </div>
+            <div class="step-box active">
+              <div class="step-num">Step 6</div>
+              <div class="step-name">Transact</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Part 7: Discoverability Lift Experiment -->
+        <div class="card">
+          <div class="section-header">
+            <div class="section-title">Part 7: Discoverability Benchmark (Raw vs Structured)</div>
+            <span class="badge-green stat-badge">+15.4% Discovery Lift</span>
+          </div>
+          <div class="metrics-row">
+            <div class="stat-card">
+              <div class="stat-label">Before GEO (Raw Catalog)</div>
+              <div class="stat-value" id="stat-before">9 / 13</div>
+              <span class="stat-badge badge-amber" id="stat-before-rate">69.2% Recommendation Rate</span>
+            </div>
+            <div class="stat-card">
+              <div class="stat-label">After GEO (feed.json)</div>
+              <div class="stat-value" id="stat-after">11 / 13</div>
+              <span class="stat-badge badge-green" id="stat-after-rate">84.6% Recommendation Rate</span>
+            </div>
+            <div class="stat-card">
+              <div class="stat-label">Net Discoverability Lift</div>
+              <div class="stat-value" id="stat-lift">+2</div>
+              <span class="stat-badge badge-blue">Strict Agent Verification</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Interactive Live Sandbox (Part 8 Demo) -->
+        <div class="card" id="sandbox-section">
+          <div class="section-header">
+            <div class="section-title">Part 8: Live Buyer Agent & Razorpay Trust Gate</div>
+            <span class="stat-badge badge-blue">Interactive Test Sandbox</span>
+          </div>
+          <div class="sandbox-container">
+            <div class="presets-row">
+              <span style="font-size:12px; font-weight:600; align-self:center; color:#64748b;">Presets:</span>
+              <button class="chip-btn" onclick="setQuery('A skincare product under 1500 rupees', 'prod_004')">APPROVE Case (Serum ₹1250)</button>
+              <button class="chip-btn" onclick="setQuery('A titanium-build smart ring with a warranty', 'prod_003')">HOLD Case (Smart Ring ₹18999)</button>
+              <button class="chip-btn" onclick="setQuery('An anti-aging product that works fast', 'prod_001')">BLOCK Case (Morrowen Elixir)</button>
+              <button class="chip-btn" onclick="setQuery('A titanium water bottle with a warranty', 'prod_006')">BLOCK Currency (USD Bottle)</button>
+            </div>
+            <div class="input-group">
+              <input type="text" id="query-input" class="query-input-field" placeholder="Enter shopper intent query...">
+              <button class="btn-primary" id="run-btn" onclick="runAgentQuery()">Run Purchase Agent</button>
+            </div>
+            <div class="live-output-box" id="live-output">
+              <span style="color:#94a3b8;">// Select a preset query above or type a custom query and hit "Run Purchase Agent".</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Audit Trail Table -->
+        <div class="card">
+          <div class="section-header">
+            <div class="section-title">Part 8d: Purchase Decision Audit Log</div>
+            <span class="view-all" onclick="loadAuditLog()">Refresh Log</span>
+          </div>
+          <div class="table-container">
+            <table>
+              <thead>
+                <tr>
+                  <th>Timestamp</th>
+                  <th>Query</th>
+                  <th>Matched Product</th>
+                  <th>Trust</th>
+                  <th>Decision</th>
+                  <th>Razorpay Status</th>
+                </tr>
+              </thead>
+              <tbody id="audit-table-body">
+                <tr><td colspan="6" style="text-align:center; color:#94a3b8;">Loading audit trail...</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Right / Side Column -->
+      <div class="side-column">
+
+        <!-- Quick Summary Stats -->
+        <div class="card">
+          <div class="section-header">
+            <div class="section-title">Catalog Summary</div>
+          </div>
+          <div class="metric-list">
+            <div class="metric-item">
+              <div class="metric-item-info">
+                <span class="metric-item-name">Total Products</span>
+                <span class="metric-item-desc">Structured in feed.json</span>
+              </div>
+              <div class="metric-item-val" id="val-total-prod">22</div>
+            </div>
+            <div class="metric-item">
+              <div class="metric-item-info">
+                <span class="metric-item-name">Average Trust Score</span>
+                <span class="metric-item-desc">Hybrid Rule + LLM</span>
+              </div>
+              <div class="metric-item-val" id="val-avg-trust">42.5</div>
+            </div>
+            <div class="metric-item">
+              <div class="metric-item-info">
+                <span class="metric-item-name">Razorpay Auto-Approved</span>
+                <span class="metric-item-desc">Orders executed in test mode</span>
+              </div>
+              <div class="metric-item-val" style="color:var(--accent-green);" id="val-approved-count">1</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Feed Record Inspector -->
+        <div class="card">
+          <div class="section-header">
+            <div class="section-title">Feed JSON Inspector</div>
+          </div>
+          <select id="product-selector" class="product-select" onchange="renderProductJSON()">
+            <option value="">Select a product...</option>
+          </select>
+          <div class="feed-inspector">
+            <pre class="code-block" id="json-viewer">// Select a product to view structured attributes and trust evidence.</pre>
+          </div>
+        </div>
+
+      </div>
+
+    </main>
+  </div>
+
+  <script>
+    let globalFeed = [];
+    let selectedForcedId = null;
+
+    window.addEventListener('DOMContentLoaded', () => {
+      loadFeedData();
+      loadAuditLog();
+      
+      // Clear forced ID when user manually types a custom query
+      const queryInput = document.getElementById('query-input');
+      if (queryInput) {
+        queryInput.addEventListener('input', () => {
+          selectedForcedId = null;
+        });
+      }
+    });
+
+    function scrollToSandbox() {
+      document.getElementById('sandbox-section').scrollIntoView({ behavior: 'smooth' });
+    }
+
+    async function loadFeedData() {
+      try {
+        const res = await fetch('/api/feed');
+        globalFeed = await res.json();
+        document.getElementById('val-total-prod').innerText = globalFeed.length;
+        
+        // Calculate average trust score
+        if (globalFeed.length > 0) {
+          const sum = globalFeed.reduce((acc, curr) => acc + (curr.trust_score || 0), 0);
+          document.getElementById('val-avg-trust').innerText = (sum / globalFeed.length).toFixed(1);
+        }
+
+        const selector = document.getElementById('product-selector');
+        selector.innerHTML = '<option value="">Select a product...</option>';
+        globalFeed.forEach(p => {
+          const opt = document.createElement('option');
+          opt.value = p.product_id;
+          opt.innerText = `${p.product_id}: ${p.title} (Trust: ${p.trust_score || 0})`;
+          selector.appendChild(opt);
+        });
+
+        if (globalFeed.length > 0) {
+          selector.value = globalFeed[0].product_id;
+          renderProductJSON();
+        }
+      } catch (err) {
+        console.error('Failed to load feed data', err);
+      }
+    }
+
+    function renderProductJSON() {
+      const pid = document.getElementById('product-selector').value;
+      const viewer = document.getElementById('json-viewer');
+      if (!pid) {
+        viewer.innerText = '// Select a product to view structured attributes.';
+        return;
+      }
+      const prod = globalFeed.find(p => p.product_id === pid);
+      if (prod) {
+        viewer.innerText = JSON.stringify(prod, null, 2);
+      }
+    }
+
+    async function loadAuditLog() {
+      try {
+        const res = await fetch('/api/audit-log');
+        const logs = await res.json();
+        const tbody = document.getElementById('audit-table-body');
+        tbody.innerHTML = '';
+
+        if (!logs || logs.length === 0) {
+          tbody.innerHTML = '<tr><td colspan="6" style="text-align:center; color:#94a3b8;">No audit entries found.</td></tr>';
+          return;
+        }
+
+        let approvedCount = 0;
+        logs.slice().reverse().forEach(entry => {
+          if (entry.decision === 'APPROVE') approvedCount++;
+          const tr = document.createElement('tr');
+          
+          let badgeClass = 'badge-blue';
+          if (entry.decision === 'APPROVE') badgeClass = 'badge-green';
+          if (entry.decision === 'HOLD_FOR_APPROVAL') badgeClass = 'badge-amber';
+          if (entry.decision === 'BLOCK') badgeClass = 'badge-red';
+
+          const timeStr = entry.timestamp ? new Date(entry.timestamp).toLocaleTimeString() : 'N/A';
+          const rzpStatus = entry.payment && entry.payment.order_id ? `Created (${entry.payment.order_id})` : (entry.payment_status || 'N/A');
+
+          tr.innerHTML = `
+            <td style="font-size:11px; color:#64748b;">${timeStr}</td>
+            <td style="max-width:180px; overflow:hidden; text-overflow:ellipsis; white-space:nowrap;">"${entry.query || ''}"</td>
+            <td>${entry.matched_title || entry.matched_product_id || 'None'}</td>
+            <td><strong>${entry.trust_score !== undefined && entry.trust_score !== null ? entry.trust_score : 'N/A'}</strong></td>
+            <td><span class="stat-badge ${badgeClass}">${entry.decision || 'N/A'}</span></td>
+            <td style="font-size:11px; font-family:monospace;">${rzpStatus}</td>
+          `;
+          tbody.appendChild(tr);
+        });
+
+        document.getElementById('val-approved-count').innerText = approvedCount;
+      } catch (err) {
+        console.error('Failed to load audit log', err);
+      }
+    }
+
+    function setQuery(text, forcedId) {
+      document.getElementById('query-input').value = text;
+      selectedForcedId = forcedId;
+    }
+
+    async function runAgentQuery() {
+      const inputElem = document.getElementById('query-input');
+      const q = inputElem ? inputElem.value : '';
+      if (!q.trim()) return;
+
+      const out = document.getElementById('live-output');
+      const btn = document.getElementById('run-btn');
+      btn.innerText = 'Processing...';
+      btn.disabled = true;
+      out.innerHTML = '<span style="color:#60a5fa;">> Executing AI Buyer Agent & Trust Gate...</span>';
+
+      try {
+        const res = await fetch('/api/query', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ query: q.trim(), forced_product_id: selectedForcedId })
+        });
+
+        if (!res.ok) {
+          const errData = await res.json().catch(() => ({ detail: res.statusText }));
+          out.innerHTML = `<span style="color:#f87171;">API Error: ${errData.detail || 'Failed to process query'}</span>`;
+          return;
+        }
+
+        const result = await res.json();
+
+        if (result.decision === 'NO_MATCH' || !result.matched_product_id) {
+          let html = `<div><span style="color:#94a3b8;">Query:</span> "${result.query || q}"</div>`;
+          html += `<div><span style="color:#94a3b8;">Matched Product:</span> <strong style="color:#f87171;">No matching product found in catalog</strong></div>`;
+          html += `<div><span style="color:#94a3b8;">Gate Decision:</span> <strong style="color:#94a3b8;">NO_MATCH</strong> — ${result.reason || 'No product matched your request.'}</div>`;
+          out.innerHTML = html;
+          selectedForcedId = null;
+          loadAuditLog();
+          return;
+        }
+
+        let decisionColor = '#34d399';
+        if (result.decision === 'HOLD_FOR_APPROVAL') decisionColor = '#fbbf24';
+        if (result.decision === 'BLOCK') decisionColor = '#f87171';
+
+        const matchedTitle = result.matched_title || result.matched_product_id || 'Unknown Item';
+        const trustVal = result.trust_score !== undefined && result.trust_score !== null ? result.trust_score : 'N/A';
+        const priceVal = result.price !== undefined && result.price !== null ? `${result.price} ${result.currency || 'INR'}` : 'N/A';
+
+        let html = `<div><span style="color:#94a3b8;">Query:</span> "${result.query || q}"</div>`;
+        html += `<div><span style="color:#94a3b8;">Matched Product:</span> <strong style="color:#ffffff;">${matchedTitle}</strong> (Trust Score: ${trustVal}, Price: ${priceVal})</div>`;
+        html += `<div><span style="color:#94a3b8;">Gate Decision:</span> <strong style="color:${decisionColor};">${result.decision}</strong> — ${result.reason}</div>`;
+        
+        if (result.alternative && result.alternative.title) {
+          html += `<div><span style="color:#60a5fa;">Suggested Alternative:</span> ${result.alternative.title}</div>`;
+        }
+
+        if (result.payment && result.payment.order_id) {
+          html += `<div style="color:#34d399; font-weight:bold;">⚡ Razorpay Order Created: ${result.payment.order_id} (Amount: ₹${result.price})</div>`;
+        }
+
+        out.innerHTML = html;
+        selectedForcedId = null; // reset forced ID after execution
+        loadAuditLog(); // refresh audit table
+      } catch (err) {
+        out.innerHTML = `<span style="color:#f87171;">Error executing purchase pipeline: ${err.message}</span>`;
+      } finally {
+        btn.innerText = 'Run Purchase Agent';
+        btn.disabled = false;
+      }
+    }
+  </script>
+</body>
+</html>
