@@ -234,7 +234,8 @@ def main():
             "key_attributes": structured.get("key_attributes", []),
             "claims_made": structured.get("claims_made", []),
             "price": structured.get("price"),
-            "price_currency": structured.get("price_currency", "INR"),  # Root cause #1 fix
+            "price_currency": structured.get("price_currency", "unknown"),
+            "warranty": structured.get("warranty", "missing"),
             "availability": structured.get("availability"),
             "fulfillment_terms": structured.get("fulfillment_terms", {}),
 

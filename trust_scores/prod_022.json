@@ -1,0 +1,24 @@
+{
+    "product_id": "prod_022",
+    "title": "Slim Fit Tan Cafe Racer Jacket",
+    "claims_evaluated": [
+        {
+            "claim": "Free standard shipping",
+            "score": 100,
+            "reason": "The listing explicitly states 'Free standard shipping' and provides a specific timeframe of 5-7 business days, which serves as direct textual evidence for the claim.",
+            "llm_evaluated": true
+        }
+    ],
+    "claim_evidence_avg": 100,
+    "failed_claim_evaluations": 0,
+    "score_reliable": true,
+    "deterministic_checks": {
+        "return_policy_present": true,
+        "price_consistent": true,
+        "prices_found_in_text": [],
+        "contact_info_present": false,
+        "deterministic_score": 67
+    },
+    "trust_score": 90,
+    "summary_reason": "No contact/business info found."
+}

@@ -113,10 +113,14 @@ Extract the following fields into a precise JSON object:
 7. "availability": string (e.g. "In stock", "Low stock", "Out of stock", "missing")
 8. "fulfillment_terms": object containing:
    - "delivery_window": string (e.g. "2-3 days", "Ships within 24 hours", "missing")
-   - "return_policy": string (the exact return/refund/exchange policy as stated;
-     "missing" if not mentioned; "No returns" if explicitly refused)
-   - "warranty": string (manufacturer or seller warranty — e.g. "1-year warranty";
-     "missing" if not mentioned)
+   - "return_policy": string (the exact return/refund/exchange policy ONLY —
+     do not fold warranty information into this field; "missing" if not
+     mentioned; "No returns" if explicitly refused)
+9. "warranty": string (the exact warranty/guarantee terms as stated, kept
+   separate from return_policy even if they appear in the same source sentence
+   e.g. "5-year manufacturer warranty, 30-day returns if unused" splits into
+   warranty="5-year manufacturer warranty" and return_policy="30-day returns
+   if unused"; "missing" if no warranty is mentioned)
 
 CRITICAL INSTRUCTIONS:
 - If a field is genuinely absent from the source text, use "missing" (or null for numbers).
@@ -136,9 +140,9 @@ CRITICAL INSTRUCTIONS:
   "availability": "...",
   "fulfillment_terms": {{
     "delivery_window": "...",
-    "return_policy": "...",
-    "warranty": "..."
-  }}
+    "return_policy": "..."
+  }},
+  "warranty": "..."
 }}
 """
 

@@ -1,0 +1,196 @@
+{
+    "summary": {
+        "total_queries_tested": 13,
+        "mentioned_before_raw": 9,
+        "mentioned_after_structured": 11,
+        "net_lift": 2,
+        "total_raw_call_failures": 0,
+        "total_structured_call_failures": 0,
+        "headline": "Before GEO (keyword match on raw catalog): target mentioned in 9/13 queries.  After GEO (LLM + feed.json): 11/13.  Net lift: +2 recommendations.",
+        "trust_segmented_lift": {
+            "high_trust_gte_70": {
+                "n": 4,
+                "before": 2,
+                "after": 3,
+                "lift": 1
+            },
+            "low_trust_lt_70": {
+                "n": 9,
+                "before": 7,
+                "after": 8,
+                "lift": 1
+            }
+        }
+    },
+    "results": [
+        {
+            "query": "skin products under 1500 with returns available",
+            "target_product_id": "prod_004",
+            "target_title": "GlowSkin Vitamin C Radiance Serum",
+            "trust_score": 62,
+            "raw_mentioned": false,
+            "structured_mentioned": true,
+            "raw_call_failed": false,
+            "structured_call_failed": false,
+            "lift": "IMPROVED ↑",
+            "raw_response_snippet": "Final Recommendation: PureOats Organic Gluten-Free Oats (1kg)\nReason: Keyword overlap score=2 against raw listing text (literal match only, no reasoning).",
+            "structured_response_snippet": "Final Recommendation: GlowSkin Vitamin C Radiance Serum\nReason: Price 1250 INR is under 1500 and it has a 30‑day return policy."
+        },
+        {
+            "query": "serums under 3000 INR",
+            "target_product_id": "prod_004",
+            "target_title": "GlowSkin Vitamin C Radiance Serum",
+            "trust_score": 62,
+            "raw_mentioned": true,
+            "structured_mentioned": true,
+            "raw_call_failed": false,
+            "structured_call_failed": false,
+            "lift": "both hit",
+            "raw_response_snippet": "Final Recommendation: GlowSkin Vitamin C Radiance Serum\nReason: Keyword overlap score=2 against raw listing text (literal match only, no reasoning).",
+            "structured_response_snippet": "Final Recommendation: GlowSkin Vitamin C Radiance Serum\nReason: Price 1250 INR is under 3000 INR and it is a serum."
+        },
+        {
+            "query": "ESP32",
+            "target_product_id": "prod_018",
+            "target_title": "ESP32-WROOM Microcontroller Module",
+            "trust_score": 80,
+            "raw_mentioned": true,
+            "structured_mentioned": true,
+            "raw_call_failed": false,
+            "structured_call_failed": false,
+            "lift": "both hit",
+            "raw_response_snippet": "Final Recommendation: ESP32-WROOM Microcontroller Module\nReason: Keyword overlap score=1 against raw listing text (literal match only, no reasoning).",
+            "structured_response_snippet": "Final Recommendation: ESP32-WROOM Microcontroller Module\nReason: The product title contains ESP32."
+        },
+        {
+            "query": "I need a food or breakfast item does not contain gluten and will be delivered next day.",
+            "target_product_id": "prod_002",
+            "target_title": "PureOats Organic Gluten-Free Oats (1kg)",
+            "trust_score": 27,
+            "raw_mentioned": true,
+            "structured_mentioned": true,
+            "raw_call_failed": false,
+            "structured_call_failed": false,
+            "lift": "both hit",
+            "raw_response_snippet": "Final Recommendation: PureOats Organic Gluten-Free Oats (1kg)\nReason: Keyword overlap score=4 against raw listing text (literal match only, no reasoning).",
+            "structured_response_snippet": "Final Recommendation: PureOats Organic Gluten-Free Oats (1kg)\nReason: It is gluten‑free, a breakfast item, and offers next‑day delivery."
+        },
+        {
+            "query": "Health Monitor or tracker with warranty",
+            "target_product_id": "prod_003",
+            "target_title": "Aura Sleep & Activity Smart Ring",
+            "trust_score": 78,
+            "raw_mentioned": true,
+            "structured_mentioned": true,
+            "raw_call_failed": false,
+            "structured_call_failed": false,
+            "lift": "both hit",
+            "raw_response_snippet": "Final Recommendation: Aura Sleep & Activity Smart Ring\nReason: Keyword overlap score=1 against raw listing text (literal match only, no reasoning).",
+            "structured_response_snippet": "Final Recommendation: Aura Sleep & Activity Smart Ring\nReason: It is a health monitor/tracker and includes a 1‑year warranty."
+        },
+        {
+            "query": "product to help me loose weight fast",
+            "target_product_id": "prod_005",
+            "target_title": "KetoFit Extreme Fat Burner",
+            "trust_score": 20,
+            "raw_mentioned": false,
+            "structured_mentioned": true,
+            "raw_call_failed": false,
+            "structured_call_failed": false,
+            "lift": "IMPROVED ↑",
+            "raw_response_snippet": "Final Recommendation: Morrowen Miracle Elixir\nReason: Keyword overlap score=1 against raw listing text (literal match only, no reasoning).",
+            "structured_response_snippet": "Final Recommendation: KetoFit Extreme Fat Burner\nReason: The product claims rapid weight loss while sleeping."
+        },
+        {
+            "query": "Noise-cancelling earbuds under ₹3000",
+            "target_product_id": "prod_008",
+            "target_title": "Wireless Earbuds (AirPods Pro Max Replica)",
+            "trust_score": 20,
+            "raw_mentioned": true,
+            "structured_mentioned": true,
+            "raw_call_failed": false,
+            "structured_call_failed": false,
+            "lift": "both hit",
+            "raw_response_snippet": "Final Recommendation: Wireless Earbuds (AirPods Pro Max Replica)\nReason: Keyword overlap score=1 against raw listing text (literal match only, no reasoning).",
+            "structured_response_snippet": "Final Recommendation: Wireless Earbuds (AirPods Pro Max Replica)\nReason: It is noise‑cancelling, priced at 2499 INR, which is under ₹3000."
+        },
+        {
+            "query": "Handmade real leather jacket with zipper under 20000 INR. Return available",
+            "target_product_id": "prod_007",
+            "target_title": "Vintage Leather Jacket - Distress Brown",
+            "trust_score": 27,
+            "raw_mentioned": true,
+            "structured_mentioned": true,
+            "raw_call_failed": false,
+            "structured_call_failed": false,
+            "lift": "both hit",
+            "raw_response_snippet": "Final Recommendation: Vintage Leather Jacket - Distress Brown\nReason: Keyword overlap score=5 against raw listing text (literal match only, no reasoning).",
+            "structured_response_snippet": "Final Recommendation: Vintage Leather Jacket - Distress Brown\nReason: Handmade real leather with a zipper, priced ~15750 INR, and has a return policy."
+        },
+        {
+            "query": "Water bottle corrosion-resistant, has warranty",
+            "target_product_id": "prod_006",
+            "target_title": "Ultra-Resilient Titanium Water Bottle (32oz)",
+            "trust_score": 27,
+            "raw_mentioned": true,
+            "structured_mentioned": true,
+            "raw_call_failed": false,
+            "structured_call_failed": false,
+            "lift": "both hit",
+            "raw_response_snippet": "Final Recommendation: Ultra-Resilient Titanium Water Bottle (32oz)\nReason: Keyword overlap score=3 against raw listing text (literal match only, no reasoning).",
+            "structured_response_snippet": "Final Recommendation: Ultra-Resilient Titanium Water Bottle (32oz)\nReason: Titanium makes it corrosion‑resistant and it comes with a 5‑year warranty."
+        },
+        {
+            "query": "Oriental tea",
+            "target_product_id": "prod_009",
+            "target_title": "Organic Matcha Green Tea Powder 250g",
+            "trust_score": 38,
+            "raw_mentioned": true,
+            "structured_mentioned": true,
+            "raw_call_failed": false,
+            "structured_call_failed": false,
+            "lift": "both hit",
+            "raw_response_snippet": "Final Recommendation: Organic Matcha Green Tea Powder 250g\nReason: Keyword overlap score=1 against raw listing text (literal match only, no reasoning).",
+            "structured_response_snippet": "Final Recommendation: Organic Matcha Green Tea Powder 250g\nReason: It is an oriental (Japanese) tea product."
+        },
+        {
+            "query": "Computer Accessories under 8000 INR",
+            "target_product_id": "prod_015",
+            "target_title": "Mechanical Keyboard 65%",
+            "trust_score": 80,
+            "raw_mentioned": false,
+            "structured_mentioned": false,
+            "raw_call_failed": false,
+            "structured_call_failed": false,
+            "lift": "same",
+            "raw_response_snippet": "Final Recommendation: GlowSkin Vitamin C Radiance Serum\nReason: Keyword overlap score=1 against raw listing text (literal match only, no reasoning).",
+            "structured_response_snippet": "Final Recommendation: USB-C Hub Multiport Adapter 7-in-1\nReason: Price 25 USD (~2075 INR) is under 8000 INR and it is a computer accessory."
+        },
+        {
+            "query": "gifts for sporty people",
+            "target_product_id": "prod_013",
+            "target_title": "Running Shoes Apex-V",
+            "trust_score": 80,
+            "raw_mentioned": false,
+            "structured_mentioned": true,
+            "raw_call_failed": false,
+            "structured_call_failed": false,
+            "lift": "IMPROVED ↑",
+            "raw_response_snippet": "Final Recommendation: NONE\nReason: No literal keyword overlap found in any raw listing.",
+            "structured_response_snippet": "Final Recommendation: Running Shoes Apex-V\nReason: Running shoes are suitable gifts for sporty people."
+        },
+        {
+            "query": "gifts under 15.99 for coffee lovers",
+            "target_product_id": "prod_010",
+            "target_title": "Ceramic Coffee Mug",
+            "trust_score": 45,
+            "raw_mentioned": true,
+            "structured_mentioned": false,
+            "raw_call_failed": false,
+            "structured_call_failed": false,
+            "lift": "REGRESSED ↓",
+            "raw_response_snippet": "Final Recommendation: Ceramic Coffee Mug\nReason: Keyword overlap score=2 against raw listing text (literal match only, no reasoning).",
+            "structured_response_snippet": "Final Recommendation: Smart LED Bulb 9W RGB (Pack of 2)\nReason: Price 14.99 USD is under 15.99 and it is a coffee‑lovers gift."
+        }
+    ]
+}

@@ -1,0 +1,27 @@
+{
+    "category": "Apparel",
+    "target_audience": "missing",
+    "key_attributes": [
+        "Classic Black Biker Leather Jacket",
+        "Asymmetric zipper",
+        "Snap-tab collar",
+        "Quilted shoulder pattern",
+        "Premium full-grain lambskin",
+        "Soft finish"
+    ],
+    "claims_made": [
+        "2-day priority dispatch available",
+        "10 days no-hassle"
+    ],
+    "price": 210.0,
+    "price_currency": "USD",
+    "availability": "missing",
+    "fulfillment_terms": {
+        "delivery_window": "2-day priority dispatch available",
+        "return_policy": "10 days no-hassle"
+    },
+    "warranty": "missing",
+    "product_id": "prod_021",
+    "original_title": "Classic Black Biker Leather Jacket",
+    "original_raw_description": "name: Classic Black Biker Leather Jacket\nrate: $210.00 USD\nstyle: Asymmetric zipper, snap-tab collar, quilted shoulder pattern\nmaterial: Premium full-grain lambskin (soft finish)\nshipping details: 2-day priority dispatch available\nreturn_window: 10 days no-hassle"
+}

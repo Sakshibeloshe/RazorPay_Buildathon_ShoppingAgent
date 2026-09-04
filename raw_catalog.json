@@ -98,5 +98,15 @@
     "id": "prod_020",
     "title": "USB-C Hub Multiport Adapter 7-in-1",
     "raw_description": "{\n  \"title\": \"USB-C Hub Multiport Adapter 7-in-1\",\n  \"price\": \"$25\",\n  \"features\": [\"4K HDMI\", \"100W PD\", \"USB 3.0\", \"SD Card Reader\"]\n}"
+  },
+  {
+    "id": "prod_021",
+    "title": "Classic Black Biker Leather Jacket",
+    "raw_description": "name: Classic Black Biker Leather Jacket\nrate: $210.00 USD\nstyle: Asymmetric zipper, snap-tab collar, quilted shoulder pattern\nmaterial: Premium full-grain lambskin (soft finish)\nshipping details: 2-day priority dispatch available\nreturn_window: 10 days no-hassle"
+  },
+  {
+    "id": "prod_022",
+    "title": "Slim Fit Tan Cafe Racer Jacket",
+    "raw_description": "Hey check out this cafe racer jacket in clean tan color! Minimalist snap collar design with subtle vertical panel stitching. Made from heavy-duty buffalo leather. Price: USD 140. Free standard shipping (takes about 5-7 business days). Returns: 30 days exchange or refund."
   }
 ]

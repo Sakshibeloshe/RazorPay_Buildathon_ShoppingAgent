@@ -1,0 +1,32 @@
+{
+    "product_id": "prod_021",
+    "title": "Classic Black Biker Leather Jacket",
+    "claims_evaluated": [
+        {
+            "claim": "2-day priority dispatch available",
+            "score": 10,
+            "reason": "This is a logistical service option rather than a product attribute, and while it is a specific promise, it lacks external verification or technical specification within the listing text itself.",
+            "llm_evaluated": true
+        },
+        {
+            "claim": "10 days no-hassle",
+            "score": 10,
+            "reason": "This is a vague marketing phrase for a return policy that lacks specific terms, conditions, or verifiable mechanisms to define what 'no-hassle' entails.",
+            "llm_evaluated": true
+        }
+    ],
+    "claim_evidence_avg": 10,
+    "failed_claim_evaluations": 0,
+    "score_reliable": true,
+    "deterministic_checks": {
+        "return_policy_present": true,
+        "price_consistent": true,
+        "prices_found_in_text": [
+            210.0
+        ],
+        "contact_info_present": false,
+        "deterministic_score": 67
+    },
+    "trust_score": 27,
+    "summary_reason": "Weakest claim: \"2-day priority dispatch available\" — This is a logistical service option rather than a product attribute, and while it is a specific promise, it lacks external verification or technical specification within the listing text itself. No contact/business info found."
+}

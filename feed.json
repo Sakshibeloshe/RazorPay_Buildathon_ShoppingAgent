@@ -13,6 +13,7 @@
         ],
         "price": 2499,
         "price_currency": "INR",
+        "warranty": "missing",
         "availability": "Low stock",
         "fulfillment_terms": {
             "delivery_window": "missing",
@@ -22,7 +23,12 @@
         "intent_coverage": {
             "phrasings": [
                 {
-                    "query": "What are the main ingredients in the Morrowen Miracle Elixir?",
+                    "query": "Is there a supplement that claims to reverse aging quickly?",
+                    "covered": true,
+                    "gap": null
+                },
+                {
+                    "query": "What are the ingredients in the Morrowen Miracle Elixir?",
                     "covered": true,
                     "gap": null
                 },
@@ -30,16 +36,11 @@
                     "query": "Can I return the Morrowen Miracle Elixir if it doesn't work for me?",
                     "covered": true,
                     "gap": null
-                },
-                {
-                    "query": "How long does it take to receive the Morrowen Miracle Elixir after ordering?",
-                    "covered": false,
-                    "gap": "Missing delivery window information"
                 }
             ],
-            "covered_count": 2,
+            "covered_count": 3,
             "total_count": 3,
-            "coverage_pct": 67
+            "coverage_pct": 100
         },
         "trust_score": 20,
         "trust_summary_reason": "Weakest claim: \"Reverses cellular aging by 15 years in 3 days\" — The claim relies on vague 'quantum starlight ingredients' and makes an impossible biological promise without citing any studies, certifications, or verifiable mechanisms. No contact/business info found.",
@@ -86,6 +87,7 @@
         ],
         "price": 350,
         "price_currency": "INR",
+        "warranty": "missing",
         "availability": "In stock",
         "fulfillment_terms": {
             "delivery_window": "Next day delivery available in metro cities",
@@ -95,19 +97,19 @@
         "intent_coverage": {
             "phrasings": [
                 {
-                    "query": "I have celiac disease and need a safe, certified organic oat brand that is definitely gluten-free.",
+                    "query": "I need a large bag of certified organic oats that are safe for people with celiac disease, what do you recommend?",
                     "covered": true,
                     "gap": null
                 },
                 {
-                    "query": "What is the price and delivery time for a 1kg pack of PureOats organic oats?",
+                    "query": "How much does a 1kg pack of gluten-free rolled oats cost and is it available for next-day delivery?",
                     "covered": true,
                     "gap": null
                 },
                 {
-                    "query": "Are these oats suitable for making overnight oats for a toddler, and what is the return policy if the package arrives damaged?",
+                    "query": "What is the return policy if the oats arrive damaged, and do they come with a warranty?",
                     "covered": false,
-                    "gap": "Missing specific suitability information for toddlers or infants in the target audience or key attributes."
+                    "gap": "Missing warranty information"
                 }
             ],
             "covered_count": 2,
@@ -159,6 +161,7 @@
         ],
         "price": 18999,
         "price_currency": "INR",
+        "warranty": "missing",
         "availability": "In stock",
         "fulfillment_terms": {
             "delivery_window": "Ships immediately",
@@ -173,12 +176,12 @@
                     "gap": null
                 },
                 {
-                    "query": "What is the best waterproof titanium smart ring for swimmers that lasts over a week on a single charge?",
+                    "query": "What is the best waterproof titanium smart ring for swimmers that has a long battery life?",
                     "covered": true,
                     "gap": null
                 },
                 {
-                    "query": "Which smart ring is best for someone with sensitive skin who wants a durable, metal-free alternative to a smartwatch?",
+                    "query": "Which smart ring is best for people with sensitive skin who want a durable, hypoallergenic option?",
                     "covered": false,
                     "gap": "Missing information regarding hypoallergenic properties or specific skin-sensitivity suitability."
                 }
@@ -231,6 +234,7 @@
         ],
         "price": 1250,
         "price_currency": "INR",
+        "warranty": "missing",
         "availability": "Low stock",
         "fulfillment_terms": {
             "delivery_window": "4 days",
@@ -240,19 +244,19 @@
         "intent_coverage": {
             "phrasings": [
                 {
-                    "query": "I have persistent dark spots from sun damage; what is a highly effective vitamin C serum that can brighten my skin tone?",
+                    "query": "I have stubborn dark spots and want to brighten my complexion, what vitamin C serum would you recommend?",
                     "covered": true,
                     "gap": null
                 },
                 {
-                    "query": "Recommend a fragrance-free skincare serum with at least 10% L-ascorbic acid for sensitive skin.",
+                    "query": "Is there a fragrance-free vitamin C serum with 10% L-ascorbic acid available?",
                     "covered": true,
                     "gap": null
                 },
                 {
-                    "query": "Is this serum suitable for a 15-year-old with oily skin, and what is the warranty if it causes a reaction?",
+                    "query": "I need a skincare product for sensitive skin that is safe to use, does this serum have a warranty or guarantee?",
                     "covered": false,
-                    "gap": "Missing target audience suitability for minors/oily skin and warranty details."
+                    "gap": "Missing warranty information and specific suitability details for sensitive skin beyond fragrance-free status."
                 }
             ],
             "covered_count": 2,
@@ -303,6 +307,7 @@
         ],
         "price": 1899,
         "price_currency": "INR",
+        "warranty": "missing",
         "availability": "missing",
         "fulfillment_terms": {
             "delivery_window": "1 week",
@@ -386,6 +391,7 @@
         ],
         "price": 45.99,
         "price_currency": "USD",
+        "warranty": "missing",
         "availability": "In stock",
         "fulfillment_terms": {
             "delivery_window": "missing",
@@ -405,9 +411,9 @@
                     "gap": null
                 },
                 {
-                    "query": "How long does it take to ship the 32oz titanium bottle to my house?",
+                    "query": "How long does it take to ship this titanium bottle to my house?",
                     "covered": false,
-                    "gap": "Missing delivery_window"
+                    "gap": "Missing delivery window information"
                 }
             ],
             "covered_count": 2,
@@ -451,6 +457,7 @@
         ],
         "price": 189.5,
         "price_currency": "USD",
+        "warranty": "missing",
         "availability": "Low stock",
         "fulfillment_terms": {
             "delivery_window": "missing",
@@ -460,19 +467,19 @@
         "intent_coverage": {
             "phrasings": [
                 {
-                    "query": "I need a durable, authentic leather jacket that looks broken-in and vintage, what options are available in brown?",
+                    "query": "I need a durable, authentic leather jacket for daily commuting that looks rugged and well-worn. Do you have a real cowhide option in a distressed brown finish?",
                     "covered": true,
                     "gap": null
                 },
                 {
-                    "query": "Where can I buy a size L real cowhide jacket with brass zippers that is handmade in Turkey?",
+                    "query": "Find me a size L vintage-style jacket with brass zippers that is handmade in Turkey and costs under $200.",
                     "covered": true,
                     "gap": null
                 },
                 {
-                    "query": "How quickly can I get a distressed brown leather jacket delivered, and what is the return policy if it doesn't fit?",
+                    "query": "What is the delivery time and warranty coverage for the Distress Brown leather jacket if I order it today?",
                     "covered": false,
-                    "gap": "Missing delivery window information"
+                    "gap": "Missing delivery_window and warranty information"
                 }
             ],
             "covered_count": 2,
@@ -518,6 +525,7 @@
         ],
         "price": 2499,
         "price_currency": "INR",
+        "warranty": "missing",
         "availability": "In stock",
         "fulfillment_terms": {
             "delivery_window": "missing",
@@ -527,24 +535,24 @@
         "intent_coverage": {
             "phrasings": [
                 {
-                    "query": "I need wireless earbuds with active noise cancellation that last at least 6 hours on a single charge.",
+                    "query": "I need wireless earbuds with active noise cancellation that last at least 6 hours on a single charge, what are some good options?",
                     "covered": true,
                     "gap": null
                 },
                 {
-                    "query": "What is the return policy and warranty for this $2,499 replica earbud set?",
+                    "query": "What is the return policy and warranty for the AirPods Pro Max replica earbuds?",
                     "covered": false,
                     "gap": "Missing return policy and warranty details"
                 },
                 {
-                    "query": "Are these AirPods Pro Max replicas suitable for long-haul flights, and how quickly can they be delivered?",
-                    "covered": false,
-                    "gap": "Missing delivery window information"
+                    "query": "Are there any affordable wireless earbuds with ANC that are currently in stock?",
+                    "covered": true,
+                    "gap": null
                 }
             ],
-            "covered_count": 1,
+            "covered_count": 2,
             "total_count": 3,
-            "coverage_pct": 33
+            "coverage_pct": 67
         },
         "trust_score": 20,
         "trust_summary_reason": "Weakest claim: \"ANC works great\" — The phrase 'works great' is a subjective, vague marketing assertion with no technical specifications, certification, or verifiable mechanism provided. No return policy stated.",
@@ -590,6 +598,7 @@
         ],
         "price": 22.0,
         "price_currency": "EUR",
+        "warranty": "missing",
         "availability": "missing",
         "fulfillment_terms": {
             "delivery_window": "missing",
@@ -599,24 +608,24 @@
         "intent_coverage": {
             "phrasings": [
                 {
-                    "query": "I need a high-quality ceremonial grade matcha from Uji, Japan that is certified organic. Do you have a 250g tin available?",
+                    "query": "I want to make a high-quality matcha latte at home, what is a good ceremonial grade powder from Japan that is organic?",
                     "covered": true,
                     "gap": null
                 },
                 {
-                    "query": "What is the price and current stock availability for the 250g organic matcha powder?",
-                    "covered": false,
-                    "gap": "Missing availability status"
+                    "query": "How much does a 250g bag of certified organic matcha green tea powder cost?",
+                    "covered": true,
+                    "gap": null
                 },
                 {
-                    "query": "If I order this organic matcha today, when can I expect it to be delivered and what is the return policy?",
+                    "query": "Can I get this organic matcha powder delivered to my door, and what is the return policy if I don't like it?",
                     "covered": false,
-                    "gap": "Missing delivery window and return policy"
+                    "gap": "Missing delivery window and return policy details."
                 }
             ],
-            "covered_count": 1,
+            "covered_count": 2,
             "total_count": 3,
-            "coverage_pct": 33
+            "coverage_pct": 67
         },
         "trust_score": 38,
         "trust_summary_reason": "Weakest claim: \"Organic certified\" — The listing explicitly states 'organic_certified: Yes' and includes 'Organic' in the product name, but it fails to name a specific certification body (e.g., USDA, EU Organic, JAS) or provide a certification number, leaving the claim as a self-declared attribute rather than a fully verifiable technical spec. No return policy stated. No contact/business info found.",
@@ -655,6 +664,7 @@
         ],
         "price": 12.99,
         "price_currency": "unknown",
+        "warranty": "missing",
         "availability": "In stock",
         "fulfillment_terms": {
             "delivery_window": "missing",
@@ -664,24 +674,24 @@
         "intent_coverage": {
             "phrasings": [
                 {
-                    "query": "I need a coffee mug that I can put in the dishwasher and microwave without worrying about it breaking.",
+                    "query": "I need a coffee mug that I can put in the dishwasher and microwave without worrying about it breaking or fading.",
                     "covered": true,
                     "gap": null
                 },
                 {
-                    "query": "What is the return policy and warranty for this ceramic mug if it arrives damaged?",
+                    "query": "What is the return policy and warranty for this ceramic mug if it arrives chipped?",
                     "covered": false,
                     "gap": "Missing return policy and warranty information"
                 },
                 {
-                    "query": "Do you have a simple, neutral-colored ceramic mug available for immediate delivery?",
-                    "covered": false,
-                    "gap": "Missing specific delivery window details"
+                    "query": "Do you have a simple, neutral-colored ceramic mug for my office desk that is currently in stock?",
+                    "covered": true,
+                    "gap": null
                 }
             ],
-            "covered_count": 1,
+            "covered_count": 2,
             "total_count": 3,
-            "coverage_pct": 33
+            "coverage_pct": 67
         },
         "trust_score": 45,
         "trust_summary_reason": "No return policy stated. No contact/business info found.",
@@ -723,6 +733,7 @@
         ],
         "price": 29.0,
         "price_currency": "USD",
+        "warranty": "missing",
         "availability": "Low stock",
         "fulfillment_terms": {
             "delivery_window": "missing",
@@ -732,19 +743,19 @@
         "intent_coverage": {
             "phrasings": [
                 {
-                    "query": "I need a serum with niacinamide and hyaluronic acid to help with hydration and brightening, what do you recommend?",
+                    "query": "What skincare serum with niacinamide and hyaluronic acid can I buy for $29?",
                     "covered": true,
                     "gap": null
                 },
                 {
-                    "query": "Is there a good affordable serum under $30 that gives an instant glass skin effect?",
-                    "covered": true,
-                    "gap": null
-                },
-                {
-                    "query": "I want to buy a niacinamide serum today, but I need to know if it ships fast and what the return policy is if I don't like it.",
+                    "query": "Is there a product that gives instant glass skin results?",
                     "covered": false,
-                    "gap": "Missing delivery window and return policy details"
+                    "gap": "Missing target audience and specific usage context to confirm if the 'instant glass skin' claim applies to the user's skin type or routine."
+                },
+                {
+                    "query": "Do you have any low-stock serums that are in stock right now?",
+                    "covered": true,
+                    "gap": null
                 }
             ],
             "covered_count": 2,
@@ -790,6 +801,7 @@
         "claims_made": [],
         "price": 145.0,
         "price_currency": "unknown",
+        "warranty": "missing",
         "availability": "missing",
         "fulfillment_terms": {
             "delivery_window": "missing",
@@ -799,19 +811,19 @@
         "intent_coverage": {
             "phrasings": [
                 {
-                    "query": "I need an office chair with adjustable armrests and lumbar support that is under $150.",
+                    "query": "I need an ergonomic office chair with adjustable lumbar support and 360-degree armrests that is black and weighs around 14kg.",
                     "covered": true,
                     "gap": null
                 },
                 {
-                    "query": "What is the weight and color of the ergonomic mesh chair with SKU 7788?",
-                    "covered": true,
-                    "gap": null
-                },
-                {
-                    "query": "Is this chair in stock and how long does delivery take?",
+                    "query": "What is the delivery time and warranty for the Ergonomic Office Chair Mesh (SKU 7788)?",
                     "covered": false,
-                    "gap": "Missing availability status and delivery window information."
+                    "gap": "Missing delivery_window and warranty information"
+                },
+                {
+                    "query": "Is this black mesh office chair suitable for someone who works long hours at a desk, and what is the return policy?",
+                    "covered": true,
+                    "gap": null
                 }
             ],
             "covered_count": 2,
@@ -843,6 +855,7 @@
         "claims_made": [],
         "price": 79.99,
         "price_currency": "unknown",
+        "warranty": "missing",
         "availability": "In stock",
         "fulfillment_terms": {
             "delivery_window": "missing",
@@ -862,7 +875,7 @@
                     "gap": "Missing warranty and return policy details"
                 },
                 {
-                    "query": "Are the Apex-V running shoes currently available for purchase?",
+                    "query": "Are the Apex-V running shoes currently in stock?",
                     "covered": true,
                     "gap": null
                 }
@@ -902,6 +915,7 @@
         ],
         "price": 14.99,
         "price_currency": "USD",
+        "warranty": "missing",
         "availability": "missing",
         "fulfillment_terms": {
             "delivery_window": "missing",
@@ -911,19 +925,19 @@
         "intent_coverage": {
             "phrasings": [
                 {
-                    "query": "I need smart light bulbs that work with Alexa and Google Home to change colors via an app, preferably a 9W RGB pack of 2.",
+                    "query": "I need smart light bulbs that work with Alexa and Google Home, can you recommend a pack of two?",
                     "covered": true,
                     "gap": null
                 },
                 {
-                    "query": "What is the warranty and return policy for the Smart LED Bulb 9W RGB pack of 2?",
+                    "query": "What is the price of a 9W RGB LED bulb with an E27 base sold in a 2-pack?",
+                    "covered": true,
+                    "gap": null
+                },
+                {
+                    "query": "Do these smart bulbs come with a warranty and what is the return policy if I don't like them?",
                     "covered": false,
                     "gap": "Missing warranty and return policy details"
-                },
-                {
-                    "query": "Do you have any affordable smart bulbs under $15 that come in a two-pack with E27 bases?",
-                    "covered": true,
-                    "gap": null
                 }
             ],
             "covered_count": 2,
@@ -972,6 +986,7 @@
         "claims_made": [],
         "price": 75.0,
         "price_currency": "USD",
+        "warranty": "missing",
         "availability": "missing",
         "fulfillment_terms": {
             "delivery_window": "missing",
@@ -981,19 +996,19 @@
         "intent_coverage": {
             "phrasings": [
                 {
-                    "query": "I need a compact mechanical keyboard with brown switches that I can customize with hot-swapping, what are my options?",
+                    "query": "I need a compact keyboard with tactile switches that I can customize, what are some good options under $100?",
                     "covered": true,
                     "gap": null
                 },
                 {
-                    "query": "What is the best 65% keyboard for coding that has per-key RGB lighting and costs under $80?",
+                    "query": "What is the best 65% mechanical keyboard with Gateron Brown switches and per-key RGB lighting?",
                     "covered": true,
                     "gap": null
                 },
                 {
-                    "query": "Does this 65% mechanical keyboard come with a warranty and how long is the delivery time?",
+                    "query": "Can I get this keyboard delivered to my office next week, and what is the return policy if it doesn't fit my desk setup?",
                     "covered": false,
-                    "gap": "Missing warranty and delivery window information"
+                    "gap": "Missing delivery window and return policy information"
                 }
             ],
             "covered_count": 2,
@@ -1029,6 +1044,7 @@
         ],
         "price": 0.04,
         "price_currency": "USD",
+        "warranty": "missing",
         "availability": "missing",
         "fulfillment_terms": {
             "delivery_window": "missing",
@@ -1038,17 +1054,17 @@
         "intent_coverage": {
             "phrasings": [
                 {
-                    "query": "I need a bulk supply of medical-grade disposable masks for my clinic, can you find a box of 500?",
+                    "query": "I need a bulk supply of medical-grade 3-ply face masks for my clinic, can you find a box of 500?",
                     "covered": true,
                     "gap": null
                 },
                 {
-                    "query": "What is the per-unit cost for a 3-ply disposable face mask sold in a 500-count box?",
+                    "query": "What is the per-unit cost for a large order of disposable 3-ply masks?",
                     "covered": true,
                     "gap": null
                 },
                 {
-                    "query": "Do you have 3-ply masks available for immediate delivery to my office?",
+                    "query": "Do you have any 3-ply masks available for immediate delivery to my office?",
                     "covered": false,
                     "gap": "Missing availability and delivery window information"
                 }
@@ -1097,6 +1113,7 @@
         ],
         "price": 850,
         "price_currency": "INR",
+        "warranty": "missing",
         "availability": "In stock",
         "fulfillment_terms": {
             "delivery_window": "missing",
@@ -1159,6 +1176,7 @@
         "claims_made": [],
         "price": 4.5,
         "price_currency": "USD",
+        "warranty": "missing",
         "availability": "missing",
         "fulfillment_terms": {
             "delivery_window": "missing",
@@ -1168,19 +1186,19 @@
         "intent_coverage": {
             "phrasings": [
                 {
-                    "query": "I need a microcontroller module that supports both Wi-Fi and Bluetooth 4.2 BLE for my IoT project, what are the specs?",
+                    "query": "I need a microcontroller module that supports both Wi-Fi and Bluetooth for my IoT project, what are the specs?",
                     "covered": true,
                     "gap": null
                 },
                 {
-                    "query": "How much does the ESP32-WROOM module cost and is it in stock?",
+                    "query": "How much does the ESP32-WROOM module cost and is it available for immediate purchase?",
                     "covered": false,
-                    "gap": "Missing availability status"
+                    "gap": "Missing availability status and delivery window information."
                 },
                 {
-                    "query": "What is the warranty policy for the Espressif ESP32-WROOM microcontroller?",
+                    "query": "What is the warranty policy if I buy an ESP32-WROOM module from Espressif Direct?",
                     "covered": false,
-                    "gap": "Missing warranty information"
+                    "gap": "Missing warranty details."
                 }
             ],
             "covered_count": 1,
@@ -1217,6 +1235,7 @@
         ],
         "price": 38.0,
         "price_currency": "GBP",
+        "warranty": "missing",
         "availability": "missing",
         "fulfillment_terms": {
             "delivery_window": "missing",
@@ -1226,7 +1245,7 @@
         "intent_coverage": {
             "phrasings": [
                 {
-                    "query": "I need a long-lasting soy candle with a sophisticated fig and vetiver scent for my living room.",
+                    "query": "I'm looking for a long-lasting soy candle with a sophisticated, earthy scent like fig and vetiver.",
                     "covered": true,
                     "gap": null
                 },
@@ -1281,6 +1300,7 @@
         "claims_made": [],
         "price": 25,
         "price_currency": "USD",
+        "warranty": "missing",
         "availability": "missing",
         "fulfillment_terms": {
             "delivery_window": "missing",
@@ -1290,19 +1310,19 @@
         "intent_coverage": {
             "phrasings": [
                 {
-                    "query": "I need a USB-C hub that supports 4K HDMI and 100W power delivery for my laptop.",
+                    "query": "I need a compact USB-C adapter that supports 4K HDMI and 100W power delivery for my laptop.",
                     "covered": true,
                     "gap": null
                 },
                 {
-                    "query": "What is the best 7-in-1 USB-C adapter with a built-in SD card reader?",
+                    "query": "What is the best 7-in-1 USB-C hub under $30 that includes an SD card reader?",
                     "covered": true,
                     "gap": null
                 },
                 {
-                    "query": "Is this USB-C hub suitable for a photographer who needs to transfer SD cards and edit 4K video on the go?",
+                    "query": "Does this 7-in-1 USB-C hub come with a warranty and what is the return policy if it arrives damaged?",
                     "covered": false,
-                    "gap": "Missing target audience and specific use-case validation for professional photography workflows."
+                    "gap": "Missing warranty and return policy details"
                 }
             ],
             "covered_count": 2,
@@ -1323,5 +1343,146 @@
         },
         "claims_evaluated": [],
         "original_raw_description": "{\n  \"title\": \"USB-C Hub Multiport Adapter 7-in-1\",\n  \"price\": \"$25\",\n  \"features\": [\"4K HDMI\", \"100W PD\", \"USB 3.0\", \"SD Card Reader\"]\n}"
+    },
+    {
+        "product_id": "prod_021",
+        "title": "Classic Black Biker Leather Jacket",
+        "category": "Apparel",
+        "target_audience": "missing",
+        "key_attributes": [
+            "Classic Black Biker Leather Jacket",
+            "Asymmetric zipper",
+            "Snap-tab collar",
+            "Quilted shoulder pattern",
+            "Premium full-grain lambskin",
+            "Soft finish"
+        ],
+        "claims_made": [
+            "2-day priority dispatch available",
+            "10 days no-hassle"
+        ],
+        "price": 210.0,
+        "price_currency": "USD",
+        "warranty": "missing",
+        "availability": "missing",
+        "fulfillment_terms": {
+            "delivery_window": "2-day priority dispatch available",
+            "return_policy": "10 days no-hassle"
+        },
+        "intent_coverage": {
+            "phrasings": [
+                {
+                    "query": "I need a high-quality black leather biker jacket made from full-grain lambskin with a soft finish, what are the key design details?",
+                    "covered": true,
+                    "gap": null
+                },
+                {
+                    "query": "What is the return policy and how fast can I get a classic black biker jacket delivered if I order it today?",
+                    "covered": true,
+                    "gap": null
+                },
+                {
+                    "query": "Is this black leather jacket suitable for a professional office environment or is it too casual for work?",
+                    "covered": false,
+                    "gap": "Missing target audience or style context to determine professional suitability"
+                }
+            ],
+            "covered_count": 2,
+            "total_count": 3,
+            "coverage_pct": 67
+        },
+        "trust_score": 27,
+        "trust_summary_reason": "Weakest claim: \"2-day priority dispatch available\" — This is a logistical service option rather than a product attribute, and while it is a specific promise, it lacks external verification or technical specification within the listing text itself. No contact/business info found.",
+        "claim_evidence_avg": 10,
+        "deterministic_checks": {
+            "return_policy_present": true,
+            "price_consistent": true,
+            "prices_found_in_text": [
+                210.0
+            ],
+            "contact_info_present": false,
+            "deterministic_score": 67
+        },
+        "claims_evaluated": [
+            {
+                "claim": "2-day priority dispatch available",
+                "score": 10,
+                "reason": "This is a logistical service option rather than a product attribute, and while it is a specific promise, it lacks external verification or technical specification within the listing text itself.",
+                "llm_evaluated": true
+            },
+            {
+                "claim": "10 days no-hassle",
+                "score": 10,
+                "reason": "This is a vague marketing phrase for a return policy that lacks specific terms, conditions, or verifiable mechanisms to define what 'no-hassle' entails.",
+                "llm_evaluated": true
+            }
+        ],
+        "original_raw_description": "name: Classic Black Biker Leather Jacket\nrate: $210.00 USD\nstyle: Asymmetric zipper, snap-tab collar, quilted shoulder pattern\nmaterial: Premium full-grain lambskin (soft finish)\nshipping details: 2-day priority dispatch available\nreturn_window: 10 days no-hassle"
+    },
+    {
+        "product_id": "prod_022",
+        "title": "Slim Fit Tan Cafe Racer Jacket",
+        "category": "Apparel",
+        "target_audience": "missing",
+        "key_attributes": [
+            "Slim fit",
+            "Tan color",
+            "Cafe racer style",
+            "Minimalist snap collar design",
+            "Subtle vertical panel stitching",
+            "Heavy-duty buffalo leather"
+        ],
+        "claims_made": [
+            "Free standard shipping"
+        ],
+        "price": 140,
+        "price_currency": "USD",
+        "warranty": "missing",
+        "availability": "missing",
+        "fulfillment_terms": {
+            "delivery_window": "5-7 business days",
+            "return_policy": "30 days exchange or refund"
+        },
+        "intent_coverage": {
+            "phrasings": [
+                {
+                    "query": "I need a durable, slim-fit leather jacket in tan for my daily commute, what are the best options under $150?",
+                    "covered": true,
+                    "gap": null
+                },
+                {
+                    "query": "Does this cafe racer style jacket come in a minimalist design with buffalo leather and what is the return policy?",
+                    "covered": true,
+                    "gap": null
+                },
+                {
+                    "query": "Who is this slim tan leather jacket specifically designed for and is it currently in stock?",
+                    "covered": false,
+                    "gap": "Missing target audience and availability status"
+                }
+            ],
+            "covered_count": 2,
+            "total_count": 3,
+            "coverage_pct": 67
+        },
+        "trust_score": 90,
+        "trust_summary_reason": "No contact/business info found.",
+        "claim_evidence_avg": 100,
+        "deterministic_checks": {
+            "return_policy_present": true,
+            "price_consistent": true,
+            "prices_found_in_text": [],
+            "contact_info_present": false,
+            "deterministic_score": 67
+        },
+        "claims_evaluated": [
+            {
+                "claim": "Free standard shipping",
+                "score": 100,
+                "reason": "The listing explicitly states 'Free standard shipping' and provides a specific timeframe of 5-7 business days, which serves as direct textual evidence for the claim.",
+                "llm_evaluated": true
+            }
+        ],
+        "original_raw_description": "Hey check out this cafe racer jacket in clean tan color! Minimalist snap collar design with subtle vertical panel stitching. Made from heavy-duty buffalo leather. Price: USD 140. Free standard shipping (takes about 5-7 business days). Returns: 30 days exchange or refund."
     }
 ]
