@@ -368,5 +368,683 @@
     },
     "payment_status": null,
     "payment": null
+  },
+  {
+    "timestamp": "2026-09-05T03:49:19.096760+00:00",
+    "query": "gift for 6 year old",
+    "matched_product_id": "prod_029",
+    "matched_title": "Little Explorers 5-Book Picture Set (Ages 3-6)",
+    "claim": [
+      "Printed on FSC-certified paper",
+      "Non-toxic, child-safe inks"
+    ],
+    "evidence_check_result": "Weakest claim: \"Non-toxic, child-safe inks\" — The claim uses vague marketing language ('non-toxic', 'child-safe') without citing specific safety standards (e.g., ASTM D-4236, EN 71-3), named chemical compositions, or independent lab test results.",
+    "trust_score": 66,
+    "price": 799,
+    "currency": "INR",
+    "decision": "APPROVE",
+    "reason": "Trust score 66 and price ₹799 within policy.",
+    "alternative": null,
+    "payment_status": "created",
+    "payment": {
+      "status": "created",
+      "order_id": "order_TYDFudJsRQsv2P",
+      "raw": {
+        "amount": 79900,
+        "amount_due": 79900,
+        "amount_paid": 0,
+        "attempts": 0,
+        "created_at": 1788580158,
+        "currency": "INR",
+        "entity": "order",
+        "id": "order_TYDFudJsRQsv2P",
+        "notes": {
+          "product_id": "prod_029",
+          "title": "Little Explorers 5-Book Picture Set (Ages 3-6)",
+          "trust_score": "66"
+        },
+        "offer_id": null,
+        "receipt": "rcpt_prod_029_1788580158",
+        "status": "created"
+      }
+    }
+  },
+  {
+    "timestamp": "2026-09-05T03:49:39.302116+00:00",
+    "query": "insulated lunch box",
+    "matched_product_id": "prod_030",
+    "matched_title": "HydroSteel Insulated Lunch Box (3-Tier)",
+    "claim": [
+      "keeps food warm up to 4 hours"
+    ],
+    "evidence_check_result": "Weakest claim: \"keeps food warm up to 4 hours\" — The claim is supported by the specific technical mechanism of 'double-wall vacuum insulation' and a precise time specification, but lacks independent certification or test data to verify the actual performance.",
+    "trust_score": 58,
+    "price": 1099,
+    "currency": "INR",
+    "decision": "HOLD_FOR_APPROVAL",
+    "reason": "Trust score 58 is moderate — needs a human check before this purchase proceeds.",
+    "alternative": null,
+    "payment_status": null,
+    "payment": null
+  },
+  {
+    "timestamp": "2026-09-05T03:50:24.973688+00:00",
+    "query": "electric kettle under 2000",
+    "matched_product_id": "prod_025",
+    "matched_title": "Kyotherm Smart Electric Kettle 1.5L",
+    "claim": [
+      "ISI marked",
+      "BIS certified"
+    ],
+    "evidence_check_result": "Claims are evidence-backed and listing basics are present.",
+    "trust_score": 100,
+    "price": 1799,
+    "currency": "INR",
+    "decision": "APPROVE",
+    "reason": "Trust score 100 and price ₹1799 within policy.",
+    "alternative": null,
+    "payment_status": "created",
+    "payment": {
+      "status": "created",
+      "order_id": "order_TYDH4YJQmB33F5",
+      "raw": {
+        "amount": 179900,
+        "amount_due": 179900,
+        "amount_paid": 0,
+        "attempts": 0,
+        "created_at": 1788580224,
+        "currency": "INR",
+        "entity": "order",
+        "id": "order_TYDH4YJQmB33F5",
+        "notes": {
+          "product_id": "prod_025",
+          "title": "Kyotherm Smart Electric Kettle 1.5L",
+          "trust_score": "100"
+        },
+        "offer_id": null,
+        "receipt": "rcpt_prod_025_1788580224",
+        "status": "created"
+      }
+    }
+  },
+  {
+    "timestamp": "2026-09-05T03:50:39.468516+00:00",
+    "query": "oriental tea",
+    "matched_product_id": "prod_009",
+    "matched_title": "Organic Matcha Powder 250g",
+    "claim": [
+      "Organic certified"
+    ],
+    "evidence_check_result": "Weakest claim: \"Organic certified\" — The listing explicitly states 'organic_certified: Yes' and includes 'Organic' in the product name, but it fails to name a specific certification body (e.g., USDA, EU Organic, JAS) or provide a certification number, leaving the claim as a self-declared attribute rather than a fully verifiable technical spec. No return policy stated. No contact/business info found.",
+    "trust_score": 38,
+    "price": 22.0,
+    "currency": "EUR",
+    "decision": "BLOCK",
+    "reason": "Listed in EUR, which this merchant account cannot settle directly. Needs currency conversion before purchase.",
+    "alternative": {
+      "product_id": "prod_024",
+      "title": "Nishio First-Flush Matcha (40g)"
+    },
+    "payment_status": null,
+    "payment": null
+  },
+  {
+    "timestamp": "2026-09-05T03:50:51.246557+00:00",
+    "query": "matcha",
+    "matched_product_id": "prod_023",
+    "matched_title": "Zen Garden Uji Ceremonial Matcha (30g)",
+    "claim": [
+      "Ceremonial grade matcha",
+      "First harvest (ichibancha)",
+      "Stone-ground",
+      "JAS-certified organic"
+    ],
+    "evidence_check_result": "Weakest claim: \"Ceremonial grade matcha\" — This is a marketing classification without a defined technical specification or standard in the text, relying on consumer trust rather than verifiable evidence.",
+    "trust_score": 59,
+    "price": 1450,
+    "currency": "INR",
+    "decision": "HOLD_FOR_APPROVAL",
+    "reason": "Trust score 59 is moderate — needs a human check before this purchase proceeds.",
+    "alternative": null,
+    "payment_status": null,
+    "payment": null
+  },
+  {
+    "timestamp": "2026-09-05T05:54:52.256190+00:00",
+    "query": "A skincare product under 1500 rupees",
+    "matched_product_id": "prod_004",
+    "matched_title": "GlowSkin Vitamin C Radiance Serum",
+    "claim": [
+      "Treats dark spots",
+      "Brightens skin"
+    ],
+    "evidence_check_result": "No contact/business info found.",
+    "trust_score": 62,
+    "price": 1250,
+    "currency": "INR",
+    "decision": "APPROVE",
+    "reason": "Trust score 62 and price ₹1250 within policy.",
+    "alternative": null,
+    "payment_status": "created",
+    "payment": {
+      "status": "created",
+      "order_id": "order_TYFOXNzp0oiXlm",
+      "raw": {
+        "amount": 125000,
+        "amount_due": 125000,
+        "amount_paid": 0,
+        "attempts": 0,
+        "created_at": 1788587691,
+        "currency": "INR",
+        "entity": "order",
+        "id": "order_TYFOXNzp0oiXlm",
+        "notes": {
+          "product_id": "prod_004",
+          "title": "GlowSkin Vitamin C Radiance Serum",
+          "trust_score": "62"
+        },
+        "offer_id": null,
+        "receipt": "rcpt_prod_004_1788587691",
+        "status": "created"
+      }
+    }
+  },
+  {
+    "timestamp": "2026-09-05T05:54:54.265672+00:00",
+    "query": "A titanium-build smart ring with a warranty",
+    "matched_product_id": "prod_003",
+    "matched_title": "Aura Sleep & Activity Smart Ring",
+    "claim": [
+      "Waterproof up to 50m",
+      "Battery lasts 7 days"
+    ],
+    "evidence_check_result": "No contact/business info found.",
+    "trust_score": 78,
+    "price": 18999,
+    "currency": "INR",
+    "decision": "HOLD_FOR_APPROVAL",
+    "reason": "Trust score 78 is high, but price ₹18999 exceeds the ₹5000 auto-approve limit.",
+    "alternative": null,
+    "payment_status": null,
+    "payment": null
+  },
+  {
+    "timestamp": "2026-09-05T05:54:56.271748+00:00",
+    "query": "An anti-aging product that works fast",
+    "matched_product_id": "prod_001",
+    "matched_title": "Morrowen Miracle Elixir",
+    "claim": [
+      "Reverses cellular aging by 15 years in 3 days",
+      "No other product does this"
+    ],
+    "evidence_check_result": "Weakest claim: \"Reverses cellular aging by 15 years in 3 days\" — The claim relies on vague 'quantum starlight ingredients' and makes an impossible biological promise without citing any studies, certifications, or verifiable mechanisms. No contact/business info found.",
+    "trust_score": 20,
+    "price": 2499,
+    "currency": "INR",
+    "decision": "BLOCK",
+    "reason": "Trust score 20 is too low — claims on this listing are largely unsupported.",
+    "alternative": {
+      "product_id": "prod_024",
+      "title": "Nishio First-Flush Matcha (40g)"
+    },
+    "payment_status": null,
+    "payment": null
+  },
+  {
+    "timestamp": "2026-09-05T05:54:58.276717+00:00",
+    "query": "A titanium water bottle with a warranty",
+    "matched_product_id": "prod_006",
+    "matched_title": "Ultra-Resilient Titanium Water Bottle (32oz)",
+    "claim": [
+      "Ultra-Resilient"
+    ],
+    "evidence_check_result": "Weakest claim: \"Ultra-Resilient\" — The term 'Ultra-Resilient' is a vague marketing adjective not supported by specific technical specifications, impact test data, or defined mechanical properties in the listing. No contact/business info found.",
+    "trust_score": 27,
+    "price": 45.99,
+    "currency": "USD",
+    "decision": "BLOCK",
+    "reason": "Listed in USD, which this merchant account cannot settle directly. Needs currency conversion before purchase.",
+    "alternative": {
+      "product_id": "prod_024",
+      "title": "Nishio First-Flush Matcha (40g)"
+    },
+    "payment_status": null,
+    "payment": null
+  },
+  {
+    "timestamp": "2026-09-05T05:55:43.066123+00:00",
+    "query": "matcha",
+    "matched_product_id": "prod_024",
+    "matched_title": "Nishio First-Flush Matcha (40g)",
+    "claim": [
+      "JAS Organic certification",
+      "USDA Organic certification",
+      "First flush harvest",
+      "Shade-grown 21 days",
+      "Ceremonial grade"
+    ],
+    "evidence_check_result": "Claims are evidence-backed and listing basics are present.",
+    "trust_score": 100,
+    "price": 1690,
+    "currency": "INR",
+    "decision": "APPROVE",
+    "reason": "Trust score 100 and price ₹1690 within policy.",
+    "alternative": null,
+    "payment_status": "created",
+    "payment": {
+      "status": "created",
+      "order_id": "order_TYFPQtAEK5ACZk",
+      "raw": {
+        "amount": 169000,
+        "amount_due": 169000,
+        "amount_paid": 0,
+        "attempts": 0,
+        "created_at": 1788587742,
+        "currency": "INR",
+        "entity": "order",
+        "id": "order_TYFPQtAEK5ACZk",
+        "notes": {
+          "product_id": "prod_024",
+          "title": "Nishio First-Flush Matcha (40g)",
+          "trust_score": "100"
+        },
+        "offer_id": null,
+        "receipt": "rcpt_prod_024_1788587742",
+        "status": "created"
+      }
+    }
+  },
+  {
+    "timestamp": "2026-09-05T05:55:55.003729+00:00",
+    "query": "matcha under 1500",
+    "matched_product_id": "prod_023",
+    "matched_title": "Zen Garden Uji Ceremonial Matcha (30g)",
+    "claim": [
+      "Ceremonial grade matcha",
+      "First harvest (ichibancha)",
+      "Stone-ground",
+      "JAS-certified organic"
+    ],
+    "evidence_check_result": "Weakest claim: \"Ceremonial grade matcha\" — This is a marketing classification without a defined technical specification or standard in the text, relying on consumer trust rather than verifiable evidence.",
+    "trust_score": 59,
+    "price": 1450,
+    "currency": "INR",
+    "decision": "HOLD_FOR_APPROVAL",
+    "reason": "Trust score 59 is moderate — needs a human check before this purchase proceeds.",
+    "alternative": null,
+    "payment_status": null,
+    "payment": null
+  },
+  {
+    "timestamp": "2026-09-05T07:15:59.152595+00:00",
+    "query": "matcha",
+    "matched_product_id": "prod_024",
+    "matched_title": "Nishio First-Flush Matcha (40g)",
+    "claim": [
+      "JAS Organic certification",
+      "USDA Organic certification",
+      "First flush harvest",
+      "Shade-grown 21 days",
+      "Ceremonial grade"
+    ],
+    "evidence_check_result": "Claims are evidence-backed and listing basics are present.",
+    "trust_score": 100,
+    "price": 1690,
+    "currency": "INR",
+    "decision": "APPROVE",
+    "reason": "Trust score 100 and price ₹1690 within policy.",
+    "alternative": null,
+    "payment_status": "created",
+    "payment": {
+      "status": "created",
+      "order_id": "order_TYGmDr6i0IijZi",
+      "raw": {
+        "amount": 169000,
+        "amount_due": 169000,
+        "amount_paid": 0,
+        "attempts": 0,
+        "created_at": 1788592558,
+        "currency": "INR",
+        "entity": "order",
+        "id": "order_TYGmDr6i0IijZi",
+        "notes": {
+          "product_id": "prod_024",
+          "title": "Nishio First-Flush Matcha (40g)",
+          "trust_score": "100"
+        },
+        "offer_id": null,
+        "receipt": "rcpt_prod_024_1788592557",
+        "status": "created"
+      }
+    }
+  },
+  {
+    "timestamp": "2026-09-05T07:34:48.620822+00:00",
+    "query": "matcha",
+    "matched_product_id": "prod_024",
+    "matched_title": "Nishio First-Flush Matcha (40g)",
+    "claim": [
+      "JAS Organic certification",
+      "USDA Organic certification",
+      "First flush harvest",
+      "Shade-grown 21 days",
+      "Ceremonial grade"
+    ],
+    "evidence_check_result": "Claims are evidence-backed and listing basics are present.",
+    "trust_score": 100,
+    "price": 1690,
+    "currency": "INR",
+    "decision": "APPROVE",
+    "reason": "Trust score 100 and price ₹1690 within policy.",
+    "alternative": null,
+    "payment_status": "created",
+    "payment": {
+      "status": "created",
+      "order_id": "order_TYH66jXp9G5AWe",
+      "raw": {
+        "amount": 169000,
+        "amount_due": 169000,
+        "amount_paid": 0,
+        "attempts": 0,
+        "created_at": 1788593687,
+        "currency": "INR",
+        "entity": "order",
+        "id": "order_TYH66jXp9G5AWe",
+        "notes": {
+          "product_id": "prod_024",
+          "title": "Nishio First-Flush Matcha (40g)",
+          "trust_score": "100"
+        },
+        "offer_id": null,
+        "receipt": "rcpt_prod_024_1788593686",
+        "status": "created"
+      }
+    }
+  },
+  {
+    "timestamp": "2026-09-05T07:34:56.712664+00:00",
+    "query": "matcha",
+    "matched_product_id": "prod_024",
+    "matched_title": "Nishio First-Flush Matcha (40g)",
+    "claim": [
+      "JAS Organic certification",
+      "USDA Organic certification",
+      "First flush harvest",
+      "Shade-grown 21 days",
+      "Ceremonial grade"
+    ],
+    "evidence_check_result": "Claims are evidence-backed and listing basics are present.",
+    "trust_score": 100,
+    "price": 1690,
+    "currency": "INR",
+    "decision": "APPROVE",
+    "reason": "Trust score 100 and price ₹1690 within policy.",
+    "alternative": null,
+    "payment_status": "created",
+    "payment": {
+      "status": "created",
+      "order_id": "order_TYH6FXhrKHyA1y",
+      "raw": {
+        "amount": 169000,
+        "amount_due": 169000,
+        "amount_paid": 0,
+        "attempts": 0,
+        "created_at": 1788593695,
+        "currency": "INR",
+        "entity": "order",
+        "id": "order_TYH6FXhrKHyA1y",
+        "notes": {
+          "product_id": "prod_024",
+          "title": "Nishio First-Flush Matcha (40g)",
+          "trust_score": "100"
+        },
+        "offer_id": null,
+        "receipt": "rcpt_prod_024_1788593694",
+        "status": "created"
+      }
+    }
+  },
+  {
+    "timestamp": "2026-09-05T07:37:06.426532+00:00",
+    "query": "matcha",
+    "matched_product_id": "prod_024",
+    "matched_title": "Nishio First-Flush Matcha (40g)",
+    "claim": [
+      "JAS Organic certification",
+      "USDA Organic certification",
+      "First flush harvest",
+      "Shade-grown 21 days",
+      "Ceremonial grade"
+    ],
+    "evidence_check_result": "Claims are evidence-backed and listing basics are present.",
+    "trust_score": 100,
+    "price": 1690,
+    "currency": "INR",
+    "decision": "APPROVE",
+    "reason": "Trust score 100 and price ₹1690 within policy.",
+    "alternative": null,
+    "payment_status": "created",
+    "payment": {
+      "status": "created",
+      "order_id": "order_TYH8X8tA50qXqF",
+      "raw": {
+        "amount": 169000,
+        "amount_due": 169000,
+        "amount_paid": 0,
+        "attempts": 0,
+        "created_at": 1788593825,
+        "currency": "INR",
+        "entity": "order",
+        "id": "order_TYH8X8tA50qXqF",
+        "notes": {
+          "product_id": "prod_024",
+          "title": "Nishio First-Flush Matcha (40g)",
+          "trust_score": "100"
+        },
+        "offer_id": null,
+        "receipt": "rcpt_prod_024_1788593823",
+        "status": "created"
+      }
+    }
+  },
+  {
+    "timestamp": "2026-09-05T07:37:19.811100+00:00",
+    "query": "A titanium-build smart ring with a warranty",
+    "matched_product_id": "prod_003",
+    "matched_title": "Aura Sleep & Activity Smart Ring",
+    "claim": [
+      "Waterproof up to 50m",
+      "Battery lasts 7 days"
+    ],
+    "evidence_check_result": "No contact/business info found.",
+    "trust_score": 78,
+    "price": 18999,
+    "currency": "INR",
+    "decision": "HOLD_FOR_APPROVAL",
+    "reason": "Trust score 78 is high, but price ₹18999 exceeds the ₹5000 auto-approve limit.",
+    "alternative": null,
+    "payment_status": null,
+    "payment": null
+  },
+  {
+    "timestamp": "2026-09-05T07:37:37.963040+00:00",
+    "query": "A titanium water bottle with a warranty",
+    "matched_product_id": "prod_006",
+    "matched_title": "Ultra-Resilient Titanium Water Bottle (32oz)",
+    "claim": [
+      "Ultra-Resilient"
+    ],
+    "evidence_check_result": "Weakest claim: \"Ultra-Resilient\" — The term 'Ultra-Resilient' is a vague marketing adjective not supported by specific technical specifications, impact test data, or defined mechanical properties in the listing. No contact/business info found.",
+    "trust_score": 27,
+    "price": 45.99,
+    "currency": "USD",
+    "decision": "BLOCK",
+    "reason": "Listed in USD, which this merchant account cannot settle directly. Needs currency conversion before purchase.",
+    "alternative": {
+      "product_id": "prod_024",
+      "title": "Nishio First-Flush Matcha (40g)"
+    },
+    "payment_status": null,
+    "payment": null
+  },
+  {
+    "timestamp": "2026-09-05T09:23:55.021738+00:00",
+    "query": "A skincare product under 1500 rupees",
+    "matched_product_id": "prod_004",
+    "matched_title": "GlowSkin Vitamin C Radiance Serum",
+    "claim": [
+      "Treats dark spots",
+      "Brightens skin"
+    ],
+    "evidence_check_result": "No contact/business info found.",
+    "trust_score": 62,
+    "price": 1250,
+    "currency": "INR",
+    "decision": "APPROVE",
+    "reason": "Trust score 62 and price ₹1250 within policy.",
+    "alternative": null,
+    "payment_status": "created",
+    "payment": {
+      "status": "created",
+      "order_id": "order_TYIxMMKUOjiqXD",
+      "raw": {
+        "amount": 125000,
+        "amount_due": 125000,
+        "amount_paid": 0,
+        "attempts": 0,
+        "created_at": 1788600234,
+        "currency": "INR",
+        "entity": "order",
+        "id": "order_TYIxMMKUOjiqXD",
+        "notes": {
+          "product_id": "prod_004",
+          "title": "GlowSkin Vitamin C Radiance Serum",
+          "trust_score": "62"
+        },
+        "offer_id": null,
+        "receipt": "rcpt_prod_004_1788600232",
+        "status": "created"
+      }
+    }
+  },
+  {
+    "timestamp": "2026-09-05T09:25:04.437672+00:00",
+    "query": "A skincare product under 1500 rupees",
+    "matched_product_id": "prod_004",
+    "matched_title": "GlowSkin Vitamin C Radiance Serum",
+    "claim": [
+      "Treats dark spots",
+      "Brightens skin"
+    ],
+    "evidence_check_result": "No contact/business info found.",
+    "trust_score": 62,
+    "price": 1250,
+    "currency": "INR",
+    "decision": "APPROVE",
+    "reason": "Trust score 62 and price ₹1250 within policy.",
+    "alternative": null,
+    "payment_status": "created",
+    "payment": {
+      "status": "created",
+      "order_id": "order_TYIyaD211R2Nd1",
+      "raw": {
+        "amount": 125000,
+        "amount_due": 125000,
+        "amount_paid": 0,
+        "attempts": 0,
+        "created_at": 1788600303,
+        "currency": "INR",
+        "entity": "order",
+        "id": "order_TYIyaD211R2Nd1",
+        "notes": {
+          "product_id": "prod_004",
+          "title": "GlowSkin Vitamin C Radiance Serum",
+          "trust_score": "62"
+        },
+        "offer_id": null,
+        "receipt": "rcpt_prod_004_1788600302",
+        "status": "created"
+      }
+    }
+  },
+  {
+    "timestamp": "2026-09-05T09:25:24.368117+00:00",
+    "query": "A titanium-build smart ring with a warranty",
+    "matched_product_id": "prod_003",
+    "matched_title": "Aura Sleep & Activity Smart Ring",
+    "claim": [
+      "Waterproof up to 50m",
+      "Battery lasts 7 days"
+    ],
+    "evidence_check_result": "No contact/business info found.",
+    "trust_score": 78,
+    "price": 18999,
+    "currency": "INR",
+    "decision": "HOLD_FOR_APPROVAL",
+    "reason": "Trust score 78 is high, but price ₹18999 exceeds the ₹5000 auto-approve limit.",
+    "alternative": null,
+    "payment_status": null,
+    "payment": null
+  },
+  {
+    "timestamp": "2026-09-05T09:25:51.394082+00:00",
+    "query": "gifts for kids age 5",
+    "matched_product_id": "prod_029",
+    "matched_title": "Little Explorers 5-Book Picture Set (Ages 3-6)",
+    "claim": [
+      "Printed on FSC-certified paper",
+      "Non-toxic, child-safe inks"
+    ],
+    "evidence_check_result": "Weakest claim: \"Non-toxic, child-safe inks\" — The claim uses vague marketing language ('non-toxic', 'child-safe') without citing specific safety standards (e.g., ASTM D-4236, EN 71-3), named chemical compositions, or independent lab test results.",
+    "trust_score": 66,
+    "price": 799,
+    "currency": "INR",
+    "decision": "APPROVE",
+    "reason": "Trust score 66 and price ₹799 within policy.",
+    "alternative": null,
+    "payment_status": "created",
+    "payment": {
+      "status": "created",
+      "order_id": "order_TYIzPTYEtiM9tk",
+      "raw": {
+        "amount": 79900,
+        "amount_due": 79900,
+        "amount_paid": 0,
+        "attempts": 0,
+        "created_at": 1788600350,
+        "currency": "INR",
+        "entity": "order",
+        "id": "order_TYIzPTYEtiM9tk",
+        "notes": {
+          "product_id": "prod_029",
+          "title": "Little Explorers 5-Book Picture Set (Ages 3-6)",
+          "trust_score": "66"
+        },
+        "offer_id": null,
+        "receipt": "rcpt_prod_029_1788600349",
+        "status": "created"
+      }
+    }
+  },
+  {
+    "timestamp": "2026-09-05T09:26:09.131556+00:00",
+    "query": "A titanium water bottle with a warranty",
+    "matched_product_id": "prod_006",
+    "matched_title": "Ultra-Resilient Titanium Water Bottle (32oz)",
+    "claim": [
+      "Ultra-Resilient"
+    ],
+    "evidence_check_result": "Weakest claim: \"Ultra-Resilient\" — The term 'Ultra-Resilient' is a vague marketing adjective not supported by specific technical specifications, impact test data, or defined mechanical properties in the listing. No contact/business info found.",
+    "trust_score": 27,
+    "price": 45.99,
+    "currency": "USD",
+    "decision": "BLOCK",
+    "reason": "Listed in USD, which this merchant account cannot settle directly. Needs currency conversion before purchase.",
+    "alternative": {
+      "product_id": "prod_024",
+      "title": "Nishio First-Flush Matcha (40g)"
+    },
+    "payment_status": null,
+    "payment": null
   }
 ]

@@ -45,7 +45,6 @@
       overflow: hidden;
     }
 
-    /* ============ Sidebar: fixed, hover-expands, click switches tab ============ */
     aside.sidebar {
       position: fixed;
       top: 0;
@@ -166,7 +165,6 @@
       transition-delay: 0.06s;
     }
 
-    /* ============ Main Container ============ */
     .app-container {
       margin-left: var(--sidebar-collapsed);
       height: 100vh;
@@ -240,7 +238,6 @@
 
     .user-info { font-size: 13px; font-weight: 600; }
 
-    /* ============ Scrollable Workspace ============ */
     main.content-area {
       flex: 1;
       padding: 4px 32px 32px 32px;
@@ -270,7 +267,6 @@
 
     .card:last-child { margin-bottom: 0; }
 
-    /* Hero Banner */
     .hero-card {
       background: #ffffff;
       display: flex;
@@ -301,7 +297,6 @@
 
     .hero-illustration { display: flex; align-items: center; justify-content: center; opacity: 0.9; flex-shrink: 0; }
 
-    /* Section Titles */
     .section-header {
       display: flex; align-items: center; justify-content: space-between; margin-bottom: 16px;
     }
@@ -310,7 +305,6 @@
     .view-all { font-size: 12px; font-weight: 600; color: var(--text-muted); cursor: pointer; text-decoration: none; background: none; border: none; }
     .view-all:hover { color: var(--text-main); }
 
-    /* ============ Pipeline modules (Structured Feed tab) ============ */
     .pipeline-intro {
       font-size: 14.5px; color: var(--text-muted); line-height: 1.7; margin-bottom: 22px; max-width: 640px;
     }
@@ -365,7 +359,6 @@
     .step-detail-title { font-size: 15px; font-weight: 700; margin-bottom: 8px; }
     .step-detail-body { font-size: 13.5px; color: #334155; line-height: 1.65; }
 
-    /* ============ Discoverability Lift Grid ============ */
     .metrics-row {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
@@ -392,7 +385,6 @@
     .badge-amber { background: #fef3c7; color: #b45309; }
     .badge-red { background: #fee2e2; color: #b91c1c; }
 
-    /* ============ Sandbox ============ */
     .sandbox-container { display: flex; flex-direction: column; gap: 16px; }
     .presets-row { display: flex; flex-wrap: wrap; gap: 8px; }
 
@@ -416,7 +408,35 @@
       overflow-x: auto; display: flex; flex-direction: column; gap: 8px;
     }
 
-    /* ============ Table ============ */
+    /* ============ Upsell / cross-sell panel ============ */
+    .upsell-panel {
+      display: none;
+      background: #f8fafc;
+      border: 1px solid var(--border-color);
+      border-radius: 14px;
+      padding: 16px 18px;
+    }
+    .upsell-panel.show { display: block; }
+    .upsell-heading {
+      font-size: 12px; font-weight: 800; text-transform: uppercase; letter-spacing: 0.4px;
+      color: var(--text-muted); margin-bottom: 10px;
+    }
+    .upsell-groups { display: flex; flex-direction: column; gap: 12px; }
+    .upsell-group-label {
+      font-size: 11px; font-weight: 700; color: #94a3b8; text-transform: uppercase;
+      letter-spacing: 0.4px; margin-bottom: 6px;
+    }
+    .upsell-items { display: flex; flex-direction: column; gap: 8px; }
+    .upsell-item {
+      display: flex; align-items: flex-start; justify-content: space-between; gap: 12px;
+      background: #ffffff; border: 1px solid var(--border-color); border-radius: 10px;
+      padding: 10px 12px;
+    }
+    .upsell-item-title { font-size: 12.5px; font-weight: 700; }
+    .upsell-item-reason { font-size: 11.5px; color: var(--text-muted); margin-top: 2px; line-height: 1.5; }
+    .upsell-item-meta { font-size: 11px; font-weight: 700; color: #047857; white-space: nowrap; flex-shrink: 0; }
+    .upsell-empty { font-size: 12px; color: #94a3b8; }
+
     .table-container { overflow-x: auto; }
     table { width: 100%; border-collapse: collapse; text-align: left; font-size: 13px; }
     th {
@@ -428,7 +448,6 @@
     tr:last-child td { border-bottom: none; }
     tr:hover td { background-color: #f8fafc; }
 
-    /* ============ Metric list ============ */
     .metric-list { display: flex; flex-direction: column; gap: 12px; }
     .metric-item {
       display: flex; align-items: center; justify-content: space-between;
@@ -439,7 +458,6 @@
     .metric-item-desc { font-size: 11px; color: var(--text-muted); }
     .metric-item-val { font-size: 18px; font-weight: 800; }
 
-    /* ============ Feed JSON Inspector ============ */
     .feed-inspector {
       background: #f8fafc; border: 1px solid var(--border-color); border-radius: 14px;
       padding: 16px; max-height: 340px; overflow-y: auto;
@@ -450,7 +468,6 @@
     }
     pre.code-block { font-family: monospace; font-size: 11px; color: #1e293b; white-space: pre-wrap; word-break: break-all; }
 
-    /* ============ Trust ranking table (Discoverability tab) ============ */
     .trust-bar-track {
       width: 100px; height: 6px; background: #e2e8f0; border-radius: 4px; overflow: hidden; display: inline-block; vertical-align: middle; margin-right: 8px;
     }
@@ -465,7 +482,6 @@
 </head>
 <body>
 
-  <!-- ============ Sidebar ============ -->
   <aside class="sidebar">
     <div class="brand-logo-row">
       <div class="brand-logo">Δ</div>
@@ -491,7 +507,6 @@
     </nav>
   </aside>
 
-  <!-- ============ Main Container ============ -->
   <div class="app-container">
 
     <header class="topbar">
@@ -512,7 +527,6 @@
 
     <main class="content-area">
 
-      <!-- ================= HOME ================= -->
       <div class="view-panel active" id="view-home">
         <div class="two-col">
           <div class="main-column">
@@ -533,7 +547,6 @@
               </div>
             </div>
 
-            <!-- Live Sandbox -->
             <div class="card" id="sandbox-section">
               <div class="section-header">
                 <div class="section-title">Live Buyer Agent &amp; Razorpay Trust Gate</div>
@@ -554,10 +567,10 @@
                 <div class="live-output-box" id="live-output">
                   <span style="color:#94a3b8;">// Select a preset above or type a custom query, then hit "Run Purchase Agent".</span>
                 </div>
+                <div class="upsell-panel" id="upsell-panel"></div>
               </div>
             </div>
 
-            <!-- Recent decisions preview -->
             <div class="card">
               <div class="section-header">
                 <div>
@@ -580,7 +593,6 @@
 
           </div>
 
-          <!-- Home side column -->
           <div class="side-column">
             <div class="card">
               <div class="section-header"><div class="section-title">Feed JSON Inspector</div></div>
@@ -595,7 +607,6 @@
         </div>
       </div>
 
-      <!-- ================= STRUCTURED FEED ================= -->
       <div class="view-panel" id="view-structure">
         <div class="card">
           <div class="section-title" style="margin-bottom:6px;">End-to-End GEO Pipeline</div>
@@ -623,12 +634,10 @@
             </div>
           </div>
           <div class="step-detail-panel" id="step-detail-panel">
-            <!-- filled by JS -->
           </div>
         </div>
       </div>
 
-      <!-- ================= DISCOVERABILITY ================= -->
       <div class="view-panel" id="view-discoverability">
 
         <div class="card">
@@ -706,7 +715,6 @@
 
       </div>
 
-      <!-- ================= AUDIT LOG ================= -->
       <div class="view-panel" id="view-audit">
         <div class="card">
           <div class="section-header">
@@ -917,6 +925,7 @@
         if (entry.decision === 'APPROVE') badgeClass = 'badge-green';
         if (entry.decision === 'HOLD_FOR_APPROVAL') badgeClass = 'badge-amber';
         if (entry.decision === 'BLOCK') badgeClass = 'badge-red';
+        if (entry.decision === 'ERROR') badgeClass = 'badge-red';
 
         const timeStr = entry.timestamp ? new Date(entry.timestamp).toLocaleTimeString() : 'N/A';
         const rzpStatus = entry.payment && entry.payment.order_id ? `Created (${entry.payment.order_id})` : (entry.payment_status || 'N/A');
@@ -975,6 +984,50 @@
       selectedForcedId = forcedId;
     }
 
+    function renderUpsellPanel(upsell) {
+      const panel = document.getElementById('upsell-panel');
+      if (!upsell || (!upsell.upsell_available && !upsell.cross_sell_available)) {
+        panel.classList.remove('show');
+        panel.innerHTML = '';
+        return;
+      }
+
+      const itemRow = (item) => {
+        const priceStr = item.price !== undefined && item.price !== null
+          ? `${item.price} ${item.currency || ''}`.trim() : '';
+        return `
+          <div class="upsell-item">
+            <div>
+              <div class="upsell-item-title">${item.title}</div>
+              <div class="upsell-item-reason">${item.reason || ''}</div>
+            </div>
+            <div class="upsell-item-meta">trust ${item.trust_score ?? '—'}${priceStr ? ' · ' + priceStr : ''}</div>
+          </div>`;
+      };
+
+      let groupsHtml = '';
+      if (upsell.upsell_available) {
+        groupsHtml += `
+          <div>
+            <div class="upsell-group-label">Step up</div>
+            <div class="upsell-items">${upsell.upsell.map(itemRow).join('')}</div>
+          </div>`;
+      }
+      if (upsell.cross_sell_available) {
+        groupsHtml += `
+          <div>
+            <div class="upsell-group-label">Goes well with it</div>
+            <div class="upsell-items">${upsell.cross_sell.map(itemRow).join('')}</div>
+          </div>`;
+      }
+
+      panel.innerHTML = `
+        <div class="upsell-heading">You might also like</div>
+        <div class="upsell-groups">${groupsHtml}</div>
+      `;
+      panel.classList.add('show');
+    }
+
     async function runAgentQuery() {
       const inputElem = document.getElementById('query-input');
       const q = inputElem ? inputElem.value : '';
@@ -985,6 +1038,7 @@
       btn.innerText = 'Processing...';
       btn.disabled = true;
       out.innerHTML = '<span style="color:#60a5fa;">> Executing AI Buyer Agent & Trust Gate...</span>';
+      renderUpsellPanel(null);
 
       try {
         const res = await fetch('/api/query', {
@@ -1000,6 +1054,16 @@
         }
 
         const result = await res.json();
+
+        if (result.decision === 'ERROR') {
+          let html = `<div><span style="color:#94a3b8;">Query:</span> "${result.query || q}"</div>`;
+          html += `<div style="color:#f87171; font-weight:700;">⚠ LLM configuration error, not a purchase decision:</div>`;
+          html += `<div style="color:#fca5a5; margin-top:4px;">${result.reason || 'Unknown error'}</div>`;
+          html += `<div style="color:#94a3b8; margin-top:6px; font-size:11px;">This means the buyer agent never actually evaluated your query. Check your server terminal / GROQ_API_KEY.</div>`;
+          out.innerHTML = html;
+          selectedForcedId = null;
+          return;
+        }
 
         if (result.decision === 'NO_MATCH' || !result.matched_product_id) {
           let html = `<div><span style="color:#94a3b8;">Query:</span> "${result.query || q}"</div>`;
@@ -1032,6 +1096,7 @@
         }
 
         out.innerHTML = html;
+        renderUpsellPanel(result.upsell);
         selectedForcedId = null;
         loadAuditPreview();
       } catch (err) {

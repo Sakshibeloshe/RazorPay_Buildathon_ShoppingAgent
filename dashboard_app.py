@@ -23,7 +23,16 @@ from pydantic import BaseModel
 # Import purchase pipeline logic
 from purchase_pipeline import run_purchase, load_feed, FEED_FILE, AUDIT_LOG_FILE
 
+# Upsell / cross-sell agent (Part 9 bonus) -- deterministic feed.json lookup,
+# see upsell_agent.py for the full explanation of how it decides candidates.
+from upsell_agent import suggest_upsell_cross_sell, annotate_feed
+
 app = FastAPI(title="GEO Merchant Dashboard")
+
+# Decisions that mean an actual (or pending) purchase is happening -- this is
+# the only point in the flow where a cross-sell/upsell suggestion makes sense.
+# A BLOCK or NO_MATCH means there's nothing to upsell alongside.
+PURCHASE_DECISIONS = {"APPROVE", "HOLD_FOR_APPROVAL"}
 
 DISCOVERABILITY_FILE = "discoverability_results.json"
 DISCOVERABILITY_V2_FILE = "discoverability_results_v2.json"
@@ -66,7 +75,31 @@ def execute_query(req: QueryRequest):
         raise HTTPException(status_code=400, detail="Query string cannot be empty")
     feed = load_feed()
     entry = run_purchase(req.query.strip(), feed, forced_product_id=req.forced_product_id)
+
+    # Only compute upsell/cross-sell once we know a purchase actually went
+    # through or is pending approval -- never for BLOCK/NO_MATCH, and never
+    # by asking an LLM to invent something; it's a lookup over the same feed
+    # this request already loaded, reusing the trust scores already on it.
+    matched_id = entry.get("matched_product_id")
+    if matched_id and entry.get("decision") in PURCHASE_DECISIONS:
+        annotated = annotate_feed(feed)
+        entry["upsell"] = suggest_upsell_cross_sell(matched_id, annotated)
+    else:
+        entry["upsell"] = None
+
     return entry
+
+
+@app.get("/api/upsell/{product_id}")
+def get_upsell(product_id: str):
+    """Standalone lookup, independent of a live query -- lets the frontend
+    (e.g. the Feed JSON Inspector) show 'pairs well with' for any product,
+    not just the one that was just purchased."""
+    feed = load_feed()
+    annotated = annotate_feed(feed)
+    if product_id not in annotated:
+        raise HTTPException(status_code=404, detail=f"{product_id} not found in feed")
+    return suggest_upsell_cross_sell(product_id, annotated)
 
 # Serve index.html
 @app.get("/", response_class=HTMLResponse)

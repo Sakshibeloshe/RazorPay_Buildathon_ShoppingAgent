@@ -29,6 +29,7 @@ import re
 from datetime import datetime, timezone
 from dotenv import load_dotenv
 from groq import Groq
+import groq as groq_module
 
 try:
     import razorpay
@@ -94,8 +95,23 @@ def load_feed():
 # 8a. The Buyer Agent
 # ---------------------------------------------------------------------------
 
+class LLMConfigError(Exception):
+    """Raised when the LLM call fails for a reason retrying won't fix --
+    bad/revoked API key, model not available on this account, etc. Distinct
+    from transient failures (rate limits, timeouts) which ARE worth retrying."""
+    pass
+
+
 def call_llm(prompt, max_tokens=900, retries=3, delay=5):
-    """Shared LLM caller with reasoning-model-safe settings and fallback."""
+    """Shared LLM caller with reasoning-model-safe settings and fallback.
+
+    Raises LLMConfigError immediately on auth/permission failures instead of
+    burning through every retry and every fallback model on an error that
+    will never succeed no matter how many times it's retried -- and instead
+    of silently returning "" (which upstream code was treating identically
+    to "the model genuinely found no match").
+    """
+    last_error = None
     for model_to_try in [MODEL_NAME, FALLBACK_MODEL]:
         for attempt in range(retries):
             try:
@@ -113,15 +129,36 @@ def call_llm(prompt, max_tokens=900, retries=3, delay=5):
                 if content and content.strip():
                     return content
                 print(f"    Empty response from {model_to_try} (attempt {attempt + 1}) — retrying...", flush=True)
+            except groq_module.AuthenticationError as e:
+                # Invalid/revoked key -- retrying or falling back to another
+                # model will never fix this. Fail fast and say so clearly.
+                raise LLMConfigError(
+                    f"Groq API key was rejected (AuthenticationError): {e}. "
+                    f"Check GROQ_API_KEY in .env -- it may be invalid, revoked, "
+                    f"or not actually being loaded from the folder you're running in."
+                )
+            except groq_module.NotFoundError as e:
+                raise LLMConfigError(
+                    f"Model '{model_to_try}' not available on this Groq account "
+                    f"(NotFoundError): {e}"
+                )
+            except groq_module.PermissionDeniedError as e:
+                raise LLMConfigError(
+                    f"Groq API key doesn't have permission for '{model_to_try}' "
+                    f"(PermissionDeniedError): {e}"
+                )
             except Exception as e:
                 msg = str(e)
+                last_error = msg
                 print(f"    LLM attempt {attempt + 1} failed with {model_to_try}: {msg}", flush=True)
                 if "rate_limit" in msg.lower() or "429" in msg or "quota" in msg.lower():
                     wait_time = delay * (attempt + 1) * 2
                     print(f"    Rate limit hit — sleeping {wait_time}s...", flush=True)
                     time.sleep(wait_time)
             time.sleep(delay)
-    return ""
+    # Genuinely transient failures (timeouts, 5xx, etc.) that survived every
+    # retry on every model -- still don't pretend this is "no match found".
+    raise LLMConfigError(f"LLM call failed after all retries/fallbacks. Last error: {last_error}")
 
 
 def build_agent_catalog_text(feed):
@@ -153,24 +190,44 @@ def match_product(query, feed, forced_product_id=None):
         return {"query": query, "matched_product_id": forced_product_id}
 
     catalog_text = build_agent_catalog_text(feed)
-    prompt = f"""You are a buyer agent matching a shopper's request to one product.
+    prompt = f"""You are a buyer agent shortlisting products that match a shopper's request.
 
 Catalog:
 {catalog_text}
 
 User query: "{query}"
 
-Pick the single best-matching product_id from the catalog above. If nothing
-reasonably matches, say NONE.
+List EVERY product_id that reasonably matches this request -- not just one.
+If several products are different variants/grades/brands of essentially the
+same thing the shopper asked for (e.g. multiple listings for "matcha" when
+the query is just "matcha"), include ALL of them; a later step will pick
+the most trustworthy one from your shortlist -- that is not your job here.
+If nothing reasonably matches, say NONE.
 
 Respond in exactly this format, nothing else:
-Product ID: <product_id or NONE>
+Product IDs: <comma-separated product_ids, or NONE>
 """
-    response = call_llm(prompt, max_tokens=300)
-    match = re.search(r"Product ID:\s*(\S+)", response or "")
-    product_id = match.group(1).strip() if match else None
-    if not product_id or product_id.upper() == "NONE" or product_id not in feed:
+    response = call_llm(prompt, max_tokens=300)  # raises LLMConfigError on config problems -- let it propagate
+    match = re.search(r"Product IDs?:\s*(.+)", response or "")
+    if not match or match.group(1).strip().upper() == "NONE":
         return {"query": query, "matched_product_id": None}
+
+    candidate_ids = [pid.strip() for pid in match.group(1).split(",")]
+    candidate_ids = [pid for pid in candidate_ids if pid in feed]
+    if not candidate_ids:
+        return {"query": query, "matched_product_id": None}
+
+    # Deterministic tie-break: among everything the LLM judged semantically
+    # relevant, pick the highest-trust option. No AI guess here on purpose --
+    # same principle as the gate itself: once relevance is established,
+    # which one to actually transact with is a boring, auditable comparison,
+    # not another model opinion.
+    candidate_ids.sort(key=lambda pid: feed[pid].get("trust_score") or 0, reverse=True)
+    product_id = candidate_ids[0]
+    if len(candidate_ids) > 1:
+        print(f"  Buyer agent shortlisted {len(candidate_ids)} matches for \"{query}\": "
+              f"{[(pid, feed[pid].get('trust_score')) for pid in candidate_ids]} "
+              f"-- picked highest trust: {product_id}", flush=True)
     return {"query": query, "matched_product_id": product_id}
 
 
@@ -320,7 +377,22 @@ def run_purchase(query, feed, forced_product_id=None):
     print(f"\nQuery: \"{query}\"", flush=True)
 
     # 8a
-    intent = match_product(query, feed, forced_product_id=forced_product_id)
+    try:
+        intent = match_product(query, feed, forced_product_id=forced_product_id)
+    except LLMConfigError as e:
+        # Config/auth problems are not a purchase decision -- don't log them
+        # into the audit trail as if the agent evaluated anything. Surface
+        # the real reason instead of a misleading NO_MATCH.
+        print(f"  LLM configuration error: {e}", flush=True)
+        return {
+            "timestamp": datetime.now(timezone.utc).isoformat(),
+            "query": query,
+            "matched_product_id": None,
+            "decision": "ERROR",
+            "reason": str(e),
+            "alternative": None,
+            "payment": None,
+        }
     product_id = intent["matched_product_id"]
 
     if not product_id:
