@@ -1,0 +1,32 @@
+{
+    "product_id": "prod_026",
+    "title": "FlexCore Non-Slip Yoga Mat (6mm)",
+    "claims_evaluated": [
+        {
+            "claim": "OEKO-TEX certified",
+            "score": 40,
+            "reason": "The listing names a specific, verifiable certification standard (OEKO-TEX), but provides no certificate ID, issuing body, or link to verify the claim for this specific product batch.",
+            "llm_evaluated": true
+        },
+        {
+            "claim": "free of harmful chemicals",
+            "score": 10,
+            "reason": "This is a vague marketing assertion that lacks a defined list of excluded substances, a specific test report, or a named ingredient analysis to substantiate the absolute claim of being 'free' of all harmful chemicals.",
+            "llm_evaluated": true
+        }
+    ],
+    "claim_evidence_avg": 25,
+    "failed_claim_evaluations": 0,
+    "score_reliable": true,
+    "deterministic_checks": {
+        "return_policy_present": true,
+        "price_consistent": true,
+        "prices_found_in_text": [
+            899.0
+        ],
+        "contact_info_present": true,
+        "deterministic_score": 100
+    },
+    "trust_score": 48,
+    "summary_reason": "Weakest claim: \"free of harmful chemicals\" — This is a vague marketing assertion that lacks a defined list of excluded substances, a specific test report, or a named ingredient analysis to substantiate the absolute claim of being 'free' of all harmful chemicals."
+}

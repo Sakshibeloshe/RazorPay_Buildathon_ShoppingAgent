@@ -41,13 +41,13 @@
   },
   {
     "id": "prod_009",
-    "title": "Organic Matcha Green Tea Powder 250g",
-    "raw_description": "<catalog_item>\n  <id>PROD-552</id>\n  <name>Organic Matcha Green Tea Powder 250g</name>\n  <details>\n    <origin>Uji, Japan</origin>\n    <grade>Ceremonial</grade>\n    <organic_certified>Yes</organic_certified>\n  </details>\n  <cost>22.00</cost>\n  <currency>EUR</currency>\n</catalog_item>"
+    "title": "Organic Matcha Powder 250g",
+    "raw_description": "<catalog_item>\n  <id>PROD-552</id>\n  <name>Organic Matcha Powder 250g</name>\n  <details>\n    <origin>Uji, Japan</origin>\n    <grade>Ceremonial</grade>\n    <organic_certified>Yes</organic_certified>\n  </details>\n  <cost>22.00</cost>\n  <currency>EUR</currency>\n</catalog_item>"
   },
   {
     "id": "prod_010",
     "title": "Ceramic Coffee Mug",
-    "raw_description": "item: \"Coffee Mug Ceramic\"\namt: 12.99\nqty: 40\nnotes: dishwasher safe, microwave safe, random assorted colors (blue/white/grey)"
+    "raw_description": "item: \"Coffee Mug Ceramic\"\namt: 12.99 USD\nqty: 40\nnotes: dishwasher safe, microwave safe, random assorted colors (blue/white/grey)"
   },
   {
     "id": "prod_011",
@@ -108,5 +108,45 @@
     "id": "prod_022",
     "title": "Slim Fit Tan Cafe Racer Jacket",
     "raw_description": "Hey check out this cafe racer jacket in clean tan color! Minimalist snap collar design with subtle vertical panel stitching. Made from heavy-duty buffalo leather. Price: USD 140. Free standard shipping (takes about 5-7 business days). Returns: 30 days exchange or refund."
+  },
+  {
+    "id": "prod_023",
+    "title": "Zen Garden Uji Ceremonial Matcha (30g)",
+    "raw_description": "Ceremonial grade matcha grown in Uji, Kyoto, Japan. First harvest (ichibancha), stone-ground, JAS-certified organic. Net weight 30g. Price: \u20b91450. In stock, ships within 2 business days. Returns accepted within 10 days if the seal is unbroken. For any questions, contact our customer care at care@zengardentea.in."
+  },
+  {
+    "id": "prod_024",
+    "title": "Nishio First-Flush Matcha (40g)",
+    "raw_description": "PRODUCT: Nishio First-Flush Matcha | ORIGIN: Nishio, Aichi Prefecture, Japan | GRADE: Ceremonial | HARVEST: First flush, shade-grown 21 days | CERTIFICATION: JAS Organic + USDA Organic | NET WT: 40g | PRICE: Rs. 1690 | STOCK: In stock | RETURNS: 14-day return if unopened | SUPPORT: customer service available at support@nishiotea.co.in or call us at 080-4567-1122"
+  },
+  {
+    "id": "prod_025",
+    "title": "Kyotherm Smart Electric Kettle 1.5L",
+    "raw_description": "{\n  \"item_name\": \"Kyotherm Smart Electric Kettle 1.5L\",\n  \"capacity_litres\": 1.5,\n  \"material\": \"304 food-grade stainless steel\",\n  \"certification\": \"ISI marked, BIS certified\",\n  \"auto_shutoff\": true,\n  \"price\": \"\u20b91799\",\n  \"availability\": \"In stock\",\n  \"return_policy\": \"15-day return if unused and in original packaging\",\n  \"warranty\": \"1-year manufacturer warranty\",\n  \"support_email\": \"support@kyotherm.in\"\n}"
+  },
+  {
+    "id": "prod_026",
+    "title": "FlexCore Non-Slip Yoga Mat (6mm)",
+    "raw_description": "Hi! Selling our FlexCore Yoga Mats \ud83e\uddd8 6mm thick, non-slip TPE material, OEKO-TEX certified free of harmful chemicals. Price \u20b9899 only. Cash on delivery available. 7-day return if you don't like the grip. For questions message our customer care number or email hello@flexcorefit.in \ud83d\ude4f"
+  },
+  {
+    "id": "prod_027",
+    "title": "TrackPoint M220 Wireless Silent Mouse",
+    "raw_description": "Model: TrackPoint M220 | Connectivity: 2.4GHz wireless + Bluetooth 5.0 | Buttons: Silent click (under 20dB, tested on in-house acoustic bench) | Battery: Up to 12 months on 1 AA cell | Price: \u20b9649 | Availability: In stock | Return Policy: 30-day replacement if defective | Customer care: care@trackpointindia.com"
+  },
+  {
+    "id": "prod_028",
+    "title": "SonicWave Mini Bluetooth Speaker",
+    "raw_description": "product_name: SonicWave Mini Bluetooth Speaker\noutput_power: 10W RMS\nbattery_life: 8 hours playback (rated per manufacturer bench test)\nwater_resistance: IPX5 rated\nprice: \u20b91299\nstock_status: In stock\nreturn_policy: 10-day return if unopened\nwarranty: 6-month manufacturer warranty\ncontact: helpline 1800-123-4567"
+  },
+  {
+    "id": "prod_029",
+    "title": "Little Explorers 5-Book Picture Set (Ages 3-6)",
+    "raw_description": "A set of 5 illustrated picture books for children aged 3 to 6, printed on FSC-certified paper with non-toxic, child-safe inks. Price: \u20b9799 for the full set. Currently in stock, ships in 3-4 days. We accept returns within 10 days if the books are undamaged. For support, contact our customer service team at support@littleexplorersbooks.in."
+  },
+  {
+    "id": "prod_030",
+    "title": "HydroSteel Insulated Lunch Box (3-Tier)",
+    "raw_description": "<product>\n  <name>HydroSteel Insulated Lunch Box (3-Tier)</name>\n  <material>18/8 food-grade stainless steel</material>\n  <capacity>3 x 350ml compartments</capacity>\n  <insulation>Double-wall vacuum insulation, keeps food warm up to 4 hours</insulation>\n  <price currency=\"INR\">1099</price>\n  <availability>In stock</availability>\n  <return_policy>7-day replacement for manufacturing defects</return_policy>\n  <support>customer care: lunchbox.support@hydrosteel.in</support>\n</product>"
   }
 ]

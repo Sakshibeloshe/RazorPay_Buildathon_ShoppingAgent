@@ -23,24 +23,24 @@
         "intent_coverage": {
             "phrasings": [
                 {
-                    "query": "Is there a supplement that claims to reverse aging quickly?",
+                    "query": "What health supplement claims to reverse cellular aging by 15 years in just 3 days?",
                     "covered": true,
                     "gap": null
                 },
                 {
-                    "query": "What are the ingredients in the Morrowen Miracle Elixir?",
+                    "query": "I need a product with quantum starlight ingredients for my wellness routine, what is available?",
                     "covered": true,
                     "gap": null
                 },
                 {
-                    "query": "Can I return the Morrowen Miracle Elixir if it doesn't work for me?",
-                    "covered": true,
-                    "gap": null
+                    "query": "Can I return the Morrowen Miracle Elixir if it doesn't work, and how long does shipping take?",
+                    "covered": false,
+                    "gap": "Missing delivery window information"
                 }
             ],
-            "covered_count": 3,
+            "covered_count": 2,
             "total_count": 3,
-            "coverage_pct": 100
+            "coverage_pct": 67
         },
         "trust_score": 20,
         "trust_summary_reason": "Weakest claim: \"Reverses cellular aging by 15 years in 3 days\" — The claim relies on vague 'quantum starlight ingredients' and makes an impossible biological promise without citing any studies, certifications, or verifiable mechanisms. No contact/business info found.",
@@ -97,19 +97,19 @@
         "intent_coverage": {
             "phrasings": [
                 {
-                    "query": "I need a large bag of certified organic oats that are safe for people with celiac disease, what do you recommend?",
+                    "query": "I have celiac disease, do you have any certified organic oats that are safe for me to eat?",
                     "covered": true,
                     "gap": null
                 },
                 {
-                    "query": "How much does a 1kg pack of gluten-free rolled oats cost and is it available for next-day delivery?",
+                    "query": "What is the price and delivery time for 1kg of organic rolled oats?",
                     "covered": true,
                     "gap": null
                 },
                 {
-                    "query": "What is the return policy if the oats arrive damaged, and do they come with a warranty?",
+                    "query": "Do you have any oats suitable for making overnight oats that are free from synthetic pesticides?",
                     "covered": false,
-                    "gap": "Missing warranty information"
+                    "gap": "Missing explicit confirmation that the product is suitable for overnight oats or specific preparation methods."
                 }
             ],
             "covered_count": 2,
@@ -176,14 +176,14 @@
                     "gap": null
                 },
                 {
-                    "query": "What is the best waterproof titanium smart ring for swimmers that has a long battery life?",
+                    "query": "What is the price of a titanium smart ring that is waterproof for swimming and has a 7-day battery life?",
                     "covered": true,
                     "gap": null
                 },
                 {
-                    "query": "Which smart ring is best for people with sensitive skin who want a durable, hypoallergenic option?",
+                    "query": "Which smart ring is best for someone who wants to monitor their body temperature and sleep quality but is looking for a specific brand recommendation?",
                     "covered": false,
-                    "gap": "Missing information regarding hypoallergenic properties or specific skin-sensitivity suitability."
+                    "gap": "Missing target audience and specific brand comparison data to determine 'best' or provide tailored recommendations."
                 }
             ],
             "covered_count": 2,
@@ -244,19 +244,19 @@
         "intent_coverage": {
             "phrasings": [
                 {
-                    "query": "I have stubborn dark spots and want to brighten my complexion, what vitamin C serum would you recommend?",
+                    "query": "I have persistent dark spots and dull skin; can you recommend a fragrance-free Vitamin C serum that effectively brightens my complexion?",
                     "covered": true,
                     "gap": null
                 },
                 {
-                    "query": "Is there a fragrance-free vitamin C serum with 10% L-ascorbic acid available?",
+                    "query": "What is the price and current stock availability for a 10% L-ascorbic acid serum that is fragrance-free?",
                     "covered": true,
                     "gap": null
                 },
                 {
-                    "query": "I need a skincare product for sensitive skin that is safe to use, does this serum have a warranty or guarantee?",
+                    "query": "I want to buy a brightening serum for my sensitive skin, but I need to know the warranty details and who it is specifically recommended for.",
                     "covered": false,
-                    "gap": "Missing warranty information and specific suitability details for sensitive skin beyond fragrance-free status."
+                    "gap": "Missing warranty information and specific target audience details."
                 }
             ],
             "covered_count": 2,
@@ -317,19 +317,19 @@
         "intent_coverage": {
             "phrasings": [
                 {
-                    "query": "Is there a keto supplement that claims to help me lose weight without exercising?",
+                    "query": "Do KetoFit Extreme Fat Burner capsules actually work without dieting or exercise?",
                     "covered": true,
                     "gap": null
                 },
                 {
-                    "query": "What is the return policy for KetoFit Extreme Fat Burner?",
+                    "query": "What is the return policy and delivery time for KetoFit Extreme Fat Burner?",
                     "covered": true,
                     "gap": null
                 },
                 {
-                    "query": "Who is the KetoFit Extreme Fat Burner specifically recommended for?",
+                    "query": "Who is KetoFit Extreme Fat Burner specifically recommended for?",
                     "covered": false,
-                    "gap": "Missing target_audience"
+                    "gap": "Missing target audience information"
                 }
             ],
             "covered_count": 2,
@@ -401,19 +401,19 @@
         "intent_coverage": {
             "phrasings": [
                 {
-                    "query": "I need a durable water bottle made of titanium that is BPA free and holds 32 ounces.",
+                    "query": "I need a durable water bottle made of titanium that won't rust or break, what are the specs?",
                     "covered": true,
                     "gap": null
                 },
                 {
-                    "query": "What is the warranty and return policy for the Ultra-Resilient Titanium Water Bottle?",
-                    "covered": true,
-                    "gap": null
-                },
-                {
-                    "query": "How long does it take to ship this titanium bottle to my house?",
+                    "query": "What is the delivery time and return policy for a 32oz BPA-free titanium bottle?",
                     "covered": false,
-                    "gap": "Missing delivery window information"
+                    "gap": "Missing delivery_window"
+                },
+                {
+                    "query": "Is there a long-term warranty on this ultra-resilient titanium water bottle?",
+                    "covered": true,
+                    "gap": null
                 }
             ],
             "covered_count": 2,
@@ -467,19 +467,19 @@
         "intent_coverage": {
             "phrasings": [
                 {
-                    "query": "I need a durable, authentic leather jacket for daily commuting that looks rugged and well-worn. Do you have a real cowhide option in a distressed brown finish?",
+                    "query": "I need a durable, authentic leather jacket for daily commuting that looks rugged but professional. Do you have any real cowhide options with a vintage aesthetic?",
                     "covered": true,
                     "gap": null
                 },
                 {
-                    "query": "Find me a size L vintage-style jacket with brass zippers that is handmade in Turkey and costs under $200.",
+                    "query": "Find me a size L distressed brown leather jacket with brass zippers that is handmade in Turkey.",
                     "covered": true,
                     "gap": null
                 },
                 {
-                    "query": "What is the delivery time and warranty coverage for the Distress Brown leather jacket if I order it today?",
+                    "query": "How quickly can I get a vintage leather jacket delivered, and what is the return policy if it doesn't fit?",
                     "covered": false,
-                    "gap": "Missing delivery_window and warranty information"
+                    "gap": "Missing delivery window information"
                 }
             ],
             "covered_count": 2,
@@ -535,24 +535,24 @@
         "intent_coverage": {
             "phrasings": [
                 {
-                    "query": "I need wireless earbuds with active noise cancellation that last at least 6 hours on a single charge, what are some good options?",
+                    "query": "I need wireless earbuds with active noise cancellation that last at least 6 hours on a single charge.",
                     "covered": true,
                     "gap": null
                 },
                 {
-                    "query": "What is the return policy and warranty for the AirPods Pro Max replica earbuds?",
+                    "query": "What is the return policy and warranty for this $2,499 replica of the AirPods Pro Max?",
                     "covered": false,
                     "gap": "Missing return policy and warranty details"
                 },
                 {
-                    "query": "Are there any affordable wireless earbuds with ANC that are currently in stock?",
-                    "covered": true,
-                    "gap": null
+                    "query": "Are these wireless earbuds with ANC currently in stock and how long does delivery take?",
+                    "covered": false,
+                    "gap": "Missing delivery window information"
                 }
             ],
-            "covered_count": 2,
+            "covered_count": 1,
             "total_count": 3,
-            "coverage_pct": 67
+            "coverage_pct": 33
         },
         "trust_score": 20,
         "trust_summary_reason": "Weakest claim: \"ANC works great\" — The phrase 'works great' is a subjective, vague marketing assertion with no technical specifications, certification, or verifiable mechanism provided. No return policy stated.",
@@ -582,12 +582,12 @@
     },
     {
         "product_id": "prod_009",
-        "title": "Organic Matcha Green Tea Powder 250g",
+        "title": "Organic Matcha Powder 250g",
         "category": "Food",
         "target_audience": "missing",
         "key_attributes": [
             "Organic",
-            "Matcha Green Tea Powder",
+            "Matcha Powder",
             "250g",
             "Origin: Uji, Japan",
             "Grade: Ceremonial",
@@ -608,19 +608,19 @@
         "intent_coverage": {
             "phrasings": [
                 {
-                    "query": "I want to make a high-quality matcha latte at home, what is a good ceremonial grade powder from Japan that is organic?",
+                    "query": "I need a high-quality ceremonial grade matcha from Uji, Japan that is certified organic. Do you have a 250g tin available?",
                     "covered": true,
                     "gap": null
                 },
                 {
-                    "query": "How much does a 250g bag of certified organic matcha green tea powder cost?",
+                    "query": "What is the best organic matcha powder for making lattes, and how much does a 250g container cost?",
                     "covered": true,
                     "gap": null
                 },
                 {
-                    "query": "Can I get this organic matcha powder delivered to my door, and what is the return policy if I don't like it?",
+                    "query": "I'm looking for organic matcha green tea powder. What is the return policy and how long does delivery take?",
                     "covered": false,
-                    "gap": "Missing delivery window and return policy details."
+                    "gap": "Missing return policy and delivery window information"
                 }
             ],
             "covered_count": 2,
@@ -663,7 +663,7 @@
             "Microwave safe"
         ],
         "price": 12.99,
-        "price_currency": "unknown",
+        "price_currency": "USD",
         "warranty": "missing",
         "availability": "In stock",
         "fulfillment_terms": {
@@ -674,19 +674,19 @@
         "intent_coverage": {
             "phrasings": [
                 {
-                    "query": "I need a coffee mug that I can put in the dishwasher and microwave without worrying about it breaking or fading.",
+                    "query": "I need a coffee mug that I can put in the dishwasher and microwave without worrying about it breaking.",
                     "covered": true,
                     "gap": null
                 },
                 {
-                    "query": "What is the return policy and warranty for this ceramic mug if it arrives chipped?",
+                    "query": "What is the price and current stock status for a ceramic mug with random blue, white, or grey colors?",
+                    "covered": true,
+                    "gap": null
+                },
+                {
+                    "query": "How long does it take to deliver this mug and what is the return policy if I don't like the color?",
                     "covered": false,
-                    "gap": "Missing return policy and warranty information"
-                },
-                {
-                    "query": "Do you have a simple, neutral-colored ceramic mug for my office desk that is currently in stock?",
-                    "covered": true,
-                    "gap": null
+                    "gap": "Missing delivery window and return policy details"
                 }
             ],
             "covered_count": 2,
@@ -743,19 +743,19 @@
         "intent_coverage": {
             "phrasings": [
                 {
-                    "query": "What skincare serum with niacinamide and hyaluronic acid can I buy for $29?",
+                    "query": "I want to achieve a glass skin look, what serum should I buy?",
                     "covered": true,
                     "gap": null
                 },
                 {
-                    "query": "Is there a product that gives instant glass skin results?",
+                    "query": "Find a skincare serum containing niacinamide and hyaluronic acid",
+                    "covered": true,
+                    "gap": null
+                },
+                {
+                    "query": "How long does it take to receive this serum and what is the return policy if I don't like it?",
                     "covered": false,
-                    "gap": "Missing target audience and specific usage context to confirm if the 'instant glass skin' claim applies to the user's skin type or routine."
-                },
-                {
-                    "query": "Do you have any low-stock serums that are in stock right now?",
-                    "covered": true,
-                    "gap": null
+                    "gap": "Missing delivery window and return policy details"
                 }
             ],
             "covered_count": 2,
@@ -811,19 +811,19 @@
         "intent_coverage": {
             "phrasings": [
                 {
-                    "query": "I need an ergonomic office chair with adjustable lumbar support and 360-degree armrests that is black and weighs around 14kg.",
+                    "query": "I need an office chair with adjustable lumbar support and 360-degree armrests that is under $150.",
                     "covered": true,
                     "gap": null
                 },
                 {
-                    "query": "What is the delivery time and warranty for the Ergonomic Office Chair Mesh (SKU 7788)?",
+                    "query": "What is the weight and color of the Ergonomic Office Chair Mesh with SKU 7788?",
+                    "covered": true,
+                    "gap": null
+                },
+                {
+                    "query": "How long does it take to deliver this chair and what is the warranty period?",
                     "covered": false,
-                    "gap": "Missing delivery_window and warranty information"
-                },
-                {
-                    "query": "Is this black mesh office chair suitable for someone who works long hours at a desk, and what is the return policy?",
-                    "covered": true,
-                    "gap": null
+                    "gap": "Missing delivery window and warranty information"
                 }
             ],
             "covered_count": 2,
@@ -870,7 +870,7 @@
                     "gap": null
                 },
                 {
-                    "query": "Do the Apex-V running shoes come with a warranty or a return policy?",
+                    "query": "Do the Apex-V running shoes come with a warranty or return policy?",
                     "covered": false,
                     "gap": "Missing warranty and return policy details"
                 },
@@ -925,19 +925,19 @@
         "intent_coverage": {
             "phrasings": [
                 {
-                    "query": "I need smart light bulbs that work with Alexa and Google Home, can you recommend a pack of two?",
+                    "query": "I need smart light bulbs that work with Alexa and Google Home to change colors via an app, preferably a 9W RGB pack of 2 with E27 base.",
                     "covered": true,
                     "gap": null
                 },
                 {
-                    "query": "What is the price of a 9W RGB LED bulb with an E27 base sold in a 2-pack?",
-                    "covered": true,
-                    "gap": null
-                },
-                {
-                    "query": "Do these smart bulbs come with a warranty and what is the return policy if I don't like them?",
+                    "query": "What is the warranty and return policy for the Smart LED Bulb 9W RGB Pack of 2?",
                     "covered": false,
                     "gap": "Missing warranty and return policy details"
+                },
+                {
+                    "query": "How much does it cost to get a pair of 9W RGB smart bulbs with E27 screw bases?",
+                    "covered": true,
+                    "gap": null
                 }
             ],
             "covered_count": 2,
@@ -996,19 +996,19 @@
         "intent_coverage": {
             "phrasings": [
                 {
-                    "query": "I need a compact keyboard with tactile switches that I can customize, what are some good options under $100?",
+                    "query": "I need a compact keyboard with tactile switches that I can customize with different keycaps and colors, what do you recommend?",
                     "covered": true,
                     "gap": null
                 },
                 {
-                    "query": "What is the best 65% mechanical keyboard with Gateron Brown switches and per-key RGB lighting?",
+                    "query": "Is there a 65% mechanical keyboard with Gateron Brown switches and hot-swappable sockets available for under $80?",
                     "covered": true,
                     "gap": null
                 },
                 {
-                    "query": "Can I get this keyboard delivered to my office next week, and what is the return policy if it doesn't fit my desk setup?",
+                    "query": "What is the warranty and return policy for this 65% mechanical keyboard if it arrives defective?",
                     "covered": false,
-                    "gap": "Missing delivery window and return policy information"
+                    "gap": "Missing warranty and return policy details"
                 }
             ],
             "covered_count": 2,
@@ -1054,19 +1054,19 @@
         "intent_coverage": {
             "phrasings": [
                 {
-                    "query": "I need a bulk supply of medical-grade 3-ply face masks for my clinic, can you find a box of 500?",
+                    "query": "I need a bulk supply of medical-grade disposable masks for my clinic, what is the price per unit for a box of 500?",
                     "covered": true,
                     "gap": null
                 },
                 {
-                    "query": "What is the per-unit cost for a large order of disposable 3-ply masks?",
+                    "query": "Are these 3-ply face masks suitable for daily personal use, and how many are included in the package?",
                     "covered": true,
                     "gap": null
                 },
                 {
-                    "query": "Do you have any 3-ply masks available for immediate delivery to my office?",
+                    "query": "How quickly can I get a box of 500 disposable masks delivered, and what is the return policy if they arrive damaged?",
                     "covered": false,
-                    "gap": "Missing availability and delivery window information"
+                    "gap": "Missing delivery window and return policy details"
                 }
             ],
             "covered_count": 2,
@@ -1123,24 +1123,24 @@
         "intent_coverage": {
             "phrasings": [
                 {
-                    "query": "I need a raw, unfiltered honey from Kashmir in a 500g glass jar for my kitchen.",
+                    "query": "I need a raw, unfiltered honey from Kashmir in a 500g glass jar that is organic.",
                     "covered": true,
                     "gap": null
                 },
                 {
-                    "query": "What is the best organic honey to boost my immunity?",
-                    "covered": true,
-                    "gap": null
-                },
-                {
-                    "query": "How long does it take to deliver this honey and what is the return policy if I don't like it?",
+                    "query": "What is the best organic honey for boosting immunity that is currently in stock?",
                     "covered": false,
-                    "gap": "Missing delivery window and return policy details"
+                    "gap": "Missing target audience and specific comparative data to determine 'best' or suitability for specific immunity needs beyond the general claim."
+                },
+                {
+                    "query": "How much does a 500g jar of organic raw honey cost and what is the delivery timeframe?",
+                    "covered": false,
+                    "gap": "Missing delivery window information."
                 }
             ],
-            "covered_count": 2,
+            "covered_count": 1,
             "total_count": 3,
-            "coverage_pct": 67
+            "coverage_pct": 33
         },
         "trust_score": 10,
         "trust_summary_reason": "Weakest claim: \"Very good for immunity\" — The statement is a vague health benefit claim without citing any specific study, certification, or verifiable mechanism to support the assertion. No return policy stated. No contact/business info found.",
@@ -1186,17 +1186,17 @@
         "intent_coverage": {
             "phrasings": [
                 {
-                    "query": "I need a microcontroller module that supports both Wi-Fi and Bluetooth for my IoT project, what are the specs?",
+                    "query": "What are the technical specs and connectivity options for the ESP32-WROOM module?",
                     "covered": true,
                     "gap": null
                 },
                 {
-                    "query": "How much does the ESP32-WROOM module cost and is it available for immediate purchase?",
+                    "query": "Is the ESP32-WROOM Microcontroller Module currently in stock and how long does shipping take?",
                     "covered": false,
                     "gap": "Missing availability status and delivery window information."
                 },
                 {
-                    "query": "What is the warranty policy if I buy an ESP32-WROOM module from Espressif Direct?",
+                    "query": "How much does the Espressif ESP32-WROOM cost and what is the warranty policy?",
                     "covered": false,
                     "gap": "Missing warranty details."
                 }
@@ -1245,19 +1245,19 @@
         "intent_coverage": {
             "phrasings": [
                 {
-                    "query": "I'm looking for a long-lasting soy candle with a sophisticated, earthy scent like fig and vetiver.",
+                    "query": "I need a long-lasting soy candle with a sophisticated earthy scent for my living room, what do you recommend?",
                     "covered": true,
                     "gap": null
                 },
                 {
-                    "query": "What is the burn time and vessel material for the Fig & Vetiver scented soy candle?",
+                    "query": "Do you have any hand-poured candles in matte black ceramic vessels that burn for at least 50 hours?",
                     "covered": true,
                     "gap": null
                 },
                 {
-                    "query": "Do you ship this candle quickly, and what is the return policy if I don't like the scent?",
+                    "query": "What is the return policy and delivery time for the Fig & Vetiver soy candle?",
                     "covered": false,
-                    "gap": "Missing delivery window and return policy details"
+                    "gap": "Missing return policy and delivery window information"
                 }
             ],
             "covered_count": 2,
@@ -1310,17 +1310,17 @@
         "intent_coverage": {
             "phrasings": [
                 {
-                    "query": "I need a compact USB-C adapter that supports 4K HDMI and 100W power delivery for my laptop.",
+                    "query": "I need a USB-C hub that supports 4K HDMI and 100W power delivery for my laptop.",
                     "covered": true,
                     "gap": null
                 },
                 {
-                    "query": "What is the best 7-in-1 USB-C hub under $30 that includes an SD card reader?",
+                    "query": "What is the best 7-in-1 USB-C adapter with SD card reader and USB 3.0 ports under $30?",
                     "covered": true,
                     "gap": null
                 },
                 {
-                    "query": "Does this 7-in-1 USB-C hub come with a warranty and what is the return policy if it arrives damaged?",
+                    "query": "Does this USB-C hub come with a warranty and what is the return policy if it breaks?",
                     "covered": false,
                     "gap": "Missing warranty and return policy details"
                 }
@@ -1372,19 +1372,19 @@
         "intent_coverage": {
             "phrasings": [
                 {
-                    "query": "I need a high-quality black leather biker jacket made from full-grain lambskin with a soft finish, what are the key design details?",
+                    "query": "I need a high-quality leather jacket made from full-grain lambskin with a classic biker cut and asymmetric zipper.",
                     "covered": true,
                     "gap": null
                 },
                 {
-                    "query": "What is the return policy and how fast can I get a classic black biker jacket delivered if I order it today?",
+                    "query": "What is the return policy and how fast can you ship a black leather jacket?",
                     "covered": true,
                     "gap": null
                 },
                 {
-                    "query": "Is this black leather jacket suitable for a professional office environment or is it too casual for work?",
+                    "query": "Is this jacket suitable for a professional setting or is it too edgy for office wear?",
                     "covered": false,
-                    "gap": "Missing target audience or style context to determine professional suitability"
+                    "gap": "Missing target audience or style context to determine suitability for professional settings"
                 }
             ],
             "covered_count": 2,
@@ -1446,19 +1446,19 @@
         "intent_coverage": {
             "phrasings": [
                 {
-                    "query": "I need a durable, slim-fit leather jacket in tan for my daily commute, what are the best options under $150?",
+                    "query": "I need a durable leather jacket for daily commuting that has a slim fit and is tan in color.",
                     "covered": true,
                     "gap": null
                 },
                 {
-                    "query": "Does this cafe racer style jacket come in a minimalist design with buffalo leather and what is the return policy?",
+                    "query": "What is the return policy and delivery time for a cafe racer style jacket made of buffalo leather?",
                     "covered": true,
                     "gap": null
                 },
                 {
-                    "query": "Who is this slim tan leather jacket specifically designed for and is it currently in stock?",
+                    "query": "Is this slim fit tan leather jacket available for purchase right now?",
                     "covered": false,
-                    "gap": "Missing target audience and availability status"
+                    "gap": "Missing availability status"
                 }
             ],
             "covered_count": 2,
@@ -1484,5 +1484,614 @@
             }
         ],
         "original_raw_description": "Hey check out this cafe racer jacket in clean tan color! Minimalist snap collar design with subtle vertical panel stitching. Made from heavy-duty buffalo leather. Price: USD 140. Free standard shipping (takes about 5-7 business days). Returns: 30 days exchange or refund."
+    },
+    {
+        "product_id": "prod_023",
+        "title": "Zen Garden Uji Ceremonial Matcha (30g)",
+        "category": "Food",
+        "target_audience": "missing",
+        "key_attributes": [
+            "Ceremonial grade matcha",
+            "grown in Uji, Kyoto, Japan",
+            "first harvest (ichibancha)",
+            "stone-ground",
+            "JAS-certified organic",
+            "net weight 30g"
+        ],
+        "claims_made": [
+            "Ceremonial grade matcha",
+            "First harvest (ichibancha)",
+            "Stone-ground",
+            "JAS-certified organic"
+        ],
+        "price": 1450,
+        "price_currency": "INR",
+        "warranty": "missing",
+        "availability": "In stock",
+        "fulfillment_terms": {
+            "delivery_window": "Ships within 2 business days",
+            "return_policy": "Returns accepted within 10 days if the seal is unbroken."
+        },
+        "intent_coverage": {
+            "phrasings": [
+                {
+                    "query": "I'm looking for a high-quality ceremonial grade matcha that is certified organic and stone-ground for the best texture.",
+                    "covered": true,
+                    "gap": null
+                },
+                {
+                    "query": "What is the best matcha for daily meditation and mindfulness rituals that comes from a traditional region in Japan?",
+                    "covered": false,
+                    "gap": "Missing specific information on the product's suitability or recommendations for meditation and mindfulness rituals."
+                },
+                {
+                    "query": "Can you recommend a first harvest matcha from Uji, Kyoto that is available for quick delivery?",
+                    "covered": true,
+                    "gap": null
+                }
+            ],
+            "covered_count": 2,
+            "total_count": 3,
+            "coverage_pct": 67
+        },
+        "trust_score": 59,
+        "trust_summary_reason": "Weakest claim: \"Ceremonial grade matcha\" — This is a marketing classification without a defined technical specification or standard in the text, relying on consumer trust rather than verifiable evidence.",
+        "claim_evidence_avg": 41,
+        "deterministic_checks": {
+            "return_policy_present": true,
+            "price_consistent": true,
+            "prices_found_in_text": [
+                1450.0
+            ],
+            "contact_info_present": true,
+            "deterministic_score": 100
+        },
+        "claims_evaluated": [
+            {
+                "claim": "Ceremonial grade matcha",
+                "score": 20,
+                "reason": "This is a marketing classification without a defined technical specification or standard in the text, relying on consumer trust rather than verifiable evidence.",
+                "llm_evaluated": true
+            },
+            {
+                "claim": "First harvest (ichibancha)",
+                "score": 30,
+                "reason": "While 'ichibancha' is a specific term, the listing provides no harvest date, lot number, or certificate to verify the timing of the harvest.",
+                "llm_evaluated": true
+            },
+            {
+                "claim": "Stone-ground",
+                "score": 25,
+                "reason": "This is a process claim that is difficult to verify from the listing alone and lacks specific technical details like particle size or grinding duration.",
+                "llm_evaluated": true
+            },
+            {
+                "claim": "JAS-certified organic",
+                "score": 90,
+                "reason": "JAS (Japanese Agricultural Standard) is a specific, named government certification that provides a verifiable framework for the organic claim.",
+                "llm_evaluated": true
+            }
+        ],
+        "original_raw_description": "Ceremonial grade matcha grown in Uji, Kyoto, Japan. First harvest (ichibancha), stone-ground, JAS-certified organic. Net weight 30g. Price: ₹1450. In stock, ships within 2 business days. Returns accepted within 10 days if the seal is unbroken. For any questions, contact our customer care at care@zengardentea.in."
+    },
+    {
+        "product_id": "prod_024",
+        "title": "Nishio First-Flush Matcha (40g)",
+        "category": "Food",
+        "target_audience": "missing",
+        "key_attributes": [
+            "Origin: Nishio, Aichi Prefecture, Japan",
+            "Grade: Ceremonial",
+            "Harvest: First flush, shade-grown 21 days",
+            "Certification: JAS Organic + USDA Organic",
+            "Net weight: 40g"
+        ],
+        "claims_made": [
+            "JAS Organic certification",
+            "USDA Organic certification",
+            "First flush harvest",
+            "Shade-grown 21 days",
+            "Ceremonial grade"
+        ],
+        "price": 1690,
+        "price_currency": "INR",
+        "warranty": "missing",
+        "availability": "In stock",
+        "fulfillment_terms": {
+            "delivery_window": "missing",
+            "return_policy": "14-day return if unopened"
+        },
+        "intent_coverage": {
+            "phrasings": [
+                {
+                    "query": "I need a high-quality ceremonial matcha for daily meditation that is certified organic and from Japan.",
+                    "covered": true,
+                    "gap": null
+                },
+                {
+                    "query": "What is the price and return policy for Nishio First-Flush Matcha?",
+                    "covered": true,
+                    "gap": null
+                },
+                {
+                    "query": "How long does it take to receive this matcha if I order it today?",
+                    "covered": false,
+                    "gap": "Missing delivery window information"
+                }
+            ],
+            "covered_count": 2,
+            "total_count": 3,
+            "coverage_pct": 67
+        },
+        "trust_score": 100,
+        "trust_summary_reason": "Claims are evidence-backed and listing basics are present.",
+        "claim_evidence_avg": 100,
+        "deterministic_checks": {
+            "return_policy_present": true,
+            "price_consistent": true,
+            "prices_found_in_text": [],
+            "contact_info_present": true,
+            "deterministic_score": 100
+        },
+        "claims_evaluated": [
+            {
+                "claim": "JAS Organic certification",
+                "score": 100,
+                "reason": "The listing explicitly states 'CERTIFICATION: JAS Organic', providing the specific certification name as direct evidence.",
+                "llm_evaluated": true
+            },
+            {
+                "claim": "USDA Organic certification",
+                "score": 100,
+                "reason": "The listing explicitly states 'CERTIFICATION: ... + USDA Organic', providing the specific certification name as direct evidence.",
+                "llm_evaluated": true
+            },
+            {
+                "claim": "First flush harvest",
+                "score": 100,
+                "reason": "The listing explicitly states 'HARVEST: First flush', providing the specific harvest timing as direct evidence.",
+                "llm_evaluated": true
+            },
+            {
+                "claim": "Shade-grown 21 days",
+                "score": 100,
+                "reason": "The listing explicitly states 'HARVEST: ... shade-grown 21 days', providing the precise technical specification for the shading period.",
+                "llm_evaluated": true
+            },
+            {
+                "claim": "Ceremonial grade",
+                "score": 100,
+                "reason": "The listing explicitly states 'GRADE: Ceremonial', providing the specific grade classification as direct evidence.",
+                "llm_evaluated": true
+            }
+        ],
+        "original_raw_description": "PRODUCT: Nishio First-Flush Matcha | ORIGIN: Nishio, Aichi Prefecture, Japan | GRADE: Ceremonial | HARVEST: First flush, shade-grown 21 days | CERTIFICATION: JAS Organic + USDA Organic | NET WT: 40g | PRICE: Rs. 1690 | STOCK: In stock | RETURNS: 14-day return if unopened | SUPPORT: customer service available at support@nishiotea.co.in or call us at 080-4567-1122"
+    },
+    {
+        "product_id": "prod_025",
+        "title": "Kyotherm Smart Electric Kettle 1.5L",
+        "category": "Home",
+        "target_audience": "missing",
+        "key_attributes": [
+            "1.5L capacity",
+            "304 food-grade stainless steel",
+            "ISI marked, BIS certified",
+            "auto shut-off feature"
+        ],
+        "claims_made": [
+            "ISI marked",
+            "BIS certified"
+        ],
+        "price": 1799,
+        "price_currency": "INR",
+        "warranty": "1-year manufacturer warranty",
+        "availability": "In stock",
+        "fulfillment_terms": {
+            "delivery_window": "missing",
+            "return_policy": "15-day return if unused and in original packaging"
+        },
+        "intent_coverage": {
+            "phrasings": [
+                {
+                    "query": "I need a safe electric kettle for my family that is certified by Indian standards and has a large capacity.",
+                    "covered": true,
+                    "gap": null
+                },
+                {
+                    "query": "What is the return policy and delivery time for the Kyotherm 1.5L stainless steel kettle?",
+                    "covered": false,
+                    "gap": "Missing delivery window information"
+                },
+                {
+                    "query": "Is there a food-grade stainless steel kettle under 2000 INR that shuts off automatically?",
+                    "covered": true,
+                    "gap": null
+                }
+            ],
+            "covered_count": 2,
+            "total_count": 3,
+            "coverage_pct": 67
+        },
+        "trust_score": 100,
+        "trust_summary_reason": "Claims are evidence-backed and listing basics are present.",
+        "claim_evidence_avg": 100,
+        "deterministic_checks": {
+            "return_policy_present": true,
+            "price_consistent": true,
+            "prices_found_in_text": [
+                1799.0
+            ],
+            "contact_info_present": true,
+            "deterministic_score": 100
+        },
+        "claims_evaluated": [
+            {
+                "claim": "ISI marked",
+                "score": 100,
+                "reason": "The listing explicitly states 'ISI marked' in the certification field, providing direct textual evidence for the claim.",
+                "llm_evaluated": true
+            },
+            {
+                "claim": "BIS certified",
+                "score": 100,
+                "reason": "The listing explicitly states 'BIS certified' in the certification field, providing direct textual evidence for the claim.",
+                "llm_evaluated": true
+            }
+        ],
+        "original_raw_description": "{\n  \"item_name\": \"Kyotherm Smart Electric Kettle 1.5L\",\n  \"capacity_litres\": 1.5,\n  \"material\": \"304 food-grade stainless steel\",\n  \"certification\": \"ISI marked, BIS certified\",\n  \"auto_shutoff\": true,\n  \"price\": \"₹1799\",\n  \"availability\": \"In stock\",\n  \"return_policy\": \"15-day return if unused and in original packaging\",\n  \"warranty\": \"1-year manufacturer warranty\",\n  \"support_email\": \"support@kyotherm.in\"\n}"
+    },
+    {
+        "product_id": "prod_026",
+        "title": "FlexCore Non-Slip Yoga Mat (6mm)",
+        "category": "Health",
+        "target_audience": "missing",
+        "key_attributes": [
+            "6mm thick",
+            "non-slip",
+            "TPE material",
+            "OEKO-TEX certified",
+            "free of harmful chemicals"
+        ],
+        "claims_made": [
+            "OEKO-TEX certified",
+            "free of harmful chemicals"
+        ],
+        "price": 899,
+        "price_currency": "INR",
+        "warranty": "missing",
+        "availability": "missing",
+        "fulfillment_terms": {
+            "delivery_window": "missing",
+            "return_policy": "7-day return if you don't like the grip."
+        },
+        "intent_coverage": {
+            "phrasings": [
+                {
+                    "query": "I need a yoga mat that is completely safe for my skin and free of toxic chemicals, is there one with OEKO-TEX certification?",
+                    "covered": true,
+                    "gap": null
+                },
+                {
+                    "query": "What is the best non-slip yoga mat made from TPE material that is 6mm thick?",
+                    "covered": true,
+                    "gap": null
+                },
+                {
+                    "query": "How long does it take to deliver a new yoga mat and what is the return policy if the grip isn't good enough?",
+                    "covered": false,
+                    "gap": "Missing delivery window information"
+                }
+            ],
+            "covered_count": 2,
+            "total_count": 3,
+            "coverage_pct": 67
+        },
+        "trust_score": 48,
+        "trust_summary_reason": "Weakest claim: \"free of harmful chemicals\" — This is a vague marketing assertion that lacks a defined list of excluded substances, a specific test report, or a named ingredient analysis to substantiate the absolute claim of being 'free' of all harmful chemicals.",
+        "claim_evidence_avg": 25,
+        "deterministic_checks": {
+            "return_policy_present": true,
+            "price_consistent": true,
+            "prices_found_in_text": [
+                899.0
+            ],
+            "contact_info_present": true,
+            "deterministic_score": 100
+        },
+        "claims_evaluated": [
+            {
+                "claim": "OEKO-TEX certified",
+                "score": 40,
+                "reason": "The listing names a specific, verifiable certification standard (OEKO-TEX), but provides no certificate ID, issuing body, or link to verify the claim for this specific product batch.",
+                "llm_evaluated": true
+            },
+            {
+                "claim": "free of harmful chemicals",
+                "score": 10,
+                "reason": "This is a vague marketing assertion that lacks a defined list of excluded substances, a specific test report, or a named ingredient analysis to substantiate the absolute claim of being 'free' of all harmful chemicals.",
+                "llm_evaluated": true
+            }
+        ],
+        "original_raw_description": "Hi! Selling our FlexCore Yoga Mats 🧘 6mm thick, non-slip TPE material, OEKO-TEX certified free of harmful chemicals. Price ₹899 only. Cash on delivery available. 7-day return if you don't like the grip. For questions message our customer care number or email hello@flexcorefit.in 🙏"
+    },
+    {
+        "product_id": "prod_027",
+        "title": "TrackPoint M220 Wireless Silent Mouse",
+        "category": "Electronics",
+        "target_audience": "missing",
+        "key_attributes": [
+            "Model: TrackPoint M220",
+            "Connectivity: 2.4GHz wireless + Bluetooth 5.0",
+            "Buttons: Silent click (under 20dB, tested on in-house acoustic bench)",
+            "Battery: Up to 12 months on 1 AA cell"
+        ],
+        "claims_made": [
+            "Silent click under 20dB",
+            "tested on in-house acoustic bench",
+            "Up to 12 months battery life on 1 AA cell"
+        ],
+        "price": 649,
+        "price_currency": "INR",
+        "warranty": "missing",
+        "availability": "In stock",
+        "fulfillment_terms": {
+            "delivery_window": "missing",
+            "return_policy": "30-day replacement if defective"
+        },
+        "intent_coverage": {
+            "phrasings": [
+                {
+                    "query": "I need a wireless mouse that is extremely quiet for late-night work, can you recommend one with verified low decibel output?",
+                    "covered": true,
+                    "gap": null
+                },
+                {
+                    "query": "What is the battery life of the TrackPoint M220 and does it support both Bluetooth and 2.4GHz connections?",
+                    "covered": true,
+                    "gap": null
+                },
+                {
+                    "query": "Is the TrackPoint M220 suitable for a home office setup, and how long is the delivery window if I order it today?",
+                    "covered": false,
+                    "gap": "Missing delivery window information"
+                }
+            ],
+            "covered_count": 2,
+            "total_count": 3,
+            "coverage_pct": 67
+        },
+        "trust_score": 77,
+        "trust_summary_reason": "Weakest claim: \"tested on in-house acoustic bench\" — This is a vague assertion of methodology without naming a specific standard, third-party lab, or providing raw data, making it difficult to verify independently.",
+        "claim_evidence_avg": 67,
+        "deterministic_checks": {
+            "return_policy_present": true,
+            "price_consistent": true,
+            "prices_found_in_text": [
+                649.0
+            ],
+            "contact_info_present": true,
+            "deterministic_score": 100
+        },
+        "claims_evaluated": [
+            {
+                "claim": "Silent click under 20dB",
+                "score": 85,
+                "reason": "The claim provides a precise technical specification (decibel threshold) which is a verifiable metric, though the testing method is self-reported.",
+                "llm_evaluated": true
+            },
+            {
+                "claim": "tested on in-house acoustic bench",
+                "score": 40,
+                "reason": "This is a vague assertion of methodology without naming a specific standard, third-party lab, or providing raw data, making it difficult to verify independently.",
+                "llm_evaluated": true
+            },
+            {
+                "claim": "Up to 12 months battery life on 1 AA cell",
+                "score": 75,
+                "reason": "The claim specifies the power source (1 AA cell) and a precise duration, which are verifiable technical parameters, but lacks details on usage conditions or battery chemistry.",
+                "llm_evaluated": true
+            }
+        ],
+        "original_raw_description": "Model: TrackPoint M220 | Connectivity: 2.4GHz wireless + Bluetooth 5.0 | Buttons: Silent click (under 20dB, tested on in-house acoustic bench) | Battery: Up to 12 months on 1 AA cell | Price: ₹649 | Availability: In stock | Return Policy: 30-day replacement if defective | Customer care: care@trackpointindia.com"
+    },
+    {
+        "product_id": "prod_028",
+        "title": "SonicWave Mini Bluetooth Speaker",
+        "category": "Electronics",
+        "target_audience": "missing",
+        "key_attributes": [
+            "10W RMS output power",
+            "8 hours playback battery life",
+            "IPX5 water resistance"
+        ],
+        "claims_made": [
+            "IPX5 rated"
+        ],
+        "price": 1299,
+        "price_currency": "INR",
+        "warranty": "6-month manufacturer warranty",
+        "availability": "In stock",
+        "fulfillment_terms": {
+            "delivery_window": "missing",
+            "return_policy": "10-day return if unopened"
+        },
+        "intent_coverage": {
+            "phrasings": [
+                {
+                    "query": "I need a portable speaker that can withstand splashes from rain or poolside use, what are some good options with water resistance?",
+                    "covered": true,
+                    "gap": null
+                },
+                {
+                    "query": "What is the battery life and output power of the SonicWave Mini Bluetooth Speaker?",
+                    "covered": true,
+                    "gap": null
+                },
+                {
+                    "query": "How long does it take to get the SonicWave Mini delivered, and what is the return policy if I change my mind?",
+                    "covered": false,
+                    "gap": "Missing delivery_window information"
+                }
+            ],
+            "covered_count": 2,
+            "total_count": 3,
+            "coverage_pct": 67
+        },
+        "trust_score": 90,
+        "trust_summary_reason": "Claims are evidence-backed and listing basics are present.",
+        "claim_evidence_avg": 85,
+        "deterministic_checks": {
+            "return_policy_present": true,
+            "price_consistent": true,
+            "prices_found_in_text": [
+                1299.0
+            ],
+            "contact_info_present": true,
+            "deterministic_score": 100
+        },
+        "claims_evaluated": [
+            {
+                "claim": "IPX5 rated",
+                "score": 85,
+                "reason": "The listing explicitly cites the specific international standard (IPX5) for water resistance, which is a verifiable technical specification rather than a vague marketing term.",
+                "llm_evaluated": true
+            }
+        ],
+        "original_raw_description": "product_name: SonicWave Mini Bluetooth Speaker\noutput_power: 10W RMS\nbattery_life: 8 hours playback (rated per manufacturer bench test)\nwater_resistance: IPX5 rated\nprice: ₹1299\nstock_status: In stock\nreturn_policy: 10-day return if unopened\nwarranty: 6-month manufacturer warranty\ncontact: helpline 1800-123-4567"
+    },
+    {
+        "product_id": "prod_029",
+        "title": "Little Explorers 5-Book Picture Set (Ages 3-6)",
+        "category": "Books",
+        "target_audience": "children aged 3-6",
+        "key_attributes": [
+            "5 illustrated picture books",
+            "FSC-certified paper",
+            "non-toxic, child-safe inks"
+        ],
+        "claims_made": [
+            "Printed on FSC-certified paper",
+            "Non-toxic, child-safe inks"
+        ],
+        "price": 799,
+        "price_currency": "INR",
+        "warranty": "missing",
+        "availability": "In stock",
+        "fulfillment_terms": {
+            "delivery_window": "3-4 days",
+            "return_policy": "We accept returns within 10 days if the books are undamaged."
+        },
+        "intent_coverage": {
+            "phrasings": [
+                {
+                    "query": "I need a set of picture books for my 4-year-old that are safe for them to handle and read, with non-toxic inks.",
+                    "covered": true,
+                    "gap": null
+                },
+                {
+                    "query": "Are there any eco-friendly children's book sets made from FSC-certified paper available right now?",
+                    "covered": true,
+                    "gap": null
+                },
+                {
+                    "query": "What is the return policy if I buy a 5-book set for my toddler and it arrives damaged?",
+                    "covered": false,
+                    "gap": "The record specifies returns are accepted only if books are undamaged, but does not clarify the process or refund terms for damaged items."
+                }
+            ],
+            "covered_count": 2,
+            "total_count": 3,
+            "coverage_pct": 67
+        },
+        "trust_score": 66,
+        "trust_summary_reason": "Weakest claim: \"Non-toxic, child-safe inks\" — The claim uses vague marketing language ('non-toxic', 'child-safe') without citing specific safety standards (e.g., ASTM D-4236, EN 71-3), named chemical compositions, or independent lab test results.",
+        "claim_evidence_avg": 52,
+        "deterministic_checks": {
+            "return_policy_present": true,
+            "price_consistent": true,
+            "prices_found_in_text": [
+                799.0
+            ],
+            "contact_info_present": true,
+            "deterministic_score": 100
+        },
+        "claims_evaluated": [
+            {
+                "claim": "Printed on FSC-certified paper",
+                "score": 85,
+                "reason": "The claim cites a specific, verifiable third-party certification standard (FSC), which provides a clear mechanism for verification, although the specific license number is not provided.",
+                "llm_evaluated": true
+            },
+            {
+                "claim": "Non-toxic, child-safe inks",
+                "score": 20,
+                "reason": "The claim uses vague marketing language ('non-toxic', 'child-safe') without citing specific safety standards (e.g., ASTM D-4236, EN 71-3), named chemical compositions, or independent lab test results.",
+                "llm_evaluated": true
+            }
+        ],
+        "original_raw_description": "A set of 5 illustrated picture books for children aged 3 to 6, printed on FSC-certified paper with non-toxic, child-safe inks. Price: ₹799 for the full set. Currently in stock, ships in 3-4 days. We accept returns within 10 days if the books are undamaged. For support, contact our customer service team at support@littleexplorersbooks.in."
+    },
+    {
+        "product_id": "prod_030",
+        "title": "HydroSteel Insulated Lunch Box (3-Tier)",
+        "category": "Food",
+        "target_audience": "missing",
+        "key_attributes": [
+            "18/8 food-grade stainless steel",
+            "3 x 350ml compartments",
+            "Double-wall vacuum insulation, keeps food warm up to 4 hours"
+        ],
+        "claims_made": [
+            "keeps food warm up to 4 hours"
+        ],
+        "price": 1099,
+        "price_currency": "INR",
+        "warranty": "missing",
+        "availability": "In stock",
+        "fulfillment_terms": {
+            "delivery_window": "missing",
+            "return_policy": "7-day replacement for manufacturing defects"
+        },
+        "intent_coverage": {
+            "phrasings": [
+                {
+                    "query": "I need a lunch box that keeps my food hot for at least 4 hours for my long commute, what do you recommend?",
+                    "covered": true,
+                    "gap": null
+                },
+                {
+                    "query": "Is there a 3-tier stainless steel lunch container available that is made from 18/8 food-grade material?",
+                    "covered": true,
+                    "gap": null
+                },
+                {
+                    "query": "What is the delivery timeframe and return policy for the HydroSteel Insulated Lunch Box?",
+                    "covered": false,
+                    "gap": "Missing delivery_window information"
+                }
+            ],
+            "covered_count": 2,
+            "total_count": 3,
+            "coverage_pct": 67
+        },
+        "trust_score": 58,
+        "trust_summary_reason": "Weakest claim: \"keeps food warm up to 4 hours\" — The claim is supported by the specific technical mechanism of 'double-wall vacuum insulation' and a precise time specification, but lacks independent certification or test data to verify the actual performance.",
+        "claim_evidence_avg": 40,
+        "deterministic_checks": {
+            "return_policy_present": true,
+            "price_consistent": true,
+            "prices_found_in_text": [],
+            "contact_info_present": true,
+            "deterministic_score": 100
+        },
+        "claims_evaluated": [
+            {
+                "claim": "keeps food warm up to 4 hours",
+                "score": 40,
+                "reason": "The claim is supported by the specific technical mechanism of 'double-wall vacuum insulation' and a precise time specification, but lacks independent certification or test data to verify the actual performance.",
+                "llm_evaluated": true
+            }
+        ],
+        "original_raw_description": "<product>\n  <name>HydroSteel Insulated Lunch Box (3-Tier)</name>\n  <material>18/8 food-grade stainless steel</material>\n  <capacity>3 x 350ml compartments</capacity>\n  <insulation>Double-wall vacuum insulation, keeps food warm up to 4 hours</insulation>\n  <price currency=\"INR\">1099</price>\n  <availability>In stock</availability>\n  <return_policy>7-day replacement for manufacturing defects</return_policy>\n  <support>customer care: lunchbox.support@hydrosteel.in</support>\n</product>"
     }
 ]

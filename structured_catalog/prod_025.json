@@ -1,0 +1,25 @@
+{
+    "category": "Home",
+    "target_audience": "missing",
+    "key_attributes": [
+        "1.5L capacity",
+        "304 food-grade stainless steel",
+        "ISI marked, BIS certified",
+        "auto shut-off feature"
+    ],
+    "claims_made": [
+        "ISI marked",
+        "BIS certified"
+    ],
+    "price": 1799,
+    "price_currency": "INR",
+    "availability": "In stock",
+    "fulfillment_terms": {
+        "delivery_window": "missing",
+        "return_policy": "15-day return if unused and in original packaging"
+    },
+    "warranty": "1-year manufacturer warranty",
+    "product_id": "prod_025",
+    "original_title": "Kyotherm Smart Electric Kettle 1.5L",
+    "original_raw_description": "{\n  \"item_name\": \"Kyotherm Smart Electric Kettle 1.5L\",\n  \"capacity_litres\": 1.5,\n  \"material\": \"304 food-grade stainless steel\",\n  \"certification\": \"ISI marked, BIS certified\",\n  \"auto_shutoff\": true,\n  \"price\": \"₹1799\",\n  \"availability\": \"In stock\",\n  \"return_policy\": \"15-day return if unused and in original packaging\",\n  \"warranty\": \"1-year manufacturer warranty\",\n  \"support_email\": \"support@kyotherm.in\"\n}"
+}

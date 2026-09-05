@@ -161,7 +161,7 @@ Do NOT add any text before or after the array.
                         {"role": "user", "content": prompt},
                     ],
                     model=model_to_try,
-                    max_tokens=1200,
+                    max_tokens=1000,
                     temperature=0.1,
                 )
                 result = clean_and_parse_json_array(completion.choices[0].message.content)

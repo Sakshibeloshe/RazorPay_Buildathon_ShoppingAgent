@@ -1,0 +1,24 @@
+{
+    "category": "Books",
+    "target_audience": "children aged 3-6",
+    "key_attributes": [
+        "5 illustrated picture books",
+        "FSC-certified paper",
+        "non-toxic, child-safe inks"
+    ],
+    "claims_made": [
+        "Printed on FSC-certified paper",
+        "Non-toxic, child-safe inks"
+    ],
+    "price": 799,
+    "price_currency": "INR",
+    "availability": "In stock",
+    "fulfillment_terms": {
+        "delivery_window": "3-4 days",
+        "return_policy": "We accept returns within 10 days if the books are undamaged."
+    },
+    "warranty": "missing",
+    "product_id": "prod_029",
+    "original_title": "Little Explorers 5-Book Picture Set (Ages 3-6)",
+    "original_raw_description": "A set of 5 illustrated picture books for children aged 3 to 6, printed on FSC-certified paper with non-toxic, child-safe inks. Price: ₹799 for the full set. Currently in stock, ships in 3-4 days. We accept returns within 10 days if the books are undamaged. For support, contact our customer service team at support@littleexplorersbooks.in."
+}

@@ -1,24 +1,24 @@
 {
     "summary": {
-        "total_queries_tested": 13,
+        "total_queries_tested": 14,
         "mentioned_before_raw": 9,
-        "mentioned_after_structured": 11,
-        "net_lift": 2,
+        "mentioned_after_structured": 14,
+        "net_lift": 5,
         "total_raw_call_failures": 0,
         "total_structured_call_failures": 0,
-        "headline": "Before GEO (keyword match on raw catalog): target mentioned in 9/13 queries.  After GEO (LLM + feed.json): 11/13.  Net lift: +2 recommendations.",
+        "headline": "Before GEO (keyword match on raw catalog): target mentioned in 9/14 queries.  After GEO (LLM + feed.json): 14/14.  Net lift: +5 recommendations.",
         "trust_segmented_lift": {
             "high_trust_gte_70": {
                 "n": 4,
                 "before": 2,
-                "after": 3,
-                "lift": 1
+                "after": 4,
+                "lift": 2
             },
             "low_trust_lt_70": {
-                "n": 9,
+                "n": 10,
                 "before": 7,
-                "after": 8,
-                "lift": 1
+                "after": 10,
+                "lift": 3
             }
         }
     },
@@ -34,7 +34,7 @@
             "structured_call_failed": false,
             "lift": "IMPROVED ↑",
             "raw_response_snippet": "Final Recommendation: PureOats Organic Gluten-Free Oats (1kg)\nReason: Keyword overlap score=2 against raw listing text (literal match only, no reasoning).",
-            "structured_response_snippet": "Final Recommendation: GlowSkin Vitamin C Radiance Serum\nReason: Price 1250 INR is under 1500 and it has a 30‑day return policy."
+            "structured_response_snippet": "Final Recommendation: GlowSkin Vitamin C Radiance Serum\nReason: Price 1250 INR is below 1500 and it has a 30‑day return policy."
         },
         {
             "query": "serums under 3000 INR",
@@ -47,7 +47,7 @@
             "structured_call_failed": false,
             "lift": "both hit",
             "raw_response_snippet": "Final Recommendation: GlowSkin Vitamin C Radiance Serum\nReason: Keyword overlap score=2 against raw listing text (literal match only, no reasoning).",
-            "structured_response_snippet": "Final Recommendation: GlowSkin Vitamin C Radiance Serum\nReason: Price 1250 INR is under 3000 INR and it is a serum."
+            "structured_response_snippet": "Final Recommendation: GlowSkin Vitamin C Radiance Serum\nReason: Price 1250 INR is under the 3000 INR budget."
         },
         {
             "query": "ESP32",
@@ -60,7 +60,7 @@
             "structured_call_failed": false,
             "lift": "both hit",
             "raw_response_snippet": "Final Recommendation: ESP32-WROOM Microcontroller Module\nReason: Keyword overlap score=1 against raw listing text (literal match only, no reasoning).",
-            "structured_response_snippet": "Final Recommendation: ESP32-WROOM Microcontroller Module\nReason: The product title contains ESP32."
+            "structured_response_snippet": "Final Recommendation: ESP32-WROOM Microcontroller Module\nReason: The product name contains ESP32."
         },
         {
             "query": "I need a food or breakfast item does not contain gluten and will be delivered next day.",
@@ -73,7 +73,7 @@
             "structured_call_failed": false,
             "lift": "both hit",
             "raw_response_snippet": "Final Recommendation: PureOats Organic Gluten-Free Oats (1kg)\nReason: Keyword overlap score=4 against raw listing text (literal match only, no reasoning).",
-            "structured_response_snippet": "Final Recommendation: PureOats Organic Gluten-Free Oats (1kg)\nReason: It is gluten‑free, a breakfast item, and offers next‑day delivery."
+            "structured_response_snippet": "Final Recommendation: PureOats Organic Gluten-Free Oats (1kg)\nReason: Gluten‑free oats with next‑day delivery and in stock."
         },
         {
             "query": "Health Monitor or tracker with warranty",
@@ -86,7 +86,7 @@
             "structured_call_failed": false,
             "lift": "both hit",
             "raw_response_snippet": "Final Recommendation: Aura Sleep & Activity Smart Ring\nReason: Keyword overlap score=1 against raw listing text (literal match only, no reasoning).",
-            "structured_response_snippet": "Final Recommendation: Aura Sleep & Activity Smart Ring\nReason: It is a health monitor/tracker and includes a 1‑year warranty."
+            "structured_response_snippet": "Final Recommendation: Aura Sleep & Activity Smart Ring\nReason: Health tracker with a 1‑year warranty."
         },
         {
             "query": "product to help me loose weight fast",
@@ -99,7 +99,7 @@
             "structured_call_failed": false,
             "lift": "IMPROVED ↑",
             "raw_response_snippet": "Final Recommendation: Morrowen Miracle Elixir\nReason: Keyword overlap score=1 against raw listing text (literal match only, no reasoning).",
-            "structured_response_snippet": "Final Recommendation: KetoFit Extreme Fat Burner\nReason: The product claims rapid weight loss while sleeping."
+            "structured_response_snippet": "Final Recommendation: KetoFit Extreme Fat Burner\nReason: Claims to help lose weight fast."
         },
         {
             "query": "Noise-cancelling earbuds under ₹3000",
@@ -112,7 +112,7 @@
             "structured_call_failed": false,
             "lift": "both hit",
             "raw_response_snippet": "Final Recommendation: Wireless Earbuds (AirPods Pro Max Replica)\nReason: Keyword overlap score=1 against raw listing text (literal match only, no reasoning).",
-            "structured_response_snippet": "Final Recommendation: Wireless Earbuds (AirPods Pro Max Replica)\nReason: It is noise‑cancelling, priced at 2499 INR, which is under ₹3000."
+            "structured_response_snippet": "Final Recommendation: Wireless Earbuds (AirPods Pro Max Replica)\nReason: Price 2499 INR is under ₹3000."
         },
         {
             "query": "Handmade real leather jacket with zipper under 20000 INR. Return available",
@@ -125,7 +125,7 @@
             "structured_call_failed": false,
             "lift": "both hit",
             "raw_response_snippet": "Final Recommendation: Vintage Leather Jacket - Distress Brown\nReason: Keyword overlap score=5 against raw listing text (literal match only, no reasoning).",
-            "structured_response_snippet": "Final Recommendation: Vintage Leather Jacket - Distress Brown\nReason: Handmade real leather with a zipper, priced ~15750 INR, and has a return policy."
+            "structured_response_snippet": "Final Recommendation: Vintage Leather Jacket - Distress Brown\nReason: Handmade real leather jacket with zipper, price ~15750 INR, return policy available."
         },
         {
             "query": "Water bottle corrosion-resistant, has warranty",
@@ -138,20 +138,20 @@
             "structured_call_failed": false,
             "lift": "both hit",
             "raw_response_snippet": "Final Recommendation: Ultra-Resilient Titanium Water Bottle (32oz)\nReason: Keyword overlap score=3 against raw listing text (literal match only, no reasoning).",
-            "structured_response_snippet": "Final Recommendation: Ultra-Resilient Titanium Water Bottle (32oz)\nReason: Titanium makes it corrosion‑resistant and it comes with a 5‑year warranty."
+            "structured_response_snippet": "Final Recommendation: Ultra-Resilient Titanium Water Bottle (32oz)\nReason: Titanium bottle is corrosion‑resistant and comes with a 5‑year warranty."
         },
         {
             "query": "Oriental tea",
             "target_product_id": "prod_009",
-            "target_title": "Organic Matcha Green Tea Powder 250g",
+            "target_title": "Organic Matcha Powder 250g",
             "trust_score": 38,
             "raw_mentioned": true,
             "structured_mentioned": true,
             "raw_call_failed": false,
             "structured_call_failed": false,
             "lift": "both hit",
-            "raw_response_snippet": "Final Recommendation: Organic Matcha Green Tea Powder 250g\nReason: Keyword overlap score=1 against raw listing text (literal match only, no reasoning).",
-            "structured_response_snippet": "Final Recommendation: Organic Matcha Green Tea Powder 250g\nReason: It is an oriental (Japanese) tea product."
+            "raw_response_snippet": "Final Recommendation: Organic Matcha Powder 250g\nReason: Keyword overlap score=1 against raw listing text (literal match only, no reasoning).",
+            "structured_response_snippet": "Final Recommendation: Zen Garden Uji Ceremonial Matcha (30g)\nReason: Oriental tea from Uji, Japan, within the catalog."
         },
         {
             "query": "Computer Accessories under 8000 INR",
@@ -159,12 +159,12 @@
             "target_title": "Mechanical Keyboard 65%",
             "trust_score": 80,
             "raw_mentioned": false,
-            "structured_mentioned": false,
+            "structured_mentioned": true,
             "raw_call_failed": false,
             "structured_call_failed": false,
-            "lift": "same",
+            "lift": "IMPROVED ↑",
             "raw_response_snippet": "Final Recommendation: GlowSkin Vitamin C Radiance Serum\nReason: Keyword overlap score=1 against raw listing text (literal match only, no reasoning).",
-            "structured_response_snippet": "Final Recommendation: USB-C Hub Multiport Adapter 7-in-1\nReason: Price 25 USD (~2075 INR) is under 8000 INR and it is a computer accessory."
+            "structured_response_snippet": "Final Recommendation: Mechanical Keyboard 65%\nReason: Computer accessory priced at 75 USD (~6225 INR) under 8000 INR."
         },
         {
             "query": "gifts for sporty people",
@@ -177,20 +177,33 @@
             "structured_call_failed": false,
             "lift": "IMPROVED ↑",
             "raw_response_snippet": "Final Recommendation: NONE\nReason: No literal keyword overlap found in any raw listing.",
-            "structured_response_snippet": "Final Recommendation: Running Shoes Apex-V\nReason: Running shoes are suitable gifts for sporty people."
+            "structured_response_snippet": "Final Recommendation: Running Shoes Apex-V\nReason: Suitable for sporty people and in stock."
         },
         {
-            "query": "gifts under 15 usd for coffee lovers",
+            "query": "gifts under 15.99 for coffee lovers",
             "target_product_id": "prod_010",
             "target_title": "Ceramic Coffee Mug",
             "trust_score": 45,
             "raw_mentioned": true,
-            "structured_mentioned": false,
+            "structured_mentioned": true,
             "raw_call_failed": false,
             "structured_call_failed": false,
-            "lift": "REGRESSED ↓",
+            "lift": "both hit",
             "raw_response_snippet": "Final Recommendation: Ceramic Coffee Mug\nReason: Keyword overlap score=2 against raw listing text (literal match only, no reasoning).",
-            "structured_response_snippet": "Final Recommendation: Smart LED Bulb 9W RGB (Pack of 2)\nReason: Price 14.99 USD is under 15.99 and it is a coffee‑lovers gift."
+            "structured_response_snippet": "Final Recommendation: Ceramic Coffee Mug\nReason: Price 12.99 USD is below 15.99 and fits coffee lovers."
+        },
+        {
+            "query": "gifts for 5 year old kids",
+            "target_product_id": "prod_029",
+            "target_title": "Little Explorers 5-Book Picture Set (Ages 3-6)",
+            "trust_score": 66,
+            "raw_mentioned": false,
+            "structured_mentioned": true,
+            "raw_call_failed": false,
+            "structured_call_failed": false,
+            "lift": "IMPROVED ↑",
+            "raw_response_snippet": "Final Recommendation: Morrowen Miracle Elixir\nReason: Keyword overlap score=1 against raw listing text (literal match only, no reasoning).",
+            "structured_response_snippet": "Final Recommendation: Little Explorers 5-Book Picture Set (Ages 3-6)\nReason: Appropriate gift for a 5‑year‑old child."
         }
     ]
 }

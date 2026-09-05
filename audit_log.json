@@ -266,5 +266,107 @@
         "status": "created"
       }
     }
+  },
+  {
+    "timestamp": "2026-09-05T02:55:25.630179+00:00",
+    "query": "A skincare product under 1500 rupees",
+    "matched_product_id": "prod_004",
+    "matched_title": "GlowSkin Vitamin C Radiance Serum",
+    "claim": [
+      "Treats dark spots",
+      "Brightens skin"
+    ],
+    "evidence_check_result": "No contact/business info found.",
+    "trust_score": 62,
+    "price": 1250,
+    "currency": "INR",
+    "decision": "APPROVE",
+    "reason": "Trust score 62 and price ₹1250 within policy.",
+    "alternative": null,
+    "payment_status": "created",
+    "payment": {
+      "status": "created",
+      "order_id": "order_TYCKzALQZRCVR4",
+      "raw": {
+        "amount": 125000,
+        "amount_due": 125000,
+        "amount_paid": 0,
+        "attempts": 0,
+        "created_at": 1788576924,
+        "currency": "INR",
+        "entity": "order",
+        "id": "order_TYCKzALQZRCVR4",
+        "notes": {
+          "product_id": "prod_004",
+          "title": "GlowSkin Vitamin C Radiance Serum",
+          "trust_score": "62"
+        },
+        "offer_id": null,
+        "receipt": "rcpt_prod_004_1788576924",
+        "status": "created"
+      }
+    }
+  },
+  {
+    "timestamp": "2026-09-05T02:55:27.636960+00:00",
+    "query": "A titanium-build smart ring with a warranty",
+    "matched_product_id": "prod_003",
+    "matched_title": "Aura Sleep & Activity Smart Ring",
+    "claim": [
+      "Waterproof up to 50m",
+      "Battery lasts 7 days"
+    ],
+    "evidence_check_result": "No contact/business info found.",
+    "trust_score": 78,
+    "price": 18999,
+    "currency": "INR",
+    "decision": "HOLD_FOR_APPROVAL",
+    "reason": "Trust score 78 is high, but price ₹18999 exceeds the ₹5000 auto-approve limit.",
+    "alternative": null,
+    "payment_status": null,
+    "payment": null
+  },
+  {
+    "timestamp": "2026-09-05T02:55:29.641058+00:00",
+    "query": "An anti-aging product that works fast",
+    "matched_product_id": "prod_001",
+    "matched_title": "Morrowen Miracle Elixir",
+    "claim": [
+      "Reverses cellular aging by 15 years in 3 days",
+      "No other product does this"
+    ],
+    "evidence_check_result": "Weakest claim: \"Reverses cellular aging by 15 years in 3 days\" — The claim relies on vague 'quantum starlight ingredients' and makes an impossible biological promise without citing any studies, certifications, or verifiable mechanisms. No contact/business info found.",
+    "trust_score": 20,
+    "price": 2499,
+    "currency": "INR",
+    "decision": "BLOCK",
+    "reason": "Trust score 20 is too low — claims on this listing are largely unsupported.",
+    "alternative": {
+      "product_id": "prod_024",
+      "title": "Nishio First-Flush Matcha (40g)"
+    },
+    "payment_status": null,
+    "payment": null
+  },
+  {
+    "timestamp": "2026-09-05T02:55:31.647774+00:00",
+    "query": "A titanium water bottle with a warranty",
+    "matched_product_id": "prod_006",
+    "matched_title": "Ultra-Resilient Titanium Water Bottle (32oz)",
+    "claim": [
+      "Ultra-Resilient"
+    ],
+    "evidence_check_result": "Weakest claim: \"Ultra-Resilient\" — The term 'Ultra-Resilient' is a vague marketing adjective not supported by specific technical specifications, impact test data, or defined mechanical properties in the listing. No contact/business info found.",
+    "trust_score": 27,
+    "price": 45.99,
+    "currency": "USD",
+    "decision": "BLOCK",
+    "reason": "Listed in USD, which this merchant account cannot settle directly. Needs currency conversion before purchase.",
+    "alternative": {
+      "product_id": "prod_024",
+      "title": "Nishio First-Flush Matcha (40g)"
+    },
+    "payment_status": null,
+    "payment": null
   }
 ]

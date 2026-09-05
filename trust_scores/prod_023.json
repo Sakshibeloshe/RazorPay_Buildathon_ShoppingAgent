@@ -1,0 +1,44 @@
+{
+    "product_id": "prod_023",
+    "title": "Zen Garden Uji Ceremonial Matcha (30g)",
+    "claims_evaluated": [
+        {
+            "claim": "Ceremonial grade matcha",
+            "score": 20,
+            "reason": "This is a marketing classification without a defined technical specification or standard in the text, relying on consumer trust rather than verifiable evidence.",
+            "llm_evaluated": true
+        },
+        {
+            "claim": "First harvest (ichibancha)",
+            "score": 30,
+            "reason": "While 'ichibancha' is a specific term, the listing provides no harvest date, lot number, or certificate to verify the timing of the harvest.",
+            "llm_evaluated": true
+        },
+        {
+            "claim": "Stone-ground",
+            "score": 25,
+            "reason": "This is a process claim that is difficult to verify from the listing alone and lacks specific technical details like particle size or grinding duration.",
+            "llm_evaluated": true
+        },
+        {
+            "claim": "JAS-certified organic",
+            "score": 90,
+            "reason": "JAS (Japanese Agricultural Standard) is a specific, named government certification that provides a verifiable framework for the organic claim.",
+            "llm_evaluated": true
+        }
+    ],
+    "claim_evidence_avg": 41,
+    "failed_claim_evaluations": 0,
+    "score_reliable": true,
+    "deterministic_checks": {
+        "return_policy_present": true,
+        "price_consistent": true,
+        "prices_found_in_text": [
+            1450.0
+        ],
+        "contact_info_present": true,
+        "deterministic_score": 100
+    },
+    "trust_score": 59,
+    "summary_reason": "Weakest claim: \"Ceremonial grade matcha\" — This is a marketing classification without a defined technical specification or standard in the text, relying on consumer trust rather than verifiable evidence."
+}

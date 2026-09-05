@@ -1,0 +1,32 @@
+{
+    "product_id": "prod_029",
+    "title": "Little Explorers 5-Book Picture Set (Ages 3-6)",
+    "claims_evaluated": [
+        {
+            "claim": "Printed on FSC-certified paper",
+            "score": 85,
+            "reason": "The claim cites a specific, verifiable third-party certification standard (FSC), which provides a clear mechanism for verification, although the specific license number is not provided.",
+            "llm_evaluated": true
+        },
+        {
+            "claim": "Non-toxic, child-safe inks",
+            "score": 20,
+            "reason": "The claim uses vague marketing language ('non-toxic', 'child-safe') without citing specific safety standards (e.g., ASTM D-4236, EN 71-3), named chemical compositions, or independent lab test results.",
+            "llm_evaluated": true
+        }
+    ],
+    "claim_evidence_avg": 52,
+    "failed_claim_evaluations": 0,
+    "score_reliable": true,
+    "deterministic_checks": {
+        "return_policy_present": true,
+        "price_consistent": true,
+        "prices_found_in_text": [
+            799.0
+        ],
+        "contact_info_present": true,
+        "deterministic_score": 100
+    },
+    "trust_score": 66,
+    "summary_reason": "Weakest claim: \"Non-toxic, child-safe inks\" — The claim uses vague marketing language ('non-toxic', 'child-safe') without citing specific safety standards (e.g., ASTM D-4236, EN 71-3), named chemical compositions, or independent lab test results."
+}

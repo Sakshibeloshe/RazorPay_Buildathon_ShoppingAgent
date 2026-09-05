@@ -1,0 +1,48 @@
+{
+    "product_id": "prod_024",
+    "title": "Nishio First-Flush Matcha (40g)",
+    "claims_evaluated": [
+        {
+            "claim": "JAS Organic certification",
+            "score": 100,
+            "reason": "The listing explicitly states 'CERTIFICATION: JAS Organic', providing the specific certification name as direct evidence.",
+            "llm_evaluated": true
+        },
+        {
+            "claim": "USDA Organic certification",
+            "score": 100,
+            "reason": "The listing explicitly states 'CERTIFICATION: ... + USDA Organic', providing the specific certification name as direct evidence.",
+            "llm_evaluated": true
+        },
+        {
+            "claim": "First flush harvest",
+            "score": 100,
+            "reason": "The listing explicitly states 'HARVEST: First flush', providing the specific harvest timing as direct evidence.",
+            "llm_evaluated": true
+        },
+        {
+            "claim": "Shade-grown 21 days",
+            "score": 100,
+            "reason": "The listing explicitly states 'HARVEST: ... shade-grown 21 days', providing the precise technical specification for the shading period.",
+            "llm_evaluated": true
+        },
+        {
+            "claim": "Ceremonial grade",
+            "score": 100,
+            "reason": "The listing explicitly states 'GRADE: Ceremonial', providing the specific grade classification as direct evidence.",
+            "llm_evaluated": true
+        }
+    ],
+    "claim_evidence_avg": 100,
+    "failed_claim_evaluations": 0,
+    "score_reliable": true,
+    "deterministic_checks": {
+        "return_policy_present": true,
+        "price_consistent": true,
+        "prices_found_in_text": [],
+        "contact_info_present": true,
+        "deterministic_score": 100
+    },
+    "trust_score": 100,
+    "summary_reason": "Claims are evidence-backed and listing basics are present."
+}

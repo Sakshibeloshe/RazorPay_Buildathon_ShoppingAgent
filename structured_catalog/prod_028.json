@@ -1,0 +1,23 @@
+{
+    "category": "Electronics",
+    "target_audience": "missing",
+    "key_attributes": [
+        "10W RMS output power",
+        "8 hours playback battery life",
+        "IPX5 water resistance"
+    ],
+    "claims_made": [
+        "IPX5 rated"
+    ],
+    "price": 1299,
+    "price_currency": "INR",
+    "availability": "In stock",
+    "fulfillment_terms": {
+        "delivery_window": "missing",
+        "return_policy": "10-day return if unopened"
+    },
+    "warranty": "6-month manufacturer warranty",
+    "product_id": "prod_028",
+    "original_title": "SonicWave Mini Bluetooth Speaker",
+    "original_raw_description": "product_name: SonicWave Mini Bluetooth Speaker\noutput_power: 10W RMS\nbattery_life: 8 hours playback (rated per manufacturer bench test)\nwater_resistance: IPX5 rated\nprice: ₹1299\nstock_status: In stock\nreturn_policy: 10-day return if unopened\nwarranty: 6-month manufacturer warranty\ncontact: helpline 1800-123-4567"
+}

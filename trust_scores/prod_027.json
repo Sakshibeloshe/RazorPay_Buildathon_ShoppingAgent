@@ -1,0 +1,38 @@
+{
+    "product_id": "prod_027",
+    "title": "TrackPoint M220 Wireless Silent Mouse",
+    "claims_evaluated": [
+        {
+            "claim": "Silent click under 20dB",
+            "score": 85,
+            "reason": "The claim provides a precise technical specification (decibel threshold) which is a verifiable metric, though the testing method is self-reported.",
+            "llm_evaluated": true
+        },
+        {
+            "claim": "tested on in-house acoustic bench",
+            "score": 40,
+            "reason": "This is a vague assertion of methodology without naming a specific standard, third-party lab, or providing raw data, making it difficult to verify independently.",
+            "llm_evaluated": true
+        },
+        {
+            "claim": "Up to 12 months battery life on 1 AA cell",
+            "score": 75,
+            "reason": "The claim specifies the power source (1 AA cell) and a precise duration, which are verifiable technical parameters, but lacks details on usage conditions or battery chemistry.",
+            "llm_evaluated": true
+        }
+    ],
+    "claim_evidence_avg": 67,
+    "failed_claim_evaluations": 0,
+    "score_reliable": true,
+    "deterministic_checks": {
+        "return_policy_present": true,
+        "price_consistent": true,
+        "prices_found_in_text": [
+            649.0
+        ],
+        "contact_info_present": true,
+        "deterministic_score": 100
+    },
+    "trust_score": 77,
+    "summary_reason": "Weakest claim: \"tested on in-house acoustic bench\" — This is a vague assertion of methodology without naming a specific standard, third-party lab, or providing raw data, making it difficult to verify independently."
+}

@@ -1,0 +1,24 @@
+{
+    "product_id": "prod_030",
+    "title": "HydroSteel Insulated Lunch Box (3-Tier)",
+    "claims_evaluated": [
+        {
+            "claim": "keeps food warm up to 4 hours",
+            "score": 40,
+            "reason": "The claim is supported by the specific technical mechanism of 'double-wall vacuum insulation' and a precise time specification, but lacks independent certification or test data to verify the actual performance.",
+            "llm_evaluated": true
+        }
+    ],
+    "claim_evidence_avg": 40,
+    "failed_claim_evaluations": 0,
+    "score_reliable": true,
+    "deterministic_checks": {
+        "return_policy_present": true,
+        "price_consistent": true,
+        "prices_found_in_text": [],
+        "contact_info_present": true,
+        "deterministic_score": 100
+    },
+    "trust_score": 58,
+    "summary_reason": "Weakest claim: \"keeps food warm up to 4 hours\" — The claim is supported by the specific technical mechanism of 'double-wall vacuum insulation' and a precise time specification, but lacks independent certification or test data to verify the actual performance."
+}

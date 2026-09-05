@@ -50,5 +50,9 @@
   {
     "query": "gifts under 15.99 for coffee lovers",
     "target_product_id": "prod_010"
+  },
+  {
+    "query": "gifts for 5 year old kids",
+    "target_product_id": "prod_029"
   }
 ]

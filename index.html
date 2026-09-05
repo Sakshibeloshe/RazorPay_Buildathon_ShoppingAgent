@@ -27,6 +27,8 @@
       --radius-lg: 20px;
       --shadow-sm: 0 1px 3px rgba(0,0,0,0.05);
       --shadow-md: 0 4px 12px rgba(0,0,0,0.05);
+      --sidebar-collapsed: 90px;
+      --sidebar-expanded: 248px;
     }
 
     * {
@@ -39,27 +41,46 @@
     body {
       background-color: var(--bg-main);
       color: var(--text-main);
-      display: flex;
       height: 100vh;
       overflow: hidden;
     }
 
-    /* Sidebar Styling */
+    /* ============ Sidebar: fixed, hover-expands, click switches tab ============ */
     aside.sidebar {
-      width: 90px;
+      position: fixed;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      width: var(--sidebar-collapsed);
       background-color: var(--sidebar-bg);
       display: flex;
       flex-direction: column;
-      align-items: center;
+      align-items: flex-start;
       padding: 24px 0;
       gap: 24px;
-      z-index: 10;
-      flex-shrink: 0;
+      z-index: 100;
+      overflow: hidden;
+      transition: width 0.22s cubic-bezier(0.4, 0, 0.2, 1);
+      box-shadow: 0 0 0 rgba(0,0,0,0);
+    }
+
+    aside.sidebar:hover {
+      width: var(--sidebar-expanded);
+      box-shadow: 8px 0 24px rgba(0,0,0,0.18);
+    }
+
+    .brand-logo-row {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 0 23px;
+      width: 100%;
     }
 
     .brand-logo {
       width: 44px;
       height: 44px;
+      flex-shrink: 0;
       background: linear-gradient(135deg, #ffffff, #cbd5e1);
       color: #0f172a;
       border-radius: 50%;
@@ -68,29 +89,45 @@
       justify-content: center;
       font-weight: 800;
       font-size: 20px;
-      margin-bottom: 12px;
       box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    }
+
+    .brand-wordmark {
+      color: #ffffff;
+      font-weight: 700;
+      font-size: 14px;
+      white-space: nowrap;
+      opacity: 0;
+      transform: translateX(-6px);
+      transition: opacity 0.18s ease, transform 0.18s ease;
+    }
+
+    aside.sidebar:hover .brand-wordmark {
+      opacity: 1;
+      transform: translateX(0);
+      transition-delay: 0.08s;
     }
 
     nav.nav-menu {
       display: flex;
       flex-direction: column;
-      gap: 16px;
+      gap: 8px;
       width: 100%;
-      align-items: center;
     }
 
     .nav-item {
-      width: 48px;
+      width: calc(100% - 24px);
+      margin: 0 12px;
       height: 48px;
       border-radius: 14px;
       display: flex;
       align-items: center;
-      justify-content: center;
+      gap: 14px;
+      padding: 0 13px;
       color: #94a3b8;
       cursor: pointer;
-      transition: all 0.2s ease;
-      position: relative;
+      transition: background-color 0.2s ease, color 0.2s ease;
+      white-space: nowrap;
     }
 
     .nav-item:hover {
@@ -101,12 +138,13 @@
     .nav-item.active {
       color: #0f172a;
       background-color: #ffffff;
-      box-shadow: 0 4px 12px rgba(255,255,255,0.2);
+      box-shadow: 0 4px 12px rgba(255,255,255,0.15);
     }
 
     .nav-item svg {
       width: 22px;
       height: 22px;
+      flex-shrink: 0;
       fill: none;
       stroke: currentColor;
       stroke-width: 2;
@@ -114,18 +152,31 @@
       stroke-linejoin: round;
     }
 
-    /* Main Container */
+    .nav-label {
+      font-size: 13px;
+      font-weight: 700;
+      opacity: 0;
+      transform: translateX(-6px);
+      transition: opacity 0.18s ease, transform 0.18s ease;
+    }
+
+    aside.sidebar:hover .nav-label {
+      opacity: 1;
+      transform: translateX(0);
+      transition-delay: 0.06s;
+    }
+
+    /* ============ Main Container ============ */
     .app-container {
-      flex: 1;
+      margin-left: var(--sidebar-collapsed);
+      height: 100vh;
       display: flex;
       flex-direction: column;
       overflow: hidden;
     }
 
-    /* Top Bar Header */
     header.topbar {
       height: 72px;
-      background-color: transparent;
       display: flex;
       align-items: center;
       justify-content: space-between;
@@ -161,163 +212,109 @@
       transition: border 0.2s;
     }
 
-    .search-input:focus {
-      border-color: var(--text-main);
-    }
+    .search-input:focus { border-color: var(--text-main); }
 
-    .topbar-right {
-      display: flex;
-      align-items: center;
-      gap: 20px;
-    }
+    .topbar-right { display: flex; align-items: center; gap: 20px; }
 
     .icon-btn {
-      width: 40px;
-      height: 40px;
+      width: 40px; height: 40px;
       background-color: #ffffff;
       border: 1px solid var(--border-color);
       border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      cursor: pointer;
-      color: #64748b;
+      display: flex; align-items: center; justify-content: center;
+      cursor: pointer; color: #64748b;
     }
 
     .user-profile {
-      display: flex;
-      align-items: center;
-      gap: 12px;
-      background: #ffffff;
-      padding: 6px 14px 6px 8px;
-      border-radius: 30px;
-      border: 1px solid var(--border-color);
+      display: flex; align-items: center; gap: 12px;
+      background: #ffffff; padding: 6px 14px 6px 8px;
+      border-radius: 30px; border: 1px solid var(--border-color);
     }
 
     .avatar {
-      width: 32px;
-      height: 32px;
-      border-radius: 50%;
-      background: #0f172a;
-      color: #ffffff;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 13px;
-      font-weight: 700;
+      width: 32px; height: 32px; border-radius: 50%;
+      background: #0f172a; color: #ffffff;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 13px; font-weight: 700;
     }
 
-    .user-info {
-      font-size: 13px;
-      font-weight: 600;
-      color: var(--text-main);
-    }
+    .user-info { font-size: 13px; font-weight: 600; }
 
-    /* Scrollable Workspace Content */
+    /* ============ Scrollable Workspace ============ */
     main.content-area {
       flex: 1;
-      padding: 0 32px 32px 32px;
+      padding: 4px 32px 32px 32px;
       overflow-y: auto;
+    }
+
+    .view-panel { display: none; }
+    .view-panel.active { display: block; }
+
+    .two-col {
       display: flex;
       gap: 28px;
+      align-items: flex-start;
     }
 
-    .main-column {
-      flex: 1.6;
-      display: flex;
-      flex-direction: column;
-      gap: 24px;
-    }
+    .main-column { flex: 1.6; display: flex; flex-direction: column; gap: 24px; }
+    .side-column { flex: 0.9; display: flex; flex-direction: column; gap: 24px; }
 
-    .side-column {
-      flex: 0.9;
-      display: flex;
-      flex-direction: column;
-      gap: 24px;
-    }
-
-    /* Cards */
     .card {
       background-color: var(--bg-card);
       border-radius: var(--radius-lg);
       padding: 24px;
       box-shadow: var(--shadow-sm);
       border: 1px solid var(--border-color);
+      margin-bottom: 24px;
     }
 
-    /* Hero Banner Card */
+    .card:last-child { margin-bottom: 0; }
+
+    /* Hero Banner */
     .hero-card {
       background: #ffffff;
-      position: relative;
-      overflow: hidden;
       display: flex;
       justify-content: space-between;
       align-items: center;
+      gap: 24px;
     }
 
     .hero-text h1 {
-      font-size: 24px;
-      font-weight: 800;
-      margin-bottom: 6px;
-      letter-spacing: -0.5px;
+      font-size: 24px; font-weight: 800; margin-bottom: 8px; letter-spacing: -0.5px;
     }
 
     .hero-text p {
-      color: var(--text-muted);
-      font-size: 14px;
-      max-width: 480px;
-      margin-bottom: 18px;
-      line-height: 1.5;
+      color: var(--text-muted); font-size: 14px; max-width: 500px;
+      margin-bottom: 18px; line-height: 1.6;
     }
 
     .btn-primary {
-      background-color: var(--primary);
-      color: #ffffff;
-      padding: 10px 22px;
-      border-radius: 12px;
-      font-size: 13px;
-      font-weight: 600;
-      border: none;
-      cursor: pointer;
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
+      background-color: var(--primary); color: #ffffff;
+      padding: 10px 22px; border-radius: 12px;
+      font-size: 13px; font-weight: 600; border: none; cursor: pointer;
+      display: inline-flex; align-items: center; gap: 8px;
       transition: background-color 0.2s;
     }
 
-    .btn-primary:hover {
-      background-color: var(--primary-hover);
-    }
+    .btn-primary:hover { background-color: var(--primary-hover); }
+    .btn-primary:disabled { opacity: 0.6; cursor: default; }
 
-    .hero-illustration {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      opacity: 0.9;
-    }
+    .hero-illustration { display: flex; align-items: center; justify-content: center; opacity: 0.9; flex-shrink: 0; }
 
     /* Section Titles */
     .section-header {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      margin-bottom: 16px;
+      display: flex; align-items: center; justify-content: space-between; margin-bottom: 16px;
+    }
+    .section-title { font-size: 16px; font-weight: 700; }
+    .section-subtitle { font-size: 12.5px; color: var(--text-muted); margin-top: 3px; line-height: 1.5; }
+    .view-all { font-size: 12px; font-weight: 600; color: var(--text-muted); cursor: pointer; text-decoration: none; background: none; border: none; }
+    .view-all:hover { color: var(--text-main); }
+
+    /* ============ Pipeline modules (Structured Feed tab) ============ */
+    .pipeline-intro {
+      font-size: 14.5px; color: var(--text-muted); line-height: 1.7; margin-bottom: 22px; max-width: 640px;
     }
 
-    .section-title {
-      font-size: 16px;
-      font-weight: 700;
-    }
-
-    .view-all {
-      font-size: 12px;
-      font-weight: 600;
-      color: var(--text-muted);
-      cursor: pointer;
-      text-decoration: none;
-    }
-
-    /* Pipeline Step Bar */
     .pipeline-grid {
       display: grid;
       grid-template-columns: repeat(6, 1fr);
@@ -330,29 +327,45 @@
       border-radius: var(--radius-md);
       padding: 14px 10px;
       text-align: center;
-      transition: all 0.2s ease;
+      cursor: pointer;
+      transition: all 0.18s ease;
     }
 
+    .step-box:hover { border-color: #94a3b8; }
+
     .step-box.active {
-      background: #ffffff;
-      border-color: var(--text-main);
+      background: #0f172a;
+      border-color: #0f172a;
       box-shadow: var(--shadow-sm);
     }
 
+    .step-box.active .step-num { color: #94a3b8; }
+    .step-box.active .step-name { color: #ffffff; }
+
     .step-num {
-      font-size: 10px;
-      font-weight: 800;
-      color: var(--text-muted);
-      text-transform: uppercase;
-      margin-bottom: 4px;
+      font-size: 10px; font-weight: 800; color: var(--text-muted);
+      text-transform: uppercase; margin-bottom: 4px;
     }
 
-    .step-name {
-      font-size: 12px;
-      font-weight: 700;
+    .step-name { font-size: 12px; font-weight: 700; }
+
+    .step-detail-panel {
+      margin-top: 16px;
+      padding: 20px;
+      background: #f8fafc;
+      border: 1px solid var(--border-color);
+      border-left: 3px solid #0f172a;
+      border-radius: var(--radius-md);
     }
 
-    /* Discoverability Lift Grid */
+    .step-detail-eyebrow {
+      font-size: 11px; font-weight: 800; color: var(--text-muted); margin-bottom: 6px;
+    }
+
+    .step-detail-title { font-size: 15px; font-weight: 700; margin-bottom: 8px; }
+    .step-detail-body { font-size: 13.5px; color: #334155; line-height: 1.65; }
+
+    /* ============ Discoverability Lift Grid ============ */
     .metrics-row {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
@@ -366,26 +379,12 @@
       padding: 16px;
     }
 
-    .stat-label {
-      font-size: 12px;
-      color: var(--text-muted);
-      font-weight: 600;
-      margin-bottom: 8px;
-    }
-
-    .stat-value {
-      font-size: 22px;
-      font-weight: 800;
-      letter-spacing: -0.5px;
-    }
+    .stat-label { font-size: 12px; color: var(--text-muted); font-weight: 600; margin-bottom: 8px; }
+    .stat-value { font-size: 22px; font-weight: 800; letter-spacing: -0.5px; }
 
     .stat-badge {
-      display: inline-block;
-      margin-top: 6px;
-      font-size: 11px;
-      font-weight: 700;
-      padding: 2px 8px;
-      border-radius: 20px;
+      display: inline-block; margin-top: 6px; font-size: 11px; font-weight: 700;
+      padding: 2px 8px; border-radius: 20px;
     }
 
     .badge-green { background: #d1fae5; color: #047857; }
@@ -393,196 +392,108 @@
     .badge-amber { background: #fef3c7; color: #b45309; }
     .badge-red { background: #fee2e2; color: #b91c1c; }
 
-    /* Sandbox Interactive Box */
-    .sandbox-container {
-      display: flex;
-      flex-direction: column;
-      gap: 16px;
-    }
-
-    .presets-row {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 8px;
-    }
+    /* ============ Sandbox ============ */
+    .sandbox-container { display: flex; flex-direction: column; gap: 16px; }
+    .presets-row { display: flex; flex-wrap: wrap; gap: 8px; }
 
     .chip-btn {
-      background: #f1f5f9;
-      border: 1px solid #cbd5e1;
-      padding: 6px 12px;
-      border-radius: 20px;
-      font-size: 12px;
-      font-weight: 600;
-      color: #334155;
-      cursor: pointer;
-      transition: all 0.2s;
+      background: #f1f5f9; border: 1px solid #cbd5e1;
+      padding: 6px 12px; border-radius: 20px; font-size: 12px; font-weight: 600;
+      color: #334155; cursor: pointer; transition: all 0.2s;
     }
+    .chip-btn:hover { background: #e2e8f0; color: #0f172a; }
 
-    .chip-btn:hover {
-      background: #e2e8f0;
-      color: #0f172a;
-    }
-
-    .input-group {
-      display: flex;
-      gap: 10px;
-    }
-
+    .input-group { display: flex; gap: 10px; }
     .query-input-field {
-      flex: 1;
-      padding: 12px 16px;
-      border: 1px solid var(--border-color);
-      border-radius: 12px;
-      font-size: 14px;
-      outline: none;
+      flex: 1; padding: 12px 16px; border: 1px solid var(--border-color);
+      border-radius: 12px; font-size: 14px; outline: none;
     }
-
-    .query-input-field:focus {
-      border-color: var(--primary);
-    }
+    .query-input-field:focus { border-color: var(--primary); }
 
     .live-output-box {
-      background: #0f172a;
-      color: #f8fafc;
-      border-radius: 14px;
-      padding: 18px;
-      font-family: monospace;
-      font-size: 13px;
-      min-height: 120px;
-      overflow-x: auto;
-      display: flex;
-      flex-direction: column;
-      gap: 8px;
+      background: #0f172a; color: #f8fafc; border-radius: 14px; padding: 18px;
+      font-family: monospace; font-size: 13px; min-height: 110px;
+      overflow-x: auto; display: flex; flex-direction: column; gap: 8px;
     }
 
-    /* Table Styling */
-    .table-container {
-      overflow-x: auto;
-    }
-
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      text-align: left;
-      font-size: 13px;
-    }
-
+    /* ============ Table ============ */
+    .table-container { overflow-x: auto; }
+    table { width: 100%; border-collapse: collapse; text-align: left; font-size: 13px; }
     th {
-      padding: 12px 14px;
-      font-weight: 700;
-      color: var(--text-muted);
-      border-bottom: 1px solid var(--border-color);
-      font-size: 11px;
-      text-transform: uppercase;
-      letter-spacing: 0.5px;
+      padding: 12px 14px; font-weight: 700; color: var(--text-muted);
+      border-bottom: 1px solid var(--border-color); font-size: 11px;
+      text-transform: uppercase; letter-spacing: 0.5px;
     }
+    td { padding: 14px; border-bottom: 1px solid var(--border-color); color: var(--text-main); font-weight: 500; }
+    tr:last-child td { border-bottom: none; }
+    tr:hover td { background-color: #f8fafc; }
 
-    td {
-      padding: 14px;
-      border-bottom: 1px solid var(--border-color);
-      color: var(--text-main);
-      font-weight: 500;
-    }
-
-    tr:last-child td {
-      border-bottom: none;
-    }
-
-    tr:hover td {
-      background-color: #f8fafc;
-    }
-
-    /* Right Column Widgets */
-    .metric-list {
-      display: flex;
-      flex-direction: column;
-      gap: 12px;
-    }
-
+    /* ============ Metric list ============ */
+    .metric-list { display: flex; flex-direction: column; gap: 12px; }
     .metric-item {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: 14px 16px;
-      background: #f8fafc;
-      border: 1px solid var(--border-color);
-      border-radius: 14px;
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 14px 16px; background: #f8fafc; border: 1px solid var(--border-color); border-radius: 14px;
     }
+    .metric-item-info span { display: block; }
+    .metric-item-name { font-size: 13px; font-weight: 700; }
+    .metric-item-desc { font-size: 11px; color: var(--text-muted); }
+    .metric-item-val { font-size: 18px; font-weight: 800; }
 
-    .metric-item-info span {
-      display: block;
-    }
-
-    .metric-item-name {
-      font-size: 13px;
-      font-weight: 700;
-    }
-
-    .metric-item-desc {
-      font-size: 11px;
-      color: var(--text-muted);
-    }
-
-    .metric-item-val {
-      font-size: 18px;
-      font-weight: 800;
-    }
-
-    /* Feed JSON Inspector */
+    /* ============ Feed JSON Inspector ============ */
     .feed-inspector {
-      background: #f8fafc;
-      border: 1px solid var(--border-color);
-      border-radius: 14px;
-      padding: 16px;
-      max-height: 300px;
-      overflow-y: auto;
+      background: #f8fafc; border: 1px solid var(--border-color); border-radius: 14px;
+      padding: 16px; max-height: 340px; overflow-y: auto;
     }
-
     select.product-select {
-      width: 100%;
-      padding: 10px;
-      border-radius: 10px;
-      border: 1px solid var(--border-color);
-      font-size: 13px;
-      margin-bottom: 12px;
-      outline: none;
-      background: #ffffff;
+      width: 100%; padding: 10px; border-radius: 10px; border: 1px solid var(--border-color);
+      font-size: 13px; margin-bottom: 12px; outline: none; background: #ffffff;
     }
+    pre.code-block { font-family: monospace; font-size: 11px; color: #1e293b; white-space: pre-wrap; word-break: break-all; }
 
-    pre.code-block {
-      font-family: monospace;
-      font-size: 11px;
-      color: #1e293b;
-      white-space: pre-wrap;
-      word-break: break-all;
+    /* ============ Trust ranking table (Discoverability tab) ============ */
+    .trust-bar-track {
+      width: 100px; height: 6px; background: #e2e8f0; border-radius: 4px; overflow: hidden; display: inline-block; vertical-align: middle; margin-right: 8px;
     }
+    .trust-bar-fill { height: 100%; border-radius: 4px; }
+
+    .methodology-box {
+      background: #f8fafc; border: 1px solid var(--border-color); border-radius: var(--radius-md);
+      padding: 18px 20px; font-size: 13.5px; color: #334155; line-height: 1.7;
+    }
+    .methodology-box strong { color: var(--text-main); }
   </style>
 </head>
 <body>
 
-  <!-- Left Sidebar -->
+  <!-- ============ Sidebar ============ -->
   <aside class="sidebar">
-    <div class="brand-logo">Δ</div>
+    <div class="brand-logo-row">
+      <div class="brand-logo">Δ</div>
+      <div class="brand-wordmark">GEO Trust Engine</div>
+    </div>
     <nav class="nav-menu">
-      <div class="nav-item active" title="Overview & Dashboard">
+      <div class="nav-item active" data-tab="home" title="Overview & Dashboard" onclick="switchTab('home')">
         <svg viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path></svg>
+        <span class="nav-label">Home</span>
       </div>
-      <div class="nav-item" title="Structured Feed">
+      <div class="nav-item" data-tab="structure" title="Structured Feed" onclick="switchTab('structure')">
         <svg viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect></svg>
+        <span class="nav-label">Structured Feed</span>
       </div>
-      <div class="nav-item" title="Discoverability Experiment">
+      <div class="nav-item" data-tab="discoverability" title="Discoverability Agent" onclick="switchTab('discoverability')">
         <svg viewBox="0 0 24 24"><line x1="18" y1="20" x2="18" y2="10"></line><line x1="12" y1="20" x2="12" y2="4"></line><line x1="6" y1="20" x2="6" y2="14"></line></svg>
+        <span class="nav-label">Discoverability</span>
       </div>
-      <div class="nav-item" title="Audit Log">
+      <div class="nav-item" data-tab="audit" title="Audit Log" onclick="switchTab('audit')">
         <svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line></svg>
+        <span class="nav-label">Audit Log</span>
       </div>
     </nav>
   </aside>
 
-  <!-- Main Container -->
+  <!-- ============ Main Container ============ -->
   <div class="app-container">
-    
-    <!-- Top Bar -->
+
     <header class="topbar">
       <div class="search-wrapper">
         <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
@@ -599,68 +510,131 @@
       </div>
     </header>
 
-    <!-- Main Workspace Content -->
     <main class="content-area">
 
-      <!-- Left / Main Column -->
-      <div class="main-column">
+      <!-- ================= HOME ================= -->
+      <div class="view-panel active" id="view-home">
+        <div class="two-col">
+          <div class="main-column">
 
-        <!-- Hero Card -->
-        <div class="card hero-card">
-          <div class="hero-text">
-            <h1>GEO Engine — Razorpay Trust Gateway</h1>
-            <p>Structuring merchant catalog data so AI shopping agents can discover, verify, and execute transactions safely via Razorpay.</p>
-            <button class="btn-primary" onclick="scrollToSandbox()">
-              <span>Try Live Shopping Agent</span>
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
-            </button>
+            <div class="card hero-card">
+              <div class="hero-text">
+                <h1>GEO Engine — Razorpay Trust Gateway</h1>
+                <p>Structuring merchant catalog data so AI shopping agents can discover, verify, and safely complete a purchase through Razorpay — with every step explained, bounded, and logged.</p>
+                <button class="btn-primary" onclick="scrollToSandbox()">
+                  <span>Try Live Shopping Agent</span>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                </button>
+              </div>
+              <div class="hero-illustration">
+                <svg width="100" height="100" viewBox="0 0 24 24" fill="none" stroke="#0f172a" stroke-width="1.2">
+                  <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+                </svg>
+              </div>
+            </div>
+
+            <!-- Live Sandbox -->
+            <div class="card" id="sandbox-section">
+              <div class="section-header">
+                <div class="section-title">Live Buyer Agent &amp; Razorpay Trust Gate</div>
+                <span class="stat-badge badge-blue">Interactive Test Sandbox</span>
+              </div>
+              <div class="sandbox-container">
+                <div class="presets-row">
+                  <span style="font-size:12px; font-weight:600; align-self:center; color:#64748b;">Presets:</span>
+                  <button class="chip-btn" onclick="setQuery('A skincare product under 1500 rupees', 'prod_004')">APPROVE Case (Serum ₹1250)</button>
+                  <button class="chip-btn" onclick="setQuery('A titanium-build smart ring with a warranty', 'prod_003')">HOLD Case (Smart Ring ₹18999)</button>
+                  <button class="chip-btn" onclick="setQuery('An anti-aging product that works fast', 'prod_001')">BLOCK Case (Morrowen Elixir)</button>
+                  <button class="chip-btn" onclick="setQuery('A titanium water bottle with a warranty', 'prod_006')">BLOCK Currency (USD Bottle)</button>
+                </div>
+                <div class="input-group">
+                  <input type="text" id="query-input" class="query-input-field" placeholder="Enter shopper intent query...">
+                  <button class="btn-primary" id="run-btn" onclick="runAgentQuery()">Run Purchase Agent</button>
+                </div>
+                <div class="live-output-box" id="live-output">
+                  <span style="color:#94a3b8;">// Select a preset above or type a custom query, then hit "Run Purchase Agent".</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Recent decisions preview -->
+            <div class="card">
+              <div class="section-header">
+                <div>
+                  <div class="section-title">Recent Purchase Decisions</div>
+                  <div class="section-subtitle">Last 5 audit entries — every gate decision made across all products.</div>
+                </div>
+                <button class="view-all" onclick="switchTab('audit')">View all →</button>
+              </div>
+              <div class="table-container">
+                <table>
+                  <thead>
+                    <tr><th>Timestamp</th><th>Query</th><th>Matched Product</th><th>Trust</th><th>Decision</th><th>Razorpay Status</th></tr>
+                  </thead>
+                  <tbody id="audit-table-body-home">
+                    <tr><td colspan="6" style="text-align:center; color:#94a3b8;">Loading audit trail...</td></tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
           </div>
-          <div class="hero-illustration">
-            <svg width="110" height="110" viewBox="0 0 24 24" fill="none" stroke="#0f172a" stroke-width="1.2">
-              <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
-            </svg>
+
+          <!-- Home side column -->
+          <div class="side-column">
+            <div class="card">
+              <div class="section-header"><div class="section-title">Feed JSON Inspector</div></div>
+              <select id="product-selector" class="product-select" onchange="renderProductJSON()">
+                <option value="">Select a product...</option>
+              </select>
+              <div class="feed-inspector">
+                <pre class="code-block" id="json-viewer">// Select a product to view its structured attributes and trust evidence.</pre>
+              </div>
+            </div>
           </div>
         </div>
+      </div>
 
-        <!-- Core 6-Step Pipeline Visual -->
+      <!-- ================= STRUCTURED FEED ================= -->
+      <div class="view-panel" id="view-structure">
         <div class="card">
-          <div class="section-header">
-            <div class="section-title">End-to-End GEO Pipeline</div>
-            <span class="view-all">6 Core Modules</span>
+          <div class="section-title" style="margin-bottom:6px;">End-to-End GEO Pipeline</div>
+          <p class="pipeline-intro">
+            Every product a merchant lists goes through six stages before an AI shopping agent ever sees it, and two more when a real purchase is attempted. This turns a messy, human-written listing into a structured record an agent can trust — and a trust score that travels with it wherever it's recommended. Click any step below to see what happens there.
+          </p>
+          <div class="pipeline-grid" id="pipeline-grid">
+            <div class="step-box active" data-step="1" onclick="selectStep(1)" onmouseenter="selectStep(1)">
+              <div class="step-num">Step 1</div><div class="step-name">Ingest</div>
+            </div>
+            <div class="step-box" data-step="2" onclick="selectStep(2)" onmouseenter="selectStep(2)">
+              <div class="step-num">Step 2</div><div class="step-name">Structure</div>
+            </div>
+            <div class="step-box" data-step="3" onclick="selectStep(3)" onmouseenter="selectStep(3)">
+              <div class="step-num">Step 3</div><div class="step-name">Intent</div>
+            </div>
+            <div class="step-box" data-step="4" onclick="selectStep(4)" onmouseenter="selectStep(4)">
+              <div class="step-num">Step 4</div><div class="step-name">Trust Score</div>
+            </div>
+            <div class="step-box" data-step="5" onclick="selectStep(5)" onmouseenter="selectStep(5)">
+              <div class="step-num">Step 5</div><div class="step-name">Publish</div>
+            </div>
+            <div class="step-box" data-step="6" onclick="selectStep(6)" onmouseenter="selectStep(6)">
+              <div class="step-num">Step 6</div><div class="step-name">Transact</div>
+            </div>
           </div>
-          <div class="pipeline-grid">
-            <div class="step-box active">
-              <div class="step-num">Step 1</div>
-              <div class="step-name">Ingest</div>
-            </div>
-            <div class="step-box active">
-              <div class="step-num">Step 2</div>
-              <div class="step-name">Structure</div>
-            </div>
-            <div class="step-box active">
-              <div class="step-num">Step 3</div>
-              <div class="step-name">Intent</div>
-            </div>
-            <div class="step-box active">
-              <div class="step-num">Step 4</div>
-              <div class="step-name">Trust Score</div>
-            </div>
-            <div class="step-box active">
-              <div class="step-num">Step 5</div>
-              <div class="step-name">Publish</div>
-            </div>
-            <div class="step-box active">
-              <div class="step-num">Step 6</div>
-              <div class="step-name">Transact</div>
-            </div>
+          <div class="step-detail-panel" id="step-detail-panel">
+            <!-- filled by JS -->
           </div>
         </div>
+      </div>
 
-        <!-- Part 7: Discoverability Lift Experiment -->
+      <!-- ================= DISCOVERABILITY ================= -->
+      <div class="view-panel" id="view-discoverability">
+
         <div class="card">
           <div class="section-header">
-            <div class="section-title">Part 7: Discoverability Benchmark (Raw vs Structured)</div>
-            <span class="badge-green stat-badge">+15.4% Discovery Lift</span>
+            <div class="section-title">Discoverability Benchmark (Raw vs Structured)</div>
+            <span class="stat-badge badge-green" id="disc-lift-badge">+2 Discovery Lift</span>
           </div>
           <div class="metrics-row">
             <div class="stat-card">
@@ -681,65 +655,8 @@
           </div>
         </div>
 
-        <!-- Interactive Live Sandbox (Part 8 Demo) -->
-        <div class="card" id="sandbox-section">
-          <div class="section-header">
-            <div class="section-title">Part 8: Live Buyer Agent & Razorpay Trust Gate</div>
-            <span class="stat-badge badge-blue">Interactive Test Sandbox</span>
-          </div>
-          <div class="sandbox-container">
-            <div class="presets-row">
-              <span style="font-size:12px; font-weight:600; align-self:center; color:#64748b;">Presets:</span>
-              <button class="chip-btn" onclick="setQuery('A skincare product under 1500 rupees', 'prod_004')">APPROVE Case (Serum ₹1250)</button>
-              <button class="chip-btn" onclick="setQuery('A titanium-build smart ring with a warranty', 'prod_003')">HOLD Case (Smart Ring ₹18999)</button>
-              <button class="chip-btn" onclick="setQuery('An anti-aging product that works fast', 'prod_001')">BLOCK Case (Morrowen Elixir)</button>
-              <button class="chip-btn" onclick="setQuery('A titanium water bottle with a warranty', 'prod_006')">BLOCK Currency (USD Bottle)</button>
-            </div>
-            <div class="input-group">
-              <input type="text" id="query-input" class="query-input-field" placeholder="Enter shopper intent query...">
-              <button class="btn-primary" id="run-btn" onclick="runAgentQuery()">Run Purchase Agent</button>
-            </div>
-            <div class="live-output-box" id="live-output">
-              <span style="color:#94a3b8;">// Select a preset query above or type a custom query and hit "Run Purchase Agent".</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- Audit Trail Table -->
         <div class="card">
-          <div class="section-header">
-            <div class="section-title">Part 8d: Purchase Decision Audit Log</div>
-            <span class="view-all" onclick="loadAuditLog()">Refresh Log</span>
-          </div>
-          <div class="table-container">
-            <table>
-              <thead>
-                <tr>
-                  <th>Timestamp</th>
-                  <th>Query</th>
-                  <th>Matched Product</th>
-                  <th>Trust</th>
-                  <th>Decision</th>
-                  <th>Razorpay Status</th>
-                </tr>
-              </thead>
-              <tbody id="audit-table-body">
-                <tr><td colspan="6" style="text-align:center; color:#94a3b8;">Loading audit trail...</td></tr>
-              </tbody>
-            </table>
-          </div>
-        </div>
-
-      </div>
-
-      <!-- Right / Side Column -->
-      <div class="side-column">
-
-        <!-- Quick Summary Stats -->
-        <div class="card">
-          <div class="section-header">
-            <div class="section-title">Catalog Summary</div>
-          </div>
+          <div class="section-header"><div class="section-title">Catalog Summary</div></div>
           <div class="metric-list">
             <div class="metric-item">
               <div class="metric-item-info">
@@ -751,33 +668,65 @@
             <div class="metric-item">
               <div class="metric-item-info">
                 <span class="metric-item-name">Average Trust Score</span>
-                <span class="metric-item-desc">Hybrid Rule + LLM</span>
+                <span class="metric-item-desc">Hybrid rule-based checks + LLM evidence review</span>
               </div>
-              <div class="metric-item-val" id="val-avg-trust">42.5</div>
+              <div class="metric-item-val" id="val-avg-trust">43.3</div>
             </div>
             <div class="metric-item">
               <div class="metric-item-info">
                 <span class="metric-item-name">Razorpay Auto-Approved</span>
                 <span class="metric-item-desc">Orders executed in test mode</span>
               </div>
-              <div class="metric-item-val" style="color:var(--accent-green);" id="val-approved-count">1</div>
+              <div class="metric-item-val" style="color:var(--accent-green);" id="val-approved-count">2</div>
             </div>
           </div>
         </div>
 
-        <!-- Feed Record Inspector -->
         <div class="card">
-          <div class="section-header">
-            <div class="section-title">Feed JSON Inspector</div>
-          </div>
-          <select id="product-selector" class="product-select" onchange="renderProductJSON()">
-            <option value="">Select a product...</option>
-          </select>
-          <div class="feed-inspector">
-            <pre class="code-block" id="json-viewer">// Select a product to view structured attributes and trust evidence.</pre>
+          <div class="section-header"><div class="section-title">How the Trust Score Works</div></div>
+          <div class="methodology-box">
+            Every listing's claims are checked two ways. First, a set of <strong>deterministic checks</strong> that need no AI at all — is a return policy present, is the price stated consistently, is there real contact/business information. Second, an <strong>LLM evidence review</strong> asks whether each specific claim ("clinically tested," "certified organic," "reverses aging") is actually backed by something in the listing, or just asserted. The two scores combine into one <strong>trust_score</strong> per product, which travels with it into the structured feed — so any agent that reads the feed, not just this dashboard's, can see the same signal before deciding whether to recommend or purchase it.
           </div>
         </div>
 
+        <div class="card">
+          <div class="section-header">
+            <div class="section-title">Products Ranked by Trust Score</div>
+            <span class="section-subtitle" style="margin-top:0;">From the current feed.json</span>
+          </div>
+          <div class="table-container">
+            <table>
+              <thead><tr><th>Product</th><th>Category</th><th>Price</th><th>Trust Score</th></tr></thead>
+              <tbody id="trust-table-body">
+                <tr><td colspan="4" style="text-align:center; color:#94a3b8;">Loading catalog...</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- ================= AUDIT LOG ================= -->
+      <div class="view-panel" id="view-audit">
+        <div class="card">
+          <div class="section-header">
+            <div>
+              <div class="section-title">Purchase Decision Audit Log</div>
+              <div class="section-subtitle">Every purchase intent this system has ever processed — approved, held, or blocked — with the reason for each decision.</div>
+            </div>
+            <button class="view-all" onclick="loadAuditFull()">Refresh Log</button>
+          </div>
+          <div class="table-container">
+            <table>
+              <thead>
+                <tr><th>Timestamp</th><th>Query</th><th>Matched Product</th><th>Trust</th><th>Decision</th><th>Razorpay Status</th></tr>
+              </thead>
+              <tbody id="audit-table-body-full">
+                <tr><td colspan="6" style="text-align:center; color:#94a3b8;">Loading audit trail...</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
       </div>
 
     </main>
@@ -787,16 +736,72 @@
     let globalFeed = [];
     let selectedForcedId = null;
 
+    const STEP_DETAILS = {
+      1: {
+        eyebrow: 'Part 3',
+        title: 'Ingest — pull the merchant\'s raw catalog',
+        body: 'Most Razorpay merchants don\'t have one clean, standardized product feed — they have a custom website, an app, or a storefront, each formatted differently. This step pulls in whatever messy, inconsistent text the merchant actually has: prose, half-finished JSON, spreadsheet exports, even WhatsApp-style listings. Nothing gets cleaned up yet — this is the "before" state.'
+      },
+      2: {
+        eyebrow: 'Part 3',
+        title: 'Structure — turn messy text into a clean record',
+        body: 'An LLM extraction pass converts the raw listing into a consistent schema: category, target audience, key attributes, claims made, price, availability, and fulfillment terms. If a field genuinely isn\'t in the source text, it\'s marked "missing" rather than guessed — an agent should know the difference between a fact and a gap.'
+      },
+      3: {
+        eyebrow: 'Part 4',
+        title: 'Intent — check it against real shopper phrasing',
+        body: 'This is the "keyword research" of GEO. A handful of natural-language ways a real shopper might ask for the product ("gentle on sensitive skin," "no harsh chemicals") get checked against the structured record. Where the record can\'t answer a realistic question, that gap gets flagged — it\'s a concrete, fixable signal for the merchant, not just a pass/fail grade.'
+      },
+      4: {
+        eyebrow: 'Part 5',
+        title: 'Trust Score — claims vs. evidence',
+        body: 'Every claim gets checked for whether it\'s actually backed by something in the listing, or just asserted with no evidence — the exact pattern that let a fabricated brand get recommended by real AI models in under three weeks. Combined with deterministic checks (return policy present, price consistent, real contact info), this produces one trust_score that\'s attached directly to the product record.'
+      },
+      5: {
+        eyebrow: 'Part 6',
+        title: 'Publish — one feed, every signal included',
+        body: 'The structured record, its intent coverage, and its trust score are merged into a single entry in feed.json. This is the actual artifact a merchant walks away with — an agent-readable version of their catalog that any AI system, not just this dashboard, can read and act on safely.'
+      },
+      6: {
+        eyebrow: 'Part 7 – 8',
+        title: 'Transact — discover it, then safely buy it',
+        body: 'Two things get proven here. First, a live discoverability test shows whether real AI models actually recommend the product more often once it\'s structured. Second, a buyer agent matches a shopper\'s request to a product in the feed, and a trust-based gate — plain, deterministic logic, no AI — decides whether to approve, hold, or block the purchase before a real Razorpay test-mode order ever fires.'
+      }
+    };
+
+    function selectStep(n) {
+      document.querySelectorAll('.step-box').forEach(el => {
+        el.classList.toggle('active', parseInt(el.dataset.step, 10) === n);
+      });
+      const d = STEP_DETAILS[n];
+      const panel = document.getElementById('step-detail-panel');
+      panel.innerHTML = `
+        <div class="step-detail-eyebrow">${d.eyebrow}</div>
+        <div class="step-detail-title">${d.title}</div>
+        <div class="step-detail-body">${d.body}</div>
+      `;
+    }
+
+    function switchTab(tab) {
+      document.querySelectorAll('.view-panel').forEach(el => el.classList.remove('active'));
+      document.getElementById('view-' + tab).classList.add('active');
+      document.querySelectorAll('.nav-item').forEach(el => {
+        el.classList.toggle('active', el.dataset.tab === tab);
+      });
+      if (tab === 'audit') loadAuditFull();
+      if (tab === 'home') loadAuditPreview();
+      if (tab === 'discoverability') { loadDiscoverability(); renderTrustTable(); }
+    }
+
     window.addEventListener('DOMContentLoaded', () => {
+      selectStep(1);
       loadFeedData();
-      loadAuditLog();
-      
-      // Clear forced ID when user manually types a custom query
+      loadAuditPreview();
+      loadDiscoverability();
+
       const queryInput = document.getElementById('query-input');
       if (queryInput) {
-        queryInput.addEventListener('input', () => {
-          selectedForcedId = null;
-        });
+        queryInput.addEventListener('input', () => { selectedForcedId = null; });
       }
     });
 
@@ -809,8 +814,7 @@
         const res = await fetch('/api/feed');
         globalFeed = await res.json();
         document.getElementById('val-total-prod').innerText = globalFeed.length;
-        
-        // Calculate average trust score
+
         if (globalFeed.length > 0) {
           const sum = globalFeed.reduce((acc, curr) => acc + (curr.trust_score || 0), 0);
           document.getElementById('val-avg-trust').innerText = (sum / globalFeed.length).toFixed(1);
@@ -829,6 +833,8 @@
           selector.value = globalFeed[0].product_id;
           renderProductJSON();
         }
+
+        renderTrustTable();
       } catch (err) {
         console.error('Failed to load feed data', err);
       }
@@ -842,50 +848,125 @@
         return;
       }
       const prod = globalFeed.find(p => p.product_id === pid);
-      if (prod) {
-        viewer.innerText = JSON.stringify(prod, null, 2);
+      if (prod) viewer.innerText = JSON.stringify(prod, null, 2);
+    }
+
+    function trustColor(score) {
+      if (score >= 60) return '#10b981';
+      if (score >= 35) return '#f59e0b';
+      return '#ef4444';
+    }
+
+    function renderTrustTable() {
+      const tbody = document.getElementById('trust-table-body');
+      if (!tbody) return;
+      if (!globalFeed.length) {
+        tbody.innerHTML = '<tr><td colspan="4" style="text-align:center; color:#94a3b8;">No catalog data loaded yet.</td></tr>';
+        return;
+      }
+      const sorted = [...globalFeed].sort((a, b) => (b.trust_score || 0) - (a.trust_score || 0));
+      tbody.innerHTML = sorted.map(p => {
+        const score = p.trust_score || 0;
+        const color = trustColor(score);
+        const priceStr = p.price !== undefined && p.price !== null
+          ? `${p.price} ${p.price_currency || 'unknown'}` : 'N/A';
+        return `
+          <tr>
+            <td>${p.title}</td>
+            <td>${p.category || '—'}</td>
+            <td>${priceStr}</td>
+            <td>
+              <span class="trust-bar-track"><span class="trust-bar-fill" style="width:${score}%; background:${color};"></span></span>
+              <strong>${score}</strong>
+            </td>
+          </tr>`;
+      }).join('');
+    }
+
+    async function fetchAuditLog() {
+      try {
+        const res = await fetch('/api/audit-log');
+        return await res.json();
+      } catch (err) {
+        console.error('Failed to load audit log', err);
+        return [];
       }
     }
 
-    async function loadAuditLog() {
+    function renderAuditRows(logs, tbodyId, limit) {
+      const tbody = document.getElementById(tbodyId);
+      if (!tbody) return;
+      tbody.innerHTML = '';
+
+      if (!logs || logs.length === 0) {
+        tbody.innerHTML = '<tr><td colspan="6" style="text-align:center; color:#94a3b8;">No audit entries found.</td></tr>';
+        return;
+      }
+
+      let rows = logs.slice().reverse();
+      if (limit) rows = rows.slice(0, limit);
+
+      let approvedCount = 0;
+      logs.forEach(e => { if (e.decision === 'APPROVE') approvedCount++; });
+      const approvedEl = document.getElementById('val-approved-count');
+      if (approvedEl) approvedEl.innerText = approvedCount;
+
+      rows.forEach(entry => {
+        const tr = document.createElement('tr');
+        let badgeClass = 'badge-blue';
+        if (entry.decision === 'APPROVE') badgeClass = 'badge-green';
+        if (entry.decision === 'HOLD_FOR_APPROVAL') badgeClass = 'badge-amber';
+        if (entry.decision === 'BLOCK') badgeClass = 'badge-red';
+
+        const timeStr = entry.timestamp ? new Date(entry.timestamp).toLocaleTimeString() : 'N/A';
+        const rzpStatus = entry.payment && entry.payment.order_id ? `Created (${entry.payment.order_id})` : (entry.payment_status || 'N/A');
+
+        tr.innerHTML = `
+          <td style="font-size:11px; color:#64748b;">${timeStr}</td>
+          <td style="max-width:180px; overflow:hidden; text-overflow:ellipsis; white-space:nowrap;">"${entry.query || ''}"</td>
+          <td>${entry.matched_title || entry.matched_product_id || 'None'}</td>
+          <td><strong>${entry.trust_score !== undefined && entry.trust_score !== null ? entry.trust_score : 'N/A'}</strong></td>
+          <td><span class="stat-badge ${badgeClass}">${entry.decision || 'N/A'}</span></td>
+          <td style="font-size:11px; font-family:monospace;">${rzpStatus}</td>
+        `;
+        tbody.appendChild(tr);
+      });
+    }
+
+    async function loadAuditPreview() {
+      const logs = await fetchAuditLog();
+      renderAuditRows(logs, 'audit-table-body-home', 5);
+    }
+
+    async function loadAuditFull() {
+      const logs = await fetchAuditLog();
+      renderAuditRows(logs, 'audit-table-body-full', null);
+    }
+
+    async function loadDiscoverability() {
       try {
-        const res = await fetch('/api/audit-log');
-        const logs = await res.json();
-        const tbody = document.getElementById('audit-table-body');
-        tbody.innerHTML = '';
+        const res = await fetch('/api/discoverability');
+        const data = await res.json();
+        const s = data && data.summary;
+        if (!s) return;
 
-        if (!logs || logs.length === 0) {
-          tbody.innerHTML = '<tr><td colspan="6" style="text-align:center; color:#94a3b8;">No audit entries found.</td></tr>';
-          return;
-        }
+        const total = s.total_queries_tested;
+        const before = s.mentioned_before_raw;
+        const after = s.mentioned_after_structured;
+        const lift = s.net_lift;
+        if (total === undefined || before === undefined || after === undefined) return;
 
-        let approvedCount = 0;
-        logs.slice().reverse().forEach(entry => {
-          if (entry.decision === 'APPROVE') approvedCount++;
-          const tr = document.createElement('tr');
-          
-          let badgeClass = 'badge-blue';
-          if (entry.decision === 'APPROVE') badgeClass = 'badge-green';
-          if (entry.decision === 'HOLD_FOR_APPROVAL') badgeClass = 'badge-amber';
-          if (entry.decision === 'BLOCK') badgeClass = 'badge-red';
+        document.getElementById('stat-before').innerText = `${before} / ${total}`;
+        document.getElementById('stat-after').innerText = `${after} / ${total}`;
+        document.getElementById('stat-lift').innerText = (lift >= 0 ? '+' : '') + lift;
+        document.getElementById('disc-lift-badge').innerText = `${lift >= 0 ? '+' : ''}${lift} Discovery Lift`;
 
-          const timeStr = entry.timestamp ? new Date(entry.timestamp).toLocaleTimeString() : 'N/A';
-          const rzpStatus = entry.payment && entry.payment.order_id ? `Created (${entry.payment.order_id})` : (entry.payment_status || 'N/A');
-
-          tr.innerHTML = `
-            <td style="font-size:11px; color:#64748b;">${timeStr}</td>
-            <td style="max-width:180px; overflow:hidden; text-overflow:ellipsis; white-space:nowrap;">"${entry.query || ''}"</td>
-            <td>${entry.matched_title || entry.matched_product_id || 'None'}</td>
-            <td><strong>${entry.trust_score !== undefined && entry.trust_score !== null ? entry.trust_score : 'N/A'}</strong></td>
-            <td><span class="stat-badge ${badgeClass}">${entry.decision || 'N/A'}</span></td>
-            <td style="font-size:11px; font-family:monospace;">${rzpStatus}</td>
-          `;
-          tbody.appendChild(tr);
-        });
-
-        document.getElementById('val-approved-count').innerText = approvedCount;
+        const beforePct = total ? ((before / total) * 100).toFixed(1) : '0.0';
+        const afterPct = total ? ((after / total) * 100).toFixed(1) : '0.0';
+        document.getElementById('stat-before-rate').innerText = `${beforePct}% Recommendation Rate`;
+        document.getElementById('stat-after-rate').innerText = `${afterPct}% Recommendation Rate`;
       } catch (err) {
-        console.error('Failed to load audit log', err);
+        console.error('Failed to load discoverability results', err);
       }
     }
 
@@ -926,7 +1007,7 @@
           html += `<div><span style="color:#94a3b8;">Gate Decision:</span> <strong style="color:#94a3b8;">NO_MATCH</strong> — ${result.reason || 'No product matched your request.'}</div>`;
           out.innerHTML = html;
           selectedForcedId = null;
-          loadAuditLog();
+          loadAuditPreview();
           return;
         }
 
@@ -936,12 +1017,12 @@
 
         const matchedTitle = result.matched_title || result.matched_product_id || 'Unknown Item';
         const trustVal = result.trust_score !== undefined && result.trust_score !== null ? result.trust_score : 'N/A';
-        const priceVal = result.price !== undefined && result.price !== null ? `${result.price} ${result.currency || 'INR'}` : 'N/A';
+        const priceVal = result.price !== undefined && result.price !== null ? `${result.price} ${result.currency || 'unknown'}` : 'N/A';
 
         let html = `<div><span style="color:#94a3b8;">Query:</span> "${result.query || q}"</div>`;
         html += `<div><span style="color:#94a3b8;">Matched Product:</span> <strong style="color:#ffffff;">${matchedTitle}</strong> (Trust Score: ${trustVal}, Price: ${priceVal})</div>`;
         html += `<div><span style="color:#94a3b8;">Gate Decision:</span> <strong style="color:${decisionColor};">${result.decision}</strong> — ${result.reason}</div>`;
-        
+
         if (result.alternative && result.alternative.title) {
           html += `<div><span style="color:#60a5fa;">Suggested Alternative:</span> ${result.alternative.title}</div>`;
         }
@@ -951,8 +1032,8 @@
         }
 
         out.innerHTML = html;
-        selectedForcedId = null; // reset forced ID after execution
-        loadAuditLog(); // refresh audit table
+        selectedForcedId = null;
+        loadAuditPreview();
       } catch (err) {
         out.innerHTML = `<span style="color:#f87171;">Error executing purchase pipeline: ${err.message}</span>`;
       } finally {

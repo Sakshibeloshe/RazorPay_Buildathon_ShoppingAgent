@@ -1,0 +1,26 @@
+{
+    "category": "Electronics",
+    "target_audience": "missing",
+    "key_attributes": [
+        "Model: TrackPoint M220",
+        "Connectivity: 2.4GHz wireless + Bluetooth 5.0",
+        "Buttons: Silent click (under 20dB, tested on in-house acoustic bench)",
+        "Battery: Up to 12 months on 1 AA cell"
+    ],
+    "claims_made": [
+        "Silent click under 20dB",
+        "tested on in-house acoustic bench",
+        "Up to 12 months battery life on 1 AA cell"
+    ],
+    "price": 649,
+    "price_currency": "INR",
+    "availability": "In stock",
+    "fulfillment_terms": {
+        "delivery_window": "missing",
+        "return_policy": "30-day replacement if defective"
+    },
+    "warranty": "missing",
+    "product_id": "prod_027",
+    "original_title": "TrackPoint M220 Wireless Silent Mouse",
+    "original_raw_description": "Model: TrackPoint M220 | Connectivity: 2.4GHz wireless + Bluetooth 5.0 | Buttons: Silent click (under 20dB, tested on in-house acoustic bench) | Battery: Up to 12 months on 1 AA cell | Price: ₹649 | Availability: In stock | Return Policy: 30-day replacement if defective | Customer care: care@trackpointindia.com"
+}

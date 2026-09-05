@@ -1,0 +1,23 @@
+{
+    "category": "Food",
+    "target_audience": "missing",
+    "key_attributes": [
+        "18/8 food-grade stainless steel",
+        "3 x 350ml compartments",
+        "Double-wall vacuum insulation, keeps food warm up to 4 hours"
+    ],
+    "claims_made": [
+        "keeps food warm up to 4 hours"
+    ],
+    "price": 1099,
+    "price_currency": "INR",
+    "availability": "In stock",
+    "fulfillment_terms": {
+        "delivery_window": "missing",
+        "return_policy": "7-day replacement for manufacturing defects"
+    },
+    "warranty": "missing",
+    "product_id": "prod_030",
+    "original_title": "HydroSteel Insulated Lunch Box (3-Tier)",
+    "original_raw_description": "<product>\n  <name>HydroSteel Insulated Lunch Box (3-Tier)</name>\n  <material>18/8 food-grade stainless steel</material>\n  <capacity>3 x 350ml compartments</capacity>\n  <insulation>Double-wall vacuum insulation, keeps food warm up to 4 hours</insulation>\n  <price currency=\"INR\">1099</price>\n  <availability>In stock</availability>\n  <return_policy>7-day replacement for manufacturing defects</return_policy>\n  <support>customer care: lunchbox.support@hydrosteel.in</support>\n</product>"
+}

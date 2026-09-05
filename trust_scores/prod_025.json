@@ -1,0 +1,32 @@
+{
+    "product_id": "prod_025",
+    "title": "Kyotherm Smart Electric Kettle 1.5L",
+    "claims_evaluated": [
+        {
+            "claim": "ISI marked",
+            "score": 100,
+            "reason": "The listing explicitly states 'ISI marked' in the certification field, providing direct textual evidence for the claim.",
+            "llm_evaluated": true
+        },
+        {
+            "claim": "BIS certified",
+            "score": 100,
+            "reason": "The listing explicitly states 'BIS certified' in the certification field, providing direct textual evidence for the claim.",
+            "llm_evaluated": true
+        }
+    ],
+    "claim_evidence_avg": 100,
+    "failed_claim_evaluations": 0,
+    "score_reliable": true,
+    "deterministic_checks": {
+        "return_policy_present": true,
+        "price_consistent": true,
+        "prices_found_in_text": [
+            1799.0
+        ],
+        "contact_info_present": true,
+        "deterministic_score": 100
+    },
+    "trust_score": 100,
+    "summary_reason": "Claims are evidence-backed and listing basics are present."
+}

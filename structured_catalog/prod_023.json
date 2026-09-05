@@ -1,0 +1,29 @@
+{
+    "category": "Food",
+    "target_audience": "missing",
+    "key_attributes": [
+        "Ceremonial grade matcha",
+        "grown in Uji, Kyoto, Japan",
+        "first harvest (ichibancha)",
+        "stone-ground",
+        "JAS-certified organic",
+        "net weight 30g"
+    ],
+    "claims_made": [
+        "Ceremonial grade matcha",
+        "First harvest (ichibancha)",
+        "Stone-ground",
+        "JAS-certified organic"
+    ],
+    "price": 1450,
+    "price_currency": "INR",
+    "availability": "In stock",
+    "fulfillment_terms": {
+        "delivery_window": "Ships within 2 business days",
+        "return_policy": "Returns accepted within 10 days if the seal is unbroken."
+    },
+    "warranty": "missing",
+    "product_id": "prod_023",
+    "original_title": "Zen Garden Uji Ceremonial Matcha (30g)",
+    "original_raw_description": "Ceremonial grade matcha grown in Uji, Kyoto, Japan. First harvest (ichibancha), stone-ground, JAS-certified organic. Net weight 30g. Price: ₹1450. In stock, ships within 2 business days. Returns accepted within 10 days if the seal is unbroken. For any questions, contact our customer care at care@zengardentea.in."
+}
