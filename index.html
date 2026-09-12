@@ -504,6 +504,10 @@
         <svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line></svg>
         <span class="nav-label">Audit Log</span>
       </div>
+      <div class="nav-item" data-tab="bring-your-catalog" title="Bring Your Catalog" onclick="switchTab('bring-your-catalog')">
+        <svg viewBox="0 0 24 24"><path d="M12 3v12"></path><path d="m7 8 5-5 5 5"></path><path d="M5 15v4a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-4"></path></svg>
+        <span class="nav-label">Bring Your Catalog</span>
+      </div>
     </nav>
   </aside>
 
@@ -733,6 +737,22 @@
                 <tr><td colspan="6" style="text-align:center; color:#94a3b8;">Loading audit trail...</td></tr>
               </tbody>
             </table>
+          </div>
+        </div>
+      </div>
+
+      <div class="view-panel" id="view-bring-your-catalog">
+        <div class="card">
+          <div class="section-title" style="margin-bottom:6px;">Get Your Catalog GEO-Ready</div>
+          <p class="pipeline-intro">
+            Paste a real product listing exactly as it exists today—messy prose, a JSON export, or storefront copy. It runs through the same structuring and trust-scoring pipeline as the demo catalog. For multiple listings, separate each one with a line containing only <code>---</code>. Maximum 10 listings per submission.
+          </p>
+          <div class="sandbox-container">
+            <textarea id="byo-input" class="query-input-field" style="width:100%; min-height:180px; font-family:monospace; font-size:13px; resize:vertical;" placeholder="Paste a raw product listing here...&#10;&#10;---&#10;&#10;Optional second listing"></textarea>
+            <div class="input-group">
+              <button class="btn-primary" id="byo-run-btn" onclick="runGeoReady()">Make It GEO-Ready</button>
+            </div>
+            <div id="byo-results" aria-live="polite"></div>
           </div>
         </div>
       </div>
@@ -1103,6 +1123,109 @@
         out.innerHTML = `<span style="color:#f87171;">Error executing purchase pipeline: ${err.message}</span>`;
       } finally {
         btn.innerText = 'Run Purchase Agent';
+        btn.disabled = false;
+      }
+    }
+
+    function escapeHtml(value) {
+      return String(value ?? '')
+        .replace(/&/g, '&amp;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;')
+        .replace(/"/g, '&quot;')
+        .replace(/'/g, '&#039;');
+    }
+
+    function geoTrustBadge(score) {
+      if (score === null || score === undefined) {
+        return '<span class="stat-badge badge-red">Trust unavailable</span>';
+      }
+      const scoreClass = score >= 60 ? 'badge-green' : (score >= 35 ? 'badge-amber' : 'badge-red');
+      return `<span class="stat-badge ${scoreClass}">Trust score: ${escapeHtml(score)}</span>`;
+    }
+
+    function renderGeoReadyResults(data) {
+      const container = document.getElementById('byo-results');
+      if (!data?.results?.length) {
+        container.innerHTML = '<p style="color:#94a3b8; font-size:13px; margin-top:12px;">No results returned.</p>';
+        return;
+      }
+
+      container.innerHTML = data.results.map(result => {
+        const title = escapeHtml(result.original_title || result.title || result.product_id);
+        const rawText = escapeHtml(result.original_raw_description || '');
+        if (result.error) {
+          return `
+            <div class="card" style="margin-top:16px; border-color:#fecaca;">
+              <div class="section-title" style="color:#b91c1c;">${title}</div>
+              <div style="font-size:13px; color:#b91c1c; margin-top:8px;">${escapeHtml(result.error)}</div>
+              <pre class="code-block" style="background:#fef2f2; border:1px solid #fecaca; border-radius:10px; padding:12px; margin-top:12px; max-height:180px; overflow-y:auto;">${rawText}</pre>
+            </div>`;
+        }
+
+        const structuredView = {
+          category: result.category,
+          target_audience: result.target_audience,
+          key_attributes: result.key_attributes,
+          claims_made: result.claims_made,
+          price: result.price,
+          price_currency: result.price_currency,
+          availability: result.availability,
+          fulfillment_terms: result.fulfillment_terms,
+          warranty: result.warranty
+        };
+        return `
+          <div class="card" style="margin-top:16px;">
+            <div class="section-header">
+              <div class="section-title">${title}</div>
+              ${geoTrustBadge(result.trust_score)}
+            </div>
+            <div class="two-col" style="align-items:flex-start; gap:20px;">
+              <div class="main-column" style="flex:1; min-width:0;">
+                <div class="section-subtitle" style="margin-bottom:6px;">Before — what you pasted</div>
+                <pre class="code-block" style="background:#f8fafc; border:1px solid var(--border-color); border-radius:10px; padding:12px; max-height:280px; overflow-y:auto;">${rawText}</pre>
+              </div>
+              <div class="main-column" style="flex:1; min-width:0;">
+                <div class="section-subtitle" style="margin-bottom:6px;">After — GEO-ready structured record</div>
+                <pre class="code-block" style="background:#f8fafc; border:1px solid var(--border-color); border-radius:10px; padding:12px; max-height:280px; overflow-y:auto;">${escapeHtml(JSON.stringify(structuredView, null, 2))}</pre>
+              </div>
+            </div>
+            <div class="methodology-box" style="margin-top:14px;">
+              <strong>Trust reasoning:</strong> ${escapeHtml(result.trust_summary_reason || 'No summary available.')}
+            </div>
+          </div>`;
+      }).join('');
+    }
+
+    async function runGeoReady() {
+      const input = document.getElementById('byo-input');
+      const btn = document.getElementById('byo-run-btn');
+      const container = document.getElementById('byo-results');
+      const rawText = input?.value || '';
+      if (!rawText.trim()) {
+        container.innerHTML = '<p style="color:#f87171; font-size:13px; margin-top:12px;">Paste at least one product listing first.</p>';
+        return;
+      }
+
+      btn.textContent = 'Structuring & scoring…';
+      btn.disabled = true;
+      container.innerHTML = '<p style="color:#94a3b8; font-size:13px; margin-top:12px;">Running the extraction and trust-scoring pipeline. This makes real LLM calls and may take a few seconds per listing.</p>';
+      try {
+        const response = await fetch('/api/geo-ready', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ raw_text: rawText })
+        });
+        if (!response.ok) {
+          const error = await response.json().catch(() => ({ detail: response.statusText }));
+          container.innerHTML = `<p style="color:#f87171; font-size:13px; margin-top:12px;">Error: ${escapeHtml(error.detail || 'Failed to process catalog.')}</p>`;
+          return;
+        }
+        renderGeoReadyResults(await response.json());
+      } catch (error) {
+        container.innerHTML = `<p style="color:#f87171; font-size:13px; margin-top:12px;">Error: ${escapeHtml(error.message)}</p>`;
+      } finally {
+        btn.textContent = 'Make It GEO-Ready';
         btn.disabled = false;
       }
     }

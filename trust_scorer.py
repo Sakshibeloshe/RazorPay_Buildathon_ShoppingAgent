@@ -260,7 +260,17 @@ def deterministic_checks(structured, raw_description):
 # Per-product scoring
 # ---------------------------------------------------------------------------
 
-def score_product(structured):
+def score_product(structured, retries=3, delay=10):
+    """
+    retries/delay are forwarded to score_all_claims. The batch script
+    (trust_scorer.py's main()) is fine waiting through the default
+    3-retry/10s backoff since nothing is watching it run. A live dashboard
+    request is not -- a human is staring at a spinner, and a browser/network
+    intermediary can drop a long-idle connection well before that finishes.
+    Callers serving a live request should pass a tighter budget, e.g.
+    retries=1, delay=3, so a struggling call fails fast into a visible error
+    instead of hanging the whole request for minutes.
+    """
     product_id = structured["product_id"]
     title = structured.get("original_title", "")
     raw_description = structured.get("original_raw_description", "")
@@ -269,7 +279,7 @@ def score_product(structured):
     print(f"  Scoring {product_id}: '{title}' ({len(claims)} claim(s))...")
 
     # --- Batched LLM evaluation ---
-    claims_evaluated = score_all_claims(claims, raw_description, product_id)
+    claims_evaluated = score_all_claims(claims, raw_description, product_id, retries=retries, delay=delay)
 
     # Compute average only over claims that were actually evaluated
     evaluated_scores = [
